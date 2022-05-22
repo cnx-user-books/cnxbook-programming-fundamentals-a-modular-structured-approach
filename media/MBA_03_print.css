@@ -1,0 +1,18 @@
+/*
+ * SoftChalk LessonBuilder StyleSheet (C)2004-2008
+ * SoftChalk LLC, www.softchalk.com
+ *
+ * NON STYLED FORMAT FOR PRINT MEDIA
+ */
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #fff;
+	font-size: 1em !important;
+}
+
+#photo, #sidebar, #nav, #topic_nav, .top, .topic, #banner, #report, #div45dfWo9jkDyQp5jZd, #ds45dfWo9jkDyQp5jZd {
+	display: none !important;
+}

@@ -1,0 +1,146 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Increment and Decrement Operators</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m20499</md:content-id>
+  <md:title>Increment and Decrement Operators</md:title>
+  <md:abstract>An introduction to the increment and decrement operators used in programming with details of C++ usage.</md:abstract>
+  <md:uuid>e6cbde34-8f6d-46c1-a8ed-1f9b26721252</md:uuid>
+</metadata>
+<featured-links>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit below.
+       Changes to the links section in the source will not be saved. -->
+    <link-group type="supplemental">
+      <link url="http://cnx.org/content/m18168/latest/" strength="2">Abbreviated Precedence Chart for C++ Operators</link>
+      <link url="http://cnx.org/content/m18169/latest/" strength="1">The ASCII Character Set </link>
+    </link-group>
+    <link-group type="prerequisite">
+      <link url="http://cnx.org/content/m18743/latest/" strength="2">Arithmetic Assignment Operators</link>
+      <link url="http://cnx.org/content/m18058/latest/" strength="2">Lvalue and Rvalue</link>
+      <link url="http://cnx.org/content/m20404/latest/" strength="1">Flag Concept</link>
+    </link-group>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit above.
+       Changes to the links section in the source will not be saved. -->
+</featured-links>
+<content>
+    <section id="id24540973">
+      <title>General Discussion</title>
+      <para id="id21113808">The idea of increment or decrement is to either add or subtract 1 from a variable that is usually acting as a flag. Using a variable named counter; in generic terms, for example:</para>
+      <para id="id9296364">
+        <code display="inline">increment the counter</code>
+      </para>
+      <para id="id12884210">The concept is:</para>
+      <para id="id4309407">
+        <code display="inline">counter is assigned counter + 1</code>
+      </para>
+      <para id="id12958063">That is you fetch the existing value of the counter and add one then store the answer back into the variable counter. Many programming languages allow their increment and decrement operators to only be used with the integer data type. Programmers will sometimes use inc and dec as abbreviations for increment and decrement respectively.</para>
+<para id="idklbp0001">Operator symbols and/or names vary with different programming languages. The C++ programming language operators with their meanings are:</para>
+      <table id="idklbt0001" summary="">
+        <tgroup cols="2">
+          <colspec colnum="1" colname="c1"/>
+          <colspec colnum="2" colname="c2"/>
+          <tbody>
+            <row>
+              <entry>C++ Operator</entry>
+              <entry>Meaning</entry>
+            </row>
+            <row>
+              <entry>++</entry>
+              <entry>increment, <emphasis>two plus signs</emphasis></entry>
+            </row>
+            <row>
+              <entry>--</entry>
+              <entry>decrement, <emphasis>two minus signs</emphasis></entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </section>
+    <section id="id28817286">
+      <title>C++ Code Examples</title>
+      <section id="id27681977">
+        <title>Basic Concept</title>
+        <para id="id27071955">Within the C++ programming language the increment and decrement are often used in this simple generic way. The operator of increment is represented by two plus signs in a row. Examples:</para>
+        <para id="id4169322">
+          <code display="inline">counter = counter + 1;</code>
+        </para>
+        <para id="id9972894">
+          <code display="inline">counter += 1;</code>
+        </para>
+        <para id="id26414159">
+          <code display="inline">counter++;</code>
+        </para>
+        <para id="id26963745">
+          <code display="inline">++counter;</code>
+        </para>
+        <para id="id11932599">As C++ statements, the four examples all do the same thing. They add 1 to the value of whatever is stored in counter. The decrement opereator is represented by two minus signs in a row. They would subtract 1 from the value of whatever was in the variable being decremented. The precedence of increment and decrement depends on if the operator is attached to the right of the operand (postfix) or to the left of the operand (prefix). Within C++ postfix and prefix do not have the same precedence.</para>
+      </section>
+      <section id="id27539483">
+        <title>Postfix Increment</title>
+        <para id="id4311041">Postfix increment says to use my existing value then when you are done with the other operators; increment me. An example:</para>
+        <para id="id27390001"><preformat id="klb12340001" display="block"><code>
+int oldest = 44; // variable set up with initialization
+  then later on in the code
+age = oldest++; </code></preformat>
+        </para>
+        <para id="id22965264">The first use of the oldest variable is an Rvalue context where the existing value of 44 is pulled or fetched and then assigned to the variable age; then the variable oldest is incremented with its value changing from 44 to 45. This seems to be a violation of precedence because increment is higher precedence than assignment. But that is how postfix increment works within the C++ programming language.</para>
+      </section>
+      <section id="id4110745">
+        <title>Prefix Increment</title>
+        <para id="id4101664">Prefix increment says to increment me now and use my new value in any calculation. An example:</para>
+        <para id="id10803457"><preformat id="klb12340002" display="block"><code>
+int oldest = 44; // variable set up with initialization
+  then later on in the code
+age = ++oldest; </code></preformat>
+        </para>
+        <para id="id28773038">The variable oldest is incremented with the new value changing it from 44 to 45; then the new value is assigned to age.</para>
+        <para id="id24303367">In postfix age is assigned 44 in prefix age is assigned 45.  One way to help remember the difference is to think of postfix as being polite (use my existing value and return to increment me after the other operators are done) where as prefix has an ego (I am important so increment me first and use my new value for the rest of the evaluations). </para>
+      </section>
+      <section id="id27356503">
+        <title>Allowable Data Types</title>
+        <para id="id22512277">Within some programming languages, increment and decrement can be used only on the integer data type. C++ however, expands this not only to all of the integer family but also to the floating-point family (float and double). Incrementing 3.87 will change the value to 4.87. Decrementing 'C' will change the value to 'B'. Remember the ASCII character values are really one byte unsigned integers (domain from 0 to 255).</para>
+      </section>
+      <section id="id13709445">
+        <title>Exercises</title>
+<exercise id="fs-id7921265">
+  <problem id="fs-id9966351">
+    <list id="fs-id8312299" list-type="enumerated">
+      <title> Evaluate the following items using increment or decrement:</title>
+        <item>True or false: x = x +1 and x+=1 and x++ all accomplish increment?</item>
+        <item>Given: int y = 19;  and  int z; what values will y and z have after: z = y--;</item>
+        <item>Given: double x = 7.77; and int y; what values will x and y have after: y = ++x;</item>
+        <item>Is this ok? Why or why not?     6 * ++(age -3)</item>
+  </list>
+  </problem>
+  <solution id="fs-id9556077">
+    <list id="fs-id7936892" list-type="enumerated">
+      <title>Answers:</title>
+        <item>true</item>
+        <item>y is: 18 and z is: 19</item>
+        <item>x is: 8.77 and y is: 8   Note: truncation of 8.77 to 8 upon demotion.</item>
+        <item> Not ok. Error, the item incremented must have Lvalue attributes, usually a variable. It is an expression not a variable.</item>
+    </list>
+  </solution>
+</exercise>
+      </section>
+    </section>
+    <section id="id27824418">
+      <title>Definitions</title>
+    <definition id="fs-id8867451">
+      <term>increment</term>
+      <meaning id="fs-id7178522">Adding one to the value of a variable. </meaning>
+    </definition>
+    <definition id="fs-id10448792">
+      <term>decrement</term>
+      <meaning id="fs-id5753725">Subtracting one from the value of a variable.  </meaning>
+    </definition>
+    <definition id="fs-id10664706">
+      <term>postfix</term>
+      <meaning id="fs-id8098873">Placing the increment or decrement operator to the right of the operand. </meaning>
+    </definition>
+    <definition id="fs-id10622595">
+      <term>prefix</term>
+      <meaning id="fs-id7935960">Placing the increment or decrement operator to the left of the operand. </meaning>
+    </definition>
+    </section>
+  </content>
+</document>

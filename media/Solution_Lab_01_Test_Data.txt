@@ -1,0 +1,31 @@
+Filename: Solution_Lab_01_Test_Data.txt
+
+Purpose:  Average the weight of three people
+
+Author:   Ken Busbee; © 2008 Kenneth Leroy Busbee
+
+Date:     Dec 24, 2008
+
+NOTE:     Academic Dishonesty Warning
+******************************************************
+Solution files are provided by the instructor to each
+individual student as needed. Students are not to 
+share these files with any other student.
+Not now, not later, not ever.  Don't share them.
+******************************************************
+
+Test Data
+
+Person    Qty
+******    ***
+first     100
+second    200
+third     160
+*******   ***
+total     460
+
+Divided by 3 is: 153.3333
+
+******************************************************
+End of file
+

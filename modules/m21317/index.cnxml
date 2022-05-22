@@ -1,0 +1,151 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Displaying Array Members</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m21317</md:content-id>
+  <md:title>Displaying Array Members</md:title>
+  <md:abstract>Examples of displaying members of an array with for loops and using the sizeof operator within the C++ programming language.</md:abstract>
+  <md:uuid>9662d3e4-9c5e-4e3e-b708-48e7c53948d3</md:uuid>
+</metadata>
+<featured-links>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit below.
+       Changes to the links section in the source will not be saved. -->
+    <link-group type="supplemental">
+      <link url="http://cnx.org/content/m18785/latest/" strength="1">Bloodshed Dev-C++ 5 Compiler/IDE</link>
+    </link-group>
+    <link-group type="prerequisite">
+      <link url="http://cnx.org/content/m21315/latest/" strength="2">Array Data Type</link>
+      <link url="http://cnx.org/content/m21316/latest/" strength="2">Array Index Operator</link>
+      <link url="http://cnx.org/content/m18736/latest/" strength="2">Sizeof Operator</link>
+      <link url="http://cnx.org/content/m20600/latest/" strength="1">For Loop</link>
+    </link-group>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit above.
+       Changes to the links section in the source will not be saved. -->
+</featured-links>
+<content>
+    <section id="id19085743">
+      <title>Accessing Array Members in C++</title>
+<example id="klbm1801">
+  <title>accessing the members of an array</title>
+  <para id="klbm1802">
+    <preformat id="klbm1803" display="block"><code>
+int ages[] = {49,48,26,19,16};
+int counter;
+
+for (counter = 0, counter &lt; 5, counter++)
+  {
+  cout &lt;&lt; ages[counter] &lt;&lt; endl;
+  }</code></preformat>
+  </para>
+</example>
+      <para id="id19294497">This second usage of the square brackets is as the <emphasis>array notation of dereference</emphasis> or more commonly called the <emphasis>index operator</emphasis>. As an operator it provides the value held by the member of the array. For example, during one of the iterations of the for loop the index (which is an integer data type) will have the value of 3. The expression ages[counter] would in essence be: ages[3]. The dereference operator of [3] means to go the 3<sup>rd</sup> offset from the front of the ages array and get the value stored there. In this case the value would be 19. The array members (or elements) are referenced starting at zero. The more common way for people to reference a list is by starting with one. Many programming languages reference array members starting at one, however for some languages (and C++ is one of them) you will need to <emphasis>change your thinking</emphasis>. Consider:</para>
+      <table id="id17747253" summary="">
+        <tgroup cols="4">
+          <colspec colnum="1" colname="c1"/>
+          <colspec colnum="2" colname="c2"/>
+          <colspec colnum="3" colname="c3"/>
+          <colspec colnum="4" colname="c4"/>
+          <tbody>
+            <row>
+              <entry>
+                <emphasis>Position</emphasis>
+              </entry>
+              <entry>
+                <emphasis>C++</emphasis>
+              </entry>
+              <entry>
+                <emphasis>Miss America</emphasis>
+              </entry>
+              <entry>
+                <emphasis>Other Contests</emphasis>
+              </entry>
+            </row>
+            <row>
+              <entry>zero offsets from the front</entry>
+              <entry>ages [0]</entry>
+              <entry>Winner</entry>
+              <entry>1<sup>st</sup> Place</entry>
+            </row>
+            <row>
+              <entry>one offsets from the front</entry>
+              <entry>ages [1]</entry>
+              <entry>1<sup>st</sup> Runner Up</entry>
+              <entry>2<sup>nd</sup> Place</entry>
+            </row>
+            <row>
+              <entry>two offsets from the front</entry>
+              <entry>ages [2]</entry>
+              <entry>2<sup>nd</sup> Runner Up</entry>
+              <entry>3<sup>rd</sup> Place</entry>
+            </row>
+            <row>
+              <entry>three offsets from the front</entry>
+              <entry>ages [3]</entry>
+              <entry>3<sup>rd</sup> Runner Up</entry>
+              <entry>4<sup>th</sup> Place</entry>
+            </row>
+            <row>
+              <entry>four offsets from the front</entry>
+              <entry>ages [4]</entry>
+              <entry>4<sup>th</sup> Runner Up</entry>
+              <entry>5<sup>th</sup> Place</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+      <para id="id19121621">Saying that my cousin is the 2<sup>nd</sup> Runner Up in the Miss America contest sounds so much better than saying that she was in 3<sup>rd</sup> Place. We would be talking about the same position in the array of the five finalists.</para>
+      <para id="id18628879">Rather than using the for loop to display the members of the array, we could have written five lines of code as follows:</para>
+      <para id="id17168509"><preformat id="idklb333301" display="block"><code>
+cout &lt;&lt; ages[0] &lt;&lt; endl;
+cout &lt;&lt; ages[1] &lt;&lt; endl;
+cout &lt;&lt; ages[2] &lt;&lt; endl;
+cout &lt;&lt; ages[3] &lt;&lt; endl;
+cout &lt;&lt; ages[4] &lt;&lt; endl; </code></preformat>
+      </para>
+    </section>
+    <section id="id17756728">
+      <title>Using the Sizeof Operator with Arrays in C++</title>
+<example id="klbm1804">
+  <title>using the sizeof operator</title>
+  <para id="klbm1805">
+    <preformat id="klbm1806" display="block"><code>
+int ages[] = {49,48,26,19,16};
+int counter;
+
+for (counter = 0, counter &lt; sizeof ages / sizeof ages[0], counter++)
+  {
+  cout &lt;&lt; ages[counter] &lt;&lt; endl;
+  }</code></preformat>
+  </para>
+</example>
+      <para id="id19085535">Within the control of the for loop for the displaying of the grades, note that we calculated the number of the members in the array by using the <term>sizeof</term> operator.  The expression is:</para>
+      
+      <para id="id19120801">
+        <code display="inline">sizeof ages / sizeof ages[0]</code>
+      </para>
+      <para id="id19085988">When you ask for the sizeof an array identifier name the answer is how many total bytes long is the array (or in other words – how many bytes of storage does this array need to store its values).  This will depend on the data type of the array and the number of elements.  When you ask for the sizeof one of its members, it tells you how many bytes one member needs.  By dividing the total number of bytes by the size of one member, we get the answer we want: the number of members in the array.  This method allows for <emphasis>flexible coding</emphasis>.  By writing the for loop in this fashion, we can change the declaration of the array by adding or subtracting members and we don't need to change our for loop code.</para>
+    </section>
+    <section id="id18585011">
+      <title> Demonstration Program in C++</title>
+      <section id="id18523925">
+        <title>Creating a Folder or Sub-Folder for Source Code Files</title>
+        <para id="id17221190">Depending on your compiler/IDE, you should decide where to download and store source code files for processing. Prudence dictates that you create these folders as needed prior to downloading source code files. A suggested sub-folder for the <term>Bloodshed Dev-C++ 5 compiler/IDE</term> might be named:</para>
+        <list id="id18585032" list-type="bulleted">
+          <item>Demo_Programs</item>
+        </list>
+        <para id="id19120703">If you have not done so, please create the folder(s) and/or sub-folder(s) as appropriate.</para>
+      </section>
+      <section id="id17758870">
+        <title>Download the Demo Program</title>
+        <para id="id19120914">Download and store the following file(s) to your storage device in the appropriate folder(s). Following the methods of your compiler/IDE, compile and run the program(s). Study the source code file(s) in conjunction with other learning materials.</para>
+        <para id="id16433359">Download from Connexions: <link document="m21317" resource="Demo_Arrays.cpp">Demo_Arrays.cpp</link></para>
+      </section>
+    </section>
+    <section id="id17758833">
+      <title>Definitions</title>
+    <definition id="fs-id5989325">
+      <term>flexible coding</term>
+      <meaning id="fs-id4813482">Using the sizeof operator to calculate the number of members in an array.  </meaning>
+    </definition>
+    </section>
+  </content>
+</document>

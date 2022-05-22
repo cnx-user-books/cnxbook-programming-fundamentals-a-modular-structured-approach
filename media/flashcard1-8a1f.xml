@@ -1,0 +1,145 @@
+<?xml version='1.0'?>
+<order>
+<color>E7E7F5</color>
+<showterm>true</showterm>
+<showdef>false</showdef>
+<customDeckText>Custom Deck</customDeckText>
+<wholeDeckText>Whole Deck</wholeDeckText>
+<showText>SHOW</showText>
+<addToText>Add to Custom</addToText>
+<showTermText>Show Term</showTermText>
+<showDefText>Show Definition</showDefText>
+<orderset value='1'>
+ <term>address operator</term>
+ <def>The ampersand or &.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='2'>
+ <term>pointer</term>
+ <def>A variable that holds an address as its value.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='3'>
+ <term>reference variable</term>
+ <def>Used with parameter passing by reference.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='4'>
+ <term>indirection operator</term>
+ <def>The asterisk used for dereferencing a pointer.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='5'>
+ <term>dereferencing</term>
+ <def>The concept of using the item to which a pointer or address is pointing at.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='6'>
+ <term>dimension</term>
+ <def>An axis of an array.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='7'>
+ <term>list</term>
+ <def>A single dimension array.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='8'>
+ <term>table</term>
+ <def>A two dimension array.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='9'>
+ <term>array member</term>
+ <def>An element or value in an array.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='10'>
+ <term>index</term>
+ <def>An operator that allows us to reference a member of an array.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='11'>
+ <term>offset</term>
+ <def>The method of referencing array members by starting at zero.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='12'>
+ <term>conditional compilation</term>
+ <def>A compiler directive that includes or excludes lines of code based on a Boolean expression.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='13'>
+ <term>high performance computing</term>
+ <def>Grouping multiple computers or multiple computer processors to accomplish a task in less time.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='14'>
+ <term>sequential processing</term>
+ <def>Using only one processor and completing the tasks in a sequential order.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='15'>
+ <term>parallel processing</term>
+ <def>Dividing a task into parts that can utilize more than one processor.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='16'>
+ <term>central processingUnit</term>
+ <def>The electronic circuitry that actually executes computer instructions.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='17'>
+ <term>parallel programming</term>
+ <def>Involves developing programs that utilize parallel processing algorithms that take advantage of multiple processors.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='18'>
+ <term>procedural programming</term>
+ <def>Aka modular structured programming.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='19'>
+ <term>object oriented</term>
+ <def>A programming approach that encapsulates data with functions.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+</order>

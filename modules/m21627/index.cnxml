@@ -1,0 +1,66 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Finding a Specific Member of an Array</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m21627</md:content-id>
+  <md:title>Finding a Specific Member of an Array</md:title>
+  <md:abstract>An introduction and example of searching an array within the C++ programming language.</md:abstract>
+  <md:uuid>ee81d509-99e0-48b8-810b-5b0e164d4bde</md:uuid>
+</metadata>
+<featured-links>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit below.
+       Changes to the links section in the source will not be saved. -->
+    <link-group type="supplemental">
+      <link url="http://cnx.org/content/m18785/latest/" strength="1">Bloodshed Dev-C++ 5 Compiler/IDE</link>
+    </link-group>
+    <link-group type="prerequisite">
+      <link url="http://cnx.org/content/m21624/latest/" strength="2">Arrays and Functions</link>
+    </link-group>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit above.
+       Changes to the links section in the source will not be saved. -->
+</featured-links>
+<content>
+    <section id="id11587594">
+      <title>Overview</title>
+      <para id="id4088348">Finding a specific member of an array means searching the array until the member is found. It's possible that the member does not exist and the programmer must handle that possibility within the logic of his algorithm. Two specific searches can be made for the maximum (largest) values in the array or the minimum (smallest) value in the array. Maximum and minimum are also know as max and min. </para>
+      <para id="id6630962">There are two basic ways of searching for a specific value:</para>
+      <list id="id11063327" list-type="enumerated" number-style="arabic">
+        <item>Linear search</item>
+        <item>Binary search</item>
+      </list>
+      <para id="id5177914">"The linear search is a very simple algorithm. Sometimes called a sequential search, it uses a loop to sequentially step through an array, starting with the first element. It compares each element with the value being search for, and stops when either the value is found or the end of the array is encountered. If the value being searched for is not in the array, the algorithm will search to the end of the array."<footnote id="id4696260">Tony Gaddis, Judy Walters and Godfrey Muganda, <emphasis effect="underline">Starting Out with C++ Early Objects Sixth Edition</emphasis> (United States of America: Pearson – Addison Wesley, 2008) 559. </footnote></para>
+      <para id="id3427876">Binary search is not cover in this module. Linear search and searching for the maximum is demonstrated in the demo file provided, thus you need to study this material in conjunction with the demo program.</para>
+    </section>
+    <section id="id3866308">
+      <title>Demonstration Program in C++</title>
+      <section id="id5177892">
+        <title>Creating a Folder or Sub-Folder for Source Code Files</title>
+        <para id="id6870585">Depending on your compiler/IDE, you should decide where to download and store source code files for processing. Prudence dictates that you create these folders as needed prior to downloading source code files. A suggested sub-folder for the <term>Bloodshed Dev-C++ 5 compiler/IDE</term> might be named:</para>
+        <list id="id4839387" list-type="bulleted">
+          <item>Demo_Programs</item>
+        </list>
+        <para id="id4352134">If you have not done so, please create the folder(s) and/or sub-folder(s) as appropriate.</para>
+      </section>
+      <section id="id10451672">
+        <title>Download the Demo Program</title>
+        <para id="id14997766">Download and store the following file(s) to your storage device in the appropriate folder(s). Following the methods of your compiler/IDE, compile and run the program(s). Study the source code file(s) in conjunction with other learning materials. You may need to right click on the link and select "Save Target As" in order to download the file.</para>
+        <para id="id15521456">Download from Connexions: <link document="m21627" resource="Demo_Finding_Array_Member.cpp">Demo_Finding Array Member.cpp</link></para>
+        <para id="id3175613">Download from Connexions: <link document="m21627" resource="Demo_Farm_Acres_Input.txt">Demo_Farm_Acres_Input.txt</link></para>
+      </section>
+    </section>
+    <section id="id12975895">
+      <title>Definitions</title>
+    <definition id="fs-id19283538">
+      <term>linear search</term>
+      <meaning id="fs-id16906035">Using a loop to sequentially step through an array.  </meaning>
+    </definition>
+    <definition id="fs-id19092987">
+      <term>maximum</term>
+      <meaning id="fs-id18111312">Aka max or the largest member of an array.  </meaning>
+    </definition>
+    <definition id="fs-id17171178">
+      <term>minimum</term>
+      <meaning id="fs-id17186889">Aka min or the smallest member of an array.  </meaning>
+    </definition>
+    </section>
+  </content>
+</document>

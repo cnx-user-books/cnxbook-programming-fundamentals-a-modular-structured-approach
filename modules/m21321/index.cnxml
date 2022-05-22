@@ -1,0 +1,87 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Practice 18: Introduction to Arrays</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m21321</md:content-id>
+  <md:title>Practice 18: Introduction to Arrays</md:title>
+  <md:abstract>Questions, exercises, problems, etc. that support this chapter in the "Programming Fundamentals - A Modular Structured Approach using C++" collection/textbook.</md:abstract>
+  <md:uuid>f47569d8-13e0-4fc7-97f0-1acd8e10fa21</md:uuid>
+</metadata>
+
+<content>
+    <section id="id3563171">
+      <title>Learning Objectives</title>
+      <para id="id3563178">With 100% accuracy during a: memory building activity, exercises, lab assignment, problems, or timed quiz/exam; the student is expected to:</para>
+      <list id="id3563188" list-type="enumerated" number-style="arabic">
+        <item>Define the terms on the definitions as listed in the modules associated with this chapter.</item>
+        <item>Within C++ source code be able to define a single dimension array.</item>
+        <item>Within C++ source code be able to access array members using the index operator.</item>
+        <item>Within C++ source code be able to calculate the number of members in an array using the sizeof operator.</item>
+      </list>
+    </section>
+    <section id="id3563219">
+      <title>Memory Building Activities</title>
+      <para id="id3563225">Link to: <link window="new" document="m21321" resource="index.html">MBA 18</link></para>
+    </section>
+    <section id="id3563244">
+      <title>Exercises</title>
+<exercise id="fs-id48401532">
+  <problem id="fs-id48039426">
+    <list id="fs-id48399549" list-type="enumerated">
+      <title>Answer the following statements as either true or false:</title>
+        <item>The array data type is one of the standard data types in C++.</item>
+        <item>Arrays can have more than one dimension.</item>
+        <item>For loops are often used to display the members of an array.</item>
+        <item>When defining an array, it is preferable to specify how many members are in the array.</item>
+        <item>Arrays are rarely used to represent data.</item>
+    </list>
+  </problem>
+  <solution id="fs-id43130315">
+    <list id="fs-id44553474" list-type="enumerated">
+      <title>Answers:</title>
+        <item>false</item>
+        <item>true</item>
+        <item>true</item>
+        <item>false</item>
+        <item>false</item>
+    </list>
+  </solution>
+</exercise>
+    </section>
+    <section id="id3563256">
+      <title>Miscellaneous Items</title>
+      <para id="id3563262">None at this time.</para>
+    </section>
+    <section id="id3563267">
+      <title>Lab Assignment</title>
+      <section id="id3563273">
+        <title>Creating a Folder or Sub-Folder for Chapter 18 Files</title>
+        <para id="id3563281">Depending on your compiler/IDE, you should decide where to download and store source code files for processing. Prudence dictates that you create these folders as needed prior to downloading source code files. A suggested sub-folder for the <term>Bloodshed Dev-C++ 5 compiler/IDE</term> might be named:</para>
+        <list id="id3563305" list-type="bulleted">
+          <item>Chapter_18 within the folder named: Cpp_Source_Code_Files</item>
+        </list>
+        <para id="id3563320">If you have not done so, please create the folder(s) and/or sub-folder(s) as appropriate.</para>
+      </section>
+      <section id="id3563326">
+        <title>Download the Lab File(s)</title>
+        <para id="id3563333">Download and store the following file(s) to your storage device in the appropriate folder(s). You may need to right click on the link and select "Save Target As" in order to download the file.</para>
+        <para id="id3563351">Download from Connexions: <link document="m21321" resource="Lab_18_Narrative_Description.txt">Lab_18_Narrative_Description.txt</link></para>
+      </section>
+      <section id="id3563372">
+        <title>Detailed Lab Instructions</title>
+        <para id="id3563380">Read and follow the directions below carefully, and perform the steps in the order listed.</para>
+        <list id="id3563386" list-type="bulleted">
+          <item>Create a source code file following the directions in the Lab_18_Narrative_Description.txt file. Name it: Lab_18.cpp</item>
+          <item>Build (compile and run) your program.</item>
+          <item>After you have successfully written this program, if you are taking this course for college credit, follow the instructions from your professor/instructor for submitting it for grading.</item>
+        </list>
+      </section>
+    </section>
+    <section id="id3563422">
+      <title>Problems</title>
+      <section id="id3563429">
+        <title>Problem 18a – Instructions</title>
+        <para id="id3563437">Briefly explain what an array is and list the two common operators used with arrays. </para>
+      </section>
+    </section>
+  </content>
+</document>

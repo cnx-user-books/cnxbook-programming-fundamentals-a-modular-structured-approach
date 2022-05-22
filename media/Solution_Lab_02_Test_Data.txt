@@ -1,0 +1,31 @@
+Filename: Solution_Lab_02_Test_Data.txt
+
+Purpose:  Bank Deposit Change Calculation
+
+Author:   Ken Busbee; © 2008 Kenneth Leroy Busbee
+
+Date:     Dec 24, 2008
+
+NOTE:     Academic Dishonesty Warning
+******************************************************
+Solution files are provided by the instructor to each
+individual student as needed. Students are not to 
+share these files with any other student.
+Not now, not later, not ever.  Don't share them.
+******************************************************
+
+Test Data
+
+                         Extended
+Coin       Qty   Value   Value
+********   ***   *****   ********
+pennies      1     .01        .01
+nickels      2     .05        .10
+dimes        3     .10        .30
+quarters     4     .25       1.00
+********   ***   *****   ********
+total                        1.41
+
+******************************************************
+End of file
+

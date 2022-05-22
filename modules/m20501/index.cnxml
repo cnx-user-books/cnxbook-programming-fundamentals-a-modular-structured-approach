@@ -1,0 +1,122 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Unary Positive and Negative Operators</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m20501</md:content-id>
+  <md:title>Unary Positive and Negative Operators</md:title>
+  <md:abstract>An introduction to unary positive and unary negative operators used in programming with details of C++ usage.</md:abstract>
+  <md:uuid>d3a6d075-aecd-4776-b139-e608620ecc4f</md:uuid>
+</metadata>
+<featured-links>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit below.
+       Changes to the links section in the source will not be saved. -->
+    <link-group type="supplemental">
+      <link url="http://cnx.org/content/m18168/latest/" strength="2">Abbreviated Precedence Chart for C++ Operators</link>
+    </link-group>
+    <link-group type="prerequisite">
+      <link url="http://cnx.org/content/m18058/latest/" strength="3">Lvalue and Rvalue</link>
+      <link url="http://cnx.org/content/m20499/latest/" strength="1">Increment and Decrement Operators</link>
+    </link-group>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit above.
+       Changes to the links section in the source will not be saved. -->
+</featured-links>
+<content>
+    <section id="id22987374">
+      <title>General Discussion</title>
+      <para id="id8725883">Unary positive also known as plus and unary negative also known as minus are unique operators. The plus and minus when used with a constant value represent the concept that the values are either positive or negative. Let’s consider:</para>
+      <para id="id21111333">
+        <code display="inline">+5 + -2</code>
+      </para>
+      <para id="id22864150">We have three operators in this order: unary positive, addition, and unary negative. The answer to this expression is a positive 3. As you can see, one must differentiate between when the plus sign means unary positive and when it means addition. Unary negative and subtraction have the same problem. Let’s consider:</para>
+      <para id="id21286196">
+        <code display="inline">-2 - +5</code>
+      </para>
+      <para id="id18611906">The expression evaluates to negative 7. Let’s consider:</para>
+      <para id="id22207015">
+        <code display="inline">7 - -2</code>
+      </para>
+      <para id="id19527072">First constants that do not have a unary minis in front of them are assumed (the default) to be positive. When you subtract a negative number it is like adding, thus the expression evaluates to positive 9.</para>
+    </section>
+    <section id="id22868318">
+      <title>C++ Code Examples</title>
+      <para id="id18458218">The above examples work within the C++ programming language. What happens if we put a unary positive or unary negative in front of a variable or a named constant?</para>
+      <section id="id22848478">
+        <title>Negation – Unary Negative</title>
+        <para id="id22345050">The concept of negation is to take a value and change its sign, that is: flip it. If it positive make it negative and if it is negative make it positive. Mathematically, it is the following C++ code example, given that money is an integer variable with a value of 6:</para>
+        <para id="id21339351">
+          <code display="inline">-money</code>
+        </para>
+        <para id="id22842056">
+          <code display="inline">money * -1</code>
+        </para>
+        <para id="id22467452">The above two expressions evaluate to the same value. In the first line, the value in the variable money is fetched and then it’s negated to a negative 6. In the second line, the value in the variable money is fetched and then it’s multiplied by negative 1 making the answer a negative 6. </para>
+      </section>
+      <section id="id15647927">
+        <title>Unary Positive – Worthless</title>
+        <para id="id22597534">Simply to satisfy symmetry, the unary positive was added to the C++ programming language as on operator. However, it is a totally worthless or useless operator and is rarely used.  However don’t be confused the following expression is completely valid:</para>
+        <para id="id22868895">
+          <code display="inline">6 + +5</code>
+        </para>
+        <para id="id21218014">The second + sign is interpreted as unary positive. The first + sign is interpreted as addition.</para>
+        <para id="id21643289">
+          <code display="inline">money</code>
+        </para>
+        <para id="id21458570">
+          <code display="inline">+money</code>
+        </para>
+        <para id="id22858899">
+          <code display="inline">money * +1</code>
+        </para>
+        <para id="id19565545">For all three lines, if the value stored in money is 6 the value of the expression is 6. Even if the value in money was negative 77 the value of the expression would be negative 77. The operator does nothing, because multiplying anything by 1 does not change its value.</para>
+      </section>
+      <section id="id7542220">
+        <title>Possible Confusion</title>
+        <para id="id19556473">Do not confuse the unary negative operator with decrement. Decrement changes the value in the variable and thus is an Lvalue concept. Unary negative does not change the value of the variable, but uses it in an Rvalue context. It fetches the value and then negates that value. The original value in the variable does not change.</para>
+        <para id="id20182382">Because there is no changing of the value associated with the identifier name, the identifier name could represent a variable or named constant.</para>
+      </section>
+      <section id="id20165575">
+        <title>Exercises</title>
+<exercise id="fs-id15820750">
+  <problem id="fs-id16055782">
+    <list id="fs-id16186999" list-type="enumerated">
+      <title> Evaluate the following items involving unary positive and unary negative:</title>
+        <item>+10 - -2</item>
+        <item>-18 + 24</item>
+        <item>4 - +3</item>
+        <item>+8 + - +5</item>
+        <item>+8 + / +5</item>
+  </list>
+  </problem>
+  <solution id="fs-id18695852">
+    <list id="fs-id16040610" list-type="enumerated">
+      <title>Answers:</title>
+        <item>12</item>
+        <item>6</item>
+        <item>1</item>
+        <item>It’s 3.  Surprised, but it works.  The middle plus sign is addition and the rest are unary positive or unary negative. </item>
+        <item>Error, no operand between addition and division.</item>
+    </list>
+  </solution>
+</exercise>
+      </section>
+    </section>
+    <section id="id11146727">
+      <title>Definitions</title>
+    <definition id="fs-id17775176">
+      <term>unary positive</term>
+      <meaning id="fs-id17675375">A worthless operator almost never used.  </meaning>
+    </definition>
+    <definition id="fs-id17682770">
+      <term>unary negative</term>
+      <meaning id="fs-id17863375">An operator that causes negation.  </meaning>
+    </definition>
+    <definition id="fs-id16220808">
+      <term>plus</term>
+      <meaning id="fs-id17059836">Aka unary positive. </meaning>
+    </definition>
+    <definition id="fs-id17059316">
+      <term>minus</term>
+      <meaning id="fs-id15954771">Aka unary negative. </meaning>
+    </definition>
+    </section>
+  </content>
+</document>

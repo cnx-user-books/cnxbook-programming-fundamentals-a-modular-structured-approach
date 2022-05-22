@@ -1,0 +1,53 @@
+Filename:    Lab_21_Narrative_Description.txt
+
+Purpose:     Practice reading, sorting and displaying a character array
+
+Author:      Ken Busbee; © 2009 Kenneth Leroy Busbee
+Date:        Apr 29, 2009; Modified: May 11, 2010
+Licensed by: Kenneth Leroy Busbee under a 
+             Creative Commons Attribution License (CC-BY 3.0)
+             http://creativecommons.org/licenses/by/3.0/
+*************************************************************
+
+You are to write a program named Lab_21.cpp that does the following:
+
+1. You will want to use the Demo_Sort_Array_Function.cpp (See:
+   Sorting an Array in Chapter 20) as a starting point.  
+   Make sure that you change the comments to a correct filename,
+   purpose, author and date, etc.
+
+2. You will use the Lab_21_Input.txt data file.
+
+3. Read in character members from a file into an array.  The characters
+   represent a student’s final grade (Example: A B C D F I W). You 
+   should use the two step process that is in the existing program.
+   You count the memebers; allocate the array; then load the array.
+
+4. Display the array; however change the display function to list the 
+   grades horizontally with two spaces between them, instead of vertically.
+   Do not list offset or the element values.
+   It should look something like: A  C  B  W  A  D  C  etc.
+
+5. Bubble sort the array.
+
+6. Display the array again. 
+
+7. HINT: Leave all of the existing code in place. You will be changing
+   all items needed to handle character data instead of integer data.
+   Most of this changing is changing the data type in various places.
+
+   All of the function prototypes and definitions need to change 
+   the: int things[] to: char things[]
+
+   The following variable declarations need to be changed from whatever 
+   they are to char:
+
+   int grades[record_count];
+   double next_value;
+   int temp;
+
+   You will need to make some changes to the display_array function as
+   noted in item 4 above.
+
+*************************************************************
+End of file

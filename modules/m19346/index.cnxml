@@ -1,0 +1,118 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Using a Header File for User Defined Specific Task Functions</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m19346</md:content-id>
+  <md:title>Using a Header File for User Defined Specific Task Functions</md:title>
+  <md:abstract>Concepts and an example of how to create a user library within the C++ programming language.</md:abstract>
+  <md:uuid>d25d71e2-475d-4e97-aa60-2cb699bc4b30</md:uuid>
+</metadata>
+<featured-links>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit below.
+       Changes to the links section in the source will not be saved. -->
+    <link-group type="supplemental">
+      <link url="http://cnx.org/content/m19202/latest/" strength="2">Standard Libraries</link>
+    </link-group>
+    <link-group type="prerequisite">
+      <link url="http://cnx.org/content/m18920/latest/" strength="3">Integrated Development Environment</link>
+      <link url="http://cnx.org/content/m19146/latest/" strength="2">Specific Task Functions</link>
+      <link url="http://cnx.org/content/m18787/latest/" strength="2">Compiler Directives</link>
+      <link url="http://cnx.org/content/m18785/latest/" strength="2">Bloodshed Dev-C++ 5 Compiler/IDE</link>
+    </link-group>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit above.
+       Changes to the links section in the source will not be saved. -->
+</featured-links>
+<content>
+    <section id="id4176021">
+      <title>Concept: User Defined Specific Task Functions</title>
+      <para id="id16731466">Most companies have certain tasks that are unique to their company. Collectively the programming staff may decide to build several functions and organize them into one or more user libraries. Specific task functions are often built using a testing shell program. The sole purpose of the testing shell program is to create the specific task functions and to test them to insure that they are working properly. Think of a clam, its shell surrounds the important part, the pearl. A testing shell program surrounds the specific task function (the important part). Usually the testing shell program will be used to create several functions that will be placed into a user defined library. The process flows as follows:</para>
+      <list id="id4975279" list-type="enumerated"><item>The <emphasis>testing shell</emphasis> program with the specific task functions is built and thoroughly tested.</item>
+	<item>A copy of the <emphasis>testing shell</emphasis> source code is saved as the <emphasis>header file</emphasis> that once modified will be placed in the user library. You delete the main part of the program leaving a comments area, any needed include file references and the specific task functions.
+<figure id="header_fig"><title>Header File Creation</title><media id="headerpic" alt="Shows header file creation">
+		<image mime-type="image/jpeg" src="../../media/header_Figure.jpg"/>
+	</media>
+	
+<caption>Creating a header file from a copy of the testing shell.</caption></figure>
+	</item>
+	<item>Another copy of the <emphasis>testing shell</emphasis> source code is saved as the <term>prototypes file</term>. This is a text file that retains only the prototypes for the functions that were placed into the <emphasis>header file</emphasis>. The functions should be using meaningful identifier names, thus the prototypes should provide adequate information to others on how to call the function with appropriate parameter passing.
+<figure id="prototypes_fig">
+			<title>Prototypes File Creation</title>
+			<media id="prototypespic" alt="Shows prototypes file creation">
+				<image mime-type="image/jpeg" src="../../media/prototypes_Figure.jpg"/>
+			</media>
+			<caption>Creating a prototypes file from a copy of the testing shell.</caption>
+		</figure>
+	</item>
+	<item>Another copy of the <emphasis>testing shell</emphasis> source code is saved as the <term>verify header program</term>. You delete the functions prototypes and definitions then provide an include that points to the header file. This program is compiled and run to make sure the <emphasis>header file</emphasis> is working properly.
+<figure id="verify_fig">
+			<title>Verify Header File Creation</title>
+			<media id="verifypic" alt="Shows verify header file creation">
+				<image mime-type="image/jpeg" src="../../media/verify_header_Figure.jpg"/>
+			</media>
+			<caption>Creating a verify header file from a copy of the testing shell.</caption>
+		</figure>
+	</item>
+</list>
+      <para id="id7000802">A good way to understand the concept is to review the four files described above that have been created by a programmer. We will be using the C++ programming language, however the code is easy to understand and will serve our needs well at explaining the concepts; even if you are not familiar with C++. </para>
+    </section>
+    <section id="id14692770">
+      <title>Demonstration Using C++</title>
+      <section id="id13093652">
+        <title>Creating a Folder or Sub-Folder for the Four Files</title>
+        <para id="id17597355">Depending on your compiler/IDE, you should decide where to download and store source code files for processing. Prudence dictates that you create these folders as needed prior to downloading source code files. A suggested sub-folder for the <term>Bloodshed Dev-C++ 5 compiler/IDE</term> might be named:</para>
+        <list id="id13429178" list-type="bulleted">
+          <item>Monitor_Header</item>
+        </list>
+        <para id="id13424509">If you have not done so, please create the folder(s) and/or sub-folder(s) as appropriate.</para>
+      </section>
+      <section id="id17227453">
+        <title>Download the Four Files</title>
+        <para id="id3998360">Download and store the following files to your storage device in the appropriate folder. You may need to right click on some of the links and select "Save Target As" in order to download some of the files. </para>
+        <para id="id7043706">Download from Connexions: <link document="m19346" resource="Monitor_Testing_Shell.cpp">Monitor_Testing_Shell.cpp</link></para>
+        <para id="id13679381">Download from Connexions: <link document="m19346" resource="udst_monitor.h">udst_monitor.h</link></para>
+        <para id="id15636973">Download from Connexions: <link document="m19346" resource="udst_monitor_prototypes.txt">udst_monitor_prototypes.txt</link></para>
+        <para id="id16994127">Download from Connexions: <link document="m19346" resource="Monitor_Verify_Header.cpp">Monitor_Verify_Header.cpp</link> </para>
+      </section>
+      <section id="id15597682">
+        <title>Study the Files Collectively to Understand the Concepts</title>
+        <para id="id6552553">Take a few moments to review the files in conjunction with the concept discussion above. You should compile and run the <emphasis>Monitor_Testing_Shell.cpp</emphasis> program. </para>
+      </section>
+      <section id="id17699565">
+        <title>Creating a Folder or Sub-Folder for your User Library</title>
+        <para id="id4311207">Depending on your compiler/IDE, you should decide where to create a folder that will hold the header files you create. We suggest that you create the folder in conjunction with the compiler/IDE software. If you were using the <term>Bloodshed Dev-C++ 5 compiler/IDE</term> you most likely installed the compiler/IDE software at: <emphasis>C:\Dev-Cpp\</emphasis> if you installed it on your machine or at: <emphasis>DriveLetter:\Dev-Cpp\</emphasis> (where the <emphasis>DriveLetter</emphasis> is the drive that represents your flash drive) if you installed it on a flash drive. We suggest that you create a sub-folder at that location named:</para>
+        <list id="id6529436" list-type="bulleted">
+          <item>user_library</item>
+        </list>
+        <para id="id4587230">The path of: <emphasis>C:\Dev-Cpp\user_library</emphasis> would be created as the location for your user library if using your machine installation. You can literally place it anywhere and name the library any name, but once you decide on a place and name; you do not want to move or rename the folders. </para>
+      </section>
+      <section id="id16223909">
+        <title>Placing the Header File into the User Library</title>
+        <para id="id17438327">You need to copy the <emphasis>udst_monitor.h</emphasis> file placing it into the user_library folder just created. As you can guess the udst stands for user defined specific task. The functions within this header file would be used to control the interaction a user has with the monitor. The .h is a convention of the C++ programming language and indicates a header file. Thus the identifier name for the header file is very meaningful and descriptive. </para>
+      </section>
+      <section id="id14440088">
+        <title>Verify that the Header File Works Properly</title>
+        <para id="id3187418">Review the <emphasis>Monitor_Verify_Header.cpp</emphasis> source code file and note the two include commands are different.</para>
+        <list id="id16334335" list-type="enumerated"><item>The Standard Library uses a less than and a greater than to bracket the Standard Library name of: iostream</item>
+	<item>The user library uses quote marks to bracket the location of the header file. This identifies to the complier that we are specifying the exact file we want. We provide a complete file specification (drive, path information, filename and extension).</item>
+	<item>Because this item is technically a string within C++, we must use two back slashes between the drive, path(s) and filename. This is because the first back slash assumes that the next character is an escape code and if we really don't want an escape code but a back slash, the second back slash says no I wanted a back slash.This string: "C:\\Dev-Cpp\\user_library\\udst_monitor.h" will be interpreted to mean: <emphasis>C:\Dev-Cpp\user_library\udst_monitor.h</emphasis></item>
+</list>
+        <para id="id7030585">Depending on what drive you are using, what path folder structure you are using and what you called your folder; you may need to correct the include reference within the source code so that it properly references the header file. </para>
+        <para id="id5863677">Compile and run the Monitor_Verify_Header.cpp program. Note: It should work exactly as the Monitor_Testing_Shell.cpp program. </para>
+      </section>
+    </section>
+<section id="fs-id2348110">
+  <title>Definitions</title>
+    <definition id="fs-id4647324">
+      <term>udst</term>
+      <meaning id="fs-id8499489">User Defined Specific Task</meaning>
+    </definition>
+    <definition id="fs-id8508995">
+      <term> testing shell</term>
+      <meaning id="fs-id8264482">A program used to create specific task functions. </meaning>
+    </definition>
+    <definition id="fs-id4468338">
+      <term>header file</term>
+      <meaning id="fs-id6011542">A file that contains items we want to have included toward the top of our source code.</meaning>
+    </definition>
+</section>
+  </content>
+</document>

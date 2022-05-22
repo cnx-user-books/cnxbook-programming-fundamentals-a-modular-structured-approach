@@ -1,0 +1,80 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Boolean Data Type</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m19544</md:content-id>
+  <md:title>Boolean Data Type</md:title>
+  <md:abstract>An introduction to the Boolean data type.</md:abstract>
+  <md:uuid>74ba6ecb-4141-4169-976b-14eacc0c03b0</md:uuid>
+</metadata>
+<featured-links>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit below.
+       Changes to the links section in the source will not be saved. -->
+    <link-group type="prerequisite">
+      <link url="http://cnx.org/content/m18653/latest/" strength="2">Data Types in C++</link>
+    </link-group>
+    <link-group type="supplemental">
+      <link url="http://cnx.org/content/m19549/latest/" strength="3">Relational Operators</link>
+      <link url="http://cnx.org/content/m19847/latest/" strength="3">Logical Operators</link>
+      <link url="http://cnx.org/content/m19542/latest/" strength="1">Assignment Vs Equality within C++</link>
+    </link-group>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit above.
+       Changes to the links section in the source will not be saved. -->
+</featured-links>
+<content>
+    <section id="id1169812074058">
+      <title>Discussion</title>
+      <para id="id1169811697256">The <emphasis>Boolean</emphasis> data type is also known as the logical data type and represents the concepts of true and false. The name "Boolean" comes from the mathematician George Boole; who in 1854 published: An Investigation of the Laws of Thought. Boolean algebra is the area of mathematics that deals with the logical representation of true and false using the numbers 0 and 1. The importance of the Boolean data type within programming is that it is used to control programming structures (if then else, while loops, etc.) that allow us to implement "choice" into our algorithms.</para>
+      <para id="id1169825795383">The Boolean data type has the same attributes and acts or behaves similarly in all programming languages. The rules within the C++ programming language are:</para>
+      <table id="id1169810933530" summary="">
+        <tgroup cols="2">
+          <colspec colnum="1" colname="c1"/>
+          <colspec colnum="2" colname="c2"/>
+          <tbody>
+            <row>
+              <entry>C++ Reserved Word</entry>
+              <entry>bool</entry>
+            </row>
+            <row>
+              <entry>Represent</entry>
+              <entry>Logical concepts of true and false</entry>
+            </row>
+            <row>
+              <entry>Size</entry>
+              <entry>Usually 1 byte</entry>
+            </row>
+            <row>
+              <entry>Normal Signage</entry>
+              <entry>Unsigned</entry>
+            </row>
+            <row>
+              <entry>Domain (Values Allowed)</entry>
+              <entry>0 meaning false, and 1 meaning true</entry>
+            </row>
+            <row>
+              <entry>C++ syntax rule</entry>
+              <entry>true and false are reserved words that can be used as values in expressions</entry>
+            </row>
+            <row>
+              <entry>C++ concept/rule</entry>
+              <entry>Any value from any data type can be demoted into a Boolean data type with zero representing false and all non-zero values representing true.</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+      <para id="id5617683">Most control structures use a <emphasis>test expression</emphasis> that executes either selection (as in the: if then else) or iteration (as in the while; do while; or for loops) based on the truthfulness or falseness of the expression. Thus, we often talk about the <term>Boolean expression</term> that is controlling the structure. Within many programming languages, this expression must be a Boolean expression and is governed by a tight set of rules. However, in C++ every data type can be used as a Boolean expression because the value of any data type within C++ can be demoted into a Boolean value.</para>
+      <para id="id1169809899736">Within most languages, expressions that yield Boolean data type values are divided into two groups. One group uses the relational operators within their expressions and the other group uses logical operators within their expressions.</para>
+      <para id="id1169816593621">Within the C++ programming language the Boolean data type is one of the standard or basic data types and is a member of the integer family.</para>
+    </section>
+    <section id="id1169822790883">
+      <title>Definitions</title>
+    <definition id="fs-id6283740">
+      <term>Boolean</term>
+      <meaning id="fs-id15662993">A data type representing the concepts of true and false.</meaning>
+    </definition>
+    <definition id="fs-id4627252">
+      <term>test expression</term>
+      <meaning id="fs-id7385028">An expression used to control programming structures.</meaning>
+    </definition>
+    </section>
+  </content>
+</document>

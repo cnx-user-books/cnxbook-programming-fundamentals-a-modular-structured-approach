@@ -1,0 +1,146 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Practice 12: Multiway Selection</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m19968</md:content-id>
+  <md:title>Practice 12: Multiway Selection</md:title>
+  <md:abstract>Questions, exercises, problems, etc. that support this chapter in the "Programming Fundamentals - A Modular Structured Approach using C++" collection/textbook.</md:abstract>
+  <md:uuid>9f65de6e-8458-48da-911d-d620af002c8a</md:uuid>
+</metadata>
+
+<content>
+    <section id="id20278184">
+      <title>Learning Objectives</title>
+      <para id="id19498029">With 100% accuracy during a: memory building activity, exercises, lab assignment, problems, or timed quiz/exam; the student is expected to:</para>
+      <list id="id19956092" list-type="enumerated" number-style="arabic">
+        <item>Define the terms on the definitions as listed in the modules associated with this chapter.</item>
+        <item>Identify which selection control structures are two-way selection and which are multiway selection.</item>
+        <item>Understand, define and/or explain case, switch and nested if then else.</item>
+        <item>Be able to write pseudo code or flowcharting for the case control structure.</item>
+        <item>Be able to write C++ source code for a case structure using equality and listed values (switch with break to act like a case structure).</item>
+        <item>Be able to write C++ source code for a case structure using ranges of values or floating-point values (nested if then else to act like a case structure).</item>
+        <item>When feasible, be able to convert C++ source code from switch acting like a case to nested if then else and vice versa.</item>
+      </list>
+    </section>
+    <section id="id20388311">
+      <title>Memory Building Activities</title>
+      <para id="id19789139">Link to: <link window="new" document="m19968" resource="index.html">MBA 12</link></para>
+    </section>
+    <section id="id20478224">
+      <title>Exercises</title>
+<exercise id="fs-id18149648">
+  <problem id="fs-id18031098">
+    <list id="fs-id18108211" list-type="enumerated">
+      <title> Evaluate the following Logical Boolean expressions:</title>
+        <item>25 &gt; 39 || 15 &gt; 36</item>
+        <item>19 &gt; 26 || 13 &lt; 17</item>
+        <item>14 &lt; 7 &amp;&amp; 6 &lt;= 6</item>
+        <item>4 &gt; 3 &amp;&amp; 17 &gt;= 7</item>
+        <item>! true</item>
+        <item>! (13 == 7)</item>
+        <item>9 != 7 &amp;&amp; ! 1</item>
+        <item>6 &lt;  &amp;&amp; 8</item>
+    </list>
+  </problem>
+  <solution id="fs-id18230323">
+    <list id="fs-id18142050" list-type="enumerated"><title>Answers:</title><item>0</item>
+	<item>1</item>
+	<item>0</item>
+	<item>1</item>
+	<item>0</item>
+	<item>1</item>
+	<item>0</item>
+	<item> Error, there needs to be an operand between the operators &lt; and &amp;&amp;.</item>
+</list>
+  </solution>
+</exercise>
+    </section>
+    <section id="id19632388">
+      <title>Miscellaneous Items</title>
+      <para id="idklb12901">Link to: <link window="new" document="m19968" resource="Manipulation_Data_Part_3.pdf">Manipulation of Data Part 3</link></para>
+    </section>
+    <section id="id20383624">
+      <title>Lab Assignment</title>
+      <section id="id20389777">
+        <title>Creating a Folder or Sub-Folder for Chapter 12 Files</title>
+        <para id="id20388996">Depending on your compiler/IDE, you should decide where to download and store source code files for processing. Prudence dictates that you create these folders as needed prior to downloading source code files. A suggested sub-folder for the <term>Bloodshed Dev-C++ 5 compiler/IDE</term> might be named:</para>
+        <list id="id20778836" list-type="bulleted">
+          <item>Chapter_12 within the folder named: Cpp_Source_Code_Files</item>
+        </list>
+        <para id="id20571329">If you have not done so, please create the folder(s) and/or sub-folder(s) as appropriate.</para>
+      </section>
+      <section id="id19759466">
+        <title>Download the Lab File(s)</title>
+        <para id="id20481241">Download and store the following file(s) to your storage device in the appropriate folder(s). You may need to right click on the link and select "Save Target As" in order to download the file.</para>
+        <para id="id9951930">Download from Connexions: <link document="m19968" resource="Lab_12a.cpp">Lab_12a.cpp</link></para>
+      </section>
+      <section id="id6106517">
+        <title>Detailed Lab Instructions</title>
+        <para id="id20485310">Read and follow the directions below carefully, and perform the steps in the order listed.</para>
+        <list id="id20415162" list-type="bulleted">
+          <item>Compile and run the Lab_12a.cpp source code file. Understand how it works.</item>
+          <item>Copy the source code file Lab_12a.cpp naming it: Lab_12b.cpp</item>
+          <item>Convert the nested if then else to a switch with breaks.</item>
+          <item>Build (compile and run) your program.</item>
+          <item>After you have successfully written this program, if you are taking this course for college credit, follow the instructions from your professor/instructor for submitting it for grading.</item>
+        </list>
+      </section>
+    </section>
+<section id="klbp1201">
+<title>Problems</title>
+<section id="klbp1202">
+<title>Problem 12a – Instructions</title>
+<para id="klbp1211">Flowchart the following pseudocode:</para>
+<example id="klbp1221">
+<title>pseudocode</title>
+<para id="klbp1212"><preformat id="klbp1222" display="block"><code>
+Case of shoe_size
+  4 to 6  Display "Small."
+  7 to 9  Display "Medium."
+  10 +    Display "Large."
+Endcase
+</code></preformat>
+</para>
+</example>
+</section>
+<section id="klbp1203">
+<title>Problem 12b – Instructions</title>
+<para id="klbp1205">The "Flip-Flops" is a unique shoe store that only sells flip-flops. Adult shoe sizes less than 4 are handled in the children’s department, thus we don’t need to concern ourselves with sizes less than 4.  Half shoe sizes are to be rounded down, thus the prompt to the user that happens before this case structure will have addressed that issue.  The variable shoe_size will be an integer value between 4 and 1,000,000,000 (one billion).</para>
+<para id="klbp1206">Write C++ source code for the following pseudocode:</para>
+<example id="klbp1223">
+<title>pseudocode</title>
+<para id="klbp1207"><preformat id="klbp1224" display="block"><code>
+Case of shoe_size
+  4 to 6  Display "Small."
+  7 to 9  Display "Medium."
+  10 +    Display "Large."
+Endcase
+</code></preformat>
+</para>
+</example>
+</section>
+<section id="klbp1204">
+<title>Problem 12c – Instructions</title>
+<para id="klbp1208">Write C++ source code for the following pseudocode:</para>
+<example id="klbp1225">
+<title>pseudocode</title>
+<para id="klbp1210"><preformat id="klbp1226" display="block"><code>
+If age equal to 24
+  Display a message "You’re the same age as Melinda."
+Else
+  If age equal to 27
+    Display a message "You’re the same age as Ruth."
+  Else
+    If age equal to 34
+      Display a message "You’re the same age as Ben."
+    Else
+      Display a message "You’re age is un-important."
+    Endif
+  Endif
+Endif
+</code></preformat>
+</para>
+</example>
+</section>
+</section>
+  </content>
+</document>

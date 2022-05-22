@@ -1,0 +1,97 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Practice 2: Program Planning &amp; Design</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m22453</md:content-id>
+  <md:title>Practice 2: Program Planning &amp; Design</md:title>
+  <md:abstract>Questions, exercises, problems, etc. that support this chapter in the "Programming Fundamentals - A Modular Structured Approach using C++" collection/textbook.</md:abstract>
+  <md:uuid>3aa352aa-917d-472f-9502-a1f461ced675</md:uuid>
+</metadata>
+
+<content>
+    <section id="id5197465">
+      <title>Learning Objectives</title>
+      <para id="id1172768255984">With 100% accuracy during a: memory building activity, exercises, lab assignment, problems, or timed quiz/exam; the student is expected to:</para>
+      <list id="id1172770882553" list-type="enumerated" number-style="arabic">
+        <item>Define the terms on the definitions as listed in the modules associated with this chapter.</item>
+        <item>Create a pseudocode document for a programming problem</item>
+        <item>Create a test data document for a programming problem</item>
+      </list>
+    </section>
+    <section id="id1172770570340">
+      <title>Memory Building Activities</title>
+      <para id="id1562253">Link to: <link window="new" document="m22453" resource="index.html">MBA 02</link></para>
+    </section>
+    <section id="id1172769399444">
+      <title>Exercises</title>
+<exercise id="fs-id5837247">
+  <problem id="fs-id5503909">
+    <list id="fs-id13435487" list-type="enumerated">
+      <title>Answer the following statements as either true or false:</title>
+        <item>Coding the program in a language like C++ is the first task of planning.  You plan as you code.</item>
+        <item>Pseudocode is the only commonly used planning tool.</item>
+        <item>Test data is developed for testing the program once it is code into a language like C++.</item>
+        <item>The word pseudo means false and includes the concepts of fake or imitation.</item>
+        <item>Many programmers pick up the bad habit of not completing the planning step before starting to code the program.</item>
+    </list>
+  </problem>
+  <solution id="fs-id3308798">
+    <list id="fs-id4892893" list-type="enumerated">
+      <title>Answers:</title>
+        <item>false</item>
+        <item>false</item>
+        <item>false</item>
+        <item>true</item>
+        <item>true</item>
+    </list>
+  </solution>
+</exercise>
+    </section>
+    <section id="id6401074">
+      <title>Miscellaneous Items</title>
+      <para id="id1172765217116">None at this time.</para>
+    </section>
+    <section id="id8630100">
+      <title>Lab Assignment</title>
+      <section id="id1172766035932">
+        <title>Creating a Folder or Sub-Folder for Chapter 02 Files</title>
+        <para id="id1172768734892">Depending on your compiler/IDE, you should decide where to download and store source code files for processing. Prudence dictates that you create these folders as needed prior to downloading source code files. A suggested sub-folder for the <term>Bloodshed Dev-C++ 5 compiler/IDE</term> might be named:</para>
+        <list id="id1172767143283" list-type="bulleted">
+          <item>Chapter_02 within the folder named: Cpp_Source_Code_Files</item>
+        </list>
+        <para id="id1172767205505">If you have not done so, please create the folder(s) and/or sub-folder(s) as appropriate.</para>
+      </section>
+      <section id="id5454163">
+        <title>Download the Lab File(s)</title>
+        <para id="id1172766214157">Download and store the following file(s) to your storage device in the appropriate folder(s). You may need to right click on the link and select "Save Target As" in order to download the file.</para>
+        <para id="id1172768037508">Download from Connexions: <link document="m22453" resource="Solution_Lab_01_Pseudocode.txt">Solution_Lab_01_Pseudocode.txt</link></para>
+        <para id="id1172766371228">Download from Connexions: <link document="m22453" resource="Solution_Lab_01_Test_Data.txt">Solution_Lab_01_Test_Data.txt</link></para>
+      </section>
+      <section id="id1172767270216">
+        <title>Detailed Lab Instructions</title>
+        <para id="id1172768693708">Read and follow the directions below carefully, and perform the steps in the order listed.</para>
+        <list id="id1172766076754" list-type="bulleted"><item>Navigate to your sub-folder: Chapter_02 and print the: Solution_Lab_01_Pseudocode.txt and the: Solution_Lab_01_Test_Data.txt files. Review the printouts in conjunction with your Lab 01 source code file. Note: In Lab 01 we gave you step by step directions for modifying the Compiler_Test.cpp source code file into the Lab_01.cpp source code file. I could have given you the pseudocode and test data files, but you had not received any instructions about them. Now, after having studied the Chapter 2 materials, these files should make sense.</item>
+	<item>Make copies of the: Solution_Lab_01_Pseudocode.txt and Solution_Lab_01_Test_Data.txt and rename them: <emphasis>Lab_02_Pseudocode.txt</emphasis> and <emphasis>Lab_02_Test_Data.txt</emphasis></item>
+	<item>Here is the problem. Your local bank has many customers who save their change and periodically bring it in for deposit. The customers have sorted the coins (pennies, nickels, dimes and quarters – forget half dollars and dollar coins) and know how many (an integer data type) of each value they have but have evolved (or their environment has made them lazy). They have lost their ability to do simple arithmetic.  They can’t seem to determine the total value of all of the coins without a calculator (or computer).  Write a program to interact with the customers and to determine and report the total value of their coins.</item>
+	<item>No! No! No! We are <emphasis>not</emphasis> going to write a program (create source code) using the C++ programming language. We are going to design a plan for a program using pseudocode as our model. Additionally, we need to develop some test data for use in testing our model.</item>
+	<item>Start your text editor (Microsoft Notepad. Set the font on Notepad to: Courier 12 font because Courier uses the same amount of space horizontally for each letter. It will make the information in the files show as it should be seen. Open your Lab 02 pseudocode text file. Change all items as needed to be able to solve the above problem. NOTE: You may use any application software that will let you open, modify and save ASCII text files. You may even use the Bloodshed Dev-C++ 5 compiler/IDE software to view, modify and save ASCII text files; after all, our source code files are ASCII text files with a special extension of .cpp</item>
+	<item>Open your Lab 02 test data text file. Modify the text file as appropriate. Use your test data and step through your pseudocode. Does everything seem to work? Have you missed something?</item>
+	<item>When you are satisfied that you have your program plan and test data completed, close your text files. That’s right, I said, "Save and close your text files." Files should be properly closed before being used by other software and this includes the Operating System software that moves, copies and renames files.</item>
+	<item>After you have successfully written this program, if you are taking this course for college credit, follow the instructions from your professor/instructor for submitting it for grading.</item>
+</list>
+      </section>
+    </section>
+    <section id="id1629007">
+      <title>Problems</title>
+      <section id="id1172766353813">
+        <title>Problem 02a – Instructions</title>
+        <para id="id1172767840542">Create simple IPO pseudocode to solve the following:</para>
+        <para id="id1172765811103">Problem: I have a friend who is visiting from Europe and he does not understand exactly how much gas he is buying for his car. We need to write a program that allows him to enter the gallons of gas and convert it to liters (metric system). NOTE: One US gallon equals 3.7854 liters.</para>
+      </section>
+      <section id="id3218930">
+        <title>Problem 02b – Instructions</title>
+        <para id="id1172767510824">Create test data for the following:</para>
+        <para id="id1172765012898">Problem: A major restaurant sends a chef to purchase fruits and vegetables every day. Upon returning to the store the chef must enter two pieces of data for each item he purchased. The quantity (Example: 2 cases) and the price he paid (Example: $4.67). The program has a list of 20 items and after the chef enters the information, the program provides a total for the purchases for that day. You need to prepare test data for five (5) items: apples, oranges, bananas, lettuce and tomatoes.</para>
+      </section>
+    </section>
+  </content>
+</document>

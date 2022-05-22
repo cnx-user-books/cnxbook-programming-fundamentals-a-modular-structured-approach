@@ -1,0 +1,78 @@
+Filename:    Lab_24_Narrative_Description.txt
+
+Purpose:     A review program that uses many concepts
+             presented with the textbook/collection.
+
+Author:      Ken Busbee; © 2009 Kenneth Leroy Busbee
+Date:        Apr 17, 2009; Modified: May 11, 2010
+Licensed by: Kenneth Leroy Busbee under a 
+             Creative Commons Attribution License (CC-BY 3.0)
+             http://creativecommons.org/licenses/by/3.0/
+*************************************************************
+
+You are to write a program named Lab_24.cpp that does the following:
+
+1. Includes variable definitions in C++ (not human definitions) that
+   use all of the following data types:
+
+   a. Boolean
+   b. character
+   c. integer
+   d. floating-point (you may use either float or double)
+   e. string
+   f. array (single dimension)
+   g. pointer
+
+2. Defines at least one constant with an identifier name.
+
+3. Includes all of the following types of functions:
+
+   a. At least one program control function 
+      HINT: You can use more than one.
+   b. A header file that includes the: monitor.h
+        and
+      a call to at least the: clear_m 
+      which is a user defined specific task function
+   c. A call to at least one Standard Library function
+      HINT: You might need to include a header file.
+
+4. Includes all of the following control structures:
+
+   a. if then else
+   b. case - Remember you must use switch with break
+   c. do while
+   d. while
+   e. for 
+
+
+5. Of necessity you will use a variety of operators, however you
+   must use/demonstrate all of the following:
+
+   a. integer division
+   b. modulus
+   c. array index
+   d. indirection
+
+Here are some hints for success:
+
+A. You may want to at least sketch out a plan before you start coding.
+   Not necessarily a complete pseudocode but a little thought as to 
+   what you are going to do and check off the above items to make
+   sure that they are planned for.  Some students use the menu structure
+   learned in Chapter 16 as a starting point. 
+
+B. To make it easy to grade, place the definitions for variables and constants
+   (as described in items 1 and 2 above) before the function main.
+
+C. Build and test your program in steps. Otherwise, you may encounter 
+   impossible to solve compiler errors. 
+
+D. Don't give up before you start. This lab should be done as you 
+   prepare for your final exam. It is designed to have you cover
+   major items and concepts that are within the first 22 chapters.
+
+E. There are 20 individual items listed between the 5 items above.
+   Each will be worth 0.5 points and this assignment will be graded by 
+   simply telling you which ones you missed and did not do.   
+*************************************************************
+End of file

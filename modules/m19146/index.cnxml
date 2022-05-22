@@ -1,0 +1,50 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Specific Task Functions</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m19146</md:content-id>
+  <md:title>Specific Task Functions</md:title>
+  <md:abstract>A general explanation of specific task functions.</md:abstract>
+  <md:uuid>acd30464-aa71-4ab1-9436-7100b17cb403</md:uuid>
+</metadata>
+<featured-links>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit below.
+       Changes to the links section in the source will not be saved. -->
+    <link-group type="supplemental">
+      <link url="http://cnx.org/content/m19147/latest/" strength="3">Global vs Local Data Storage</link>
+      <link url="http://cnx.org/content/m19202/latest/" strength="2">Standard Libraries</link>
+    </link-group>
+    <link-group type="prerequisite">
+      <link url="http://cnx.org/content/m18861/latest/" strength="3">Modularization and C++ Program Layout</link>
+      <link url="http://cnx.org/content/m19145/latest/" strength="2">Program Control Functions</link>
+    </link-group>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit above.
+       Changes to the links section in the source will not be saved. -->
+</featured-links>
+<content>
+    <section id="id1172793868466">
+      <title>Prerequisite Material</title>
+      <para id="id1172788029277">Critical to this module is the review of two Connexions modules: </para>
+      <list id="id1172788259279" list-type="enumerated" number-style="arabic">
+        <item>m_18861 – Titled: Modularization and C++ Program Layout</item>
+        <item>m_19145 – Titled: Program Control Functions</item>
+      </list>
+      <para id="id1172787236172">You should review these materials before proceeding. If you are viewing this module on-line, links to these items are in the "Links" box to your right.</para>
+    </section>
+    <section id="id1172787054082">
+      <title>General Concept</title>
+      <para id="id1172788263883">Program Control functions which might have similar identifier names usually perform slightly different tasks in one program to another. Looking at the organizational chart or hierarchy chart for two companies, both might have a vice president of production, but producing automobiles is different than producing ice cream. Similar but different. As you go down deeper into an organization you might find the job title of security guard. Notice that the security guard at the automobile plant and the security guard at the ice cream plant have exactly the same job. In fact, they are most likely interchangeable. Within programming when a task gets specific it might be useable in several programs. The calculation of leap year is a good example. Needed for the verification of dates, is there or is there not a 29<sup>th</sup> of February for this year. Needed in thousands of programs. </para>
+    </section>
+    <section id="id1172781953365">
+      <title>Specific Task Functions</title>
+      <para id="id1172781771819">To create good Specific Task functions you need to do all communication needed via parameter passing. Thus all programs that will use the function will communicate in precisely the same way. In our leap year example, you would communicate into the function the year and the function would return the communication of true or false; meaning it is a leap year and there is a 29<sup>th</sup> of February (true) or it is not a leap year (false).</para>
+      <para id="id1172792794858">The ability to modularize our program into specific task functions means that we can write the specific task function once making sure it works correctly, then reuse it over and over in many programs. As you can guess there is a balance. Most programs will have some program control functions and some specific task functions. The key to deciding if the function should be a specific task function is usually rooted in the uniqueness of the task so that it can be used in many programs. Specific task functions once created are usually placed into a <emphasis>user defined library</emphasis> then shared with others for use in many programs.</para>
+    </section>
+    <section id="id1172789033255">
+      <title>Definitions</title>
+    <definition id="fs-id1166493803127">
+      <term>user defined library</term>
+      <meaning id="fs-id1166491390336">A file containing specific task functions created by individuals to be used in many programs.</meaning>
+    </definition>
+    </section>
+  </content>
+</document>

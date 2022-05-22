@@ -1,0 +1,106 @@
+<?xml version='1.0'?>
+<cardset>
+ <color>E7E7F5</color>
+ <correctsound>correct.mp3</correctsound>
+ <wrongsound>wrong.mp3</wrongsound>
+<value>0</value>
+<valueText>Value:</valueText>
+<scoreText>Score</scoreText>
+<resetText>Re-start</resetText>
+ <cat1>Sequence</cat1>
+ <cat2>Selection</cat2>
+ <cat3>Iteration</cat3>
+ <cat4>Branching</cat4>
+
+ <card value='1'>
+  <cat>1</cat>
+  <image></image>
+  <title></title>
+  <title2></title2>
+  <text>sequence</text>
+ </card>
+ <card value='2'>
+  <cat>2</cat>
+  <image></image>
+  <title></title>
+  <title2></title2>
+  <text>if then else</text>
+ </card>
+ <card value='3'>
+  <cat>2</cat>
+  <image></image>
+  <title></title>
+  <title2></title2>
+  <text>case</text>
+ </card>
+ <card value='4'>
+  <cat>2</cat>
+  <image></image>
+  <title></title>
+  <title2></title2>
+  <text>switch</text>
+ </card>
+ <card value='5'>
+  <cat>3</cat>
+  <image></image>
+  <title></title>
+  <title2></title2>
+  <text>do while</text>
+ </card>
+ <card value='6'>
+  <cat>3</cat>
+  <image></image>
+  <title></title>
+  <title2></title2>
+  <text>while</text>
+ </card>
+ <card value='7'>
+  <cat>3</cat>
+  <image></image>
+  <title></title>
+  <title2></title2>
+  <text>for</text>
+ </card>
+ <card value='8'>
+  <cat>3</cat>
+  <image></image>
+  <title></title>
+  <title2></title2>
+  <text>repeat until</text>
+ </card>
+ <card value='9'>
+  <cat>4</cat>
+  <image></image>
+  <title></title>
+  <title2></title2>
+  <text>break</text>
+ </card>
+ <card value='10'>
+  <cat>4</cat>
+  <image></image>
+  <title></title>
+  <title2></title2>
+  <text>continue</text>
+ </card>
+ <card value='11'>
+  <cat>4</cat>
+  <image></image>
+  <title></title>
+  <title2></title2>
+  <text>goto</text>
+ </card>
+ <card value='12'>
+  <cat>4</cat>
+  <image></image>
+  <title></title>
+  <title2></title2>
+  <text>return</text>
+ </card>
+ <card value='13'>
+  <cat>4</cat>
+  <image></image>
+  <title></title>
+  <title2></title2>
+  <text>exit</text>
+ </card>
+</cardset>

@@ -1,0 +1,96 @@
+<?xml version='1.0'?>
+<order>
+<color>E7E7F5</color>
+<showterm>true</showterm>
+<showdef>false</showdef>
+<customDeckText>Custom Deck</customDeckText>
+<wholeDeckText>Whole Deck</wholeDeckText>
+<showText>SHOW</showText>
+<addToText>Add to Custom</addToText>
+<showTermText>Show Term</showTermText>
+<showDefText>Show Definition</showDefText>
+<orderset value='1'>
+ <term>logical operator</term>
+ <def>An operator used to create complex Boolean expressions.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='2'>
+ <term>truth tables</term>
+ <def>A common way to show logical relationships.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='3'>
+ <term>branching control structures</term>
+ <def>Allow the flow of execution to jump to a different part of the program.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='4'>
+ <term>break</term>
+ <def>A branching control structure that terminates the existing structure.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='5'>
+ <term>continue</term>
+ <def>A branching control structure that causes a loop to stop its current iteration and begin the next one. </def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='6'>
+ <term>goto</term>
+ <def>A branching control structure that causes the logic to jump to a different place in the program. </def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='7'>
+ <term>return</term>
+ <def>A branching control structure that causes a function to jump back to the function that called it. </def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='8'>
+ <term>exit</term>
+ <def>A pre-defined function used to prematurely stop a program and jump to the operating system. </def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='9'>
+ <term>nested control structures</term>
+ <def>Placing one control structure inside of another.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='10'>
+ <term>multiway selection</term>
+ <def>Using control structures to be able to select from more than two choices.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='11'>
+ <term>case</term>
+ <def>A control structure that does mulitway selection.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='12'>
+ <term>switch</term>
+ <def>A C++ control structure that can be made to act like a case control structure.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+</order>

@@ -1,0 +1,107 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Floating-Point Data Type</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m18657</md:content-id>
+  <md:title>Floating-Point Data Type</md:title>
+  <md:abstract>An explanation of the floating-point data type to include: float, double and long double.</md:abstract>
+  <md:uuid>88032343-b134-4da2-a2f8-d1b0fc039303</md:uuid>
+</metadata>
+<featured-links>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit below.
+       Changes to the links section in the source will not be saved. -->
+    <link-group type="supplemental">
+      <link url="http://cnx.org/content/m18736/latest/" strength="1">Sizeof Operator</link>
+      <link url="http://cnx.org/content/m10263/latest/" strength="1">Representing Numbers</link>
+    </link-group>
+    <link-group type="prerequisite">
+      <link url="http://cnx.org/content/m18653/latest/" strength="2">Data Types in C++</link>
+    </link-group>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit above.
+       Changes to the links section in the source will not be saved. -->
+</featured-links>
+<content>
+    <section id="id6745458">
+      <title>General Discussion</title>
+      <para id="id1171857493652">The floating-point data type is a family of data types that act alike and differ only in the size of their domains (the allowable values). The floating-point family of data types represent number values with fractional parts. They are technically stored as two integer values: a <emphasis>mantissa</emphasis> and an <emphasis>exponent</emphasis>. The floating-point family has the same attributes and acts or behaves similarly in all programming languages. They can always store negative or positive values thus they always are signed; unlike the integer data type that could be unsigned. The <emphasis>domain</emphasis> for floating-point data types varies because they could represent very large numbers or very small numbers. Rather than talk about the actual values, we mention the <emphasis>precision</emphasis>. The more bytes of storage the larger the mantissa and exponent, thus more precision. </para>
+      <para id="id1171851878789">The most often used floating-point family data type used in C++ is the <emphasis>double</emphasis>. By default, most compilers convert floating-point constants into the double data type for use in calculations. The double data type will store just about any number most beginning programmers will ever encounter.</para>
+      <table id="id1171846407390" summary="">
+        <tgroup cols="2">
+          <colspec colnum="1" colname="c1"/>
+          <colspec colnum="2" colname="c2"/>
+          <tbody>
+            <row>
+              <entry>C++ Reserved Word</entry>
+              <entry>double</entry>
+            </row>
+            <row>
+              <entry>Represent</entry>
+              <entry>Numbers with fractional parts</entry>
+            </row>
+            <row>
+              <entry>Size</entry>
+              <entry>Usually 8 bytes</entry>
+            </row>
+            <row>
+              <entry>Storage</entry>
+              <entry>two parts (always treated together)a mantissa and an exponent</entry>
+            </row>
+            <row>
+              <entry>Normal Signage</entry>
+              <entry>Signed (negative and positive values)</entry>
+            </row>
+            <row>
+              <entry>Domain (Values Allowed)</entry>
+              <entry>±1.7E-308 to ±1.7E308</entry>
+            </row>
+            <row>
+              <entry>C++ syntax rule</entry>
+              <entry>the presence of a decimal point means it’s floating-point data</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+      <para id="id1171845783066">Within C++ there are various reserved words that can be used to establish the size in bytes of a floating-point data item. More bytes mean more precision:</para>
+      <table id="id1171851893220" summary="">
+        <tgroup cols="2">
+          <colspec colnum="1" colname="c1"/>
+          <colspec colnum="2" colname="c2"/>
+          <tbody>
+            <row>
+              <entry>C++ Reserved Word </entry>
+              <entry>Size</entry>
+            </row>
+            <row>
+              <entry>float</entry>
+              <entry>4 bytes</entry>
+            </row>
+            <row>
+              <entry>double</entry>
+              <entry>8 bytes</entry>
+            </row>
+            <row>
+              <entry>long double</entry>
+              <entry>10 to 12 bytes (varies by machine)</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+      <para id="id1171850833012">The domain of each of the above data type options varies with the complier being used and the computer. The domains vary because the byte size allocated to the data varies with the compiler and computer. This effect is known as being <emphasis>machine dependent</emphasis>. </para>
+      <para id="id3359806">These variations of the floating-point family of data types are an annoyance in C++ for a beginning programmer. For a beginning programmer it is more important to understand the general attributes of the floating-point family that apply to most programming languages.</para>
+    </section>
+    <section id="id1171845857117">
+      <title>Definitions</title>
+    <definition id="fs-id1165571381929">
+      <term>double</term>
+      <meaning id="fs-id1165570634787">The most often used floating-point family data type used in C++. </meaning>
+    </definition>
+    <definition id="fs-id7031655">
+      <term>precision</term>
+      <meaning id="fs-id1165574108446">The effect on the domain of floating-point values given a larger or smaller storage area in bytes.</meaning>
+    </definition>
+    <definition id="fs-id1165570737971">
+      <term>mantissa exponent</term>
+      <meaning id="fs-id1165570270142">The two integer parts of a floating-point value.</meaning>
+    </definition>
+    </section>
+  </content>
+</document>

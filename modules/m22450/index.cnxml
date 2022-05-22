@@ -1,0 +1,120 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Practice 1: Introduction to Programming</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m22450</md:content-id>
+  <md:title>Practice 1: Introduction to Programming</md:title>
+  <md:abstract>Questions, exercises, problems, etc. that support this chapter in the "Programming Fundamentals - A Modular Structured Approach using C++" collection/textbook.</md:abstract>
+  <md:uuid>5d8f508c-9cf5-494d-91be-6c57b33f5fa7</md:uuid>
+</metadata>
+
+<content>
+    <section id="id10479433">
+      <title>Learning Objectives</title>
+      <para id="id8608547">With 100% accuracy during a: memory building activity, exercises, lab assignment, problems, or timed quiz/exam; the student is expected to:</para>
+      <list id="id10016597" list-type="enumerated" number-style="arabic">
+        <item>Define the terms on the definitions as listed in the modules associated with this chapter.</item>
+        <item>Install the Bloodshed Dev-C++ 5 compiler</item>
+        <item>Make minor modifications to an existing program</item>
+      </list>
+    </section>
+    <section id="id14165849">
+      <title>Memory Building Activities</title>
+      <para id="id4883922">Link to: <link window="new" document="m22450" resource="index.html">MBA 01</link></para>
+    </section>
+    <section id="id15373100">
+      <title>Exercises</title>
+<exercise id="fs-id1170660082346">
+  <problem id="fs-id7174419">
+    <list id="fs-id1170657530951" list-type="enumerated">
+      <title>Answer the following statements as either true or false:</title>
+        <item>Beginning programmers participate in all phases of the Systems Development Life Cycle.</item>
+        <item>The Bloodshed Dev-C++ 5 compiler/IDE is the preferred compiler for this textbook/collection, however any C++ compiler will work.</item>
+        <item>Most compilers can be installed on a flash drive.</item>
+        <item>In addition to function as the name of a sub-program, the computer industry also uses macro, procedure and module.</item>
+        <item>Generally functions fall into two categories: Program Control and Specific Task.</item>
+    </list>
+  </problem>
+  <solution id="fs-id1170659645344">
+    <list id="fs-id1170661364389" list-type="enumerated">
+      <title>Answers:</title>
+        <item>false</item>
+        <item>true</item>
+        <item>false</item>
+        <item>true</item>
+        <item>true</item>
+    </list>
+  </solution>
+</exercise>
+    </section>
+    <section id="id9658617">
+      <title>Miscellaneous Items</title>
+      <para id="id9261355">None at this time.</para>
+    </section>
+    <section id="id9645414">
+      <title>Lab Assignment</title>
+      <section id="id9670878">
+        <title>Creating a Folder or Sub-Folder for Chapter 01 Files</title>
+        <para id="id14882648">Within the Chapter 1 Connexions modules you were given directions on how to install the <emphasis>Bloodshed Dev-C++ 5 compiler/IDE</emphasis> and to test your installation with the Compiler_Test.cpp source code file. If you have not done this, return to the Connexions materials and complete this task.</para>
+        <para id="id8570104">In the compiler installation directions you were asked to make a folder named: Cpp_Source_Code_Files. All of your lab assignments in this course assume you have that folder on the same drive as your compiler (either drive C: your hard disk drive, or on a flash drive). If you don’t have that folder, go create it now. </para>
+        <para id="id7257403">Depending on your compiler/IDE, you should decide where to download and store source code files for processing. Prudence dictates that you create these folders as needed prior to downloading source code files. A suggested sub-folder for the <term>Bloodshed Dev-C++ 5 compiler/IDE</term> might be named:</para>
+        <list id="id5087605" list-type="bulleted">
+          <item>Chapter_01 within the folder named: Cpp_Source_Code_Files</item>
+        </list>
+        <para id="id10551027">If you have not done so, please create the folder(s) and/or sub-folder(s) as appropriate.</para>
+      </section>
+      <section id="id6640222">
+        <title>Download the Lab File(s)</title>
+        <para id="id6191938">Download and store the following file(s) to your storage device in the appropriate folder(s). You may need to right click on the link and select "Save Target As" in order to download the file.</para>
+        <para id="id7120374">Download from Connexions: <link document="m22450" resource="Compiler_Test.cpp">Compiler_Test.cpp</link></para>
+      </section>
+      <section id="id5134206">
+        <title>Detailed Lab Instructions</title>
+        <para id="id6582707">Read and follow the directions below carefully, and perform the steps in the order listed.</para>
+        <list id="id4343030" list-type="bulleted">
+          <item>Navigate to your sub-folder: Chapter_01 and rename the Compiler_Test.cpp source code file to: <emphasis>Lab_01.cpp</emphasis></item>
+          <item>If you are having problems seeing the file extensions, visit the “Show Hide File Extensions” instructions within the Appendix.</item>
+          <item>Start your compiler and open the source code file. Carefully make the following modifications: </item>
+        </list>
+        <list id="id3535479" list-type="bulleted">
+          <item>
+            <emphasis>Change the comments at the top, specifically:</emphasis>
+          </item>
+        </list>
+        <list id="id9312266" list-type="bulleted"><item>The filename should be: Lab_01.cpp</item>
+	<item>Purpose should be: Average the weight of three people</item>
+	<item>Remove the next 2 lines of comment talking about the main idea</item>
+	<item>Author: put your name and erase my name and copyright</item>
+	<item>Date: Put today's date</item>
+	<item>Remove the next 3 lines of comment dealing with licensing (don't erase the asterisk line)</item>
+</list>
+        <note id="eip-42">During the rest of the course you will often use a source code file provided by the instructor as your starting point for a new lab assignment. Sometimes you will use a source code file that you have created as your starting point for a new lab assignment. Either way, you should modify the comments area as appropriate to include at a minimum the four lines of information (filename, purpose, author and date) as established in this lab assignment.</note><list id="id5392975" list-type="bulleted">
+          <item>
+            <emphasis>We are now going to make simple modifications to this program so that it is able to average the weight of three people. Do the following:</emphasis>
+          </item>
+        </list>
+        <list id="id7331834" list-type="bulleted">
+          <item>Within the variables area, change the variable names for age1 and age2 to weight1 and weight2. Add another variable of integer data type with the identifier name of weight3.</item>
+          <item>The input area has two prompts and requests for data from the user. They are paired up – a prompt and getting data from the keyboard. We need to modify the prompt to ask for weight instead of age. We need to change the variable name from age1 to weight1. Do this for the second pair that prompts and gets the second data item. Create a third pair that prompts and gets the third data item.</item>
+          <item>The process area has only one line of code and we need to make changes that add the weight3 and divides by 3.0 instead of 2.0. The code should look like this:</item>
+          <item>
+            <emphasis>answer = (weight1 + weight2 + weight3) / 3.0;</emphasis>
+          </item>
+          <item>The output area needs the text modified from ages to weights.</item>
+        </list>
+        <list id="id8141453" list-type="bulleted">
+          <item>Build (compile and run) your program. You have successfully written this program if when it run and you put in the three weights; it tells you the correct average.</item>
+        </list>
+        <list id="id9787178" list-type="bulleted">
+          <item>After you have successfully written this program, if you are taking this course for college credit, follow the instructions from your professor/instructor for submitting it for grading.</item>
+        </list>
+      </section>
+    </section>
+    <section id="id5250122">
+      <title>Problems</title>
+      <section id="id9969713">
+        <title>Problem 01a – Instructions</title>
+        <para id="id9208700">List the steps of the Systems Development Life Cycle and indicate which step you are likely to work in as a new computer professional.</para>
+      </section>
+    </section>
+  </content>
+</document>

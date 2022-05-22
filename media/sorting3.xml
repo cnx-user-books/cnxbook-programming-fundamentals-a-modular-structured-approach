@@ -1,0 +1,85 @@
+<?xml version='1.0'?>
+<cardset>
+ <color>E7E7F5</color>
+ <correctsound>correct.mp3</correctsound>
+ <wrongsound>wrong.mp3</wrongsound>
+<value>0</value>
+<valueText>Value:</valueText>
+<scoreText>Score</scoreText>
+<resetText>Re-start</resetText>
+ <cat1>no comm in - no comm out</cat1>
+ <cat2>no comm in - some comm out</cat2>
+ <cat3>some comm in - no comm out</cat3>
+ <cat4>some comm in - some comm out</cat4>
+
+ <card value='1'>
+  <cat>1</cat>
+  <image></image>
+  <title></title>
+  <title2></title2>
+  <text>void getdata(void);</text>
+ </card>
+ <card value='2'>
+  <cat>1</cat>
+  <image></image>
+  <title></title>
+  <title2></title2>
+  <text>void pause_m(void);</text>
+ </card>
+ <card value='3'>
+  <cat>1</cat>
+  <image></image>
+  <title></title>
+  <title2></title2>
+  <text>void clear_m(void);</text>
+ </card>
+ <card value='4'>
+  <cat>2</cat>
+  <image></image>
+  <title></title>
+  <title2></title2>
+  <text>clock_t clock(void);</text>
+ </card>
+ <card value='5'>
+  <cat>3</cat>
+  <image></image>
+  <title></title>
+  <title2></title2>
+  <text>void exit(int exit_code);</text>
+ </card>
+ <card value='6'>
+  <cat>3</cat>
+  <image></image>
+  <title></title>
+  <title2></title2>
+  <text>void delay_m(int tenths_second);</text>
+ </card>
+ <card value='7'>
+  <cat>4</cat>
+  <image></image>
+  <title></title>
+  <title2></title2>
+  <text>int abs(int number);</text>
+ </card>
+ <card value='8'>
+  <cat>4</cat>
+  <image></image>
+  <title></title>
+  <title2></title2>
+  <text>double sqrt(double number);</text>
+ </card>
+ <card value='9'>
+  <cat>4</cat>
+  <image></image>
+  <title></title>
+  <title2></title2>
+  <text>double feet_to_meters(double feet);</text>
+ </card>
+ <card value='10'>
+  <cat>4</cat>
+  <image></image>
+  <title></title>
+  <title2></title2>
+  <text>double area_circle(double radius);</text>
+ </card>
+</cardset>

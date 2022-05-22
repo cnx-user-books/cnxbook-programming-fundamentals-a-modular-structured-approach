@@ -1,0 +1,59 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Sizeof Operator</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m18736</md:content-id>
+  <md:title>Sizeof Operator</md:title>
+  <md:abstract>An explanation of the sizeof operator with examples as used within the C++ programming language.</md:abstract>
+  <md:uuid>b8dd0f6d-c7d8-460e-b693-7ab0931bc4fb</md:uuid>
+</metadata>
+<featured-links>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit below.
+       Changes to the links section in the source will not be saved. -->
+    <link-group type="supplemental">
+      <link url="http://cnx.org/content/m21317/latest/" strength="3">Displaying Array Members</link>
+      <link url="http://cnx.org/content/m18741/latest/" strength="2">Typedef - An Alias</link>
+      <link url="http://cnx.org/content/m18168/latest/" strength="2">Abbreviated Precedence Chart for C++ Operators</link>
+    </link-group>
+    <link-group type="prerequisite">
+      <link url="http://cnx.org/content/m18719/latest/" strength="3">Constants and Variables</link>
+      <link url="http://cnx.org/content/m18657/latest/" strength="2">Floating-Point Data Type</link>
+      <link url="http://cnx.org/content/m18654/latest/" strength="2">Integer Data Type</link>
+    </link-group>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit above.
+       Changes to the links section in the source will not be saved. -->
+</featured-links>
+<content>
+<section id="fs-id7362161">
+  <title>Overview</title>
+    <para id="id5505312">Every data item, constants and variables, not only have a data type, but the data type determines how many bytes the item will use in the memory of the computer. The size of each data type varies with the complier being used and the computer. This effect is known as being <term>machine dependent</term>. Additionally, there have been some size changes with upgrades to the language. In "C" the int data type was allocated 2 bytes of memory storage on an Intel compatible central processing unit (cpu) machine. In "C++" an int is allocated 4 bytes.</para>
+    <para id="id3913215">There is an operator named "sizeof (… )" that is a unary operator, that is it has only one operand. The operand is to the right of the operator and is placed within the parentheses if it is a data type. The operand may be any data type (including those created by typedef).  If the operand is an identifier name it does not need to go inside a set of  parentheses.  It works for both variable and memory constant identifier names.  This operator is unique in that it performs its calculation at compile time for global scoped items and at run time for local scoped items. Examples:</para>
+      <para id="id5487721">
+        <code display="inline">cout &lt;&lt; "The size of an integer is: " &lt;&lt; sizeof (int);</code>
+      </para>
+    <para id="id4800066">The compiler would determine the byte size of an integer on the specific machine and in essence replaces the sizeof operator with a value. Integers are usually 4 bytes long, thus the line of code would be changed to:</para>
+      <para id="id5568708">
+        <code display="inline">cout &lt;&lt; "The size of an integer is: " &lt;&lt; 4;</code>
+      </para>
+    <para id="id5482530">If you place an identifier name that represents a data storage area (variable or memory constant), it looks at the definition for the identifier name. NOTE: the parentheses are not needed and often not included for an identifier name.</para>
+<example id="fs-id6071388">
+<title>sizeof with a Variable</title>
+<para id="fs-id2767692"><preformat id="fs-id6102840" display="block"><code>
+double money;     // variable set up with initialization
+    then later on in the program
+cout &lt;&lt; "The size of money is: " &lt;&lt; sizeof money;</code></preformat>
+</para>
+</example>
+    <para id="id5554180">The compiler would determine the byte size of money by looking at the definition where it indicates that the data type is double. The double data type on the specific machine (usually 8 bytes) would replace the code and it would become:</para>
+      <para id="id4430435">
+        <code display="inline">cout &lt;&lt; "The size of money is: " &lt;&lt; 8;</code>
+      </para>
+</section>
+<section id="fs-id6093708">
+  <title>Definitions</title>
+    <definition id="fs-id6091948">
+      <term>sizeof</term>
+      <meaning id="fs-id5976903">An operator that tells you how many bytes a data type occupies in storage.</meaning>
+    </definition>
+</section>
+  </content>
+</document>

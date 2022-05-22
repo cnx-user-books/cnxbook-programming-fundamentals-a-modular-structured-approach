@@ -1,0 +1,38 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Show Hide File Extensions</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m18100</md:content-id>
+  <md:title>Show Hide File Extensions</md:title>
+  <md:abstract>General instructions on how to show or hide file extensions.  Specific instructions and web page links for Windows XP, Windows Vista and Windows 7 operating systems.</md:abstract>
+  <md:uuid>f7adf7c5-94df-4ada-9b8f-8f3d77059900</md:uuid>
+</metadata>
+<content>
+    <para id="id21872198">By default, file extensions for known file types are hidden in Windows operating systems. However, you can change this setting so that file extensions are shown for all file types. Being able to see file extensions can be very helpful for students taking computer courses because those course instructions often refer to file extensions.</para>
+    <para id="id21872216">All Windows operating systems navigate you to the “Folder Options” menu, then have you select the “View” tab. Indeed the box is identical in Windows XP, Windows Vista and Windows 7. </para>
+    <para id="id21872229">
+      <figure id="id21872257">
+        <media id="id21872257_media" alt="">
+          <image mime-type="image/png" src="../../media/graphics1.png" id="id21872257__onlineimage" height="525" width="436"/>
+        </media>
+      </figure>
+    </para>
+    <para id="id21872284">The check in the box acts like a toggle switch. With a check present, it will hide known file types. Without the check present, it will show all file types. Click on the box to make the check appear [hide file extensions] or disappear [show file extensions] and then select “OK”.</para>
+    <para id="id21872300">Instructions for navigating to the “Folder Options” for various Windows operating systems along with an Internet link for additional help are provided below.</para>
+    <section id="id21872310">
+      <title>Windows XP</title>
+      <para id="id21872318">With the Windows Explorer open, slect the “Tools” tab and then “Folder Options”.</para>
+      <para id="id21872325">Link for additional help: <link url="http://www.fileinfo.net/help/windows-show-extensions.html">http://www.fileinfo.net/help/windows-show-extensions.html</link> or <link url="http://dotwhat.net/page/displayextensions/">http://dotwhat.net/page/displayextensions/</link></para>
+    </section>
+    <section id="id21872348">
+      <title>Windows Vista</title>
+      <para id="id21872355">Select the “Start” button, then “Control Panel”, then “Appearance and Personalization” and then “Folder Options”.</para>
+      <para id="id21872367">Link for additional help:
+<link url="http://windows.microsoft.com/en-us/windows-vista/Show-or-hide-file-name-extensions">http://windows.microsoft.com/en-us/windows-vista/Show-or-hide-file-name-extensions</link></para>
+    </section>
+    <section id="id21872390">
+      <title>Windows 7</title>
+      <para id="id21872397">Select the “Start” button, then “Control Panel” and then “Folder Options”.</para>
+      <para id="id21872404">Link for additional help: <link url="http://maximumpcguides.com/windows-7/hide-file-extensions/">http://maximumpcguides.com/windows-7/hide-file-extensions/</link></para>
+    </section>
+  </content>
+</document>

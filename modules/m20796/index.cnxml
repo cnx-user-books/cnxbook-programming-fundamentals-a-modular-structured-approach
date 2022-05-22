@@ -1,0 +1,104 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>String Class within C++</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m20796</md:content-id>
+  <md:title>String Class within C++</md:title>
+  <md:abstract>An introduction to the string class within the C++ programming language.</md:abstract>
+  <md:uuid>4235cdfa-7320-4bfd-be4e-89b2b352e160</md:uuid>
+</metadata>
+<featured-links>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit below.
+       Changes to the links section in the source will not be saved. -->
+    <link-group type="supplemental">
+      <link url="http://cnx.org/content/m18785/latest/" strength="1">Bloodshed Dev-C++ 5 Compiler/IDE</link>
+    </link-group>
+    <link-group type="prerequisite">
+      <link url="http://cnx.org/content/m18656/latest/" strength="2">String Data Type</link>
+    </link-group>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit above.
+       Changes to the links section in the source will not be saved. -->
+</featured-links>
+<content>
+    <section id="id17538620">
+      <title>General Discussion</title>
+      <para id="id12199130">In most programming languages a string is typically a string of characters (string them along in a series). The rules for handling strings vary from language to language. Technically, there is no string data type in the C++ programming language. However, the concept of a string data type makes it easy to handle stings of character data. Associated with object oriented programming the string class has been added to C++ as a standard part of the programming language. </para>
+      <para id="id11143035">Most data is more complex than just one character, integer, etc.  Programming languages develop other methods to represent and store data that are more complex.  A complex data type of array is first most students encounter. An array is a sequenced collection of elements of the same data type with a single identifier name. This definition perfectly describes our string data type concept.  The simplest array is called a one-dimensional array; also know as a list because we usually list the members or elements vertically.  However, strings are viewed as a one-dimensional array that visualize as listed horizontally.  Strings are an array of character data.</para>
+      <para id="id6634411">In the "C" programming language all strings were handled as an array of characters that end in an ASCII null character (the value 0 or the first character in the <term>ASCII</term> character code set). This changed with the implementation of the string class within C++ where strings are stored as a length controlled array with a maximum length of 255 characters. This string class implementation also allowed programmers to use the reserved word <term>string</term> as if it were a data type. Commonly used operators and some alternatives for the string class are summarized in the following table:</para>
+      <table id="id15485028" summary="">
+        <tgroup cols="3">
+          <colspec colnum="1" colname="c1"/>
+          <colspec colnum="2" colname="c2"/>
+          <colspec colnum="3" colname="c3"/>
+          <tbody>
+            <row>
+              <entry>C++ Operator</entry>
+              <entry>Operator Name</entry>
+              <entry>String Class Implementation</entry>
+            </row>
+            <row>
+              <entry>=</entry>
+              <entry>assignment</entry>
+              <entry>Same as for standard data types</entry>
+            </row>
+            <row>
+              <entry>&lt;, &gt;, &lt;=, &gt;=, ==, !=</entry>
+              <entry>six relational</entry>
+              <entry>Same as for standard data types</entry>
+            </row>
+            <row>
+              <entry>+</entry>
+              <entry>addition</entry>
+              <entry>Concatenation or Append</entry>
+            </row>
+            <row>
+              <entry>sizeof</entry>
+              <entry>Usage how many bytes a data type occupies</entry>
+              <entry>Implemented using a class member function named length. Format: identifier_name.length() NOTE: The period between the identifier name and the function name is the class member operator.</entry>
+            </row>
+            <row>
+              <entry>. <emphasis>the period</emphasis></entry>
+              <entry>class member</entry>
+              <entry>Used in conjunction with class functions</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+      <para id="id8643916">Most other operators are not allowed and basically do not make sense for a string data type. The above items are demonstrated in the following program.</para>
+    </section>
+    <section id="id14177815">
+      <title>Demonstration Program in C++</title>
+      <section id="id16952152">
+        <title>Creating a Folder or Sub-Folder for Source Code Files</title>
+        <para id="id7527095">Depending on your compiler/IDE, you should decide where to download and store source code files for processing. Prudence dictates that you create these folders as needed prior to downloading source code files. A suggested sub-folder for the <term>Bloodshed Dev-C++ 5 compiler/IDE</term> might be named:</para>
+        <list id="id9057496" list-type="bulleted">
+          <item>Demo_Programs</item>
+        </list>
+        <para id="id13355933">If you have not done so, please create the folder(s) and/or sub-folder(s) as appropriate.</para>
+      </section>
+      <section id="id17546050">
+        <title>Download the Demo Program</title>
+        <para id="id4924817">Download and store the following file(s) to your storage device in the appropriate folder(s). Following the methods of your compiler/IDE, compile and run the program(s). Study the source code file(s) in conjunction with other learning materials.</para>
+        <para id="id7526278">Download from Connexions: <link document="m20796" resource="Demo_String_Class.cpp">Demo_String_Class.cpp</link></para>
+      </section>
+    </section>
+    <section id="id12763271">
+      <title>Definitions</title>
+    <definition id="fs-id8169639">
+      <term>array</term>
+      <meaning id="fs-id6135743">A sequenced collection of elements of the same data type with a single identifier name. </meaning>
+    </definition>
+    <definition id="fs-id8181693">
+      <term>concatenation</term>
+      <meaning id="fs-id12098855">Combining two strings into one string. </meaning>
+    </definition>
+    <definition id="fs-id8171986">
+      <term>string class</term>
+      <meaning id="fs-id11864161">A complex data item that uses object oriented programming.  </meaning>
+    </definition>
+    <definition id="fs-id8173743">
+      <term>class member</term>
+      <meaning id="fs-id14817719">An operator used to invoke functions associated with a class. </meaning>
+    </definition>
+    </section>
+  </content>
+</document>

@@ -1,0 +1,115 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Integer Data Type</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m18654</md:content-id>
+  <md:title>Integer Data Type</md:title>
+  <md:abstract>An introduction to the integer data type.</md:abstract>
+  <md:uuid>66406e08-758b-469c-a819-d35cf6b696d6</md:uuid>
+</metadata>
+<featured-links>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit below.
+       Changes to the links section in the source will not be saved. -->
+    <link-group type="supplemental">
+      <link url="http://cnx.org/content/m18736/latest/" strength="1">Sizeof Operator</link>
+    </link-group>
+    <link-group type="prerequisite">
+      <link url="http://cnx.org/content/m18653/latest/" strength="3">Data Types in C++</link>
+    </link-group>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit above.
+       Changes to the links section in the source will not be saved. -->
+</featured-links>
+<content>
+    <section id="id1163998494795">
+      <title>General Discussion</title>
+      <para id="id1164010001836">The integer data type has two meanings:</para>
+      <list id="id1163998275817" list-type="bulleted">
+        <item>The integer data type with its various modifiers that create different domains</item>
+        <item>The integer family which also includes the Boolean and character data types</item>
+      </list>
+      <para id="id1164000708518">The integer data type basically represents whole numbers (no fractional parts). The integer values jump from one value to another. There is nothing between 6 and 7. It could be asked why not make all your numbers floating point which allow for fractional parts. The reason is twofold. First, some things in the real world are not fractional. A dog, even with only 3 legs, is still one (1) dog not ¾ of a dog. Second, integer data type is often used to control program flow by counting, thus the need for a data type that jumps from one value to another.</para>
+      <para id="id1164002820760">The integer data type has the same attributes and acts or behaves similarly in all programming languages. The most often used integer data type in C++ is the simple integer. </para>
+      <table id="id1163999140404" summary="">
+        <tgroup cols="2">
+          <colspec colnum="1" colname="c1"/>
+          <colspec colnum="2" colname="c2"/>
+          <tbody>
+            <row>
+              <entry>C++ Reserved Word</entry>
+              <entry>int</entry>
+            </row>
+            <row>
+              <entry>Represent</entry>
+              <entry>Whole numbers (no fractional parts)</entry>
+            </row>
+            <row>
+              <entry>Size</entry>
+              <entry>Usually 4 bytes</entry>
+            </row>
+            <row>
+              <entry>Normal Signage</entry>
+              <entry>Signed (negative and positive values)</entry>
+            </row>
+            <row>
+              <entry>Domain (Values Allowed)</entry>
+              <entry>-2,147,483,648 to 2, 147,483,647</entry>
+            </row>
+            <row>
+              <entry>C++ syntax rule</entry>
+              <entry>Do not start with a 0 (zero)</entry>
+            </row>
+            <row>
+              <entry>C++ syntax rule</entry>
+              <entry>No decimal point</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+      <para id="id1164009966092">Within C++ there are various reserved words that can be used to modify the size or signage of an integer. They include: long, short, signed and unsigned. Signed is rarely used because integers are signed by default – you must specify unsigned if you want integers that are only positive. Possible combinations are:</para>
+      <table id="id1163998306195" summary="">
+        <tgroup cols="2">
+          <colspec colnum="1" colname="c1"/>
+          <colspec colnum="2" colname="c2"/>
+          <tbody>
+            <row>
+              <entry>C++ Reserved Word Combination</entry>
+              <entry>Signage</entry>
+            </row>
+            <row>
+              <entry>short int</entry>
+              <entry>signed</entry>
+            </row>
+            <row>
+              <entry>unsigned short int</entry>
+              <entry>unsigned</entry>
+            </row>
+            <row>
+              <entry>int</entry>
+              <entry>signed</entry>
+            </row>
+            <row>
+              <entry>unsigned int</entry>
+              <entry>unsigned</entry>
+            </row>
+            <row>
+              <entry>long int</entry>
+              <entry>singed</entry>
+            </row>
+            <row>
+              <entry>unsigned long int</entry>
+              <entry>unsigned</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+      <para id="id1163998290666">The domain of each of the above data type options varies with the complier being used and the computer. The domains vary because the byte size allocated to the data varies with the compiler and computer. This effect is known as being <emphasis>machine dependent</emphasis>. Additionally, there have been some size changes with upgrades to the language. In "C" the int data type was allocated 2 bytes of memory storage on an Intel compatible central processing unit (cpu) machine. In "C++" an int is allocated 4 bytes. </para>
+      <para id="id1164012021266">These variations of the integer data type are an annoyance in C++ for a beginning programmer. For a beginning programmer it is more important to understand the general attributes of the integer data type that apply to most programming languages.</para>
+    </section>
+    <section id="id1163998678445">
+      <title>Definitions</title>
+    <definition id="fs-id1167337804148">
+      <term>machine dependent</term>
+      <meaning id="fs-id1167339988253">An attribute of a programming language that changes depending on the computer's CPU.</meaning>
+    </definition>
+    </section>
+  </content>
+</document>

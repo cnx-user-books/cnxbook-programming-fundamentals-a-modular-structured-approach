@@ -1,0 +1,61 @@
+<?xml version='1.0'?>
+<order>
+<color>E7E7F5</color>
+<showterm>true</showterm>
+<showdef>false</showdef>
+<customDeckText>Custom Deck</customDeckText>
+<wholeDeckText>Whole Deck</wholeDeckText>
+<showText>SHOW</showText>
+<addToText>Add to Custom</addToText>
+<showTermText>Show Term</showTermText>
+<showDefText>Show Definition</showDefText>
+<orderset value='1'>
+ <term>high performance computing</term>
+ <def>Grouping multiple computers or multiple computer processors to accomplish a task in less time.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='2'>
+ <term>sequential processing</term>
+ <def>Using only one processor and completing the tasks in a sequential order.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='3'>
+ <term>parallel processing</term>
+ <def>Dividing a task into parts that can utilize more than one processor.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='4'>
+ <term>central processingUnit</term>
+ <def>The electronic circuitry that actually executes computer instructions.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='5'>
+ <term>parallel programming</term>
+ <def>Involves developing programs that utilize parallel processing algorithms that take advantage of multiple processors.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='6'>
+ <term>procedural programming</term>
+ <def>Aka modular structured programming.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='7'>
+ <term>object oriented</term>
+ <def>A programming approach that encapsulates data with functions.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+</order>

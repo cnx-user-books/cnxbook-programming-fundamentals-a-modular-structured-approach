@@ -1,0 +1,65 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Assignment Operator</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m18725</md:content-id>
+  <md:title>Assignment Operator</md:title>
+  <md:abstract>An explanation of the assignment operator with examples as used in the C++ programming language.</md:abstract>
+  <md:uuid>21c64adb-cce1-45cd-8608-d89572cfa1e3</md:uuid>
+</metadata>
+<featured-links>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit below.
+       Changes to the links section in the source will not be saved. -->
+    <link-group type="supplemental">
+      <link url="http://cnx.org/content/m18058/latest/" strength="3">Lvalue and Rvalue</link>
+      <link url="http://cnx.org/content/m18168/latest/" strength="2">Abbreviated Precedence Chart for C++ Operators</link>
+    </link-group>
+    <link-group type="prerequisite">
+      <link url="http://cnx.org/content/m18705/latest/" strength="3">Data Manipulation</link>
+      <link url="http://cnx.org/content/m18719/latest/" strength="3">Constants and Variables</link>
+    </link-group>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit above.
+       Changes to the links section in the source will not be saved. -->
+</featured-links>
+<content>
+    <section id="id1164502438256">
+      <title>Discussion</title>
+      <para id="id1164502174744">The assignment operator allows us to change the value of a modifiable data object (for beginning programmers this typically means a variable). It is associated with the concept of moving a value into the storage location (again usually a variable). Within C++ programming language the symbol used is the equal symbol. But bite your tongue, when you see the = symbol you need to start thinking: assignment. The assignment operator has two operands. The one to the left of the operator is usually an identifier name for a variable. The one to the right of the operator is a value.</para>
+<example id="fs-id6857034">
+<title>Simple Assignment</title>
+<para id="fs-id4118560"><preformat id="fs-id3534744" display="block"><code>
+int age;     // variable set up
+    then later in the program
+age = 21;</code></preformat>
+</para>
+</example>
+      <para id="id1164508961138">The value 21 is moved to the memory location for the variable named: age. Another way to say it: age is assigned the value 21. </para>
+<example id="fs-id1164502412560">
+<title>Assignment with an Expression</title>
+<para id="fs-id1164505812731"><preformat id="fs-id1164504236487" display="block"><code>
+int total_cousins;     // variable set up
+    then later in the program
+total_cousins = 4 + 3 + 5 + 2;</code></preformat>
+</para>
+</example>
+      <para id="id1164504255414">The item to the right of the assignment operator is an expression. The expression will be evaluated and the answer is 14. The value 14 would assigned to the variable named: total_cousins.</para>
+<example id="fs-id1164507001180">
+<title>Assignment with Identifier Names in the Expression</title>
+<para id="fs-id1164500488842"><preformat id="fs-id1164500673819" display="block"><code>
+int students_period_1 = 25;     // variable set up with initialization
+int students_period_2 = 19;
+int total_students;
+    then later in the program
+total_students = students_period_1 + students_period_2;</code></preformat>
+</para>
+</example>
+      <para id="id6283767">The expression to the right of the assignment operator contains some identifier names. The program would fetch the values stored in those variables; add them together and get a value of 44; then assign the 44 to the total_students variable.</para>
+    </section>
+    <section id="id1164508383396">
+      <title>Definitions</title>
+    <definition id="fs-id3854083">
+      <term>assignment</term>
+      <meaning id="fs-id6126093">An operator that changes the value of a modifiable data object.</meaning>
+    </definition>
+    </section>
+  </content>
+</document>

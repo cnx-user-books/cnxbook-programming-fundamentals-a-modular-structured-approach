@@ -1,0 +1,117 @@
+<?xml version='1.0'?>
+<order>
+<color>E7E7F5</color>
+<showterm>true</showterm>
+<showdef>false</showdef>
+<customDeckText>Custom Deck</customDeckText>
+<wholeDeckText>Whole Deck</wholeDeckText>
+<showText>SHOW</showText>
+<addToText>Add to Custom</addToText>
+<showTermText>Show Term</showTermText>
+<showDefText>Show Definition</showDefText>
+<orderset value='1'>
+ <term>text editor</term>
+ <def>A software program for creating and editing ASCII text files.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='2'>
+ <term>compiler</term>
+ <def>Converts source code to object code.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='3'>
+ <term>pre processor</term>
+ <def>The first step the complier does in converting source code to object code.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='4'>
+ <term>linker</term>
+ <def>Connects or links object files into an executable file.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='5'>
+ <term>loader</term>
+ <def>Part of the operating system that loads executable files into memory and direct the CPU to start running the program.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='6'>
+ <term>debugging</term>
+ <def>The process of removing errors from a program. 1) compiler 2) linker 3) logic</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='7'>
+ <term>warning</term>
+ <def>A compiler alert that there might be a problem.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='8'>
+ <term>device</term>
+ <def>A piece of equipment that is electronically connected to the memory so that data can be transferred between the memory and the device.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='9'>
+ <term>standard input</term>
+ <def>The keyboard.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='10'>
+ <term>standard output</term>
+ <def>The monitor.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='11'>
+ <term>insertion</term>
+ <def>Aka writing or sending data to an output device.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='12'>
+ <term>extraction</term>
+ <def>Aka reading or getting data from an input device.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='13'>
+ <term>escape code</term>
+ <def>A code directing an output device to do something.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='14'>
+ <term>compiler directive</term>
+ <def>An instruction to the compiler to complete a task before formally starting to compile the program.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='15'>
+ <term>include</term>
+ <def>A compiler directive to insert the contents of a file into the program.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+</order>

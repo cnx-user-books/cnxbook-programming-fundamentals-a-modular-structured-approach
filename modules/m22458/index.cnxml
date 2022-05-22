@@ -1,0 +1,219 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Practice 6: Program Control Functions</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m22458</md:content-id>
+  <md:title>Practice 6: Program Control Functions</md:title>
+  <md:abstract>Questions, exercises, problems, etc. that support this chapter in the "Programming Fundamentals - A Modular Structured Approach using C++" collection/textbook.</md:abstract>
+  <md:uuid>0d249041-8de2-4ec0-801c-299e0fe6cb26</md:uuid>
+</metadata>
+
+<content>
+    <section id="id8694104">
+      <title>Learning Objectives</title>
+      <para id="id8090054">With 100% accuracy during a: memory building activity, exercises, lab assignment, problems, or timed quiz/exam; the student is expected to:</para>
+      <list id="id3823436" list-type="enumerated" number-style="arabic"><item>Define the terms on the definitions as listed in the modules associated with this chapter.</item>
+	<item>Given pseudocode, test data and source code of an existing program, modify the pseudocode and source code to create "program control" functions.</item>
+</list>
+    </section>
+    <section id="id8362851">
+      <title>Memory Building Activities</title>
+      <para id="id8553516">Link to: <link window="new" document="m22458" resource="index.html">MBA 06</link></para>
+    </section>
+    <section id="id5850176">
+      <title>Exercises</title>
+<exercise id="fs-id4997731">
+  <problem id="fs-id7357631">
+    <list id="fs-id7389233" list-type="enumerated">
+      <title>Answer the following statements as either true or false:</title>
+        <item>Pseudocode has a strict set of rules and is the same everywhere in the computer programming industry.</item>
+        <item>Hierarchy Charts and Structure Charts are basically the same thing. </item>
+        <item>Program Control functions are used to simply sub divide and control the program.</item>
+        <item>The void data type is rarely used in C++.</item>
+        <item>Making source code readable is only used by beginning programmers.</item>
+    </list>
+  </problem>
+  <solution id="fs-id2729554">
+    <list id="fs-id7358632" list-type="enumerated">
+      <title>Answers:</title>
+        <item>false</item>
+        <item>true</item>
+        <item>true</item>
+        <item>false</item>
+        <item>false</item>
+    </list>
+  </solution>
+</exercise>
+    </section>
+    <section id="id8588362">
+      <title>Miscellaneous Items</title>
+      <para id="id1172643974983">None at this time.</para>
+    </section>
+    <section id="id7848696">
+      <title>Lab Assignment</title>
+      <section id="id8387835">
+        <title>Creating a Folder or Sub-Folder for Chapter 06 Files</title>
+        <para id="id8194104">Depending on your compiler/IDE, you should decide where to download and store source code files for processing. Prudence dictates that you create these folders as needed prior to downloading source code files. A suggested sub-folder for the <term>Bloodshed Dev-C++ 5 compiler/IDE</term> might be named:</para>
+        <list id="id8633349" list-type="bulleted">
+          <item>Chapter_06 within the folder named: Cpp_Source_Code_Files</item>
+        </list>
+        <para id="id7974611">If you have not done so, please create the folder(s) and/or sub-folder(s) as appropriate.</para>
+      </section>
+      <section id="id6993965">
+        <title>Download the Lab File(s)</title>
+        <para id="id8801073">Download and store the following file(s) to your storage device in the appropriate folder(s). You may need to right click on the link and select "Save Target As" in order to download the file.</para>
+        <para id="id7594205">Download from Connexions: <link document="m22458" resource="Solution_Lab_01.cpp">Solution_Lab_01.cpp</link></para>
+        <para id="id8693680">Download from Connexions: <link document="m22458" resource="Solution_Lab_01_Pseudocode.txt">Solution_Lab_01_Pseudocode.txt</link></para>
+        <para id="id7966114">Download from Connexions: <link document="m22458" resource="Solution_Lab_01_Test_Data.txt">Solution_Lab_01_Test_Data.txt</link></para>
+        <para id="id8403102">Download from Connexions: <link document="m22458" resource="Solution_Lab_01m_with_Program_Control.cpp">Solution_Lab_01m_with_Program_Control.cpp</link></para>
+        <para id="id6639355">Download from Connexions: <link document="m22458" resource="Solution_Lab_01m_Pseudocode_with_Program_Control.txt">Solution_Lab_01m_Pseudocode_with_Program_Control.txt</link></para>
+        <para id="id8599182">Download from Connexions: <link document="m22458" resource="Solution_Lab_01m_Hierarchy_Chart.jpg">Solution_Lab_01m_Hierarchy_Chart.jpg</link></para>
+        <para id="id8645678">Download from Connexions: <link document="m22458" resource="Solution_Lab_03.cpp">Solution_Lab_03.cpp</link></para>
+        <para id="id8749166">Download from Connexions: <link document="m22458" resource="Solution_Lab_03_Pseudocode.txt">Solution_Lab_03_Pseudocode.txt</link></para>
+        <para id="id8257547">Download from Connexions: <link document="m22458" resource="Solution_Lab_03_Test_Data.txt">Solution_Lab_03_Test_Data.txt</link></para>
+      </section>
+      <section id="id8554476">
+        <title>Detailed Lab Instructions</title>
+        <para id="id8519232">Read and follow the directions below carefully, and perform the steps in the order listed.</para>
+        <list id="id8549447" list-type="bulleted">
+          <item>Navigate to your sub-folder: Chapter_06. Review the original Lab 01 materials. Compile and run the Lab 01 source code. Then review and compare the original Lab 01 materials to modularized Lab 01 materials taking note of the conversion to "program control" functions. Compile and run the Lab 01m source code. Review as needed the course materials. Email your professor if you have any questions. </item>
+          <item>We have supplied the solution to the Lab 03 assignment. Review the Lab 03 assignment by compiling and running the Lab 03 source code. </item>
+          <item>You need to copy the Lab 03 source code file and pseudocode file to make the following new files: <emphasis>Lab_06.cpp</emphasis> and <emphasis>Lab_06_Pseudocode.txt</emphasis></item>
+          <item>Modify the Lab 06 pseudocode file to implement “program control” functions as shown in the demonstration materials. </item>
+          <item>Modify the Lab 06 source code file to implement “program control” functions as shown in the demonstration materials.</item>
+          <item>Build (compile and run) your program. You have successfully written this program if when it runs and you use the test data [use the same test data as used in Lab 03] it gives the same results as Lab 03.</item>
+          <item>After you have successfully written this program, if you are taking this course for college credit, follow the instructions from your professor/instructor for submitting it for grading.</item>
+        </list>
+      </section>
+    </section>
+    <section id="id8819060">
+      <title>Problems</title>
+        <section id="fs-id7545774">
+          <title>Problem 06a – Instructions</title>
+          <para id="fs-id7539150"> Create a hierarchy chart for the following pseudocode example.</para>
+          <example id="fs-id5123296">
+            <title>pseudocode</title>
+            <para id="fs-id1798057"><preformat id="fs-id2686045" display="block"><code>
+******************************************************
+Filename:  Average_IQ.txt
+Purpose:   Average the IQs of two people
+Author:    Ken Busbee; © Kenneth Leroy Busbee
+Date:      Jan 17, 2009
+******************************************************
+
+Function main
+  Pass In: nothing
+  Call: get_iqs
+  Call: process_iqs
+  Call: show_average
+  Pass Out: zero to the OS
+Endfunction
+
+********************
+
+Function get_iqs
+  Pass In: nothing
+  display a message asking user for the IQ of the first person
+  get the IQ of the first person from the keyboard
+  display a message asking user for the IQ of the second person
+  get the IQ of the second person from the keyboard
+  Pass Out: nothing
+Endfunction
+
+********************
+
+Function process_iqs
+  Pass In: nothing
+  calculate the answer by adding the two IQs and 
+  dividing by 2.0
+  Pass Out: nothing
+Endfunction
+
+********************
+
+Function show_average
+  Pass In: nothing
+  display the answer with an appropriate message
+  Call: pause 
+  Pass Out: nothing
+Endfunction
+
+********************
+
+Function pause
+  Pass In: nothing
+  direct the operating system to pause the program
+  Pass Out: nothing
+Endfunction
+
+******************************************************
+
+Potential Variables
+
+Data Type	Identifier Name
+*********	***************
+integer	iq1
+integer	iq2
+double	answer
+
+******************************************************
+End of file</code></preformat>
+            </para>
+          </example>
+        </section>
+        <section id="fs-id7313517">
+          <title>Problem 06b – Instructions</title>
+          <para id="fs-id4909890">Identify some problems that make this code "undocumented", "unreadable" or wrong in some other way.</para>
+          <example id="fs-id2728236">
+            <title>C++ source code</title>
+            <para id="fs-id7796739"><preformat id="fs-id7278279" display="block"><code>
+//******************************************************
+// Author:  Ken Busbee; © 2009 Kenneth Leroy Busbee
+// Date:    Jan 17, 2009
+//******************************************************
+
+#include &lt;iostream&gt; 
+using namespace std;
+
+void pause(void);
+
+int	 age1, age2;
+double	 xx;
+
+//******************************************************
+// main
+//******************************************************
+
+int main(void)
+  {
+  // Input	
+cout &lt;&lt; "\nEnter the age of the first person ---&gt;: ";
+  cin &gt;&gt; age1;
+    cout &lt;&lt; "\nEnter the age of the second person --&gt;: ";
+  cin &gt;&gt; age2;
+
+  // Process
+  xx = (age1 + age2) / 2.0;
+
+  // Output
+  cout &lt;&lt; "\nThe average of their ages is --------&gt;: ";
+  cout &lt;&lt; xx;
+
+  pause();
+  return 0;
+  }
+
+void pause(void)
+  { cout &lt;&lt; "\n\n";
+  system("PAUSE");
+  cout &lt;&lt; "\n\n";
+  return; }
+
+//******************************************************
+// End of Program
+//******************************************************</code></preformat>
+            </para>
+          </example>
+        </section>
+    </section>
+  </content>
+</document>

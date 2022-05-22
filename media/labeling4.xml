@@ -1,0 +1,69 @@
+<?xml version='1.0'?>
+<draglabel>
+<value>0</value>
+<valueText>Value:</valueText>
+<scoreText>Score</scoreText>
+<resetText>Re-start</resetText>
+<image>labelingImage4.jpg</image>
+     <imagex>0</imagex>
+     <imagey>0</imagey>
+     <color>E7E7F5</color>
+     <linecolor>0x000000</linecolor>
+     <lineweight>1</lineweight>
+     <correctsound>correct.mp3</correctsound>
+     <wrongsound>wrong.mp3</wrongsound>
+     <labelset name='1'>
+          <name>flow lines</name>
+          <labx>333</labx>
+          <laby>283</laby>
+          <dotx>396</dotx>
+          <doty>231</doty>
+          <cornerx>405</cornerx>
+          <cornery>283</cornery>
+     </labelset>
+     <labelset name='2'>
+          <name>decision symbol</name>
+          <labx>336</labx>
+          <laby>143</laby>
+          <dotx>384</dotx>
+          <doty>80</doty>
+          <cornerx>407</cornerx>
+          <cornery>144</cornery>
+     </labelset>
+     <labelset name='3'>
+          <name>on-page connector</name>
+          <labx>189</labx>
+          <laby>143</laby>
+          <dotx>259</dotx>
+          <doty>83</doty>
+          <cornerx>259</cornerx>
+          <cornery>143</cornery>
+     </labelset>
+     <labelset name='4'>
+          <name>process symbol</name>
+          <labx>41</labx>
+          <laby>143</laby>
+          <dotx>111</dotx>
+          <doty>86</doty>
+          <cornerx>112</cornerx>
+          <cornery>143</cornery>
+     </labelset>
+     <labelset name='5'>
+          <name>input/output symbol</name>
+          <labx>186</labx>
+          <laby>283</laby>
+          <dotx>256</dotx>
+          <doty>220</doty>
+          <cornerx>257</cornerx>
+          <cornery>283</cornery>
+     </labelset>
+     <labelset name='6'>
+          <name>terminal symbol</name>
+          <labx>38</labx>
+          <laby>283</laby>
+          <dotx>113</dotx>
+          <doty>218</doty>
+          <cornerx>109</cornerx>
+          <cornery>283</cornery>
+     </labelset>
+</draglabel>

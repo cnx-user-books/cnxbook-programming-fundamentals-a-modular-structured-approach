@@ -1,0 +1,75 @@
+<?xml version='1.0'?>
+<order>
+<color>E7E7F5</color>
+<showterm>true</showterm>
+<showdef>false</showdef>
+<customDeckText>Custom Deck</customDeckText>
+<wholeDeckText>Whole Deck</wholeDeckText>
+<showText>SHOW</showText>
+<addToText>Add to Custom</addToText>
+<showTermText>Show Term</showTermText>
+<showDefText>Show Definition</showDefText>
+<orderset value='1'>
+ <term>machine dependent</term>
+ <def>An attribute of a programming language that changes depending on the computer's CPU.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='2'>
+ <term>double</term>
+ <def>The most often used floating-point family data type used in C++. </def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='3'>
+ <term>precision</term>
+ <def>The effect on the domain of floating-point values given a larger or smaller storage area in bytes.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='4'>
+ <term>mantissa exponent</term>
+ <def>The two integer parts of a floating-point value.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='5'>
+ <term>string</term>
+ <def>A series or array of characters as a single piece of data.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='6'>
+ <term>Lvalue</term>
+ <def>The requirement that the operand on the left side of the assignment operator is modifiable usually a variable.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='7'>
+ <term>Rvalue</term>
+ <def>Pulls or fetches the value stored in a variable or constant.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='8'>
+ <term>integer division</term>
+ <def>Division with no fractional parts.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='9'>
+ <term>modulus</term>
+ <def>The remainder part of integer division.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+</order>

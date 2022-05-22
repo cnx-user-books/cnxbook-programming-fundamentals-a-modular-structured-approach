@@ -1,0 +1,53 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Math Statistics with Arrays</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m21626</md:content-id>
+  <md:title>Math Statistics with Arrays</md:title>
+  <md:abstract>An introduction to functions performing statistical calculations on an array within the C++ programming language.</md:abstract>
+  <md:uuid>eda9e382-5d1a-44be-b769-3b4ec8a78bae</md:uuid>
+</metadata>
+<featured-links>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit below.
+       Changes to the links section in the source will not be saved. -->
+    <link-group type="supplemental">
+      <link url="http://cnx.org/content/m18785/latest/" strength="1">Bloodshed Dev-C++ 5 Compiler/IDE</link>
+    </link-group>
+    <link-group type="prerequisite">
+      <link url="http://cnx.org/content/m21624/latest/" strength="2">Arrays and Functions</link>
+    </link-group>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit above.
+       Changes to the links section in the source will not be saved. -->
+</featured-links>
+<content>
+    <section id="id1168561255986">
+      <title>Overview</title>
+      <para id="id9031870">Arrays are an important complex data type used in almost all programming. We continue to concentrate on simple one dimension arrays also called a list. Most programmers develop a series of <term>user defined specific task</term> functions that can be used with an array for normal processing. These functions are usually passed the array along with the number of elements within the array. Some of functions also pass another piece of data needed for that particular functions task.</para>
+      <para id="id1168558490862">This module covers the totaling of the members of an integer array member. The Latin name for totaling is summa sometimes shortened to the word <emphasis>sum</emphasis>. The <emphasis>array function</emphasis> is often called "sum" and it does some parameter passing. It passes into the function the common two items of the array: its name along with the number of elements; but it also returns a value representing sum or total of the values within the array. You need to study this module in conjunction with the demo file provided. </para>
+      <para id="id1168561489686">Other mathematical functions often associated with statistics such as: average, count, minimum, maximum, standard deviation, etc. are often developed for processing arrays.</para>
+    </section>
+    <section id="id1168557154834">
+      <title>Demonstration Program in C++</title>
+      <section id="id1168561283478">
+        <title>Creating a Folder or Sub-Folder for Source Code Files</title>
+        <para id="id1168572607656">Depending on your compiler/IDE, you should decide where to download and store source code files for processing. Prudence dictates that you create these folders as needed prior to downloading source code files. A suggested sub-folder for the <term>Bloodshed Dev-C++ 5 compiler/IDE</term> might be named:</para>
+        <list id="id1168572543025" list-type="bulleted">
+          <item>Demo_Programs</item>
+        </list>
+        <para id="id1168564967037">If you have not done so, please create the folder(s) and/or sub-folder(s) as appropriate.</para>
+      </section>
+      <section id="id1168560295117">
+        <title>Download the Demo Program</title>
+        <para id="id1168563355736">Download and store the following file(s) to your storage device in the appropriate folder(s). Following the methods of your compiler/IDE, compile and run the program(s). Study the source code file(s) in conjunction with other learning materials. You may need to right click on the link and select "Save Target As" in order to download the file.</para>
+        <para id="id1168558608158">Download from Connexions: <link document="m21626" resource="Demo_Sum_Array_Function.cpp">Demo_Sum_ Array_Function.cpp</link></para>
+        <para id="id1168561572060">Download from Connexions: <link document="m21626" resource="Demo_Farm_Acres_Input.txt">Demo_Farm_Acres_Input.txt</link></para>
+      </section>
+    </section>
+    <section id="id1168561451067">
+      <title>Definitions</title>
+    <definition id="fs-id17338391">
+      <term>sum</term>
+      <meaning id="fs-id5118721">Latin for summa or a total.  </meaning>
+    </definition>
+    </section>
+  </content>
+</document>

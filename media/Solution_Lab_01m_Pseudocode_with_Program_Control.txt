@@ -1,0 +1,81 @@
+Filename: Solution_Lab_01m_Pseudocode_with_Program_Control.txt
+
+Purpose:  Average the weight of three people
+
+Author:   Ken Busbee; © 2009 Kenneth Leroy Busbee
+
+Date:     Jan 2, 2009
+
+Comment:  Modified from Lab 01 assignment
+
+See Also: Solution_Lab_01m_Hierarchy_Chart.jpg
+
+NOTE:     Academic Dishonesty Warning
+******************************************************
+Solution files are provided by the instructor to each
+individual student as needed. Students are not to 
+share these files with any other student.
+Not now, not later, not ever.  Don't share them.
+******************************************************
+
+Function main
+   Pass In: nothing
+   Call: get_data
+   Call: process_data
+   Call: show_results
+   Pass Out: zero to the OS
+Endfunction
+
+********************
+
+Function get_data
+   Pass In: nothing
+   display a message asking user for the weight of the first person
+   get the weight of the first person from the keyboard
+   display a message asking user for the weight of the second person
+   get the weight of the second person from the keyboard
+   display a message asking user for the weight of the third person
+   get the weight of the third person from the keyboard
+   Pass Out: nothing
+Endfunction
+
+********************
+
+Function process_data
+   Pass In: nothing
+   calculate the answer by adding the three weights and 
+   dividing by 3.0
+   Pass Out: nothing
+Endfunction
+
+********************
+
+Function show_results
+   Pass In: nothing
+   display the answer with an appropriate message
+   Call: pause 
+   Pass Out: nothing
+Endfunction
+
+********************
+
+Function pause
+   Pass In: nothing
+   direct the operating system to pause the program
+   Pass Out: nothing
+Endfunction
+
+******************************************************
+
+Potential Variables
+
+Data Type    Identifier Name
+*********    ***************
+integer      weight1
+integer      weight2
+integer      weight3
+double       answer
+
+******************************************************
+End of file
+

@@ -1,0 +1,77 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Sorting an Array</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m21628</md:content-id>
+  <md:title>Sorting an Array</md:title>
+  <md:abstract>An introduction and example of sorting an array within the C++ programming language.</md:abstract>
+  <md:uuid>edff9c7c-ce78-43a9-8c64-c74793011970</md:uuid>
+</metadata>
+<featured-links>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit below.
+       Changes to the links section in the source will not be saved. -->
+    <link-group type="supplemental">
+      <link url="http://cnx.org/content/m18785/latest/" strength="1">Bloodshed Dev-C++ 5 Compiler/IDE</link>
+    </link-group>
+    <link-group type="prerequisite">
+      <link url="http://cnx.org/content/m21624/latest/" strength="2">Arrays and Functions</link>
+    </link-group>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit above.
+       Changes to the links section in the source will not be saved. -->
+</featured-links>
+<content>
+    <section id="id1172064313138">
+      <title>Overview</title>
+      <para id="id1172065491011">Sorting is the process through which data are arranged according to their values. There are several sorting algorithms or methods that can be used to sort data. Some include:</para>
+      <list id="id1172063471784" list-type="enumerated" number-style="arabic">
+        <item>Bubble</item>
+        <item>Selection</item>
+        <item>Insertion</item>
+      </list>
+      <para id="id1172064274240">We will not be covering the selection or insertion sort methods in this module.</para>
+      <para id="id1172064206839">"The bubble sort is an easy way to arrange data in ascending or descending order. If an array is sorted in ascending order, it means the values in the array are stored from lowest to highest. If values are sorted in descending order, they are stored from highest to lowest. Bubble sort works by comparing each element with its neighbor and swapping them it they are not in the desired order."<footnote id="id1172064294874">Tony Gaddis, Judy Walters and Godfrey Muganda, <emphasis effect="underline">Starting Out with C++ Early Objects Sixth Edition</emphasis> (United States of America: Pearson – Addison Wesley, 2008) 569. </footnote></para>
+      <para id="id1172067560720">There are several different methods of bubble sorting and some methods are more efficient than others. Most use a pair of nested loops or iteration control structures. One method sets a flag that indicates that the array is sorted, then does a pass and if any elements are exchanged (switched); it sets the flag to indicate that the array is not sorted. It is executed until it makes a pass and nothing is exchanged.</para>
+      <para id="id8705666">
+        <figure id="id1172064167597">
+          <media id="id1172064167597_media" alt="">
+            <image mime-type="image/jpg" src="../../media/graphics1-4c3a.jpg" id="id1172064167597__onlineimage" height="450" width="600"/>
+          </media>
+        </figure>
+      </para>
+      <para id="id1172062228054">The bubble sort gets its name from the lighter bubbles that move or "bubble up" to the top of a glass of soda pop. We move the smaller elements of the array to the top as the larger elements move to the bottom of the array. This can be viewed from a different perspective. Using an Italian salad dressing with oil, water and herbs; once shaken you can either:</para>
+      <list id="id1172061135285" list-type="enumerated" number-style="arabic">
+        <item>envision the lighter oil rising to the top; <emphasis>OR</emphasis></item>
+        <item>envision the heaver water and herbs sinking to the bottom </item>
+      </list>
+      <para id="id1172064488585">Either way is correct and this version of the code simply demonstrates the sinking to the bottom the heaver or larger elements of the array.</para>
+      <para id="id1172063509412">Bubble sorting is demonstrated in the demo file provided, thus you need to study this material in conjunction with the demo program.</para>
+    </section>
+    <section id="id1172065308202">
+      <title>Demonstration Program in C++</title>
+      <section id="id1172063470927">
+        <title>Creating a Folder or Sub-Folder for Source Code Files</title>
+        <para id="id1172064231450">Depending on your compiler/IDE, you should decide where to download and store source code files for processing. Prudence dictates that you create these folders as needed prior to downloading source code files. A suggested sub-folder for the <term>Bloodshed Dev-C++ 5 compiler/IDE</term> might be named:</para>
+        <list id="id1172063468229" list-type="bulleted">
+          <item>Demo_Programs</item>
+        </list>
+        <para id="id1172064640140">If you have not done so, please create the folder(s) and/or sub-folder(s) as appropriate.</para>
+      </section>
+      <section id="id1172060188800">
+        <title>Download the Demo Program</title>
+        <para id="id1172064274026">Download and store the following file(s) to your storage device in the appropriate folder(s). Following the methods of your compiler/IDE, compile and run the program(s). Study the source code file(s) in conjunction with other learning materials. You may need to right click on the link and select "Save Target As" in order to download the file.</para>
+        <para id="id1172060950506">Download from Connexions: <link document="m21628" resource="Demo_Sort_Array_Function.cpp">Demo_Sort_Array_Function.cpp</link></para>
+        <para id="id1172063067366">Download from Connexions: <link document="m21628" resource="Demo_Farm_Acres_Input.txt">Demo_Farm_Acres_Input.txt</link></para>
+      </section>
+    </section>
+    <section id="id1172064462180">
+      <title>Definitions</title>
+    <definition id="fs-id18805877">
+      <term>sorting</term>
+      <meaning id="fs-id16747534">Arranging data according to their values.  </meaning>
+    </definition>
+    <definition id="fs-id12243732">
+      <term>bubble sort</term>
+      <meaning id="fs-id16588850">A method of swapping array members until they are in the desired sequence.  </meaning>
+    </definition>
+    </section>
+  </content>
+</document>

@@ -1,0 +1,52 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Global vs Local Data Storage</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m19147</md:content-id>
+  <md:title>Global vs Local Data Storage</md:title>
+  <md:abstract>A explanation of scope and its effect on data storage and its use in modularization.</md:abstract>
+  <md:uuid>c9156f7d-e782-49ff-93da-2780ae0a1a16</md:uuid>
+</metadata>
+<featured-links>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit below.
+       Changes to the links section in the source will not be saved. -->
+    <link-group type="prerequisite">
+      <link url="http://cnx.org/content/m19146/latest/" strength="2">Specific Task Functions</link>
+      <link url="http://cnx.org/content/m19145/latest/" strength="2">Program Control Functions</link>
+      <link url="http://cnx.org/content/m18861/latest/" strength="2">Modularization and C++ Program Layout</link>
+    </link-group>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit above.
+       Changes to the links section in the source will not be saved. -->
+</featured-links>
+<content>
+    <section id="id5874125">
+      <title>General Discussion</title>
+      <para id="id5869825">The concept of global and local data storage is usually tied to the concept of scope. Scope is the area of the program where an item (be it variable, constant, function, etc.) that has an identifier name is recognized. In our discussion we will use a variable and the place within a program where the variable is defined determines its scope.</para>
+      <para id="id8896559"><emphasis>Global scope</emphasis> (and by extension global data storage) occurs when a variable is defined "outside of a function". When compiling the program it creates the storage area for the variable within the program's <emphasis>data area as part of the object code</emphasis>. The object code has a machine code piece, a data area and linker resolution instructions. Because the variable has global scope it is available to all of the functions within your source code. It can even be made available to functions in other object modules that will be linked to your code; however we will forgo that explanation now. A key wording change should be learned at this point. Although the variable has global scope, technically it is available only from <emphasis>the point of definition to the end of the program source code</emphasis>. That is why most variable with global scope are placed near the top of the source code before any functions. This way they are available to all of the functions.</para>
+      <para id="id11589735"><emphasis>Local scope</emphasis> (and by extension local data storage) occurs when a variable is defined "inside of a function". When compiling, the compiler creates machine instructions that will direct the creation of storage locations on an area known as the <emphasis>stack which is part of the computer's memory</emphasis>. These memory locations exist until the function completes its task and returns to its calling function. In assembly language we talk about items being pushed onto the stack and popped off the stack when the function terminates. Thus, the stack is a reusable area of memory being used by all functions and released as functions terminate. Although the variable has local scope, technically it is available only from <emphasis>the point of definition to the end of the function</emphasis>. The <term>parameter passing</term> of data items into a function establishes them as local variables. Additionally, any other variables or constants needed by the function usually occur near the top of the function definition so that they are available during the entire execution of the function's code.</para>
+      <para id="id11612431">Scope is an important concept to modularization. <term>Program Control</term> functions usually use global scope for variables and constants placing them near the top of the program before any functions. <term>Specific Task</term> functions use only local scope variables by passing data as needed into the function with parameter passing and creating local variables and constants as needed. Any information that needs to be communicated back to the calling function is again done via parameter passing. This <emphasis>closed communications model</emphasis> that passes all data into and out of a function creates an important predecessor concept for <emphasis>encapsulation</emphasis> which is used in object oriented programming. </para>
+    </section>
+    <section id="id5758891">
+      <title>Definitions</title>
+    <definition id="fs-id6747372">
+      <term>global scope</term>
+      <meaning id="fs-id6317206">Data storage defined outside of a function.</meaning>
+    </definition>
+    <definition id="fs-id846066">
+      <term>local scope</term>
+      <meaning id="fs-id1166223141873">Data storage defined inside of a function.</meaning>
+    </definition>
+    <definition id="fs-id6392269">
+      <term>data area</term>
+      <meaning id="fs-id4089671">A part of an object code file used for storage of data. </meaning>
+    </definition>
+    <definition id="fs-id1166223140337">
+      <term>stack</term>
+      <meaning id="fs-id1166224405773">A part of the computer's memory used for storage of data.</meaning>
+    </definition>
+    <definition id="fs-id6758225">
+      <term>scope</term>
+      <meaning id="fs-id2483258">The area of a source code file where an identifier name is recognized. </meaning>
+    </definition>
+    </section>
+  </content>
+</document>

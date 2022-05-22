@@ -1,0 +1,110 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Standard Input and Output</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m18835</md:content-id>
+  <md:title>Standard Input and Output</md:title>
+  <md:abstract>An explanation of standard input and output as used in the computer industry followed by examples of cin and cout as used within a C++ program.</md:abstract>
+  <md:uuid>0a7d9df6-a818-4672-b671-bacff92c3eb8</md:uuid>
+</metadata>
+<featured-links>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit below.
+       Changes to the links section in the source will not be saved. -->
+    <link-group type="supplemental">
+      <link url="http://cnx.org/content/m18787/latest/" strength="3">Compiler Directives</link>
+      <link url="http://cnx.org/content/m18168/latest/" strength="2">Abbreviated Precedence Chart for C++ Operators</link>
+    </link-group>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit above.
+       Changes to the links section in the source will not be saved. -->
+</featured-links>
+<content>
+    <section id="id1812494">
+      <title>General Discussion</title>
+      <para id="id1812502">Every task we have the computer do happens inside the central processing unit (CPU) and the associated memory. Once our program is loaded into memory and the operating system directs the CPU to start executing our programming statements the computer looks like this:</para>
+      <figure id="id1812518">
+        <media id="id1812518_media" alt="">
+          <image mime-type="image/jpg" src="../../media/graphics1-4dc3.jpg" id="id1812518__onlineimage" height="450" width="600"/>
+        </media>
+        <caption>CPU – Memory – Input/Output Devices</caption>
+      </figure>
+      <para id="id1812546">Our program now located in the memory has basically two areas:</para>
+      <list id="id1812553" list-type="bulleted">
+        <item>Machine instructions – our instructions for what we want done</item>
+        <item>Data storage – our variables that we using in our program</item>
+      </list>
+      <para id="id1812572">Often our program contains instructions to interact with the input/output devices. We need to move data into (read) and/or out of (write) the memory data area. A <emphasis>device</emphasis> is a piece of equipment that is electronically connected to the memory so that data can be transferred between the memory and the device. Historically this was done with punched cards and printouts. Tape drives were used for electronic storage. With time we migrated to using disk drives for storage with keyboards and monitors (with monitor output called soft copy) replacing punch cards and printouts (called hard copy). </para>
+      <para id="id4794565"/>
+      <para id="id4794570">Most computer operating systems and by extension programming languages have identified the keyboard as the <emphasis>standard input device</emphasis> and the monitor as the <emphasis>standard output device</emphasis>. Often the keyboard and monitor are treated as the default device when no other specific device is indicated.</para>
+    </section>
+    <section id="id4794600">
+      <title>Standard I/O within C++</title>
+      <para id="id4794607">The developers of the C++ programming language decided to provide some of the more technical code needed to interact with the operating system and the I/O devices. In the following example the include directive inserts a file that contains code from the <term>Input-Output Stream</term> library. This file contains necessary code to use <term>cout</term> and <term>cin</term> for sending data to the monitor or getting data from the keyboard. </para>
+      <para id="id4794646">
+        <code display="inline">#include &lt;iostream&gt; </code>
+      </para>
+      <para id="id4794655">You should think of <emphasis>cout</emphasis> and <emphasis>cin</emphasis> as being locations that you can send to or receive data from; similar in concept to any other variable storage location within the data area of our program. The C++ programming language has two operators to use in conjunction with I/O devices.</para>
+      <table id="id4794684" summary="">
+        <tgroup cols="3">
+          <colspec colnum="1" colname="c1"/>
+          <colspec colnum="2" colname="c2"/>
+          <colspec colnum="3" colname="c3"/>
+          <tbody>
+            <row>
+              <entry>Action</entry>
+              <entry>C ++ operator symbol</entry>
+              <entry>Used with</entry>
+            </row>
+            <row>
+              <entry>insertion operator (write)</entry>
+              <entry>&lt;&lt; (a pair of less than symbols)</entry>
+              <entry>cout</entry>
+            </row>
+            <row>
+              <entry>extraction operator (read)</entry>
+              <entry>&gt;&gt; (a pair of greater than symbols) </entry>
+              <entry>cin</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+      <para id="id1807587">Consider the following code:</para>
+<example id="fs-id1166432794434">
+<title>Insertion and Extraction</title>
+<para id="fs-id1166432193398"><preformat id="fs-id1166432892165" display="block"><code>
+int age1;     // variable set up
+   then later on in our program
+cout &lt;&lt; "\nEnter the age of the first person ---&gt;: ";
+cin &gt;&gt; age1;</code></preformat>
+</para>
+</example>
+      <para id="id1807595">Using the <emphasis>cout</emphasis> the programmer displays (or inserts) a prompting message on the monitor for the user to see. Using the <emphasis>cin</emphasis> the user types an integer value and hits the enter key and the computer extracts the value from the keyboard and stores it into the variable named age1. Within the computer all data are stored as numbers and thus part of the technical code provided by the developers of the C++ programming language that is within the <emphasis>Input-Output Stream</emphasis> library converts data from numbers to those symbols we are used to seeing as humans and vice versa. Example: If the user entered the numeral digits 57 and hit the enter key – the extraction operator would convert the 57 into a binary number and move the binary number into the integer storage place named age1.</para>
+      <para id="id1807658">The <emphasis>cout</emphasis> which uses the standard output device does not format the output into a Graphical User Interface (GUI) where you have a mouse to use. A modern operating system using GUI normally opens a <term>black screen output box</term> that would be similar to how the monitor was used when first developed in the 1960's. That is the default of how <emphasis>cout</emphasis> is normally implemented by most compilers.</para>
+      <para id="id1807706">The output message has a unique item worth mentioning. At the very front of the message is a backslash followed by the letter n. They do not get printed on the monitor. It is a special code (called a printer <emphasis>escape code</emphasis>) telling the printer to go to a new line. Printer! I thought we were using a monitor? We are but the code is a left over from the early days of printer output. The backslash tells the printer or monitor that the next letter is a command. The letter n is used for telling the printer or monitor to go to the front of a new line.</para>
+    </section>
+    <section id="id1807741">
+      <title>Definitions</title>
+    <definition id="fs-id1166431942873">
+      <term>device</term>
+      <meaning id="fs-id1166432730756">A piece of equipment that is electronically connected to the memory so that data can be transferred between the memory and the device.</meaning>
+    </definition>
+    <definition id="fs-id1166432700182">
+      <term>standard input</term>
+      <meaning id="fs-id1166432603500">The keyboard.</meaning>
+    </definition>
+    <definition id="fs-id1166433286283">
+      <term>standard output</term>
+      <meaning id="fs-id1166432799186">The monitor.</meaning>
+    </definition>
+    <definition id="fs-id1166433427719">
+      <term>insertion</term>
+      <meaning id="fs-id1166432411544">Aka writing or sending data to an output device.</meaning>
+    </definition>
+    <definition id="fs-id1166432693679">
+      <term>extraction</term>
+      <meaning id="fs-id1166432440722">Aka reading or getting data from an input device.</meaning>
+    </definition>
+    <definition id="fs-id1166432763539"><term>escape code</term>
+	<meaning id="fs-id1166434736007">A code directing an output device to do something.</meaning>
+</definition>
+    </section>
+  </content>
+</document>

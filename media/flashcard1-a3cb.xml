@@ -1,0 +1,54 @@
+<?xml version='1.0'?>
+<order>
+<color>E7E7F5</color>
+<showterm>true</showterm>
+<showdef>false</showdef>
+<customDeckText>Custom Deck</customDeckText>
+<wholeDeckText>Whole Deck</wholeDeckText>
+<showText>SHOW</showText>
+<addToText>Add to Custom</addToText>
+<showTermText>Show Term</showTermText>
+<showDefText>Show Definition</showDefText>
+<orderset value='1'>
+ <term>character</term>
+ <def>A data type representing single text characters like the alphabet, numeral digits, punctuation, etc.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='2'>
+ <term>ASCII</term>
+ <def>American Standard Code for Information Interchange</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='3'>
+ <term>single quote marks</term>
+ <def>Used to create character type data within the C++ programming language.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='4'>
+ <term>sizeof</term>
+ <def>An operator that tells you how many bytes a data type occupies in storage.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='5'>
+ <term>typedef</term>
+ <def>Allows the programmer to create an alias, or synonym, for an existing data type.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='6'>
+ <term>sequence</term>
+ <def>An operator used to separate multiple occurrences of an item.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+</order>

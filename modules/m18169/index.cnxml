@@ -1,0 +1,29 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>ASCII Character Set</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m18169</md:content-id>
+  <md:title>ASCII Character Set</md:title>
+  <md:abstract>Brief explanation of ASCII character set with web links to more information and tables.</md:abstract>
+  <md:uuid>1c4701dd-c329-4b24-b247-89c27aec1512</md:uuid>
+</metadata>
+
+<content>
+    <para id="id15366277">ASCII stands for American Standard Code for Information Interchange (pronounced "ask-key"). Computers can only understand numbers, so an ASCII code is the numerical representation of a character such as 'a' or '@' or an action of some sort. ASCII was developed a long time ago and now the non-printing characters are rarely used for their original purpose. The first 32 values (0 to 31) and the last value (127) are the non-printing characters.</para>
+    <para id="id15854538">Several software products can be used to create an ASCII text file.</para>
+    <list id="id19470582" list-type="bulleted">
+      <item>Notepad within Windows OS and it uses by default the .txt extension.</item>
+      <item>Microsoft Word by saving the file as 'text only' and it uses by default the .txt extension.</item>
+      <item>Integrated Development Environment (IDE) compliers for most programming languages usually save source code as ASCII text files but they will use an extension that describes the content of the text file. Example: C++ usually uses .cpp as the extension.</item>
+    </list>
+    <para id="id16325572">The following web links provide more information and tables listing the ASCII Character Set:</para>
+    <para id="id17501079">
+      <link window="new" url="http://asciiset.com/">http://asciiset.com/</link>
+    </para>
+    <para id="id4007568">
+      <link window="new" url="http://www.asciitable.com/">http://www.asciitable.com/</link>
+    </para>
+    <para id="id19491980">
+      <link window="new" url="http://en.wikipedia.org/wiki/ASCII">http://en.wikipedia.org/wiki/ASCII</link>
+    </para>
+  </content>
+</document>

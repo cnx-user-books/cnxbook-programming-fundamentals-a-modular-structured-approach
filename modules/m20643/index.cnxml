@@ -1,0 +1,91 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Practice 14: Test Before Loops</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m20643</md:content-id>
+  <md:title>Practice 14: Test Before Loops</md:title>
+  <md:abstract>Questions, exercises, problems, etc. that support this chapter in the "Programming Fundamentals - A Modular Structured Approach using C++" collection/textbook.</md:abstract>
+  <md:uuid>e10671a4-6467-43ab-a567-3d3629837dc3</md:uuid>
+</metadata>
+
+<content>
+    <section id="id15051683">
+      <title>Learning Objectives</title>
+      <para id="id15888496">With 100% accuracy during a: memory building activity, exercises, lab assignment, problems, or timed quiz/exam; the student is expected to:</para>
+      <list id="id9850453" list-type="enumerated" number-style="arabic">
+        <item>Define the terms on the definitions as listed in the modules associated with this chapter.</item>
+        <item>Identify which selection control structures are test before iteration.</item>
+        <item>Be able to write pseudo code or flowcharting for the while control structure.</item>
+        <item>Be able to write C++ source code for the while control structure.</item>
+      </list>
+    </section>
+    <section id="id11249736">
+      <title>Memory Building Activities</title>
+      <para id="id9817129">Link to: <link window="new" document="m20643" resource="index.html">MBA 14</link></para>
+    </section>
+    <section id="id11546915">
+      <title>Exercises</title>
+<exercise id="fs-id5372394">
+  <problem id="fs-id15032742">
+    <list id="fs-id15456046" list-type="enumerated"><title>Evaluate the following items using increment or decrement:</title><item>True or false: <code>x = x - 1;</code> and <code>x -= 1;</code> and <preformat display="inline"><code>x--;</code></preformat> and <preformat display="inline"><code>--x;</code></preformat> all accomplish decrement.</item>
+	<item>Given: <code>int y = 26;</code> and <code>int z;</code> what values will y and z have after: <code>z = y++;</code></item>
+	<item>Given: <code>double x = 4.44;</code> and <code>int y;</code> what values will x and y have after: <preformat display="inline"><code>y = --x;</code></preformat></item>
+	<item>As an expression: <code>10 / ++(money * 4)</code> Is this ok? Why or why not?</item>
+</list>
+  </problem>
+  <solution id="fs-id3946633">
+    <list id="fs-id15455157" list-type="enumerated"><title>Answers:</title><item>true</item>
+	<item>y is: 27 and z is: 26</item>
+	<item>x is: 3.44 and y is: 3   Note: truncation of 3.44 to 3 upon demotion to integer data type.</item>
+	<item> Not ok. Error, the item incremented must have Lvalue attributes, usually a variable. Because of the parentheses, it is an expression not a variable.</item>
+</list>
+  </solution>
+</exercise>
+    </section>
+    <section id="id22255888">
+      <title>Miscellaneous Items</title>
+      <para id="id3692083">Link to: <link window="new" document="m20643" resource="while_flow.gif">Animated gif showing a while loop</link></para>
+    </section>
+    <section id="id21795767">
+      <title>Lab Assignment</title>
+      <section id="id13341018">
+        <title>Creating a Folder or Sub-Folder for Chapter 14 Files</title>
+        <para id="id12389363">Depending on your compiler/IDE, you should decide where to download and store source code files for processing. Prudence dictates that you create these folders as needed prior to downloading source code files. A suggested sub-folder for the <term>Bloodshed Dev-C++ 5 compiler/IDE</term> might be named:</para>
+        <list id="id7544634" list-type="bulleted">
+          <item>Chapter_14 within the folder named: Cpp_Source_Code_Files</item>
+        </list>
+        <para id="id4222349">If you have not done so, please create the folder(s) and/or sub-folder(s) as appropriate.</para>
+      </section>
+      <section id="id19978619">
+        <title>Download the Lab File(s)</title>
+        <para id="id13259785">Download and store the following file(s) to your storage device in the appropriate folder(s). You may need to right click on the link and select "Save Target As" in order to download the file.</para>
+        <para id="id22142191">Download from Connexions: <link document="m20643" resource="Lab_14_Pseudocode.txt">Lab_14_Pseudocode.txt</link></para>
+      </section>
+      <section id="id9600563">
+        <title>Detailed Lab Instructions</title>
+        <para id="id3406925">Read and follow the directions below carefully, and perform the steps in the order listed.</para>
+        <list id="id3406899" list-type="bulleted"><item>Create a source code file from the Lab_14_Pseudocode.txt file. Name it: Lab_14.cpp</item>
+	<item>Build (compile and run) your program.</item>
+	<item>After you have successfully written this program, if you are taking this course for college credit, follow the instructions from your professor/instructor for submitting it for grading.</item>
+</list>
+      </section>
+    </section>
+    <section id="id3559293">
+      <title>Problems</title>
+      <section id="id15621911">
+        <title>Problem 14a – Instructions</title>
+        <para id="id10533737">Flowchart the following pseudocode:</para>
+<example id="fs-id19524895">
+<title>pseudocode</title>
+<para id="fs-id20951291"><preformat id="fs-id21697381" display="block"><code>
+Assign counter a value of zero
+While counter is less than 5
+  Display "I love cookies!"
+  Increment counter
+Endwhile
+</code></preformat>
+</para>
+</example>
+      </section>
+    </section>
+  </content>
+</document>

@@ -1,0 +1,98 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Structured Programming</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m19628</md:content-id>
+  <md:title>Structured Programming</md:title>
+  <md:abstract>An introduction to control structure categories and those allowed in structured programming.</md:abstract>
+  <md:uuid>3ea01b51-8bde-4d41-bc5e-37d70a83d1ba</md:uuid>
+</metadata>
+<featured-links>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit below.
+       Changes to the links section in the source will not be saved. -->
+    <link-group type="supplemental">
+      <link url="http://en.wikipedia.org/wiki/Structured_programming" strength="2">Wikipedia - Strucured Programming</link>
+    </link-group>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit above.
+       Changes to the links section in the source will not be saved. -->
+</featured-links>
+<content>
+    <section id="id2726508">
+      <title>Introduction</title>
+      <para id="id5955950">One of the most important concepts of programming is the ability to control a program so that different lines of code are executed or that some lines of code are executed many times. The mechanisms that allow us to control the flow of execution are called <emphasis>control structures</emphasis>. Flowcharting is a method of documenting (charting) the flow (or paths) that a program would execute. There are four main categories of control structures:</para>
+      <list id="id6230852" list-type="bulleted">
+        <item><emphasis>Sequence</emphasis> – Very boring. Simply do one instruction then the next and the next. Just do them in a given sequence or in order listed. Most lines of code are this. </item>
+      </list>
+      <list id="id3619866" list-type="bulleted">
+        <item><emphasis>Selection</emphasis> – This is where you select or choose between two or more flows. The choice is decided by asking some sort of question. The answer determines the path (or which lines of code) will be executed.</item>
+      </list>
+      <list id="id9271072" list-type="bulleted"><item><emphasis>Iteration</emphasis> – Also known as repetition, it allows some code (one to many lines) to be executed (or repeated) several times. The code might not be executed at all (repeat it zero times), executed a fixed number of times or executed indefinitely until some condition has been met. Also known as looping because the flowcharting shows the flow looping back to repeat the task. </item>
+</list>
+      <list id="id10557831" list-type="bulleted">
+        <item><emphasis>Branching</emphasis> – A control structure that allows the flow of execution to jump to a different part of the program. This category is rarely used in modular structured programming. </item>
+      </list>
+      <para id="id3690454">All high-level programming languages have control structures. All languages have the first three categories of control structures (sequence, selection, and iteration). Most have the <term>if then else</term> structure (which belongs to the selection category) and the <term>while</term> structure (which belongs to the iteration category). After these two basic structures there are usually language variations.</para>
+      <para id="id6284899">The concept of <emphasis>structured programming</emphasis> started in the late 1960's with an article by Edsger Dijkstra. He proposed a "go to less" method of planning programming logic that eliminated the need for the branching category of control structures. The topic was debated for about 20 years. But ultimately – "By the end of the 20th century nearly all computer scientists were convinced that it is useful to learn and apply the concepts of structured programming. "<footnote id="id6266194">Structured programming from Wikipedia</footnote></para>
+      <section id="id10606099">
+        <title>Introduction to Selection Control Structures</title>
+        <para id="id6702463">The basic attribute of a selection control structure is to be able to select between two or more alternate paths. This is described as either <term>two-way selection</term> or <term>multiway selection</term>. A question using Boolean concepts usually controls which path is selected. All of the paths from a selection control structure join back up at the end of the control structure, before moving on to the next lines of code in a program.</para>
+        <para id="id8887108">We have mentioned that the <emphasis>if then else</emphasis> control structure belongs to the selection category and is a two-way selection.</para>
+<example id="fs-id1170629942332">
+<title>if then else control structure</title>
+<para id="fs-id7149801"><preformat id="fs-id4822027" display="block"><code>
+if (age &gt; 17)
+  {
+  cout &lt;&lt; "You can vote.";
+  }
+else
+  {
+  cout &lt;&lt; "You can't vote.";
+  } </code></preformat>
+</para>
+</example>
+      </section>
+      <section id="id3809427">
+        <title>Introduction to Iteration Control Structures</title>
+        <para id="id9514669">The basic attribute of an iteration control structure is to be able to repeat some lines of code. The visual display of iteration creates a circular loop pattern when flowcharted, thus the word "loop" is associated with iteration control structures. Iteration can be accomplished with <term>test before loops</term>, <term>counting loops</term>, and <term>test after loops</term>. A question using Boolean concepts usually controls how long the loop will execute.</para>
+        <para id="id9119014">We have mentioned that the <emphasis>while</emphasis> control structure belongs to the iteration category and is a test before loop.</para>
+<example id="fs-id6922097">
+<title>while control structure</title>
+<para id="fs-id1170629944798"><preformat id="fs-id1170632372471" display="block"><code>
+counter = 0;
+while (counter &lt; 5)
+  {
+  cout &lt;&lt; "\nI love computers!";
+  counter ++;
+  } </code></preformat>
+</para>
+</example>
+      </section>
+    </section>
+    <section id="id17853016">
+      <title>Definitions</title>
+<definition id="ControlStructuresdef">
+  <term>control structures</term>
+  <meaning id="fs-id23933897">Mechanisms that allow us to control the flow of execution within a program. </meaning>
+</definition>
+<definition id="sequencedef">
+  <term>sequence</term>
+  <meaning id="fs-id10560710">A control structure where you do the items in the sequence listed.  </meaning>
+</definition>
+<definition id="selectiondef">
+  <term>selection</term>
+  <meaning id="fs-id22774698">A control structure where you select between two or more choices. </meaning>
+</definition>
+<definition id="iterationdef">
+  <term>iteration</term>
+  <meaning id="fs-id24309757">A control structure that allows some lines of code to be executed many times.  </meaning>
+</definition>
+<definition id="branchingdef">
+  <term>branching</term>
+  <meaning id="fs-id23714312">A control structure that allows the flow of execution to jump to a different part of the program.  </meaning>
+</definition>
+<definition id="StructuredProgrammingdef">
+  <term>structured programming</term>
+  <meaning id="fs-id2371431x">A method of planning programs that avoids the branching category of control structures.  </meaning>
+</definition>
+    </section>
+  </content>
+</document>

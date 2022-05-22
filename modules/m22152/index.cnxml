@@ -1,0 +1,101 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Indirection Operator</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m22152</md:content-id>
+  <md:title>Indirection Operator</md:title>
+  <md:abstract>An introduction to the indirection operator as used within the C++ programming language.</md:abstract>
+  <md:uuid>8324224c-3582-410e-bc88-cf382eab3af1</md:uuid>
+</metadata>
+<featured-links>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit below.
+       Changes to the links section in the source will not be saved. -->
+    <link-group type="supplemental">
+      <link url="http://cnx.org/content/m18785/latest/" strength="1">Bloodshed Dev-C++ 5 Compiler/IDE</link>
+    </link-group>
+    <link-group type="prerequisite">
+      <link url="http://cnx.org/content/m22151/latest/" strength="3">Pointer Data Type</link>
+      <link url="http://cnx.org/content/m22148/latest/" strength="2">Address Operator</link>
+    </link-group>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit above.
+       Changes to the links section in the source will not be saved. -->
+</featured-links>
+<content>
+    <section id="id1169676373079">
+      <title>Indirection Operator in C++</title>
+      <para id="id1169682727791">When we pass parameters to functions we usually pass by value; that is the calling function provides several values to the called function as needed. The called function takes these values which have <term>local scope</term> and stores them on the stack using them as needed for whatever processing the functions accomplishes. This is the preferred method when calling user defined specific task functions. The called function passes back a single value as the return item if needed. This has the advantage of a <term>closed communications model</term> with everything being neatly passed in as values and any needed item returned back as a parameter.</para>
+      <para id="id4747432">By necessity there are two exceptions to this closed communications model:</para>
+      <list id="id1169687812541" list-type="enumerated" number-style="arabic">
+        <item>When we need more than one item of information returned by the function</item>
+        <item>When a copy of an argument cannot reasonably or correctly be made (example: file stream objects).</item>
+      </list>
+      <para id="id2886441">These exceptions could be handled by parameter passing by reference instead of passing a value. Although different syntax than parameter passing when using a <term>reference variable</term>; using a <term>pointer</term> variable and the <emphasis>indirection operator</emphasis> can accomplish the same effect. The indirection operator is the <term>asterisk</term> or the character that we also use for multiplication. The concept of indirection is also known as <emphasis>dereferencing</emphasis>, meaning that we are not interested in the pointer but want the item to which the address is referring or referencing.</para>
+<example id="fs-id4188029">
+  <title>parameter passing with pointers</title>
+  <para id="fs-id3258286"><preformat id="fs-id3397274" display="block"><code>
+// prototype
+void process_values(int qty_dimes, int qty_quarters, double * ptr_value_dimes, double * ptr_value_quarters);
+
+// variable definitions
+int      dimes = 45;
+int      quarters = 33;
+double   value_dimes;
+double   value_quarters;
+double * ptr_value_dimes = &amp;value_dimes;
+double * ptr_value_quarters = &amp;value_quarters;
+
+// somewhere in the function main
+process_values(dimes, quarters, ptr_value_dimes, ptr_value_quarters);
+
+// definition of the function
+void process_values(int qty_dimes, int qty_quarters, double * ptr_value_dimes, double * ptr_quarters);
+  {
+  * ptr_value_dimes = dimes * 0.10;
+  * ptr_value_quarters = quarters * 0.25;
+  }    </code></preformat>
+</para>
+</example>
+      <note id="id1169687589989" type="Note">The asterisk and must appear in both the prototype and the function definition when defining the pointer variables but it does not appear in the function call when the pointers are passed into the function.</note>
+      <para id="id1169685723652">The above example shows the basic mechanics of the indirection operator.</para>
+      <para id="id1169679847646">The use of pointers with indirection is often preferred for processing arrays. The <emphasis>array index operator</emphasis> is also known as the <emphasis>array method of dereferencing</emphasis>. The following couts are equivalent:</para>
+      <para id="id1169685772604">
+        <code display="inline">int ages[] = {47, 45, 18, 11, 9};</code>
+      </para>
+      <para id="id1169683495364">
+        <code display="inline">cout &lt;&lt; ages[3];</code>
+      </para>
+      <para id="id1169683587223">
+        <code display="inline">cout &lt;&lt; *(ages + 3);</code>
+      </para>
+      <para id="id1169681891121">The both say, "The name of an array is a pointer; take the pointer and calculate a new address that points to the 3<sup>rd</sup> offset by adding the correct number of bytes onto the pointer (integer data type is normally 4 bytes long – 3 offsets times 4 bytes is 12 bytes); then dereference that pointer (since this is an Rvalue context – fetch me the value that you are pointing at) and send it to the standard output device."</para>
+      <para id="id4086303">You should study the demonstration programs in conjunction with this module.</para>
+    </section>
+    <section id="id2375768">
+      <title>Demonstration Program in C++</title>
+      <section id="id6135251">
+        <title>Creating a Folder or Sub-Folder for Source Code Files</title>
+        <para id="id1169690296092">Depending on your compiler/IDE, you should decide where to download and store source code files for processing. Prudence dictates that you create these folders as needed prior to downloading source code files. A suggested sub-folder for the <term>Bloodshed Dev-C++ 5 compiler/IDE</term> might be named:</para>
+        <list id="id1169685758343" list-type="bulleted">
+          <item>Demo_Programs</item>
+        </list>
+        <para id="id1169689418567">If you have not done so, please create the folder(s) and/or sub-folder(s) as appropriate.</para>
+      </section>
+      <section id="id1169680511807">
+        <title>Download the Demo Program</title>
+        <para id="id1169682551146">Download and store the following file(s) to your storage device in the appropriate folder(s). Following the methods of your compiler/IDE, compile and run the program(s). Study the source code file(s) in conjunction with other learning materials. You may need to right click on the link and select "Save Target As" in order to download the file. </para>
+        <para id="id8414346">Download from Connexions: <link document="m22152" resource="Demo_Pointer_Passing.cpp">Demo_Pointer_Passing.cpp</link></para>
+        <para id="id1169685040127">Download from Connexions: <link document="m22152" resource="Demo_Array_Pointer_Processing.cpp">Demo_Array_ Pointer_Processing.cpp</link></para>
+      </section>
+    </section>
+    <section id="id1169689180443">
+      <title>Definitions</title>
+    <definition id="fs-id4940828">
+      <term>indirection operator</term>
+      <meaning id="fs-id2333289">The asterisk used for dereferencing a pointer.</meaning>
+    </definition>
+    <definition id="fs-id2668832">
+      <term>dereferencing</term>
+      <meaning id="fs-id5465878">The concept of using the item to which a pointer or address is pointing at.</meaning>
+    </definition>
+    </section>
+  </content>
+</document>

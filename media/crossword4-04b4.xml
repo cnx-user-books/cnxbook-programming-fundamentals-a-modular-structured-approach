@@ -1,0 +1,16 @@
+&acrosstext=Across&
+&downtext=Down&
+&restarttext=Re-start&
+&finishtext=Finish&
+&word0=IPO&
+&clue0=Inputs - Processing - Outputs&
+&word1=PSEUDOCODE&
+&clue1=English-like statements used to convey the steps of an algorithm or function.&
+&word2=TESTDATA&
+&clue2=Providing input values and predicting the outputs.&
+&word3=PSEUDO&
+&clue3=Means false and includes the concepts of fake or imitation.&
+&word4=MODELCHECKING&
+&clue4=Using test data to check the design model (usually done in pseudocode).&
+&word5=CODECHECKING&
+&clue5=Using test data to check the coded program in a specific language (like C++).&

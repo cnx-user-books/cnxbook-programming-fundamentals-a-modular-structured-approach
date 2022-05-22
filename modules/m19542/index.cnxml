@@ -1,0 +1,49 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Assignment vs Equality within C++</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m19542</md:content-id>
+  <md:title>Assignment vs Equality within C++</md:title>
+  <md:abstract>An explanation with examples of a common mistake made by accidently confusing the assignment operator with the equality operator within the C++ programming language.</md:abstract>
+  <md:uuid>7cbf8695-ab29-4485-bdb1-3ea4236bc67c</md:uuid>
+</metadata>
+<featured-links>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit below.
+       Changes to the links section in the source will not be saved. -->
+    <link-group type="prerequisite">
+      <link url="http://cnx.org/content/m19549/latest/" strength="2">Relational Operators</link>
+      <link url="http://cnx.org/content/m18725/latest/" strength="2">Assignment Operator</link>
+    </link-group>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit above.
+       Changes to the links section in the source will not be saved. -->
+</featured-links>
+<content>
+    <section id="id6815130">
+      <title>General Discussion</title>
+      <para id="id20239514">Most control structures use a <term>test expression</term> that executes either selection (as in the: if then else) or iteration (as in the while; do while; or for loops) based on the truthfulness or falseness of the expression. Thus, we often talk about the <term>Boolean expression</term> that is controlling the structure. Within many programming languages, this expression must be a Boolean expression and is governed by a tight set of rules. However, in C++ every data type can be used as a Boolean expression, because every data type can be demoted into a Boolean value by using the rule/concept that zero represents false and all non-zero values represent true.</para>
+      <para id="id18751896">Within C++ we have the potential added confusion of the equals symbol as an operator that does not represent the normal math meaning of <term>equality</term> that we have used for most of our life. The equals symbol with C++ means: <term>assignment</term>. To get the equality concept of math within C++ we use two equal symbols to represent the relational operator of equality. Let's consider:</para>
+      <para id="id19954236"><preformat id="klb4400001" display="block"><code>
+if (pig = 'y')
+  { 
+  cout &lt;&lt; "\nPigs are good";
+  }
+else
+  {
+  cout &lt;&lt; "\nPigs are bad.";
+  } </code></preformat>
+</para>
+      <para id="id19895216">The test expression of the control structure will always be true, because the expression is an assignment (not the relational operator of ==). It assigns the 'y' to the variable pig, then looks at the value in pig and determines that it is not zero; therefore the expression is true. And it will always be true and the else part will never be executed. This is not what the programmer had intended. Let's consider:</para>
+      <para id="id20394358"><preformat id="klb4400002" display="block"><code>
+do
+  {
+  cout &lt;&lt; "\nPigs are good";
+  cout &lt;&lt; "\nDo it again, answer y or n: ";
+  cin &gt;&gt; do_it_again
+  }
+while (do_it_again = 'y'); </code></preformat>
+      </para>
+      <para id="id14780425">The loop's test expression will always be true, because the expression is an assignment (not the relational operator of ==). It assigns the 'y' to the variable do_it_again, then looks at the value in do_it_again and determines that it is not zero; therefore the expression is true. And it will always be true and you have just created an infinite loop. As a reminder, infinite loops are not a good thing. </para>
+      <para id="id18582927">These examples are to remind you that you must be careful in creating your test expressions so that they are indeed a question usually involving the relational operators.</para>
+      <para id="id8764402">Don't get caught using assignment for equality.</para>
+    </section>
+  </content>
+</document>

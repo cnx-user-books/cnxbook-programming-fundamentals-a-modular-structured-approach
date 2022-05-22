@@ -1,0 +1,184 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Understanding High Performance Computing</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m19804</md:content-id>
+  <md:title>Understanding High Performance Computing</md:title>
+  <md:abstract>An explanation of the difference between sequential programming and parallel programming concepts with examples of each.  A historical sketch of  computers with examples of high performance computing solving problems using parallel programming concepts.  Suggestions for various groups of learners to explore high performance computing.  Includes software programs, source code files and several Internet links.</md:abstract>
+  <md:uuid>728d8550-4aba-4848-a53b-cc9521a683e6</md:uuid>
+</metadata>
+<featured-links>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit below.
+       Changes to the links section in the source will not be saved. -->
+    <link-group type="example">
+      <link url="http://www.top500.org/" strength="2">Top 500 Supercomputer Sites</link>
+    </link-group>
+    <link-group type="supplemental">
+      <link url="http://en.wikipedia.org/wiki/FLOPS" strength="2">FLOPS at Wikipedia</link>
+    </link-group>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit above.
+       Changes to the links section in the source will not be saved. -->
+</featured-links>
+<content>
+<section id="fs-id4546693">
+  <title>Preface – November 13, 2009</title>
+<para id="fs-id1167631071873">This module was created as an entry for the <emphasis>2008-'09 Open Education Cup: High Performance Computing</emphasis> competition.  The competition was supervised by Dr. Jan Erik Odegard, Executive Director of the Ken Kennedy Institute for Information Technology at Rice University.  It was submitted to the "Parallel Algorithms and Applications" category and specifically designed as an introduction to the subject targeting intermediate grade school students to collegiate undergraduates who have little knowledge of High Performance Computing (HPC).
+</para>
+<para id="eip-880">This module received the <emphasis>"Best Module"</emphasis> award for the "Parallel Algorithms and Applications" category which included a US $500 prize.</para><para id="fs-id5995313">
+Those who reviewed the entries for the competition made some suggestions for improvement and most have been incorporated into this revised edition of the module.  As always; my thanks to them and all others who make suggestions for improving educational materials.
+</para>
+<para id="fs-id1167636936551">
+Kenneth Leroy Busbee  
+</para>
+</section>
+    <section id="id16110117">
+      <title>Introduction to High Performance Computing</title>
+      <para id="id12899188">Grouping multiple computers or multiple computer processors to accomplish a task quicker is referred to as <emphasis>High Performance Computing</emphasis> (HPC).  We want to explain how this is accomplished using parallel programming algorithms or concepts.</para>
+      <section id="id17832484">
+        <title>The Shift from a Single Processor to Parallel</title>
+        <para id="id12286929">We are going to start our explanation by giving two simple examples.</para>
+<example id="fs-id19692204">
+        <para id="id16907548">After eating all you can, you toss your chicken leg bone out of the car window (shame on you for trashing up the highway), but in short order an ant finds your tossed chicken bone. One single ant could bite off the left over on the bone and transport it to the colony, one bite at a time; but, it might take him 1 whole day (24 hours) of work. But, what if he gets help? He signals some buddies and being a small colony of ants they allocate a total of 10 ants to do the task. Ten times the workers take one tenth the time. The ten ants do the task in 2 hours and 24 minutes. </para>
+        <para id="id13635003">I toss another bone out the window. An ant finds it and the colony allocates 50 ants to do the task of picking the bone clean. In less than 30 minutes (28.8 to be exact) the 50 ants working in parallel complete the task.</para>
+</example>
+<example id="fs-id21407698">
+        <para id="id17832150">One painter might take 8 hours to paint the exterior of an average sized house. But, if he can put a crew of 10 painters working simultaneously (or in other words in parallel) it takes only 48 munities. What about a crew of 50 painters assuming that they can do work and not get in the way of each other; well how about less than 10 minutes (9.6 to be exact). </para>
+</example>
+        <para id="id8688192">Now let's make sure we understand that the same amount of work was done in the examples given. The work was only completed in a shorter amount of time because we put more workers on the task. Not all tasks can be divided up in this way, but when it can be divided between multiple workers, we can take advantage of the workers doing their sub part of the task in parallel. Let’s look at another example.</para>
+<example id="fs-id23527218">
+        <para id="id6741993">I want to drive from Houston, Texas to Dallas, Texas; a distance of about 250 miles. For easy calculations let's say I can travel 50 miles in one hour. It would take me 5 hours. Well, I could divide the task between 5 cars and have each car travel 50 miles and arrive in Dallas in 1 hour. Right?</para>
+</example>
+        <para id="id17716077">Well, wrong. The task of driving from Houston to Dallas cannot be divided into tasks that can be done in parallel. The task can only be done by one person driving in a line from Houston to Dallas in 5 hours. I used the word "line" because it helps connect us to the word: <emphasis>linear</emphasis>. A linear task cannot be broken-up into smaller tasks to be done in parallel by multiple workers. Within the computer world, the word associated with linear concept is <emphasis>sequential processing</emphasis>. I must drive one mile at a time in sequence to get to Dallas.</para>
+        <para id="id16610442">Our natural tendency is to share the work that is to work in parallel whenever it is possible. As a group we can accomplish many tasks that can be done in parallel in less time.</para>
+      </section>
+      <section id="id17004903">
+        <title>The Birth of Computers – A "Parallel" to Central Processing Unit (CPU) Story</title>
+        <para id="id17715278"><quote display="inline">ENIAC, short for Electronic Numerical Integrator And Computer, was the first general-purpose electronic computer (July 1946). It was the first Turing-complete, digital computer capable of being reprogrammed to solve a full range of computing problems. ENIAC had twenty ten-digit signed accumulators which used ten's complement representation and could perform 5,000 simple addition or subtraction operations between any of them and a source (e.g., another accumulator, or a constant transmitter) every second. It was possible to connect several accumulators to run simultaneously, so the peak speed of operation was potentially much higher due to parallel operation.</quote> (ENIAC from Wikipedia)</para>
+        <para id="id17401179">Often not understood by many today, the first computer used base 10 arithmetic in the electronics and was a <emphasis>parallel processing</emphasis> machine by using several accumulators to improve the speed. However, this did not last for long. During its construction: </para>
+        <para id="id17771050"><quote display="inline">The First Draft of a Report (commonly shortened to First Draft) on the EDVAC – Electronic Discrete Variable Automatic Computer was an incomplete 101 page document written by John von Neumann and distributed on June 30, 1945 by Herman Goldstine, security officer on the classified ENIAC project. It contains the first published description of the logical design of a computer using the stored-program concept, which has come to be known as the von Neumann architecture.</quote> (First Draft of a Report on the EDVAC from Wikipedia)</para>
+        <para id="id18052433"><quote display="inline">The von Neumann architecture is a design model for a stored-program digital computer that uses a [central] processing [unit] and a single separate storage structure to hold both instructions and data. It is named after the mathematician and early computer scientist John von Neumann. Such computers implement a universal Turing machine and have a sequential architecture.</quote> (Von Neumann architecture from Wikipedia)</para>
+        <para id="id16664869">Von Neumann also proposed using a binary (base 2) numbering system for the electronics. One of the characteristics of the von Neumann architecture was the trade off of multiple processors using base 10 electronics to a single central processor using base 2 (or digital) electronics. To compare to our ant example, the idea was to use one real fast ant versus 10 slow ants. If one real fast ant can do 1,000 tasks in an hour; it would be more powerful (be able to do more tasks) than 10 ants doing 10 tasks an hour or the equivalent of 100 tasks per hour.</para>
+        <para id="id17995224">The rest is history – most commercially built computers for about the first forty years (1951 to 1991) followed the von Neumann architecture. The electronic engineers keep building more reliable and faster electronics. From vacuum tube, to transistor, to integrated circuit to what we call today "chip" technology. This transformation made computers break down less frequently (they were more reliable), physically smaller, needing less electric power and faster. Personal computers were introduced in the late 1970's and within ten years became more commonly available and used. </para>
+        <para id="id5642295">One short coming was that most programming efforts were towards improving the linear (or sequential) way of thinking or solving a problem. After all, the computer electronic engineers would be making a faster computer next year. Everyone understood that the computer had only one <emphasis>central processing unit</emphasis> (CPU). Right?</para>
+      </section>
+      <section id="id17716375">
+        <title>The Need for Power</title>
+        <para id="id17716380">Well, wrong. Computer scientists and electronic engineers had been <emphasis>experimenting</emphasis> with multi-processor computers with parallel programming since 1946. But it's not until the 1980's that we see the first parallel processing computers (built by Cray and other computer companies) being sold as commercial built computers. It's time for another example.</para>
+<example id="fs-id23796220">
+        <para id="id17716037">The circus traveling by train from one city to the next has an elephant that dies. They decide to toss the elephant off the train (shame on them for trashing up the country side), but in short order a "super" ant (faster than most regular ants) finds the elephant. This project is much larger than your tossed chicken bone. One single "super" ant could do the task (bite off a piece of the elephant and transport it to the colony, one bite at a time); but, it might take one whole year. After all this requires a lot more work than a chicken bone. But, what if he gets help? He signals some buddies and being a large colony of "super" ants they allocate a total of 2,190 ants to do the task. Wow, they devour the elephant in six hours. </para>
+</example>
+        <para id="id13124720">This elephant example is exactly where the computer scientists had arrived. The electronic engineers were going to continue to make improvements in the speed of a single central processing unit computer, but not soon enough to satisfy the "need for power" to be able to solve tasks requiring <emphasis>immense computing power</emphasis>.  Some of the new tasks that would require immense computer power included the human genome project, searching for oil and gas by creating 3 dimensional images of geological formations and the study of gravitational forces in the universe; just to mention a few. The solution: parallel processing to the rescue.  Basically the only way to get this immense computer power was to implement parallel processing techniques.  During the late 1970's and early 1980's scientists saw the need to explore the parallel processing paradigm more fully and thus the birth of High Performance Computing. Various national and international conferences started during the 1980's to be able to further the cause of High Performance Computing. For example in November of 2008 the "SC08" supercomputing conference celebrated their 20<sup>th</sup> anniversary.</para>
+        <para id="id18052395">The predicting of the weather is a good example for the need of High Performance Computing. Using the fastest central processing unit computer it might take a year to predict tomorrow's weather. The information would be correct but 365 days late. Using parallel processing techniques and a powerful "high performance computer", we might be able to predict tomorrow’s weather in 6 hours. Not only correct, but in time to be useful.</para>
+      </section>
+<section id="fs-id1172054684066">
+  <title>Measuring Computer Power</title>
+<para id="fs-id1172046850527">
+Most people are familiar with the giga hertz (billions of instructions per second) measure to describe how fast a single CPU's processor is running.  Most microcomputers of today are running around 3 GHz or 3 billion instructions a second.  Although 3 billion sounds fast, many of these instructions are simple operations.  
+</para>
+<para id="fs-id1172050374584">Supercomputing uses a measurement involving floating point arithmetic calculations as the benchmark for comparing computer power.  "In computing, <emphasis>FLOPS</emphasis> (or <emphasis>flops</emphasis> or <emphasis>flop</emphasis>/<emphasis>s</emphasis>) is an acronym meaning <emphasis>FL</emphasis>oating point <emphasis>O</emphasis>perations <emphasis>P</emphasis>er <emphasis>S</emphasis>econd." and again "On May 25, 2008, an American military supercomputer built by IBM, named 'Roadrunner', reached the computing milestone of one petaflop by processing more than 1.026 quadrillion calculations per second." (FLOPS from Wikipedia)  For those of us not familiar:
+</para>
+<example id="fs-id1172046872932">
+<title>Getting a Sense of Power</title>
+<para id="fs-id1172050692402"><preformat id="fs-id1172054675918" display="block"><code>
+3 billion or 3 GHz is:                  3,000,000,000
+1 quadrillion or 1 pedaflop is: 1,000,000,000,000,000 
+</code></preformat>
+</para>
+</example>
+<para id="fs-id1172050688745">
+You also should realize that your personal computer is not doing 3 gigafolp worth of calculations, but something slower when using the FLOPS measurement.  
+</para>
+</section>
+      <section id="id18052420">
+        <title>High Performance Computing Made Personal</title>
+        <para id="id12879585">It took several years (about 30) to get computers to a personal level (1951 to 1981). It took about twenty years (late 1980’s to present 2009) to get multi-processor computers to the personal level. Currently available to the general public are computers with "duo core" and "quad core" processors. In the near future, micro computers will have 8 to 16 core processors. People ask, "Why would I need that much computer power?" There are dozens of applications, but I can think of a least one item that almost everyone wants: high quality voice recognition. That's right! I want to talk to my computer. Toss your mouse, toss your keyboard, no more touch pad – talk to it. </para>
+        <para id="id17960550">Again, one short coming is that most programming efforts have been towards teaching and learning the sequential processing way of thinking or solving a problem. Educators will now need to teach and programmers will now need to develop skills in programming using parallel concepts and algorithms.</para>
+      </section>
+      <section id="id17960560">
+        <title>Summary</title>
+        <para id="id17960566">We have bounced you back and forth between sequential and parallel concepts. We covered our natural tendency to do work in parallel. But with the birth of computers the parallel concepts were set to the side and the computer industry implemented a faster single processor approach (sequential). We explained the limitations of sequential processing and the need for computing power. Thus, the birth of High Performance Computing. Parallel processing computers are migrating into our homes. With that migration, there is a great need to educate the existing generation and develop the next generation of scientists and programmers to be able to take advantage of High Performance Computing. </para>
+      </section>
+    </section>
+    <section id="id16678745">
+      <title>Learner Appropriate Activities</title>
+      <para id="id12644573">High Performance Computing is impacting how we do everything. Learning, working, even our relaxation and entertainment are impacted by HPC. To help more people understand HPC, I have listed appropriate activities based on where a learner is in relation to their programming skills.</para>
+      <section id="id12644590">
+        <title>Computer Literacy but No Programming Skills</title>
+        <para id="id12644595">We have provided two computer programs that help students see the impact of parallel processing. The first is a "Linear to Parallel Calculator" where the student enters how long it would take one person to complete a task, asks how many people will work as a group on the task, then calculates how long it will take the group to complete the task. The second is a "Parallel Speed Demonstration Program" that simulates parallel processing. It displays to the monitor the first 60 factorial numbers in 60 seconds, then shows as if 10 processors are doing it in 6 seconds, then as if 100 processors are doing it in less than 1 second. Both are compiled and ready for use on an Intel CPU machine (compiled for use on Windows OS).</para>
+        <para id="id16190497">Download the executable file from Connexions: <link document="m19804" resource="Demo_Linear_to_Parallel.exe">Linear to Parallel Calculator</link></para>
+        <para id="id16190504">Download the executable file from Connexions: <link document="m19804" resource="Demo_Parallel_Speed.exe">Parallel Speed Demonstration Program</link></para>
+        <para id="fs-id4994930">An interesting activity would be to join a group that is using thousands of personal microcomputers via Internet connections for parallel processing. Several distributed processing projects are listed in the "FLOPS" article on Widipedia. One such group is the "Great Internet Mersenne Prime Search - GIMPS".</para>
+        <para id="fs-id10316832">A link to the GIMPS web site is: <link window="new" url="http://www.mersenne.org/">http://www.mersenne.org/</link></para>
+        <para id="id13917680">Another activity is to "Google" some keywords.  Be careful - "Googling" can be confusing and often can be difficult to focus on the precise subject that you want. </para>
+        <list id="id13917686" list-type="bulleted">
+          <item>high performance computing </item>
+          <item>computational science</item>
+          <item>supercomputing</item>
+          <item>distributed processing</item>
+        </list>
+      </section>
+      <section id="id14721086">
+        <title>Learning Programming Fundamentals </title>
+        <para id="id14721091">Students learning to program that are currently taking courses in Modular/Structured programming and/or Object Oriented programming might want to review the source code files for the demonstration programs listed above. These programs do not do parallel programming, but the student could modify or improve them to better explain parallel programming concepts.</para>
+        <para id="id14721105">You may need to right click on the link and select "Save Target As" in order to download these source code files.</para>
+        <para id="id14721115">Download the source code file from Connexions: <link document="m19804" resource="Demo_Linear_to_Parallel.cpp">Linear to Parallel Calculator</link></para>
+        <para id="id12854732">Download the source code file from Connexions: <link document="m19804" resource="Demo_Parallel_Speed.cpp">Parallel Speed Demonstration Program</link></para>
+        <para id="id12854739">Another appropriate activity is to "Google" some of the key words listed above. With your fundamental understanding of programming, you will understand more of the materials than those with no programming experience. You should get a sense that parallel programming is becoming a more important part of a computer professional’s work and career.</para>
+        <para id="id12854758">Review the "Top 500 Super Computers" at: <link window="new" url="http://www.top500.org/">http://www.top500.org/</link></para>
+        <para id="id12767168">Look at the source code listings provided in the next section, but remember, you cannot compile or run these on your normal computer.</para>
+      </section>
+      <section id="id12767178">
+        <title>Upper Division Under-Graduate College Students</title>
+        <para id="id12767183">The challenge is to try parallel computing, not just talk about it.</para>
+        <para id="id12767190">During the week of May 21st to May 26th in 2006, this author attended a workshop on Parallel and Distributed Computing.  The workshop was given by the National Computational Science Institute and introduced <emphasis>parallel programming</emphasis> using multiple computers (a group of micro computers grouped or clustered into a super-micro computer).  The conference emphasized several important points related to the computer industry:</para>
+        <list id="id12374034" list-type="enumerated" number-style="arabic"><item>During the past few years super-micro computers have become more powerful and more available.</item>
+	<item>Desk top computers are starting to be built with multiple processors (or cores) and we will have multiple (10 to 30) core processors within a few years. </item>
+	<item>Use of super-micro computing power is wide spread and growing in all areas: scientific research, engineering applications, 3D animation for computer games and education, etc.</item>
+	<item>There is a shortage of educators, scientific researchers, and computer professionals that know how to manage and utilize this developing resource. Computer professionals needed include: Technicians that know how to create and maintain a super-micro computer; and <emphasis>Programmers that know how to create computer applications that use parallel programming concepts</emphasis>.</item>
+</list>
+        <para id="id16184183">This last item was emphasized to those of you beginning a career in computer programming that as you progress in your education, you should be aware of the changing nature of computer programming as a profession.  Within a few years <emphasis>all professional programmers will have to be familiar with parallel programming</emphasis>.</para>
+        <para id="id16705304">During the conference this author wrote a program that sorts an array of 150,000 integers using two different approaches.  The first way was without parallel processing.  When it was compiled and executed using a single machine, it took 120.324 seconds to run (2 minutes).  The second way was to redesign the program so parts of it could be run on several processors at the same time.  When it was compiled and executed using 11 machines within a cluster of micro-computers, it took 20.974 seconds to run.  That’s approximately 6 times faster.  Thus, <emphasis>parallel programming will become a necessity to be able to utilize the multi-processor hardware of the near future.</emphasis></para>
+        <para id="id16705335">A distributed computing environment was set up in a normal computer lab using a Linix operating system stored on a CD.  After booting several computers with the CD, the computers can communicate with each other with the support of "Message Passing Interface" or MPI commands. This model known as the Bootable Cluster CD (BCCD) is available from:</para>
+        <para id="id16705343">Bootable Cluster CD – University of Northern Iowa at: <link window="new" url="http://www.bccd.net/">http://www.bccd.net/</link></para>
+        <para id="id16705348">The source code files used during the above workshop were modified to a version 8, thus an 8 is in the filename. The non-parallel processing "super" code was named: nonps8.cpp with the parallel processing "super" code named: ps8.cpp (Note: The parallel processing code contains some comments that describe that part of the code being run by a machine identified as the "SERVER_NODE"  with a part of the code being run by the 10 other machines (the Clients).  The client machines communicate critical information to the server node using "Message Passing Interface" or MPI commands.)</para>
+        <para id="id12364735">You may need to right click on the link and select "Save Target As" in order to download these source code files.</para>
+        <para id="id12364744">Download the source code file from Connexions: <link document="m19804" resource="nonps8.cpp">nonps8.cpp</link></para>
+        <para id="id12364751">Download the source code file from Connexions: <link document="m19804" resource="ps8.cpp">ps8.cpp</link></para>
+        <para id="id12364758">Two notable resources with super computer information were provided by presenters during the workshop:</para>
+        <para id="id12364763">Oklahoma University – Supercomputing Center for Education &amp; Research at: <link window="new" url="http://www.oscer.ou.edu/education.php">http://www.oscer.ou.edu/education.php</link></para>
+        <para id="id12364773">Contra Costa College – High Performance Computing at: <link window="new" url="http://contracosta.edu/hpc/resources/presentations/">http://contracosta.edu/hpc/resources/presentations/</link></para>
+        <para id="id12364778">You can also "Google" the topic's key words and spend several days reading and experimenting with High Performance Computing.</para>
+        <para id="id12364786">Consider reviewing the "Educator Resources" links provided in the next section.</para>
+      </section>
+    </section>
+    <section id="id6420572">
+      <title>Educator Resources</title>
+      <para id="id6420578">There are many sites that provide materials and assistance to those teaching the many aspects of High Performance Computing. A few of them are:</para>
+      <para id="id6420585">Shodor – A National Resource for Computational Science Education at: <link window="new" url="http://www.shodor.org/home/">http://www.shodor.org/home/</link></para>
+      <para id="id6420591">CSERD – Computational Science Education Reference Desk at: <link window="new" url="http://www.shodor.org/refdesk/">http://www.shodor.org/refdesk/</link></para>
+      
+      <para id="id6420599">National Computational Science Institute at: <link window="new" url="http://www.computationalscience.org/">http://www.computationalscience.org/</link></para>
+      <para id="id6420602">Association of Computing Machinery  at: <link window="new" url="http://www.acm.org/">http://www.acm.org/</link></para>
+      <para id="id6420606">Super Computing – Education at: <link window="new" url="http://sc09.sc-education.org/about/index.php">http://sc09.sc-education.org/about/index.php</link></para>
+    </section>
+    <section id="id1785uhpc">
+      <title>Simple Definitions</title>
+<definition id=" HighPerformanceComputingdef">
+  <term>high performance computing</term>
+  <meaning id="fs-id2393uhpc"> Grouping multiple computers or multiple computer processors to accomplish a task in less time. </meaning>
+</definition>
+<definition id="linearprocessingdef"><term>sequential processing</term>
+	<meaning id="fs-id1056uhpc">Using only one processor and completing the tasks in a sequential order.  </meaning>
+</definition>
+<definition id="parallelprocessingdef">
+  <term>parallel processing</term>
+  <meaning id="fs-id2277uhpc">Dividing a task into parts that can utilize more than one processor. </meaning>
+</definition>
+<definition id="centralprocessingunitdef"><term>central processing unit</term>
+	<meaning id="fs-id2430uhpc">The electronic circuitry that actually executes computer instructions. </meaning>
+</definition>
+<definition id="parallelprogrammingdef"><term>parallel programming</term>
+	<meaning id="fs-id2371uhpc">Involves developing programs that utilize parallel processing algorithms that take advantage of multiple processors. </meaning>
+</definition>
+    </section>
+  </content>
+</document>

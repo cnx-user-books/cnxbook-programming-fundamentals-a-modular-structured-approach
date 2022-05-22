@@ -1,0 +1,84 @@
+! SoftChalk LessonBuilder TIV File (C)2003-2008
+! ================ DO NOT EDIT ================
+
+act_item=3
+
+act_num=1
+act_type=2
+items=8
+colorChoice=_B
+showList=false
+showFlashCardTerm=true
+showFlashCardDef=false
+useFlashBigText=false
+instructions=Click 'Show' to see the hidden portion.
+wordPair[1]=flag|A variable or constant used to store information that will normally be used to control the program. |noimage
+wordPair[2]=do while|A test after iteration control structure available in C++.|noimage
+wordPair[3]=action item|An attribute of iteration control structures.|noimage
+wordPair[4]=update item|An attribute of iteration control structures.|noimage
+wordPair[5]=test item|An attribute of iteration control structures.|noimage
+wordPair[6]=at least once|Indicating that test after loops execute the action at least once.|noimage
+wordPair[7]=infinite loop|No method of exit, thus a bad thing.|noimage
+wordPair[8]=repeat until|A test after iteration control structure that is not available in C++.|noimage
+inline=false
+points=0
+showRestart=true
+sqrsize=20
+adaDescription=
+playFeedback=true
+hotspotWidth=450
+hotspotHeight=500
+
+act_num=2
+act_type=6
+items=8
+colorChoice=_B
+showList=false
+showFlashCardTerm=true
+showFlashCardDef=false
+useFlashBigText=false
+instructions=Solve the crossword puzzle.
+wordPair[1]=flag|A variable or constant used to store information that will normally be used to control the program.
+wordPair[2]=DoWhile|A test after iteration control structure available in C++.
+wordPair[3]=AtLeastOnce|Indicating that test after loops execute the action at least once.
+wordPair[4]=InfiniteLoop|"No method of exit, thus a bad thing."
+wordPair[5]=RepeatUntil|A test after iteration control structure that is not available in C++.
+wordPair[6]=ActionItem|An attribute of iteration control structures.
+wordPair[7]=UpdateItem|An attribute of iteration control structures.
+wordPair[8]=TestItem|An attribute of iteration control structures.
+inline=false
+points=0
+showRestart=true
+sqrsize=20
+adaDescription=
+playFeedback=true
+hotspotWidth=450
+hotspotHeight=500
+
+act_num=3
+act_type=3
+items=8
+colorChoice=_B
+showList=false
+showFlashCardTerm=true
+showFlashCardDef=false
+useFlashBigText=false
+instructions=Click and drag to highlight a found word from the list.
+seekawordHintOption=true
+wordPair[1]=flag
+wordPair[2]=DoWhile
+wordPair[3]=ActionItem
+wordPair[4]=UpdateItem
+wordPair[5]=TestItem
+wordPair[6]=AtLeastOnce
+wordPair[7]=InfiniteLoop
+wordPair[8]=RepeatUntil
+inline=false
+points=0
+showRestart=true
+sqrsize=20
+adaDescription=
+playFeedback=true
+hotspotWidth=450
+hotspotHeight=500
+

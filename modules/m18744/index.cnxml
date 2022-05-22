@@ -1,0 +1,113 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Data Type Conversions</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m18744</md:content-id>
+  <md:title>Data Type Conversions</md:title>
+  <md:abstract>Implicit and explicit type conversion with both promotion and demotion is discussed with some examples.</md:abstract>
+  <md:uuid>35ea5e0a-ff9a-48b0-8740-588edb0e2f40</md:uuid>
+</metadata>
+<featured-links>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit below.
+       Changes to the links section in the source will not be saved. -->
+    <link-group type="supplemental">
+      <link url="http://cnx.org/content/m18168/latest/" strength="3">Abbreviated Precedence Chart for C++ Operators</link>
+      <link url="http://cnx.org/content/m18169/latest/" strength="2">The ASCII Character Set </link>
+      <link url="http://cnx.org/content/m18785/latest/" strength="2">Bloodshed Dev-C++ 5 Compiler/IDE</link>
+    </link-group>
+    <link-group type="prerequisite">
+      <link url="http://cnx.org/content/m18705/latest/" strength="3">Data Manipulation</link>
+      <link url="http://cnx.org/content/m18653/latest/" strength="3">Data Types in C++</link>
+    </link-group>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit above.
+       Changes to the links section in the source will not be saved. -->
+</featured-links>
+<content>
+    <section id="id15299948">
+      <title>Overview</title>
+      <para id="id25265936">Changing a data type of a value is referred to as "type conversion".  There are two ways to do this:</para>
+      <list id="id24776159" list-type="enumerated"><item><emphasis>Implicit</emphasis> – the change is implied</item>
+	<item><emphasis>Explicit</emphasis> – the change is explicitly done with the cast operator</item>
+</list>
+      <para id="id21184591">The value being changed may be:</para>
+      <list id="id25241629" list-type="enumerated"><item><emphasis>Promotion</emphasis> – going from a smaller domain to a larger domain</item>
+	<item><emphasis>Demotion</emphasis> – going from a larger domain to a smaller domain</item>
+</list>
+    </section>
+    <section id="id19209627">
+      <title>Implicit Type Conversion</title>
+      <para id="id24121239">Automatic conversion of a value from one data type to another by a programming language, without the programmer specifically doing so, is called implicit type conversion.  It happens when ever a binary operator has two operands of different data types. Depending on the operator, one of the operands is going to be converted to the data type of the other. It could be promoted or demoted depending on the operator. </para>
+<example id="fs-id6878524">
+<title>Implicit Promotion</title>
+<para id="fs-id1167277759505"><preformat id="fs-id1167275882352" display="block"><code>
+55 + 1.75</code></preformat>
+</para>
+</example>
+      <para id="id24718236">In this example the integer value 55 is converted to a floating-point value (most likely double) of 55.0. It was promoted. </para>
+<example id="fs-id1167291215434">
+<title>Implicit Demotion</title>
+<para id="fs-id4097719"><preformat id="fs-id4552927" display="block"><code>
+int money;     // variable set up
+    then later in the program
+money = 23.16;</code></preformat>
+</para>
+</example>
+      <para id="id25392771">In this example the variable money is an integer. We are trying to move a floating-point value 23.16 into an integer storage location. This is demotion and the floating-point value usually gets truncated to 23.</para>
+    </section>
+    <section id="id25217652">
+      <title>Promotion</title>
+      <para id="id21366113">Promotion is never a problem because the lower data type (smaller range of allowable values) is sub set of the higher data type (larger range of allowable values).  Promotion often occurs with three of the standard data types: character, integer and floating-point. The allowable values (or domains) progress from one type to another.  That is the character data type values are a sub set of integer values and integer values are a sub set of floating-point values; and within the floating-point values: float values are a sub set of double.  Even though character data represent the alphabetic letters, numeral digits (0 to 9) and other symbols (a period, $, comma, etc.) their bit pattern also represent integer values from 0 to 255.  This progression allows us to promote them up the chain from character to integer to float to double.</para>
+    </section>
+    <section id="id19067434">
+      <title>Demotion</title>
+      <para id="id24183402">Demotion represents a potential problem with truncation or unpredictable results often occurring.  How do you fit an integer value of 456 into a character value?  How do you fit the floating-point value of 45656.453 into an integer value? Most compilers give a warning if it detects demotion happening. A compiler warning does not stop the compilation process. It does warn the programmer to check to see if the demotion is reasonable.</para>
+      <para id="id23709031">If I calculate the number of cans of soup to buy based on the number of people I am serving (say 8) and the servings per can (say 2.3), I would need 18.4 cans. I might want to demote the 18.4 into an integer. It would truncate the 18.4 into 18 and because the value 18 is within the domain of an integer data type, it should demote with the <emphasis>truncation</emphasis> side effect. </para>
+      <para id="id23569376">If I tried demoting a double that contained the number of stars in the Milky Way galaxy into an integer, I might have a get an <emphasis>unpredictable result</emphasis> (assuming the number of stars is larger than allowable values within the integer domain).</para>
+    </section>
+    <section id="id22745256">
+      <title>Explicit Type Conversion</title>
+      <para id="id22572427">Most languages have a method for the programmer to change or cast a value from one data type to another; called <emphasis>explicit type conversion</emphasis>.  Within C++ the cast operator is a unary operator; it only has one operand and the operand is to the right of the operator. The operator is a set of parentheses surrounding the new data type.</para>
+<example id="fs-id8638479">
+<title>Explicit Demotion with Truncation</title>
+<para id="fs-id8668994"><preformat id="fs-id1167282658771" display="block"><code>
+(int) 4.234</code></preformat>
+</para>
+</example>
+      <para id="id25106602">This expression would evaluate to: 4.</para>
+    </section>
+    <section id="id15205504">
+      <title>Demonstration Program in C++</title>
+      <section id="id25277557">
+        <title>Creating a Folder or Sub-Folder for Source Code Files</title>
+        <para id="id13578140">Depending on your compiler/IDE, you should decide where to download and store source code files for processing. Prudence dictates that you create these folders as needed prior to downloading source code files. A suggested sub-folder for the <term>Bloodshed Dev-C++ 5 compiler/IDE</term> might be named:</para>
+        <list id="id23757816" list-type="bulleted">
+          <item>Demo_Programs</item>
+        </list>
+        <para id="id24184582">If you have not done so, please create the folder(s) and/or sub-folder(s) as appropriate.</para>
+      </section>
+      <section id="id11089332"><title>Download the Demo Program</title><para id="id24904962">Download and store the following file(s) to your storage device in the appropriate folder(s). Following the methods of your compiler/IDE, compile and run the program(s). Study the soruce code file(s) in conjunction with other learning materials.</para><para id="id20646158">Download from Connexions: <link document="m18744" resource="Demo_Data_Type_Conversions.cpp">Demo_Data_Type_Conversions.cpp</link></para></section>
+    </section>
+<section id="fs-id7127688">
+  <title>Definitions</title>
+    <definition id="fs-id1167286081031">
+      <term>implicit</term>
+      <meaning id="fs-id1167280709886">A value that has its data type changed automatically.</meaning>
+    </definition>
+    <definition id="fs-id1167281283736">
+      <term>explicit</term>
+      <meaning id="fs-id4613607">Changing a value's data type with the cast operator.</meaning>
+    </definition>
+    <definition id="fs-id4330500">
+      <term>promotion</term>
+      <meaning id="fs-id1167274342800">Going from a smaller domain to a larger domain.</meaning>
+    </definition>
+    <definition id="fs-id1167274849357">
+      <term>demotion</term>
+      <meaning id="fs-id1167282760661">Going from a larger domain to a smaller domain.</meaning>
+    </definition>
+    <definition id="fs-id1167288457641">
+      <term>truncation</term>
+      <meaning id="fs-id1167274508802">The fractional part of a floating-point data type that is dropped when converted to an integer.</meaning>
+    </definition>
+</section>
+  </content>
+</document>

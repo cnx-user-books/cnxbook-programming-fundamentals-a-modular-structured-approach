@@ -1,0 +1,89 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Constants and Variables</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m18719</md:content-id>
+  <md:title>Constants and Variables</md:title>
+  <md:abstract>An introductory explanation of constants and variables with examples and how to define them within the C++ programming language.</md:abstract>
+  <md:uuid>d54ad103-00ce-4555-9afb-7fbf5f3c06cc</md:uuid>
+</metadata>
+<featured-links>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit below.
+       Changes to the links section in the source will not be saved. -->
+    <link-group type="supplemental">
+      <link url="http://cnx.org/content/m18725/latest/" strength="3">Assignment Operator</link>
+      <link url="http://cnx.org/content/m18690/latest/" strength="2">Sequence Operator</link>
+      <link url="http://cnx.org/content/m18787/latest/" strength="2">Compiler Directives</link>
+    </link-group>
+    <link-group type="prerequisite">
+      <link url="http://cnx.org/content/m18692/latest/" strength="3">Identifier Names</link>
+      <link url="http://cnx.org/content/m18653/latest/" strength="2">Data Types in C++</link>
+    </link-group>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit above.
+       Changes to the links section in the source will not be saved. -->
+</featured-links>
+<content>
+    <section id="id1167282666837">
+      <title>Understanding Constants</title>
+      <para id="id7131415">Various textbooks describe constants using different terminology. Added to the complexity are the explanations from various industry professionals will vary greatly. Let's see if we can clear it up.</para>
+      <para id="id1167290423315">A <emphasis>constant </emphasis>is a data item whose value cannot change during the program's execution. Thus, as its name implies – their value is constant.</para>
+      <para id="id1167282804942">A <emphasis>variable</emphasis> is a data item whose value can change during the program's execution. Thus, as its name implies – their value can vary.</para>
+      <para id="id3286611">Constants are used in three ways within C++. They are:</para>
+      <list id="id1167288060751" list-type="enumerated" number-style="arabic">
+        <item>literal constant</item>
+        <item>defined constant</item>
+        <item>memory constant</item>
+      </list>
+      <para id="id1167288780717">A <term>literal constant</term> is a <emphasis>value</emphasis> you type into your program wherever it is needed. Examples include the constants used for initializing a variable and constants used in lines of code:</para>
+<example id="fs-id7596562">
+<title>Literal Constants</title>
+<para id="fs-id1167282803615"><preformat id="fs-id1167289578857" display="block"><code>
+int   age   = 21;
+char  grade = 'A';
+float money = 12.34;
+bool  rich  = false;
+
+cout &lt;&lt; "\nStudents love computers";
+age = 57;</code></preformat>
+</para>
+</example>
+      <para id="id7842274">Additionally, we have learned how to recognize the data types of literal constants. Single quotes for char, double quotes for string, number without a decimal point for integer, number with a decimal point belongs to the floating-point family, and Boolean can use the reserved words of true or false.</para>
+      <para id="id1167291519472">In addition to literal constants, most text books refer to either symbolic constants or named constants but these two refer to the same concept. A symbolic constant is represented by a name similar to how we name variables. Let's say it backwards; the identifier name is the symbol that represents the data item. Within C++ identifier names have some rules. One of the rules says those names should be meaningful. Another rule about using ALL CAPS FOR CONSTANTS is an industry rule. There are two ways to create symbolic or named constants:</para>
+      <para id="id1167282742014">
+        <code display="inline">#define PI 3.14159</code>
+      </para>
+      <para id="id1167282756746">Called a <term>defined constant</term> because it uses a textual substitution method controlled by the compiler pre-processor command word "define".</para>
+      <para id="id1167283822927">
+        <code display="inline">const double PI = 3.14159;</code>
+      </para>
+      <para id="id7916242">The second one is called sometimes called <emphasis>constant variable</emphasis> but that name is contradictory all by itself. How can it be constant and vary at the same time? The better name for the second one is a <term>memory constant</term> because they have a "specific storage location in memory".</para>
+    </section>
+    <section id="id1167286011991">
+      <title>Defining Constants and Variables</title>
+      <para id="id1167282640900">In the above examples we see how to define both variables and constants along with giving them an initial value. Memory constants must be assigned a value when they are defined. But variables do not have to be assigned initial values.</para>
+      <para id="id1167282605895">
+        <code display="inline">int height;</code>
+      </para>
+      <para id="id1167282670283">
+        <code display="inline">float value_coins;</code>
+      </para>
+      <para id="id1167282646590">Variables once defined may be assigned a value within the instructions of the program.</para>
+      <para id="id7408807">
+        <code display="inline">height = 72;</code>
+      </para>
+      <para id="id1167282664424">
+        <code display="inline">value_coins = 2 * 0.25 + 3 * 0.05;</code>
+      </para>
+    </section>
+    <section id="id3003571">
+      <title>Definitions</title>
+    <definition id="fs-id1167286058629">
+      <term>constant</term>
+      <meaning id="fs-id1167290073694">A data item whose value cannot change during the program's execution.</meaning>
+    </definition>
+    <definition id="fs-id1167288566274">
+      <term>variable</term>
+      <meaning id="fs-id1167283037508">A data item whose value can change during the program's execution.</meaning>
+    </definition>
+    </section>
+  </content>
+</document>

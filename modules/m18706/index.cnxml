@@ -1,0 +1,71 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Arithmetic Operators</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m18706</md:content-id>
+  <md:title>Arithmetic Operators</md:title>
+  <md:abstract>An overview of the arithmetic operators within the C++ programming language.</md:abstract>
+  <md:uuid>b95afa19-1f40-496a-8010-daf7ca6b7191</md:uuid>
+</metadata>
+<featured-links>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit below.
+       Changes to the links section in the source will not be saved. -->
+    <link-group type="supplemental">
+      <link url="http://cnx.org/content/m18717/latest/" strength="3">Integer Division and Modulus</link>
+      <link url="http://cnx.org/content/m18168/latest/" strength="2">Abbreviated Precedence Chart for C++ Operators</link>
+    </link-group>
+    <link-group type="prerequisite">
+      <link url="http://cnx.org/content/m18705/latest/" strength="3">Data Manipulation</link>
+      <link url="http://cnx.org/content/m18719/latest/" strength="3">Constants and Variables</link>
+    </link-group>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit above.
+       Changes to the links section in the source will not be saved. -->
+</featured-links>
+<content>
+    <section id="id1164779710338">
+      <title>General Discussion</title>
+      <para id="id1164775455097">An operator performs an action on one or more operands. The common arithmetic operators are:</para>
+      <table id="id1164788790699" summary="">
+        <tgroup cols="2">
+          <colspec colnum="1" colname="c1"/>
+          <colspec colnum="2" colname="c2"/>
+          <tbody>
+            <row>
+              <entry>
+                <emphasis>Action</emphasis>
+              </entry>
+              <entry>
+                <emphasis>C ++ operator symbol</emphasis>
+              </entry>
+            </row>
+            <row>
+              <entry>Addition</entry>
+              <entry>+</entry>
+            </row>
+            <row>
+              <entry>Subtraction</entry>
+              <entry>-</entry>
+            </row>
+            <row>
+              <entry>Multiplication</entry>
+              <entry>*</entry>
+            </row>
+            <row>
+              <entry>Division</entry>
+              <entry>/</entry>
+            </row>
+            <row>
+              <entry>Modulus (associated with integers)</entry>
+              <entry>%</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+      <para id="id1164780000054">These arithmetic operators are binary that is they have two operands. The operands may be either constants or variables. </para>
+      <para id="id1164783034613">
+        <code display="inline">age + 1</code>
+      </para>
+      <para id="id6685098">This expression consists of one operator (addition) which has two operands. The first is represented by a variable named age and the second is a literal constant. If age had a value of 14 then the expression would evaluate (or be equal to) 15.</para>
+      <para id="id1164774675377">These operators work as you have learned them throughout your life with the exception of division and modulus. We normally think of division as resulting in an answer that might have a fractional part (a floating-point data type). However, division when both operands are of the integer data type act differently. Please refer to the supplemental materials on "Integer Division and Modulus".</para>
+    </section>
+  </content>
+</document>

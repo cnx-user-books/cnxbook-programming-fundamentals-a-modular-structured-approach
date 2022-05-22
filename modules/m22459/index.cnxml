@@ -1,0 +1,92 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Practice 7: Specific Task Functions</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m22459</md:content-id>
+  <md:title>Practice 7: Specific Task Functions</md:title>
+  <md:abstract>Questions, exercises, problems, etc. that support this chapter in the "Programming Fundamentals - A Modular Structured Approach using C++" collection/textbook.</md:abstract>
+  <md:uuid>914b4319-5fbd-47eb-ad1b-e6d090576629</md:uuid>
+</metadata>
+
+<content>
+    <section id="id4562334">
+      <title>Learning Objectives</title>
+      <para id="id9229237">With 100% accuracy during a: memory building activity, exercises, lab assignment, problems, or timed quiz/exam; the student is expected to:</para>
+      <list id="id12700176" list-type="enumerated" number-style="arabic">
+        <item>Define the terms on the definitions as listed in the modules associated with this chapter.</item>
+        <item>Given a testing shell program already coded and tested, create a user defined specific task header file, a user defined specific task prototypes document and a source code program to verify that the header file works properly.</item>
+      </list>
+    </section>
+    <section id="id12470850">
+      <title>Memory Building Activities</title>
+      <para id="id7637690">Link to: <link window="new" document="m22459" resource="index.html">MBA 07</link></para>
+    </section>
+    <section id="id9009156">
+      <title>Exercises</title>
+<exercise id="fs-id3098045">
+  <problem id="fs-id5328234">
+    <list id="fs-id6584187" list-type="enumerated">
+      <title>Answer the following statements as either true or false:</title>
+        <item>Scope refers to a brand of mouth wash.</item>
+        <item>User defined specific task functions are usually placed into a user defined library.</item>
+        <item>Local and global data storage is associated with the concept of scope.</item>
+        <item>Creating a header file for user defined specific task functions is a difficult task.</item>
+        <item>The stack is part of the computer’s memory used for storage of data.</item>
+    </list>
+  </problem>
+  <solution id="fs-id7207734">
+    <list id="fs-id7382712" list-type="enumerated">
+      <title>Answers:</title>
+        <item>false – Although Scope is a brand of mouth wash; we are looking for the computer related definition.</item>
+        <item>true</item>
+        <item>true</item>
+        <item>false – It may seem difficult at first, but with a little practice it is really quite easy.</item>
+        <item>true</item>
+    </list>
+  </solution>
+</exercise>
+    </section>
+    <section id="id12307943">
+      <title>Miscellaneous Items</title>
+      <para id="id5205494">None at this time.</para>
+    </section>
+    <section id="id7954082">
+      <title>Lab Assignment</title>
+      <section id="id10148662">
+        <title>Creating a Folder or Sub-Folder for Chapter 07 Files</title>
+        <para id="id8020777">Depending on your compiler/IDE, you should decide where to download and store source code files for processing. Prudence dictates that you create these folders as needed prior to downloading source code files. A suggested sub-folder for the <term>Bloodshed Dev-C++ 5 compiler/IDE</term> might be named:</para>
+        <list id="id9257446" list-type="bulleted">
+          <item>Chapter_07 within the folder named: Cpp_Source_Code_Files</item>
+        </list>
+        <para id="id3935441">If you have not done so, please create the folder(s) and/or sub-folder(s) as appropriate.</para>
+      </section>
+      <section id="id12445433">
+        <title>Download the Lab File(s)</title>
+        <para id="id9579918">Download and store the following file(s) to your storage device in the appropriate folder(s). You may need to right click on the link and select "Save Target As" in order to download the file.</para>
+        <para id="id10394050">Download from Connexions: <link document="m22459" resource="Lab_07_Testing_Shell.cpp">Lab_07_Testing_Shell.cpp</link></para>
+      </section>
+      <section id="id9099488">
+        <title>Detailed Lab Instructions</title>
+        <para id="id5605357">Read and follow the directions below carefully, and perform the steps in the order listed.</para>
+        <list id="id4678717" list-type="bulleted">
+          <item>Navigate to your sub-folder: Chapter_07. Compile and run the Lab 07 Testing Shell source code. Note: This program uses an include file that points to the "udst_monitor.h" file as explained in Connexions Chapter 7 materials. </item>
+        </list>
+        <list id="id8035425" list-type="bulleted"><item>Following same process as shown in the Connexions module "Using a Header File for User Defined Specific Task Functions" that is within the Chapter 7 materials; make the following files: <emphasis>udst_us_to_metric.h</emphasis> and <emphasis>udst_us_to_metric_prototypes.txt</emphasis> and <emphasis>Lab_07_Verify_Header.cpp</emphasis></item>
+	<item>Copy the header file to your user library, then build (compile and run) your verify header program.</item>
+	<item>After you have successfully written this program, if you are taking this course for college credit, follow the instructions from your professor/instructor for submitting it for grading.</item>
+</list>
+      </section>
+    </section>
+    <section id="id12711368">
+      <title>Problems</title>
+      <section id="id12689607">
+        <title>Problem 07a – Instructions</title>
+        <para id="id7921122">Create the pseudocode to solve the following specific task function:</para>
+        <para id="id7594712">Problem: An interior designer always needs to calculate the area of a room to determine the amount of floor covering needed (usually carpet). The rooms are rectangular with the dimensions measured in feet (with decimal fractions). The function however needs to return square yards. Hint: There are 3 lineal feet to a yard.</para>
+      </section>
+      <section id="id7387526">
+        <title>Problem 07b – Instructions</title>
+        <para id="id5857593">Create test data for the following specific task function:</para><para id="id8573091">Problem: An interior designer always needs to calculate the area of a room to determine the amount of floor covering needed (usually carpet). The rooms are rectangular with the dimensions measured in feet (with decimal fractions). The function however needs to return square yards. Hint: There are 3 lineal feet to a yard.</para>
+      </section>
+    </section>
+  </content>
+</document>

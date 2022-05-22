@@ -1,0 +1,75 @@
+<?xml version='1.0'?>
+<order>
+<color>E7E7F5</color>
+<showterm>true</showterm>
+<showdef>false</showdef>
+<customDeckText>Custom Deck</customDeckText>
+<wholeDeckText>Whole Deck</wholeDeckText>
+<showText>SHOW</showText>
+<addToText>Add to Custom</addToText>
+<showTermText>Show Term</showTermText>
+<showDefText>Show Definition</showDefText>
+<orderset value='1'>
+ <term>user defined library</term>
+ <def>A file containing specific task functions created by individuals to be used in many programs.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='2'>
+ <term>global scope</term>
+ <def>Data storage defined outside of a function.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='3'>
+ <term>local scope</term>
+ <def>Data storage defined inside of a function.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='4'>
+ <term>data area</term>
+ <def>A part of an object code file used for storage of data. </def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='5'>
+ <term>stack</term>
+ <def>A part of the computer's memory used for storage of data.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='6'>
+ <term>scope</term>
+ <def>The area of a source code file where an identifier name is recognized. </def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='7'>
+ <term>udst</term>
+ <def>User Defined Specific Task</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='8'>
+ <term>testing shell</term>
+ <def>A program used to create specific task functions. </def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='9'>
+ <term>header file</term>
+ <def>A file that contains items we want to have included toward the top of our source code.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+</order>

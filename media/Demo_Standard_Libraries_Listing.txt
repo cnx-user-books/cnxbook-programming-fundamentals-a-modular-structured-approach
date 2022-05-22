@@ -1,0 +1,77 @@
+*********************************************************************
+Filename:    Demo_Standard_Libraries_Listing.txt
+Purpose:     Prototypes for various Standard Library functions and
+             Explain various include files 
+Comment:     Not all items are demonstrated in
+             the Demo_Standard_Libraries.cpp
+Author:      Ken Busbee; © 2009 Kenneth Leroy Busbee
+Date:        Apr 24, 2009; Modified Mar 20, 2010
+Licensed by: Kenneth Leroy Busbee under a 
+             Creative Commons Attribution License (CC-BY 3.0)
+             http://creativecommons.org/licenses/by/3.0/
+*********************************************************************
+
+                                             Purpose     
+Prototypes                                   Library
+******************************************   ************************
+
+int     abs(int number);                     absolute
+                                             cstdlib
+
+double  sqrt(double number);                 square root
+                                             cmath
+
+size_t  strlen(const char *str);             string length
+                                             Note: you can consider
+                                             size_t to be an integer
+                                             cstring
+        
+int     system(const char *system_command);  run an os command
+                                             cstdlib
+
+void    exit(int exit_code);                 immediately stop program
+                                             cstdlib
+
+clock_t clock(void);                         thousands of seconds
+                                             that the program has  
+                                             been executing
+                                             Note: you can consider
+                                             clock_t to be a long
+                                             integer  
+                                             ctime
+
+NOTE: Some prototypes may be included in more than one library
+
+*********************************************************************
+
+Library   Purpose
+********  ***********************************************************
+
+iostream  Contains functions for object classes used for file I/O
+          Specifically: cout and cin
+
+fstream   Contains functions for object classes used for file I/O
+          Specifically: open and close
+
+iomanip   Contains manipulators used for I/O
+
+          Usage               Purpose
+          ******************  ***************************************
+          endl                go to a new line or end this line
+
+          setw(width)         output numbers with a specified width
+                              Note: must be done just befoe every
+                              output item
+
+          fixed               makes floating-point values show in
+                              non scientific (exponent) format
+
+          setprecision(size)  how many positions after the 
+                              decimal point to show
+
+string    Contains functions for the String object class. 
+          Specifically: identifier_name.length() function call.
+
+*********************************************************************
+End of File
+*********************************************************************

@@ -1,0 +1,83 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Practice 21: More on Typedef</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m21632</md:content-id>
+  <md:title>Practice 21: More on Typedef</md:title>
+  <md:abstract>Questions, exercises, problems, etc. that support this chapter in the "Programming Fundamentals - A Modular Structured Approach using C++" collection/textbook.</md:abstract>
+  <md:uuid>a157d9eb-c718-4024-b916-93c4b79e925d</md:uuid>
+</metadata>
+
+<content>
+    <section id="id6157081">
+      <title>Learning Objectives</title>
+      <para id="id9048116">With 100% accuracy during a: memory building activity, exercises, lab assignment, problems, or timed quiz/exam; the student is expected to:</para>
+      <list id="id5895875" list-type="enumerated" number-style="arabic">
+        <item>Define the terms on the definitions as listed in the modules associated with this chapter.</item>
+        <item>Understand how typedef is used within C++ source code be able make the code versatile that is easy to change for different data types. </item>
+      </list>
+    </section>
+    <section id="id9048070">
+      <title>Memory Building Activities</title>
+      <para id="id3832546">Link to: <link window="new" document="m21632" resource="index.html">MBA 21</link></para>
+    </section>
+    <section id="id8217264">
+      <title>Exercises</title>
+<exercise id="fs-id1168555786545">
+  <problem id="fs-id1168557268304">
+    <list id="fs-id8062429" list-type="enumerated"><title>Answer the following statements as either true or false:</title><item>Most programmers rarely worry about efficiency.</item>
+	<item>Modular/structured programming helps improve efficiency.</item>
+	<item>Flexible coding helps improve efficiency.</item>
+	<item>Who cares about indentation and alignment within source code.  It’s a waste of time.</item>
+	<item>Versatile code is a concept that is easy to understand.</item>
+</list>
+  </problem>
+  <solution id="fs-id1168563488549">
+    <list id="fs-id1168561597550" list-type="enumerated">
+      <title>Answers:</title>
+        <item>false – Efficiency of code execution, no; efficiency of code production and maintenance, yes.</item>
+        <item>true</item>
+        <item>true</item>
+        <item>false</item>
+        <item>maybe true and maybe false – It does require some effort to catch on to how it works.</item>
+    </list>
+  </solution>
+</exercise>
+    </section>
+    <section id="id7941920">
+      <title>Miscellaneous Items</title>
+      <para id="id8178271">None at this time.</para>
+    </section>
+    <section id="id8178276">
+      <title>Lab Assignment</title>
+      <section id="id8178282">
+        <title>Creating a Folder or Sub-Folder for Chapter 18 Files</title>
+        <para id="id8204757">Depending on your compiler/IDE, you should decide where to download and store source code files for processing. Prudence dictates that you create these folders as needed prior to downloading source code files. A suggested sub-folder for the <term>Bloodshed Dev-C++ 5 compiler/IDE</term> might be named:</para>
+        <list id="id5900247" list-type="bulleted"><item>Chapter_21 within the folder named: Cpp_Source_Code_Files</item>
+</list>
+        <para id="id9009846">If you have not done so, please create the folder(s) and/or sub-folder(s) as appropriate.</para>
+      </section>
+      <section id="id3782010">
+        <title>Download the Lab File(s)</title>
+        <para id="id3782016">Download and store the following file(s) to your storage device in the appropriate folder(s). You may need to right click on the link and select "Save Target As" in order to download the file.</para>
+        <para id="id8313152">Download from Connexions: <link document="m21632" resource="Lab_21_Narrative_Description.txt">Lab_21_Narrative_Description.txt</link></para>
+        <para id="id8271762">Download from Connexions: <link document="m21632" resource="Lab_21_Input.txt">Lab_21_Input.txt</link></para>
+      </section>
+      <section id="id3479610">
+        <title>Detailed Lab Instructions</title>
+        <para id="id3479618">Read and follow the directions below carefully, and perform the steps in the order listed.</para>
+        <list id="id5896738" list-type="bulleted">
+          <item>Create a source code file following the directions in the Lab_21_Narrative_Description.txt file. Name it: Lab_21.cpp</item>
+          <item>Build (compile and run) your program.</item>
+          <item>After you have successfully written this program, if you are taking this course for college credit, follow the instructions from your professor/instructor for submitting it for grading.</item>
+        </list>
+      </section>
+    </section>
+    <section id="id8272722">
+      <title>Problems</title>
+      <section id="id8272728">
+        <title>Problem 21a – Instructions</title>
+        <para id="id9010414">Explain the difference between flexible coding and versatile coding.</para>
+      </section>
+    </section>
+  </content>
+</document>

@@ -1,0 +1,160 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Branching Control Structures</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m19947</md:content-id>
+  <md:title>Branching Control Structures</md:title>
+  <md:abstract>An introduction to the common types of branching control structures and which ones are allowed in good structured programming.</md:abstract>
+  <md:uuid>e9c41e46-099f-45e3-ba66-ca01885ae07f</md:uuid>
+</metadata>
+<featured-links>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit below.
+       Changes to the links section in the source will not be saved. -->
+    <link-group type="prerequisite">
+      <link url="http://cnx.org/content/m19628/latest/" strength="2">Structured Programming</link>
+    </link-group>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit above.
+       Changes to the links section in the source will not be saved. -->
+</featured-links>
+<content>
+    <section id="id16727295">
+      <title>Discussion</title>
+      <para id="id18283828">The branching control structures allow the flow of execution to jump to a different part of the program. The common branching control structures that are used with other control structures are: break, continue and goto. These are rarely used in modular structured programming with one exception. That exception is in relation to creating the case within the selection category of control structures. Within C++ the break is used with the switch to create a structure that acts like the traditional case structure. There is one other branching control structure that is often not viewed as branching control structure. It is: return; which is used with functions. Thus, there are two commonly used branching control reserved words used in C++; break and return. Additionally, we will add to our list of branching items a pre-defined function commonly used in the C++ programming language of: exit; that is part of the C standard library (cstdlib). Some definitions:</para><section id="fs-id17872049">
+  <title>Definitions</title>
+    <definition id="fs-id4741226">
+      <term>branching control structures</term>
+      <meaning id="fs-id16162550"> Allow the flow of execution to jump to a different part of the program. </meaning>
+    </definition>
+    <definition id="fs-id3815820">
+      <term>break</term>
+      <meaning id="fs-id21996204"> A branching control structure that terminates the existing structure. </meaning>
+    </definition>
+    <definition id="fs-id18222049">
+      <term>continue</term>
+      <meaning id="fs-id10679360"> A branching control structure that causes a loop to stop its current iteration and begin the next one. </meaning>
+    </definition>
+    <definition id="fs-id11691112">
+      <term>goto</term>
+      <meaning id="fs-id25057031"> A branching control structure that causes the logic to jump to a different place in the program. </meaning>
+    </definition>
+    <definition id="fs-id18606050">
+      <term>return</term>
+      <meaning id="fs-id18783314"> A branching control structure that causes a function to jump back to the function that called it. </meaning>
+    </definition>
+    <definition id="fs-id26612846">
+      <term>exit</term>
+      <meaning id="fs-id10027836"> A pre-defined function used to prematurely stop a program and jump to the operating system. </meaning>
+    </definition>
+</section>
+      <para id="id17648939">We will discuss each item indicating which ones are allowed or not allowed within good structured programming practices.</para>
+    </section>
+    <section id="id16111738">
+      <title>Examples</title>
+      <section id="id17846400">
+        <title>break</title>
+        <para id="id17571826">The break is used in one of two ways; with the switch (a C++ programming structure) to make it act like a case structure (it's more common name within most programming languages) or as part of a looping process to break out of the loop. The first usage is allowed in good structured programming and the second is not allowed in good structured programming.</para>
+<example id="fs-id7531480">
+        <title>C++ source code</title>
+        <para id="id15133556"><preformat id="klb8888001" display="block"><code>
+switch (age)
+  {
+  case 18: cout &lt;&lt; "\nYou can vote.";
+           break;
+  case 39: cout &lt;&lt; "\nYou are middle aged.";
+           break;
+  case 65: cout &lt;&lt; "\nYou are at retirement age.";
+           break;
+  default: cout &lt;&lt; "\nYour current age is not important.";
+  } </code></preformat>
+        </para>
+</example>
+        <para id="id16858440">The following is an unauthorized use of break in a loop and it gives the appearance that the loop will execute 8 times, but the break statement causes it to stop during the fifth iteration.</para>
+<example id="fs-id7035391">
+        <title>C++ source code</title>
+        <para id="id17571331"><preformat id="klb8888002" display="block"><code>
+counter = 0;
+while(counter &lt; 8)
+  {
+  cout &lt;&lt; counter &lt;&lt; endl;
+  if (counter == 4)
+    {
+    break;
+    }
+  counter++;
+  } </code></preformat>
+        </para>
+</example>
+      </section>
+      <section id="id17853893">
+        <title>continue</title>
+        <para id="id18061788">The continue structure is not allowed in good structured programming. The following gives the appearance that the loop will print to the monitor 8 times, but the continue statement causes it not to print number 4.</para>
+<example id="fs-id7318406">
+        <title>C++ source code</title>
+        <para id="id16858614"><preformat id="klb8888003" display="block"><code>
+for(counter = 0; counter &lt; 8; counter++)
+  {
+  if (counter == 4)
+    {
+    continue;
+    }
+  cout &lt;&lt; counter &lt;&lt; endl;
+  } </code></preformat>
+        </para>
+</example>
+      </section>
+      <section id="id12311835">
+        <title>goto</title>
+        <para id="id18084264">The goto structure is not allowed in good structured programming. It is with a certain amount of hesitancy that we even show it. Many textbooks do not cover the goto. Within the C++ programming language you create a label with an identifier name followed by a colon. You use the command word goto followed by the label. A label can be used before it is declared. </para>
+<example id="fs-id7831685">
+        <title>C++ source code</title>
+        <para id="id17564394"><preformat id="klb8888004" display="block"><code>
+some lines of code; 
+goto mynewspot;                //jumps to the label
+some lines of code; 
+some lines of code; 
+some lines of code; 
+mynewspot: some statement;     //Declared label
+some lines of code; </code></preformat>
+        </para>
+</example> 
+      </section>
+      <section id="id17898569">
+        <title>return</title>
+        <para id="id16220531">The return is allowed in good structured programming, but only at the end of a function. A function should not pre-maturely end by having the logic of the function have it terminate by jumping back to the function that called it. </para>
+<example id="fs-id7807340">
+        <title>C++ source code</title>
+        <para id="id16197172"><preformat id="klb8888005" display="block"><code>
+//******************************************************
+// get data
+//******************************************************
+
+void get_data(void)
+  {
+  // Input - Test Data - 5678.9, 5432.1
+  cout &lt;&lt; "\nEnter the length of the property in feet ---&gt;: ";
+  cin &gt;&gt; property_length;
+  cout &lt;&lt; "\nEnter the width of the property in feet ----&gt;: ";
+  cin &gt;&gt; property_width;
+  return;
+  } </code></preformat>
+        </para>
+</example> 
+      </section>
+      <section id="id17880694">
+        <title>exit</title>
+        <para id="id4709687">Although exit is technically a pre-defined function, it is covered here because of its common usage in programming. A good example is the opening a file and then testing to see if the file was actually opened. If not, we have an error that usually indicates that we want to pre-maturely stop the execution of the program. Within the C++ programming language the exit function terminates the running of the program and in the process returns an integer value back to the operating system. It fits the definition of branching which is to jump to some other place in the program. In our example the value returned to the operating system is the value of the constant named: EXIT_FAILURE.</para>
+<example id="fs-id7757245">
+        <title>C++ source code</title>
+        <para id="id17872882"><preformat id="klb8888006" display="block"><code>
+inData.open(filename);  //Open input file
+if (!inData)            //Test to see if file was opened
+  {
+  cout &lt;&lt; "\n\nError opening file: " &lt;&lt; filename &lt;&lt; "\n\n";
+  pause();              //Pause - user reads message
+  exit(EXIT_FAILURE);   //Allows a pre-mature jump to OS
+  } </code></preformat>
+        </para>
+</example>
+      </section>
+    </section>
+  </content>
+</document>

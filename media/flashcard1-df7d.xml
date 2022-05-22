@@ -1,0 +1,89 @@
+<?xml version='1.0'?>
+<order>
+<color>E7E7F5</color>
+<showterm>true</showterm>
+<showdef>false</showdef>
+<customDeckText>Custom Deck</customDeckText>
+<wholeDeckText>Whole Deck</wholeDeckText>
+<showText>SHOW</showText>
+<addToText>Add to Custom</addToText>
+<showTermText>Show Term</showTermText>
+<showDefText>Show Definition</showDefText>
+<orderset value='1'>
+ <term>flowcharting</term>
+ <def>A programming design tool that uses graphical elements to visually depict the flow of logic within a function.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='2'>
+ <term>process symbol</term>
+ <def>A rectangle used in flowcharting for normal processes such as assignment.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='3'>
+ <term>input/output symbol</term>
+ <def>A parallelogram used in flowcharting for input/output interactions.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='4'>
+ <term>decision symbol</term>
+ <def>A diamond used in flowcharting for asking a question and making a decision.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='5'>
+ <term>flow lines</term>
+ <def>Lines (sometimes with arrows) that connect the various flowcharting symbols.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='6'>
+ <term>control structures</term>
+ <def>Mechanisms that allow us to control the flow of execution within a program.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='7'>
+ <term>sequence</term>
+ <def>A control structure where you do the items in the sequence listed. </def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='8'>
+ <term>selection</term>
+ <def>A control structure where you select between two or more choices.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='9'>
+ <term>iteration</term>
+ <def>A control structure that allows some lines of code to be executed many times. </def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='10'>
+ <term>branching</term>
+ <def>A control structure that allows the flow of execution to jump to a different part of the program. </def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='11'>
+ <term>structured programming</term>
+ <def>A method of planning programs that avoids the branching category of control structures.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+</order>

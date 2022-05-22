@@ -1,0 +1,93 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Practice 19: File I/O and Array Functions</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m21630</md:content-id>
+  <md:title>Practice 19: File I/O and Array Functions</md:title>
+  <md:abstract>Questions, exercises, problems, etc. that support this chapter in the "Programming Fundamentals - A Modular Structured Approach using C++" collection/textbook.</md:abstract>
+  <md:uuid>c227267b-18b5-4c1c-8f59-5e7dd6eb6f5b</md:uuid>
+</metadata>
+
+<content>
+    <section id="id1171788869563">
+      <title>Learning Objectives</title>
+      <para id="id1171787030723">With 100% accuracy during a: memory building activity, exercises, lab assignment, problems, or timed quiz/exam; the student is expected to:</para>
+      <list id="id1171784314735" list-type="enumerated" number-style="arabic">
+        <item>Define the terms on the definitions as listed in the modules associated with this chapter.</item>
+        <item>Within C++ source code be able to understand basic file input and file output.</item>
+        <item>Understand why we test to see if a file was opened properly.</item>
+        <item>Understand why we close a file when we are done with it.</item>
+        <item>Within C++ source code be able to understand functions for arrays, specifically counting the number of elements in a file so you can define an array, load that array with those elements, display the array and sum the array.</item>
+        <item>Within C++ source code be able to create functions for arrays, specifically a function for averaging.</item>
+      </list>
+    </section>
+    <section id="id1171785413342">
+      <title>Memory Building Activities</title>
+      <para id="id1171787245785">Link to: <link window="new" document="m21630" resource="index.html">MBA 19</link></para>
+    </section>
+    <section id="id1171785458582">
+      <title>Exercises</title>
+<exercise id="fs-id6452474">
+  <problem id="fs-id6486222">
+    <list id="fs-id6486360" list-type="enumerated">
+      <title>Answer the following statements as either true or false:</title>
+        <item>Text files are hard to create.</item>
+        <item>A filespec refers to a very small (like a spec dust) file.</item>
+        <item>A device token is a special non zero value the operating system gives your program and is associated with the file that you requested to be opened.</item>
+        <item>Programmers should not worry about closing a file.</item>
+        <item>Where you define an item, that is global or local scope, is rarely important.</item>
+    </list>
+  </problem>
+  <solution id="fs-id6492132">
+    <list id="fs-id6492473" list-type="enumerated">
+      <title>Answers:</title>
+        <item>false</item>
+        <item>false</item>
+        <item>true</item>
+        <item>false</item>
+        <item>false</item>
+    </list>
+  </solution>
+</exercise>
+    </section>
+    <section id="id1171784305560">
+      <title>Miscellaneous Items</title>
+      <para id="id1171785385255">None at this time.</para>
+    </section>
+    <section id="id1171785393653">
+      <title>Lab Assignment</title>
+      <section id="id1171785410220">
+        <title>Creating a Folder or Sub-Folder for Chapter 19 Files</title>
+        <para id="id1171785464529">Depending on your compiler/IDE, you should decide where to download and store source code files for processing. Prudence dictates that you create these folders as needed prior to downloading source code files. A suggested sub-folder for the <term>Bloodshed Dev-C++ 5 compiler/IDE</term> might be named:</para>
+        <list id="id1171785472497" list-type="bulleted">
+          <item>Chapter_19 within the folder named: Cpp_Source_Code_Files</item>
+        </list>
+        <para id="id1171788435665">If you have not done so, please create the folder(s) and/or sub-folder(s) as appropriate.</para>
+      </section>
+      <section id="id1171785473749">
+        <title>Download the Lab File(s)</title>
+        <para id="id1171785394963">Download and store the following file(s) to your storage device in the appropriate folder(s). You may need to right click on the link and select "Save Target As" in order to download the file.</para>
+        <para id="id1171785406446">Download from Connexions: <link document="m21630" resource="Lab_19_Narrative_Description.txt">Lab_19_Narrative_Description.txt</link></para>
+      </section>
+      <section id="id1171789577548">
+        <title>Detailed Lab Instructions</title>
+        <para id="id1171785403892">Read and follow the directions below carefully, and perform the steps in the order listed.</para>
+        <list id="id1171785376450" list-type="bulleted">
+          <item>Create a source code file following the directions in the Lab_19_Narrative_Description.txt file. Name it: Lab_19.cpp</item>
+          <item>Build (compile and run) your program.</item>
+          <item>After you have successfully written this program, if you are taking this course for college credit, follow the instructions from your professor/instructor for submitting it for grading.</item>
+        </list>
+      </section>
+    </section>
+    <section id="id1171785395153">
+      <title>Problems</title>
+      <section id="id1171784340457">
+        <title>Problem 19a – Instructions</title>
+        <para id="id1171787216128">For what purpose do we use the sizeof operator with an array.</para>
+      </section>
+      <section id="id1171787091621">
+        <title>Problem 19b – Instructions</title>
+        <para id="id1171787253289">Why would we open a file and count its elements and then close the file.</para>
+      </section>
+    </section>
+  </content>
+</document>

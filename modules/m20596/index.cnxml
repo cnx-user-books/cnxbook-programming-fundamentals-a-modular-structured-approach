@@ -1,0 +1,162 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Do While Loop</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m20596</md:content-id>
+  <md:title>Do While Loop</md:title>
+  <md:abstract>An introduction to the do while control structure with examples in the C++ programming language.</md:abstract>
+  <md:uuid>a189ed6f-0737-4bba-8482-5d049e68f400</md:uuid>
+</metadata>
+<featured-links>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit below.
+       Changes to the links section in the source will not be saved. -->
+    <link-group type="prerequisite">
+      <link url="http://cnx.org/content/m19623/latest/" strength="2">Flowcharting </link>
+      <link url="http://cnx.org/content/m19628/latest/" strength="2">Structured Programming</link>
+      <link url="http://cnx.org/content/m19683/latest/" strength="2">Compound Statement</link>
+    </link-group>
+    <link-group type="supplemental">
+      <link url="http://cnx.org/content/m20404/latest/" strength="3">Flag Concept</link>
+    </link-group>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit above.
+       Changes to the links section in the source will not be saved. -->
+</featured-links>
+<content>
+    <section id="id10424263">
+      <title>Introduction to Test After Loops</title>
+      <para id="id6078980">There are two commonly used test after loops in the iteration (or repetition) category of control structures. They are: do while and repeat until. This module covers the: do while.</para>
+      <section id="id5206893">
+        <title>Understanding Iteration in General – do while</title>
+        <para id="id5870127">The concept of iteration is connected to possibly wanting to repeat an action. Like all control structures we ask a question to control the execution of the loop. The term loop comes from the circular looping motion that occurs when using flowcharting. The basic form of the do while loop is as follows:</para>
+        <para id="id7913690"><preformat id="klb7777001" display="block"><code>
+do
+  some statements or action
+  some statements or action
+  some statements or action
+  update the flag
+while the answer to the question is true </code></preformat>
+        </para>
+        <para id="id9216093">In every language that I know the question (called a <term>test expression</term>) is a <term>Boolean expression</term>. The Boolean data type has two values – true and false. Let's rewrite the structure to consider this:</para>
+        <para id="id7286757"><preformat id="klb7777002" display="block"><code>
+do
+  some statements or action
+  some statements or action
+  some statements or action
+  update the flag
+while expression is true </code></preformat>
+        </para>
+        <para id="id5859154">Within the do while control structure there are three attributes of a properly working loop. They are:</para>
+        <list id="id7663793" list-type="bulleted">
+          <item>Action or actions</item>
+          <item>Update of the flag</item>
+          <item>Test expression</item>
+        </list>
+        <para id="id3525637">The English phrasing is, "You do the action while the expression is true". This is looping on the true. When the test expression is false, you stop the loop and go on with the next item in the program. Notice, because this is a test after loop the action will always happen <emphasis>at least once</emphasis>. It is called a <term>test after loop</term> because the test comes after the action. It is also sometimes called a post-test loop, meaning the test is post (or Latin for after) the action and update.</para>
+      </section>
+    </section>
+    <section id="id7681034">
+      <title>The do while Structure within C++</title>
+      <section id="id6130778">
+        <title>Syntax</title>
+        <para id="id8782657">The syntax for the do while control structure within the C++ programming language is:</para>
+        <para id="id5119311"><preformat id="klb7777003" display="block"><code>
+do
+  {
+  statement;
+  statement;
+  statement;
+  statement;    // This statement updates the flag;
+  }
+while (expression); </code></preformat>
+        </para>
+        <para id="id5680800"><note id="fs-id1172332594692">The test expression is within the parentheses, but this is not a function call. The parentheses are part of the control structure. Additionally, there is a semicolon after the parenthesis following the expression.</note></para>
+      </section>
+      <section id="id4429167">
+        <title>An Example</title>
+        <example id="fs-id1172332952183">
+        <title>C++ source code: do while loop</title>
+        <para id="id7854116"><preformat id="klb7777004" display="block"><code>
+do
+  {
+  cout &lt;&lt; "\nWhat is your age? ";
+  cin &gt;&gt; age_user;
+  cout &lt;&lt; "\nWhat is your friend's age? ";
+  cin &gt;&gt; age_friend;
+  cout &gt;&gt; "\nTogether your ages add up to: ";
+  cout &gt;&gt; (age_user + age_friend);
+  cout &lt;&lt; "\nDo you want to do it again? y or n ";
+  cin &gt;&gt; loop_response;
+  }
+while (loop_response == 'y'); </code></preformat>
+        </para>
+        </example>
+        <para id="id5827709">The three attributes of a test after loop are present. The action part consists of the 6 lines that prompt for data and then displays the total of the two ages. The update of the flag is the displaying the question and getting the answer for the variable loop_response. The test is the equality relational comparison of the value in the flag variable to the lower case character of y.</para>
+        <para id="id7822350">This type of loop control is called an event controlled loop. The flag updating is an event where someone decides if they want the loop to execute again. </para>
+        <para id="id8546186">Using indentation with the alignment of the loop actions and flag update is normal industry practice within the C++ community.</para>
+      </section>
+      <section id="id5131121">
+        <title>Infinite Loops</title>
+        <para id="id9825760">At this point it's worth mentioning that good programming always provides for a method to insure that the loop question will eventually be false so that the loop will stop executing and the program continues with the next line of code. However, if this does not happen then the program is in an infinite loop. Infinite loops are a bad thing. Consider the following code:</para>
+        <example id="fs-id1172331397311">
+        <title>C++ source code: infinite loop</title>
+        <para id="id7439474"><preformat id="klb7777005" display="block"><code>
+loop_response = 'y';
+do
+  {
+  cout &lt;&lt; "\nWhat is your age? ";
+  cin &gt;&gt; age_user;
+  cout &lt;&lt; "\nWhat is your friend's age? ";
+  cin &gt;&gt; age_friend;
+  cout &gt;&gt; "\nTogether your ages add up to: ";
+  cout &gt;&gt; (age_user + age_friend);
+  }
+while (loop_response == 'y'); </code></preformat>
+        </para>
+        </example>
+        <para id="id4360172">The programmer assigned a value to the flag before the loop and forgot to update the flag. Every time the test expression is asked it will always be true. Thus, an infinite loop because the programmer did not provide a way to exit the loop (he forgot to update the flag).</para>
+        <para id="id6385738">Consider the following code:</para>
+        <example id="fs-id1172336057720">
+        <title>C++ source code: infinite loop</title>
+        <para id="id8846795"><preformat id="klb7777006" display="block"><code>
+do
+  {
+  cout &lt;&lt; "\nWhat is your age? ";
+  cin &gt;&gt; age_user;
+  cout &lt;&lt; "\nWhat is your friend's age? ";
+  cin &gt;&gt; age_friend;
+  cout &gt;&gt; "\nTogether your ages add up to: ";
+  cout &gt;&gt; (age_user + age_friend);
+  cout &lt;&lt; "\nDo you want to do it again? y or n ";
+  cin &gt;&gt; loop_response;
+  }
+while (loop_response = 'y'); </code></preformat>
+        </para>
+        </example>
+        <para id="id3785948">No matter what the user replies during the flag update, the test expression does not do a relational comparison but does an assignment. It assigns 'y' to the variable and asks if 'y' is true? Since all non-zero values are treated as representing true within the Boolean concepts of the C++ programming language, the answer to the text question is true. Viola, you have an infinite loop. </para>
+      </section>
+    </section>
+    <section id="id3826790">
+      <title>Definitions</title>
+    <definition id="fs-id20957979">
+      <term>do while</term>
+      <meaning id="fs-id21625090">A test after iteration control structure available in C++. </meaning>
+    </definition>
+    <definition id="fs-id24839354"><term>action item</term>
+	<meaning id="fs-id15972657">An attribute of iteration control structures. </meaning>
+</definition>
+    <definition id="fs-id23031400"><term>update item</term>
+	<meaning id="fs-id16013980">An attribute of iteration control structures. </meaning>
+</definition>
+    <definition id="fs-id24840516"><term>test item</term>
+	<meaning id="fs-id17724952">An attribute of iteration control structures. </meaning>
+</definition>
+    <definition id="fs-id9160374">
+      <term>at least once</term>
+      <meaning id="fs-id19819382">Indicating that test after loops execute the action at least once. </meaning>
+    </definition>
+    <definition id="fs-id16012046">
+      <term>infinite loop</term>
+      <meaning id="fs-id16097588">No method of exit, thus a bad thing. </meaning>
+    </definition>
+    </section>
+  </content>
+</document>

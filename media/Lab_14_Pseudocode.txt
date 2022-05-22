@@ -1,0 +1,56 @@
+Filename:    Lab_14_Pseudocode.txt
+
+Purpose:     Practice with while
+
+Author:      Ken Busbee; © 2009 Kenneth Leroy Busbee
+Date:        Mar 18, 2009
+Licensed by: Kenneth Leroy Busbee under a 
+             Creative Commons Attribution License (CC-BY 3.0)
+             http://creativecommons.org/licenses/by/3.0/
+******************************************************
+
+Function main
+  Pass In: nothing
+
+  Assign loop_control 'y'
+  While loop_control equals'Y' or loop_control equals 'y'
+    Display a message asking user thier age
+    Get the users age from the keyboard
+    Display a message asking user for thier friend's age
+    Get the users friends age from the keyboard
+    If age_user equal to age_friend
+      Display "You and your friend are the same age."
+      Display "You should celebrate together."
+    Else
+      Display "You and your friend are not the same age."
+      Display "You should party together anyway."
+    Endif
+    Display a message asking user if they want to do it again
+    Get the response for loop_control from the keyboard
+  Endwhile
+
+  Assign counter 10
+  While counter is greater than zero
+    Display "You should study loops carefully."
+    Display the value stored in the counter
+    Decrement the couunter
+  Endwhile
+
+  Pause so the user can see the results
+
+  Pass Out: zero to the OS
+Endfunction
+
+******************************************************
+
+Potential Variables
+
+Data Type    Identifier Name
+*********    ***************
+character    loop_control
+integer      age_user
+integer      age_friend
+integer      counter
+
+******************************************************
+End of file

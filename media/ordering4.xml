@@ -1,0 +1,34 @@
+<?xml version='1.0'?>
+<order>
+<color>E7E7F5</color>
+<correctsound>correct.mp3</correctsound>
+<wrongsound>wrong.mp3</wrongsound>
+<value>0</value>
+<valueText>Value:</valueText>
+<scoreText>Score</scoreText>
+<resetText>Re-start</resetText>
+<orderset value='1'>
+ <item>Open data file - 1st time</item>
+</orderset>
+<orderset value='2'>
+ <item>Count the elements</item>
+</orderset>
+<orderset value='3'>
+ <item>Store the element count</item>
+</orderset>
+<orderset value='4'>
+ <item>Close  data file - 1st time</item>
+</orderset>
+<orderset value='5'>
+ <item>Create the array using dynamic memory</item>
+</orderset>
+<orderset value='6'>
+ <item>Open data file - 2nd time</item>
+</orderset>
+<orderset value='7'>
+ <item>Load the file values into the array</item>
+</orderset>
+<orderset value='8'>
+ <item>Close data file - 2nd time</item>
+</orderset>
+</order>

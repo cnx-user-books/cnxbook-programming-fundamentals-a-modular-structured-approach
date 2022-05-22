@@ -1,0 +1,16 @@
+&acrosstext=Across&
+&downtext=Down&
+&restarttext=Re-start&
+&finishtext=Finish&
+&word0=CHARACTER&
+&clue0=A data type representing single text characters like the alphabet, numeral digits, punctuation, etc.&
+&word1=ASCII&
+&clue1=American Standard Code for Information Interchange&
+&word2=SIZEOF&
+&clue2=An operator that tells you how many bytes a data type occupies in storage.&
+&word3=TYPEDEF&
+&clue3=Allows the programmer to create an alias, or synonym, for an existing data type.&
+&word4=SEQUENCE&
+&clue4=An operator used to separate multiple occurrences of an item.&
+&word5=SINGLEQUOTEMARKS&
+&clue5=Used to create character type data within the C++ programming language.&

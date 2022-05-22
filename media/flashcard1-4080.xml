@@ -1,0 +1,33 @@
+<?xml version='1.0'?>
+<order>
+<color>E7E7F5</color>
+<showterm>true</showterm>
+<showdef>false</showdef>
+<customDeckText>Custom Deck</customDeckText>
+<wholeDeckText>Whole Deck</wholeDeckText>
+<showText>SHOW</showText>
+<addToText>Add to Custom</addToText>
+<showTermText>Show Term</showTermText>
+<showDefText>Show Definition</showDefText>
+<orderset value='1'>
+ <term>conditional</term>
+ <def>A trinary C++ operator that acts like an if then else control structure.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='2'>
+ <term>recursion</term>
+ <def>A repetitive process in  which a function calls itself.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='3'>
+ <term>factorial</term>
+ <def>A math problem that often is solved using recursion.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+</order>

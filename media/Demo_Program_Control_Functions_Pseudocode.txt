@@ -1,0 +1,73 @@
+Filename:    Demo_Program_Control_Functions_Pseudocode.txt
+
+Purpose:     Example of Modularization for Program Control
+
+Comment:     Modified from Compiler_Test program
+
+See Also:    Demo_Program_Control_Functions_Hierarchy_Chart.jpg
+
+Author:      Ken Busbee; © 2009 Kenneth Leroy Busbee
+Date:        Jan 6, 2009
+Licensed by: Kenneth Leroy Busbee under a 
+             Creative Commons Attribution License (CC-BY 3.0)
+             http://creativecommons.org/licenses/by/3.0/
+*************************************************************
+
+Function main
+   Pass In: nothing
+   Call: get_data
+   Call: process_data
+   Call: show_results
+   Pass Out: zero to the OS
+Endfunction
+
+********************
+
+Function get_data
+   Pass In: nothing
+   display a message asking user for the age of the first person
+   get the aget of the first person from the keyboard
+   display a message asking user for the age of the second person
+   get the age of the second person from the keyboard
+   Pass Out: nothing
+Endfuction
+
+********************
+
+Function process_data
+   Pass In: nothing
+   calculate the answer by adding the two ages and 
+   dividing by 2.0
+   Pass Out: nothing
+Endfuction
+
+********************
+
+Function show_results
+   Pass In: nothing
+   display the answer with an appropriate message
+   Call: pause 
+   Pass Out: nothing
+Endfuction
+
+********************
+
+Function pause
+   Pass In: nothing
+   direct the operating system to pause the program
+   Pass Out: nothing
+Endfuction
+
+******************************************************
+
+Potential Variables
+
+Data Type    Identifier Name
+*********    ***************
+integer      age1
+integer      age2
+double       answer
+
+******************************************************
+End of file
+

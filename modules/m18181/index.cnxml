@@ -1,0 +1,140 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>C++ Reserved Keywords</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m18181</md:content-id>
+  <md:title>C++ Reserved Keywords</md:title>
+  <md:abstract>A brief explanation and list of C++ reserved keywords for use in a programming fundamentals course.</md:abstract>
+  <md:uuid>c4da01dd-b4f0-4938-a60c-3314f7d76d9d</md:uuid>
+</metadata>
+
+<content>
+    <para id="id3551034">All programming languages have "reserved words". There are usually less than 50 of these reserved words in any given programming language. They are reserved because they have been pre-assigned a specific meaning within that programming language, thus the compiler recognizes those words to mean a specific thing or action. Within C++ the reserved words are also known as "keywords".</para>
+    <para id="id14609578">Programmers use identifier names for a variety of items, to include: functions, variables, named constants, alias names, etc. But, they can't use as identifier names the words that are "reserved to the language". </para>
+    <para id="id18990018">For the C++ language all "reserved keywords" are typed in lower case. The list that follows includes the American National Standards Institute (ANSI) and the International Organization for Standardization (ISO) lists of reserved words for the C++ programming language. The ISO reserved words may not be implemented in the compiler that you are using, however they may be adopted in future releases of C++ compilers. Wisdom dictates to avoid using them at this point so that there will not be a problem compiling your source code in future releases of compilers. There has been no distinction made in the ANSI or ISO reserved word lists. A search of the Internet for C++ reserved words will reveal several different lists. Some are more unique to a specific compiler. Some will be incomplete because the list has been enlarged. The talbe that follows should work for any beginning programming course using C++. The reserved keywords are:</para>
+    <table id="id18556217" summary="">
+      <tgroup cols="4">
+        <colspec colnum="1" colname="c1"/>
+        <colspec colnum="2" colname="c2"/>
+        <colspec colnum="3" colname="c3"/>
+        <colspec colnum="4" colname="c4"/>
+        <tbody>
+          <row>
+            <entry>and</entry>
+            <entry>double</entry>
+            <entry>not_eq</entry>
+            <entry>throw</entry>
+          </row>
+          <row>
+            <entry>and_eq</entry>
+            <entry>dynamic_cast</entry>
+            <entry>operator</entry>
+            <entry>true</entry>
+          </row>
+          <row>
+            <entry>asm</entry>
+            <entry>else</entry>
+            <entry>or</entry>
+            <entry>try</entry>
+          </row>
+          <row>
+            <entry>auto</entry>
+            <entry>enum</entry>
+            <entry>or_eq</entry>
+            <entry>typedef</entry>
+          </row>
+          <row>
+            <entry>bitand</entry>
+            <entry>explicit</entry>
+            <entry>private</entry>
+            <entry>typeid</entry>
+          </row>
+          <row>
+            <entry>bitor</entry>
+            <entry>extern</entry>
+            <entry>protected</entry>
+            <entry>typename</entry>
+          </row>
+          <row>
+            <entry>bool</entry>
+            <entry>false</entry>
+            <entry>public</entry>
+            <entry>union</entry>
+          </row>
+          <row>
+            <entry>break</entry>
+            <entry>float</entry>
+            <entry>register</entry>
+            <entry>unsigned</entry>
+          </row>
+          <row>
+            <entry>case</entry>
+            <entry>fro</entry>
+            <entry>reinterpret-cast</entry>
+            <entry>using</entry>
+          </row>
+          <row>
+            <entry>catch</entry>
+            <entry>friend</entry>
+            <entry>return</entry>
+            <entry>virtual</entry>
+          </row>
+          <row>
+            <entry>char</entry>
+            <entry>goto</entry>
+            <entry>short</entry>
+            <entry>void</entry>
+          </row>
+          <row>
+            <entry>class</entry>
+            <entry>if</entry>
+            <entry>signed</entry>
+            <entry>volatile</entry>
+          </row>
+          <row>
+            <entry>compl</entry>
+            <entry>inline</entry>
+            <entry>sizeof</entry>
+            <entry>wchar_t</entry>
+          </row>
+          <row>
+            <entry>const</entry>
+            <entry>int</entry>
+            <entry>static</entry>
+            <entry>while</entry>
+          </row>
+          <row>
+            <entry>const-cast</entry>
+            <entry>long</entry>
+            <entry>static_cast</entry>
+            <entry>xor</entry>
+          </row>
+          <row>
+            <entry>continue</entry>
+            <entry>mutable</entry>
+            <entry>struct</entry>
+            <entry>xor_eq</entry>
+          </row>
+          <row>
+            <entry>default</entry>
+            <entry>namespace</entry>
+            <entry>switch</entry>
+            <entry/>
+          </row>
+          <row>
+            <entry>delete</entry>
+            <entry>new</entry>
+            <entry>template</entry>
+            <entry/>
+          </row>
+          <row>
+            <entry>do</entry>
+            <entry>not</entry>
+            <entry>this</entry>
+            <entry/>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    
+  </content>
+</document>

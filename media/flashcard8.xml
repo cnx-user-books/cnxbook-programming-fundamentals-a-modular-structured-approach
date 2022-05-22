@@ -1,0 +1,61 @@
+<?xml version='1.0'?>
+<order>
+<color>E7E7F5</color>
+<showterm>true</showterm>
+<showdef>false</showdef>
+<customDeckText>Custom Deck</customDeckText>
+<wholeDeckText>Whole Deck</wholeDeckText>
+<showText>SHOW</showText>
+<addToText>Add to Custom</addToText>
+<showTermText>Show Term</showTermText>
+<showDefText>Show Definition</showDefText>
+<orderset value='1'>
+ <term>Boolean</term>
+ <def>A data type representing the concepts of true and false.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='2'>
+ <term>test expression</term>
+ <def>An expression used to control programming structures.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='3'>
+ <term>relational operator</term>
+ <def>An operator that gives a Boolean value by evaluating the relationship between two operands.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='4'>
+ <term>mutually exclusive</term>
+ <def>Items that do not overlap. Example: true and false.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='5'>
+ <term>if then else</term>
+ <def>A two way selection control structure.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='6'>
+ <term>compound statement</term>
+ <def>A unit of code consisting of zero or more statements.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='7'>
+ <term>block</term>
+ <def>Another name for a compound statement.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+</order>

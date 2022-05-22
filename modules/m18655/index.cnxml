@@ -1,0 +1,60 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Void Data Type</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m18655</md:content-id>
+  <md:title>Void Data Type</md:title>
+  <md:abstract>An explanation of the void data type.</md:abstract>
+  <md:uuid>02ace841-dfb7-4295-89b4-dd8610560184</md:uuid>
+</metadata>
+<featured-links>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit below.
+       Changes to the links section in the source will not be saved. -->
+    <link-group type="prerequisite">
+      <link url="http://cnx.org/content/m18653/latest/" strength="2">Data Types in C++</link>
+    </link-group>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit above.
+       Changes to the links section in the source will not be saved. -->
+</featured-links>
+<content>
+    <section id="id47409480">
+      <title>General Discussion</title>
+      <para id="id47409486">The <emphasis>void data type</emphasis> has no values and no operations. It's a data type that represents the lack of a data type. </para>
+      <table id="id47409515" summary="">
+        <tgroup cols="2">
+          <colspec colnum="1" colname="c1"/>
+          <colspec colnum="2" colname="c2"/>
+          <tbody>
+            <row>
+              <entry>C++ Reserved Word</entry>
+              <entry>void</entry>
+            </row>
+            <row>
+              <entry>Represent</entry>
+              <entry>Nothing</entry>
+            </row>
+            <row>
+              <entry>Size</entry>
+              <entry>N/A or None</entry>
+            </row>
+            <row>
+              <entry>Normal Signage</entry>
+              <entry>N/A</entry>
+            </row>
+            <row>
+              <entry>Domain (Values Allowed)</entry>
+              <entry>None</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+      <para id="id47409643">This data type was added in the transition from "C" to "C++". In "C" by default a function returned an integer data type. Some functions don't return a value of any kind. Thus, the need to have a data type that indicates <emphasis>nothing</emphasis> is being returned. The void data type is mainly used in the definition and prototyping of functions to indicate that either nothing is being passed in and/or nothing is being passed out. </para>
+    </section>
+    <section id="id47409730">
+      <title>Definitions</title>
+    <definition id="fs-id4264322">
+      <term>void data type</term>
+      <meaning id="fs-id3559570">A data type that has no values or operators and is used to represent nothing.</meaning>
+    </definition>
+    </section>
+  </content>
+</document>

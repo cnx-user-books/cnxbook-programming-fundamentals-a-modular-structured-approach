@@ -1,0 +1,154 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Nested If Then Else</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m19951</md:content-id>
+  <md:title>Nested If Then Else</md:title>
+  <md:abstract>An explanation of nesting and examples using nested if then else to demonstrate multiway selection.</md:abstract>
+  <md:uuid>403dea62-ea32-42cb-bd7b-4e2b924b15ce</md:uuid>
+</metadata>
+<featured-links>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit below.
+       Changes to the links section in the source will not be saved. -->
+    <link-group type="prerequisite">
+      <link url="http://cnx.org/content/m19679/latest/" strength="3">If Then Else</link>
+      <link url="http://cnx.org/content/m19628/latest/" strength="2">Structured Programming</link>
+    </link-group>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit above.
+       Changes to the links section in the source will not be saved. -->
+</featured-links>
+<content>
+    <section id="id7715228">
+      <title>Introduction to Mulitway Selection</title>
+      <section id="id5327388">
+        <title>Nested Control Structures</title>
+        <para id="id11319196">We are going to first introduce the concept of nested control structures. Nesting is a concept that places one item inside of another. Consider:</para>
+        <para id="id5282496"><preformat id="klb123001" display="block"><code>
+if expression
+  true action
+else 
+  false action </code></preformat>
+        </para>
+        <para id="id8451328">This is the basic form of the if then else control structure. Now consider:</para>
+        <para id="id8575129"><preformat id="klb123002" display="block"><code>
+if age is less than 18
+  you can't vote
+  if age is less than 16
+    you can't drive
+  else
+    you can drive
+else 
+  you can vote
+  if age is less than 21
+    you can't drink 
+  else
+    you can drink </code></preformat>
+</para>
+        <para id="id7578512">As you can see we simply included as part of the "true action" a statement and another if then else control structure. We did the same (nested another if then else) for the "false action". In our example we nested if then else control structures. Nesting could have an if then else within a while loop. Thus, the concept of nesting allows the mixing of the different categories of control structures.</para>
+      </section>
+      <section id="id8454750">
+        <title>Multiway Selection</title>
+        <para id="id5878323">One of the drawbacks of two way selection is that we can only consider two choices. But what do you do if you have more than two choices. Consider the following which has four choices:</para>
+        <para id="id11271770"><preformat id="klb123003" display="block"><code>
+if age equal to 18
+  you can now vote
+else
+  if age equal to 39
+    you are middle aged 
+  else
+    if age equal to 65
+      you can consider retirement
+    else
+      your age is unimportant </code></preformat>
+        </para>
+        <para id="id10042664">You get an appropriate message depending on the value of age. The last item is referred to as the default. If the age is not equal to 18, 39 or 65 you get the default message. In some situations there is no default action. Consider:</para>
+        <para id="id21973320"><preformat id="klb123004" display="block"><code>
+if age equal to 18
+  you can now vote
+else
+  if age equal to 39
+    you are middle aged 
+  else
+    if age equal to 65
+      you can consider retirement </code></preformat>
+        </para>
+        <para id="id5320433">The last if then else control structure has no "else". It’s implied "else do nothing". Without the default the multiway selection could be written as a series of "if then without the else" structures. Consider:</para>
+        <para id="id10153799"><preformat id="klb123005" display="block"><code>
+if age equal to 18
+  you can now vote
+if age equal to 39
+  you are middle aged 
+if age equal to 65
+  you can consider retirement </code></preformat>
+        </para>
+        <para id="id6248877">We have shown two ways to accomplish multiway selection. The choice of using nested if then else control structures or a series of if then control structures is decided on the existence of a default action (you must use nested if then else) or programmer preference if there is not a default action (you may use nested if then else or a series of if then control structures).</para>
+      </section>
+    </section>
+    <section id="id20648468">
+      <title>if then else Syntax within C++</title>
+      <para id="id6302583">The syntax for the if then else control structure within the C++ programming language is:</para>
+<example id="fs-id14681707">
+      <title>C++ source code: Layout of an if then else</title>
+      <para id="id14279765"><preformat id="klb123006" display="block"><code>
+if (expression)
+  {
+  statement;
+  }
+else
+  {
+  statement;
+  } </code></preformat>
+        </para>
+</example>
+      <para id="id6438397"><note id="fs-id1165508025922">The test expression is within the parentheses, but this is not a function call. The parentheses are part of the control structure. Additionally, there is no semicolon after the parenthesis following the expression.</note></para>
+    </section>
+    <section id="id3804765">
+      <title>C++ Example</title>
+      <para id="id7716460">Multiway selection is often needed to cover all possibilities. Assume that the user has been prompted for the ages of two people with the answers stored in variables named age1 and age2. Consider:</para>
+<example id="fs-id17408779">
+      <title>C++ source code</title>
+      <para id="id4677880"><preformat id="klb123007" display="block"><code>
+if(age1 &gt; age2)
+  {
+  cout &lt;&lt; "\n\nThe first person is older.";
+  }
+else
+  {
+  cout &lt;&lt; "\n\nThe second person is older.";
+  } </code></preformat>
+        </para>
+</example>
+      <para id="id4613047">What if the two persons are the same age? The program incorrectly says the second person is older. To solve this we must handle all three possibilities. Consider this mulitway selection example:</para>
+<example id="fs-id16435984">
+      <title>C++ source code</title>
+      <para id="id8370430"><preformat id="klb123008" display="block"><code>
+if(age1 == age2)
+  {
+  cout &lt;&lt; "\n\nThey are the same age.";
+  }
+else
+  {
+  if(age1 &gt; age2)
+    {
+    cout &lt;&lt; "\n\nThe first person is older.";
+    }
+  else
+    {
+    cout &lt;&lt; "\n\nThe second person is older.";
+    }
+  } </code></preformat>
+        </para>
+</example>
+    </section>
+<section id="fs-id15783615">
+  <title>Definitions</title>
+    <definition id="fs-id16717739">
+      <term>nested control structures</term>
+      <meaning id="fs-id12791817"> Placing one control structure inside of another. </meaning>
+    </definition>
+    <definition id="fs-id13913970">
+      <term>multiway selection</term>
+      <meaning id="fs-id17319160"> Using control structures to be able to select from more than two choices. </meaning>
+    </definition>
+</section>
+  </content>
+</document>

@@ -1,0 +1,43 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Pointer Data Type</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m22151</md:content-id>
+  <md:title>Pointer Data Type</md:title>
+  <md:abstract>An introduction to the pointer data type as used within the C++ programming language.</md:abstract>
+  <md:uuid>be47ca43-0206-4c8a-89c3-18a351fdebb9</md:uuid>
+</metadata>
+<featured-links>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit below.
+       Changes to the links section in the source will not be saved. -->
+    <link-group type="prerequisite">
+      <link url="http://cnx.org/content/m22148/latest/" strength="2">Address Operator</link>
+    </link-group>
+    <link-group type="supplemental">
+      <link url="http://cnx.org/content/m22152/latest/" strength="3">Indirection Operator</link>
+    </link-group>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit above.
+       Changes to the links section in the source will not be saved. -->
+</featured-links>
+<content>
+    <section id="id1914128">
+      <title>Pointer Data Type in C++</title>
+      <para id="id7982241">A <emphasis>pointer</emphasis> variable is a variable that holds the address of a memory location. "Every variable is assigned a memory location whose address can be retrieved using the address operator &amp;. The address of a memory location is called a pointer."<footnote id="id7186356">Tony Gaddis, Judy Walters and Godfrey Muganda, <emphasis effect="underline">Starting Out with C++ Early Objects Sixth Edition</emphasis> (United States of America: Pearson – Addison Wesley, 2008) 597.</footnote> The <emphasis>pointer data type</emphasis> allows us to designate a variable to hold an address or a pointer. The concept of an address and a pointer are one in the same. A pointer points to the location in memory because the value of a pointer is the address were the data item resides in the memory. Given an integer variable named age: </para>
+      <para id="id6267902">
+        <code display="inline">int age = 47;</code>
+      </para>
+      <para id="id836609">We can create a pointer variable and establish its value which would be the done using the <term>address operator</term> [which is the <term>ampersand</term> or &amp;] by:</para>
+      <para id="id6372086">
+        <code display="inline">int * int_pointer = &amp;age;</code>
+      </para>
+      <para id="id6248897">The <term>asterisk</term> is used to designate that the variable int_pointer is an integer pointer [int *]. This means that whenever we use the variable int_pointer that the compiler will know that it is a pointer that points to an integer. </para>
+      <para id="id5466772">In order to use pointers you will need to understand the <term>indirection operator</term> which is covered a supplemental link. </para>
+    </section>
+    <section id="id6960935">
+      <title>Definitions</title>
+    <definition id="fs-id1171161757541">
+      <term>pointer</term>
+      <meaning id="fs-id1171157803994">A variable that holds an address as its value. </meaning>
+    </definition>
+    </section>
+  </content>
+</document>

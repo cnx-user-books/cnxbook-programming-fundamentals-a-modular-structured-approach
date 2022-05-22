@@ -1,0 +1,69 @@
+! SoftChalk LessonBuilder TIV File (C)2003-2008
+! ================ DO NOT EDIT ================
+
+act_item=3
+
+act_num=1
+act_type=2
+items=3
+colorChoice=_B
+showList=false
+showFlashCardTerm=true
+showFlashCardDef=false
+useFlashBigText=false
+instructions=Click 'Show' to see the hidden portion.
+wordPair[1]=conditional|A trinary C++ operator that acts like an if then else control structure.|noimage
+wordPair[2]=recursion|A repetitive process in  which a function calls itself.|noimage
+wordPair[3]=factorial|A math problem that often is solved using recursion.|noimage
+inline=false
+points=0
+showRestart=true
+sqrsize=20
+adaDescription=
+playFeedback=true
+hotspotWidth=450
+hotspotHeight=500
+
+act_num=2
+act_type=6
+items=3
+colorChoice=_B
+showList=false
+showFlashCardTerm=true
+showFlashCardDef=false
+useFlashBigText=false
+instructions=Solve the crossword puzzle.
+wordPair[1]=conditional|A trinary C++ operator that acts like an if then else control structure.
+wordPair[2]=recursion|A repetitive process in  which a function calls itself.
+wordPair[3]=factorial|A math problem that often is solved using recursion.
+inline=false
+points=0
+showRestart=true
+sqrsize=20
+adaDescription=
+playFeedback=true
+hotspotWidth=450
+hotspotHeight=500
+
+act_num=3
+act_type=3
+items=3
+colorChoice=_B
+showList=false
+showFlashCardTerm=true
+showFlashCardDef=false
+useFlashBigText=false
+instructions=Click and drag to highlight a found word from the list.
+seekawordHintOption=true
+wordPair[1]=conditional
+wordPair[2]=recursion
+wordPair[3]=factorial
+inline=false
+points=0
+showRestart=true
+sqrsize=20
+adaDescription=
+playFeedback=true
+hotspotWidth=450
+hotspotHeight=500
+

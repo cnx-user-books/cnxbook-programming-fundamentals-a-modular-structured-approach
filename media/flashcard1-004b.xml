@@ -1,0 +1,33 @@
+<?xml version='1.0'?>
+<order>
+<color>E7E7F5</color>
+<showterm>true</showterm>
+<showdef>false</showdef>
+<customDeckText>Custom Deck</customDeckText>
+<wholeDeckText>Whole Deck</wholeDeckText>
+<showText>SHOW</showText>
+<addToText>Add to Custom</addToText>
+<showTermText>Show Term</showTermText>
+<showDefText>Show Definition</showDefText>
+<orderset value='1'>
+ <term>versatile</term>
+ <def>Easily modifying code to handle another data type.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='2'>
+ <term>flexible coding</term>
+ <def>Using the sizeof operator to calculate the number of members in an array.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='3'>
+ <term>typedef</term>
+ <def>Allows the programmer to create an alias, or synonym, for an existing data type.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+</order>

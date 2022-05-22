@@ -1,0 +1,63 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Conditional Compilation</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m22204</md:content-id>
+  <md:title>Conditional Compilation</md:title>
+  <md:abstract>An introduction and example of conditional compilation as used within the C++ programming language.</md:abstract>
+  <md:uuid>c27ab1d9-3d63-4a2d-989f-6317c54f0033</md:uuid>
+</metadata>
+<featured-links>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit below.
+       Changes to the links section in the source will not be saved. -->
+    <link-group type="supplemental">
+      <link url="http://cnx.org/content/m18785/latest/" strength="1">Bloodshed Dev-C++ 5 Compiler/IDE</link>
+    </link-group>
+    <link-group type="prerequisite">
+      <link url="http://cnx.org/content/m18787/latest/" strength="2">Compiler Directives</link>
+      <link url="http://cnx.org/content/m18920/latest/" strength="2">Integrated Development Environment</link>
+      <link url="http://cnx.org/content/m20404/latest/" strength="1">Flag Concept</link>
+    </link-group>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit above.
+       Changes to the links section in the source will not be saved. -->
+</featured-links>
+<content>
+    <section id="id1169995116359">
+      <title>Overview</title>
+      <para id="id1169995116366">As you proceed in your programming career, the problems/tasks that need solving become more complex. The documentation of the algorithm done in pseudo code (or some other method) will still need to be converted into a programming solution. Inevitably, when writing that source code mistakes will be introduced. When learning the syntax of a new programming language, programmers sometimes automatically think in their old language syntax, and make mistakes that are sometimes hard to detect.</para>
+      <para id="id1169995116384">The concept of using a flag to either activate or have remain dormant certain lines of code designed solely to help with the debugging of a program has existed since almost the beginning of modern computer programming (1950's). One of the debugging tools available within C++ is <emphasis>conditional compilation</emphasis>. For our flag, we would use a defined constant like:</para>
+      <para id="id1169995116408">
+        <code display="inline">#define DEBUG 1</code>
+      </para>
+      <para id="id1169995116416">Then using another compiler directive pair, the #if and #endif, we can have the compiler during the pre-processor either include or not include one or more lines of code. </para>
+      <para id="id1169995116425"><preformat id="fs-id5868286"><code>
+#if DEBUG
+  cout &lt;&lt; "\n***** DEBUG Code ** Hi mom!";
+#endif</code></preformat></para>
+      <para id="id1169995116451">Of course saying "Hi mom!" is not very useful for debugging your code. However, you can use test data with conditional compilation. A series of input data values and a series of output predictors can be placed in the program. Then you can turn on the debug feature or turn them off with your debugging flag.</para>
+      <para id="id1169995116467">You should study the demonstration program in conjunction with this module.</para>
+    </section>
+    <section id="id1169995116472">
+      <title>Demonstration Program in C++</title>
+      <section id="id1169995116479">
+        <title>Creating a Folder or Sub-Folder for Source Code Files</title>
+        <para id="id1169995116485">Depending on your compiler/IDE, you should decide where to download and store source code files for processing. Prudence dictates that you create these folders as needed prior to downloading source code files. A suggested sub-folder for the <term>Bloodshed Dev-C++ 5 compiler/IDE</term> might be named:</para>
+        <list id="id1169995116508" list-type="bulleted">
+          <item>Demo_Programs</item>
+        </list>
+        <para id="id1169995116517">If you have not done so, please create the folder(s) and/or sub-folder(s) as appropriate.</para>
+      </section>
+      <section id="id1169995116523">
+        <title>Download the Demo Program</title>
+        <para id="id1169995116530">Download and store the following file(s) to your storage device in the appropriate folder(s). Following the methods of your compiler/IDE, compile and run the program(s). Study the source code file(s) in conjunction with other learning materials. You may need to right click on the link and select "Save Target As" in order to download the file.</para>
+        <para id="id1169995116549">Download from Connexions: <link document="m22204" resource="Demo_Conditional_Compilation.cpp">Demo_Conditional_Compliation.cpp</link></para>
+      </section>
+    </section>
+    <section id="id1169995116570">
+      <title>Definitions</title>
+    <definition id="fs-id5933833">
+      <term>conditional compilation</term>
+      <meaning id="fs-id5933838">A compiler directive that includes or excludes lines of code based on a Boolean expression.</meaning>
+    </definition>
+    </section>
+  </content>
+</document>

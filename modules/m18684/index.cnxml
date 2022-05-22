@@ -1,0 +1,55 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Systems Development Life Cycle</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m18684</md:content-id>
+  <md:title>Systems Development Life Cycle</md:title>
+  <md:abstract>An overview of  the Systems Development Life Cycle.</md:abstract>
+  <md:uuid>c5e94528-11ec-4ba6-9c46-af537dbfaefd</md:uuid>
+</metadata>
+<featured-links>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit below.
+       Changes to the links section in the source will not be saved. -->
+    <link-group type="supplemental">
+      <link url="http://cnx.org/content/m14619/latest/" strength="2">Software Development Process</link>
+      <link url="http://en.wikipedia.org/wiki/Systems_Development_Life_Cycle" strength="1">Wikipedia - Systems Development Life Cycle</link>
+    </link-group>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit above.
+       Changes to the links section in the source will not be saved. -->
+</featured-links>
+<content>
+    <section id="id3270147">
+      <title>Discussion</title>
+      <para id="id1165522037741">The <term>Systems Development Life Cycle</term> is the big picture of creating an information system that handles a major task (referred to as an application). The <emphasis>applications</emphasis> usually consist of many programs. An example would be the Department of Defense supply system, the customer system used at your local bank, the repair parts inventory system used by car dealerships. There are thousands of applications that use an information system created just to help solve a business problem. </para>
+      <para id="id1165520145933">Another example of an information system would be the "101 Computer Games" software you might buy at any of several retail stores. This is an entertainment application, that is we are applying the computer to do a task (entertain you). The software actually consists of many different programs (checkers, chess, tic tac toe, etc.) that were most likely written by several different programmers. </para>
+      <para id="id1165527316871">Computer professionals that are in charge of creating applications often have the job title of <emphasis>System Analyst</emphasis>. The major steps in creating an application include the following and start at <emphasis>Planning</emphasis> step.</para>
+      <para id="id1165523287674">
+        <figure id="id7832618">
+          <media id="id7832618_media" alt="">
+            <image mime-type="image/jpg" src="../../media/graphics1-87f1.jpg" id="id7832618__onlineimage" height="450" width="600"/>
+          </media>
+          <caption>Systems Development Life Cycle</caption>
+        </figure>
+      </para>
+      <para id="id1165521329650">During the <emphasis>Design</emphasis> phase the System Analyst will document the inputs, processing and outputs of each program within the application. During the <emphasis>Implementation</emphasis> phase programmers would be assigned to write the specific programs using a programming language decided by the System Analyst. Once the system of programs is tested the new application is installed for people to use. As time goes by, things change and a specific part or program might need repair. During the <emphasis>Maintenance</emphasis> phase, it goes through a mini planning, analysis, design and implementation. The programs that need modification are identified and programmers change or repair those programs. After several years of use, the system usually becomes obsolete. At this point a major revision of the application is done. Thus the cycle repeats itself.</para>
+    </section>
+    <section id="id5311759">
+      <title>Definitions </title>
+    <definition id="fs-id1164847211887">
+      <term>system analyst</term>
+      <meaning id="fs-id1164847308431">Computer professional in charge of creating applications.</meaning>
+    </definition>
+    <definition id="fs-id3640095">
+      <term>applications</term>
+      <meaning id="fs-id1164853662565">An information system or collection of programs that handles a major task.</meaning>
+    </definition>
+    <definition id="fs-id1164847208606">
+      <term>life cycle</term>
+      <meaning id="fs-id1164847002482">Systems Development Life Cycle: Planning - Analysis - Design - Implementation - Maintenance</meaning>
+    </definition>
+    <definition id="fs-id1164847454552">
+      <term>implementation</term>
+      <meaning id="fs-id3647190">The phase of a Systems Development Life Cycle where the programmers would be assigned to write specific programs.</meaning>
+    </definition>
+    </section>
+  </content>
+</document>

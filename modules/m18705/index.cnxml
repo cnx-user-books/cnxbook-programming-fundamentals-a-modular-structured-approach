@@ -1,0 +1,86 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Data Manipulation</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m18705</md:content-id>
+  <md:title>Data Manipulation</md:title>
+  <md:abstract>An introduction to expressions with definitions, an example and an explanation of precedence.</md:abstract>
+  <md:uuid>a2c34d2a-f91b-4993-9575-db5a6d3b685d</md:uuid>
+</metadata>
+<featured-links>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit below.
+       Changes to the links section in the source will not be saved. -->
+    <link-group type="supplemental">
+      <link url="http://cnx.org/content/m18168/latest/" strength="3">Abbreviated Precedence Chart for C++ Operators</link>
+      <link url="http://cnx.org/content/m18706/latest/" strength="2">Arithmetic Operators</link>
+    </link-group>
+    <link-group type="prerequisite">
+      <link url="http://cnx.org/content/m18653/latest/" strength="3">Data Types in C++</link>
+    </link-group>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit above.
+       Changes to the links section in the source will not be saved. -->
+</featured-links>
+<content>
+    <section id="id1164500673819">
+      <title>Introduction</title>
+      <para id="id1164507553242">Single values by themselves are important; however we need a method of manipulating values (processing data). Scientists wanted an accurate machine for manipulating values. They wanted a machine to process numbers or calculate answers (that is compute the answer). Prior to 1950, dictionaries listed the definition of computers as " humans that do computations". Thus, all of the terminology for describing data manipulation is math oriented. Additionally, the two fundamental data type families (the integer family and floating-point family) consist entirely of number values.</para>
+    </section>
+    <section id="id1164507908230">
+      <title>Definitions</title>
+    <definition id="fs-id1171845839066">
+      <term>expression</term>
+      <meaning id="fs-id1171845854131">A valid sequence of operand(s) and operator(s) that reduces (or evaluates) to a single value.</meaning>
+    </definition>
+    <definition id="fs-id1171845707891">
+      <term>operator</term>
+      <meaning id="fs-id1171845657086">A language-specific syntactical token (usually a symbol) that causes an action to be taken on one or more operands.</meaning>
+    </definition>
+    <definition id="fs-id1171845854706">
+      <term>operand</term>
+      <meaning id="fs-id1171845857614">A value that receives the operator's action.</meaning>
+    </definition>
+    <definition id="fs-id1171846555811">
+      <term>precedence</term>
+      <meaning id="fs-id1171845707878">Determines the order in which the operators are allowed to manipulate the operands.</meaning>
+    </definition>
+    <definition id="fs-id1171845707472">
+      <term>associativity</term>
+      <meaning id="fs-id1171846537786">Determines the order in which the operators of the same precedence are allowed to manipulate the operands.</meaning>
+    </definition>
+    <definition id="fs-id1171845856333">
+      <term>evaluation</term>
+      <meaning id="fs-id1171845970744">The process of applying the operators to the operands and resulting in a single value.</meaning>
+    </definition>
+    <definition id="fs-id1171845519620">
+      <term>parentheses</term>
+      <meaning id="fs-id1171845852478">Change the order of evaluation in an expression. You do what's in the parentheses first.</meaning>
+    </definition>
+    </section>
+    <section id="id7308264">
+      <title>An Expression Example with Evaluation</title>
+      <para id="id1164497028399">Let's look at an example: 2 + 3 * 4 + 5 is our expression but what does it equal?</para>
+      <list id="id5925471" list-type="enumerated" number-style="arabic">
+        <item>the symbols of + meaning addition and * meaning multiplication are our operators</item>
+        <item>the values 2, 3, 4 and 5 are our operands</item>
+        <item>precedence says that multiplication is higher than addition</item>
+        <item>thus, we evaluate the 3 * 4 to get 12</item>
+        <item>now we have: 2 + 12 + 5 </item>
+        <item>the associativity rules say that addition goes left to right, thus we evaluate the 2 +12 to get 14</item>
+        <item>now we have: 14 + 5</item>
+        <item>finally, we evaluate the 14 + 5 to get 19; which is the value of the expression</item>
+      </list>
+      <para id="id1164507341313">Parentheses would change the outcome. (2 + 3) * (4 + 5) evaluates to 45.</para>
+      <para id="id4718636">Parentheses would change the outcome. (2 + 3) * 4 + 5 evaluates to 25.</para>
+    </section>
+    <section id="id1164506989400">
+      <title>Precedence of Operators Chart</title>
+      <para id="id7283528">Each computer language has some rules that define precedence and associativity. They often follow rules we may have already learned. Multiplication and division come before addition and subtraction is a rule we learned in grade school. This rule still works. The precedence rules vary from one programming language to another. You should refer to the reference sheet that summarizes the rules for the language that you are using. It is often called a Precedence of Operators Chart. You should review this chart as needed when evaluating expressions.</para>
+      <para id="id8697029">A valid expression consists of operand(s) and operator(s) that are put together properly. Why the (s)? Some operators are:</para>
+      <list id="id7711407" list-type="enumerated" number-style="arabic">
+        <item>Unary – that is only have one operand</item>
+        <item>Binary – that is have two operands, one on each side of the operator</item>
+        <item>Trinary – which has two operator symbols that separate three operands</item>
+      </list>
+      <para id="id1164507432946">Most operators are binary, that is they require two operands. Within C++ there is only one trinary operator, the conditional. All of the unary operators are on the left side of the operand, except postfix increment and postfix decrement. Some precedence charts indicate of which operators are unary and trinary and thus all others are binary.</para>
+    </section>
+  </content>
+</document>

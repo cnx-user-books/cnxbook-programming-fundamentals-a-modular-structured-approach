@@ -1,0 +1,39 @@
+Filename:    Lab_18_Narrative_Description.txt
+
+Purpose:     Practice displaying an array with sizeof
+
+Author:      Ken Busbee; © 2009 Kenneth Leroy Busbee
+Date:        Apr 4, 2009
+Licensed by: Kenneth Leroy Busbee under a 
+             Creative Commons Attribution License (CC-BY 3.0)
+             http://creativecommons.org/licenses/by/3.0/
+*************************************************************
+
+You are to write a program named Lab_18.cpp that does the following:
+
+1. Create two (2) single dimension arrays (lists) as follows:
+
+   a. The first array will have between 4 to 8 members of integer 
+      data type and will be the IQs (Intelligent Quotient - usually
+      values between 80 and 150) for those people.
+
+   b. The second array will have 6 members of floating point data
+      type (either float or double) and will be the amount of cash
+      (paper and coin) money that each of 6 people have in their 
+      pockets (or wallet or purse).  Example: I have $5.32 in my pocket. 
+ 
+2. Allow the person running the program to change the IQ of 
+   the 2nd member of the array.
+
+3. Display the values for each array with a for loop using 
+   the sizeof operator to determine the number of members in
+   the array for the test expression.
+
+4. You may want to use the Demo_Arrays.cpp as 
+   a starting point.  If you do, make sure that you get rid 
+   of any lines of code not needed and make sure you change the
+   comments to a correct filename, purpose, author and date, etc.
+
+*************************************************************
+End of file
+

@@ -1,0 +1,51 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Arrays and Functions</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m21624</md:content-id>
+  <md:title>Arrays and Functions</md:title>
+  <md:abstract>An introduction to processing arrays with functions with an example of displaying an array within the C++ programming language.</md:abstract>
+  <md:uuid>0ca4d790-7a37-4f42-a288-1622ba8f3f46</md:uuid>
+</metadata>
+<featured-links>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit below.
+       Changes to the links section in the source will not be saved. -->
+    <link-group type="supplemental">
+      <link url="http://cnx.org/content/m18785/latest/" strength="1">Bloodshed Dev-C++ 5 Compiler/IDE</link>
+    </link-group>
+    <link-group type="prerequisite">
+      <link url="http://cnx.org/content/m21317/latest/" strength="3">Displaying Array Members</link>
+    </link-group>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit above.
+       Changes to the links section in the source will not be saved. -->
+</featured-links>
+<content>
+    <section id="id1171291573090">
+      <title>Overview of Array Functions</title>
+      <para id="id1171291175135">Arrays are an important complex data type used in almost all programming. We continue to concentrate on simple one dimension arrays also called a list. Most programmers develop a series of <term>user defined specific task</term> functions that can be used with an array for normal processing. These functions are usually passed the array along with the number of elements within the array. Some of functions also pass another piece of data needed for that particular functions task. </para>
+      <para id="id8354688">This module covers the displaying the array members on the monitor via calling an <emphasis>array function</emphasis> dedicated to that task. You need to study this module in conjunction with the demo file provided.</para>
+    </section>
+    <section id="id1171297382210">
+      <title>Demonstration Program in C++</title>
+      <section id="id1171297667225">
+        <title>Creating a Folder or Sub-Folder for Source Code Files</title>
+        <para id="id1171295897352">Depending on your compiler/IDE, you should decide where to download and store source code files for processing. Prudence dictates that you create these folders as needed prior to downloading source code files. A suggested sub-folder for the <term>Bloodshed Dev-C++ 5 compiler/IDE</term> might be named:</para>
+        <list id="id1171296675608" list-type="bulleted">
+          <item>Demo_Programs</item>
+        </list>
+        <para id="id6564655">If you have not done so, please create the folder(s) and/or sub-folder(s) as appropriate.</para>
+      </section>
+      <section id="id1171291079680">
+        <title>Download the Demo Program</title>
+        <para id="id1171300454885">Download and store the following file(s) to your storage device in the appropriate folder(s). Following the methods of your compiler/IDE, compile and run the program(s). Study the source code file(s) in conjunction with other learning materials.</para>
+        <para id="id4401952">Download from Connexions: <link document="m21624" resource="Demo_Array_Display_Function.cpp">Demo_Array_Display_Function.cpp</link></para>
+      </section>
+    </section>
+    <section id="id1171297747406">
+      <title>Definitions</title>
+    <definition id="fs-id1171296826118">
+      <term>array function</term>
+      <meaning id="fs-id3300509">A user defined specific task function designed to process an array.  </meaning>
+    </definition>
+    </section>
+  </content>
+</document>

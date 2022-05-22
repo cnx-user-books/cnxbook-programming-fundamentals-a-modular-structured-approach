@@ -1,0 +1,81 @@
+! SoftChalk LessonBuilder TIV File (C)2003-2008
+! ================ DO NOT EDIT ================
+
+act_item=3
+
+act_num=1
+act_type=2
+items=7
+colorChoice=_B
+showList=false
+showFlashCardTerm=true
+showFlashCardDef=false
+useFlashBigText=false
+instructions=Click 'Show' to see the hidden portion.
+wordPair[1]=high performance computing|Grouping multiple computers or multiple computer processors to accomplish a task in less time.|noimage
+wordPair[2]=sequential processing|Using only one processor and completing the tasks in a sequential order.|noimage
+wordPair[3]=parallel processing|Dividing a task into parts that can utilize more than one processor.|noimage
+wordPair[4]=central processingUnit|The electronic circuitry that actually executes computer instructions.|noimage
+wordPair[5]=parallel programming|Involves developing programs that utilize parallel processing algorithms that take advantage of multiple processors.|noimage
+wordPair[6]=procedural programming|Aka modular structured programming.|noimage
+wordPair[7]=object oriented|A programming approach that encapsulates data with functions.|noimage
+inline=false
+points=0
+showRestart=true
+sqrsize=20
+adaDescription=
+playFeedback=true
+hotspotWidth=450
+hotspotHeight=500
+
+act_num=2
+act_type=6
+items=7
+colorChoice=_B
+showList=false
+showFlashCardTerm=true
+showFlashCardDef=false
+useFlashBigText=false
+instructions=Solve the crossword puzzle.
+wordPair[1]=ObjectOriented|A programming approach that encapsulates data with functions.
+wordPair[2]=ParallelProcessing|Dividing a task into parts that can utilize more than one processor.
+wordPair[3]=CPU|The electronic circuitry that actually executes computer instructions.
+wordPair[4]=ParallelProgramming|Involves developing programs that utilize parallel processing algorithms that take advantage of multiple processors.
+wordPair[5]=Procedural|Aka modular structured programming.
+wordPair[6]=HPC|Grouping multiple computers or multiple computer processors to accomplish a task in less time.
+wordPair[7]=SequentialProcessing|Using only one processor and completing the tasks in a sequential order.
+inline=false
+points=0
+showRestart=true
+sqrsize=20
+adaDescription=
+playFeedback=true
+hotspotWidth=450
+hotspotHeight=500
+
+act_num=3
+act_type=3
+items=7
+colorChoice=_B
+showList=false
+showFlashCardTerm=true
+showFlashCardDef=false
+useFlashBigText=false
+instructions=Click and drag to highlight a found word from the list.
+seekawordHintOption=true
+wordPair[1]=HPC
+wordPair[2]=LinearProcessing
+wordPair[3]=ParallelProcessing
+wordPair[4]=CPU
+wordPair[5]=ParallelProgramming
+wordPair[6]=Procedural
+wordPair[7]=ObjectOriented
+inline=false
+points=0
+showRestart=true
+sqrsize=20
+adaDescription=
+playFeedback=true
+hotspotWidth=450
+hotspotHeight=500
+

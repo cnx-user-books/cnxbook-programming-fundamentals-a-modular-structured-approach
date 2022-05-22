@@ -1,0 +1,65 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Object Oriented Programming</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m22188</md:content-id>
+  <md:title>Object Oriented Programming</md:title>
+  <md:abstract>An overview of how object oriented programming is different from procedural or modular structured programming.</md:abstract>
+  <md:uuid>0a79321e-c77e-4201-a721-dbdd3b5a4fbf</md:uuid>
+</metadata>
+<featured-links>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit below.
+       Changes to the links section in the source will not be saved. -->
+    <link-group type="example">
+      <link url="http://cnx.org/content/m18835/latest/" strength="2">Standard Input and Output</link>
+      <link url="http://cnx.org/content/m20660/latest/" strength="2">Formatting Output</link>
+      <link url="http://cnx.org/content/m20796/latest/" strength="2">String Class within C++</link>
+      <link url="http://cnx.org/content/m21623/latest/" strength="2">File Input and Output</link>
+    </link-group>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit above.
+       Changes to the links section in the source will not be saved. -->
+</featured-links>
+<content>
+    <section id="id1166222111742">
+      <title>Discussion</title>
+      <para id="id1166222300042">"In procedural programming, the programmer constructs procedures (or functions, as they are called in C++). The procedures are collections of programming statements that perform a specific task. The procedures each contain their own variables and commonly share variables with other procedures. Procedural programming is centered on the procedure or function."<footnote id="id1166228926885">Tony Gaddis, Judy Walters and Godfrey Muganda, <emphasis effect="underline">Starting Out with C++ Early Objects Sixth Edition</emphasis> (United States of America: Pearson – Addison Wesley, 2008) 22.</footnote> For decades (1950s to through the 1980s) most programming was taught as <emphasis>procedural programming</emphasis>. Coupled with the imposition of using standardized control structures in the late 1960s, we have what is typically called <term>modular structured programming</term>. </para>
+      <para id="id1166226235682">Another, equally valid approach to programming is <emphasis>object-oriented programming</emphasis> or OOP. It was introduced in the mid 1980s and was widely accepted as a programming approach by the early 1990s. The first languages to introduce OOP to the masses were C++ and Java. Shortly after their introduction, there were American National Standards Institute (ANSI) standards established for those languages. Today, C++ and Java are widely used.</para>
+      <para id="id1166221387845">"The primary differences between the two approaches is their use of data. In a procedural program, the design centers around the rules or procedures for processing the data. The procedures, implemented as functions in C++, are the focus of the design. The data objects are passed to the functions as parameters. The key question is how the functions will transform the data they receive for either storage or further processing. Procedural programming has been the mainstay of computer science since its beginning and is still heavily used today. </para>
+      <para id="id1166224037546">In an object-oriented program, abbreviated OOP, the design centers around objects that contain (encapsulate) the data and the necessary functions to process the data. In OOP, the objects own the functions that process the data."<footnote id="id1166220608999">Behrouz A. Forouzan and Richard F. Gilberg, <emphasis effect="underline">Computer Science A Structured Approach using C++ Second Edition</emphasis> (United States of America: Thompson – Brooks/Cole, 2004) 156.</footnote></para>
+      <para id="id1166221764380">"Object-oriented programming … is centered on the object. An object is a programming element that contains data and the procedures that operate on the data. The objects contain, within themselves, both the information and the ability to manipulate the information."<footnote id="id1166221218893">Tony Gaddis, Judy Walters and Godfrey Muganda, <emphasis effect="underline">Starting Out with C++ Early Objects Sixth Edition</emphasis> (United States of America: Pearson – Addison Wesley, 2008) 22.</footnote></para>
+      <para id="id1166225398083">To help complicate the picture, the C++ programming language can be used (and is used) to write either a procedural program (modular structured program) or an object-oriented program. Some items used by those writing procedural programs in C++ are in fact objects. Examples include:</para>
+      <list id="id3180644" list-type="enumerated" number-style="arabic"><item>Standard input and output items of: cout and cin; example: cout.setf(ios::fixed)</item>
+	<item>Strings; calculating the length with: identifier_name.length()</item>
+	<item>File input/output; example: inData.open(filespec, ios::in)</item>
+</list>
+      <para id="id1166222184372">Objects are implemented with a "class" data type; which is a complex or derived data type. Implementation details will not be presented in the module. </para>
+    </section>
+    <section id="id8710347">
+      <title>Transition</title>
+      <para id="id1166222698461">Many students will learn modular structured programming before learning object-oriented programming. The common way of teaching programming fundamentals is to cover them or divide them into three courses, usually covered in this order:</para>
+      <list id="id1166221652077" list-type="enumerated" number-style="arabic">
+        <item>Modular structured</item>
+        <item>Object-oriented</item>
+        <item>Data structures</item>
+      </list>
+      <para id="id1166222537328">The following items learned in modular structured programming flow into the learning of object-oriented programming:</para>
+      <list id="id1166221795259" list-type="enumerated" number-style="arabic">
+        <item>The standard and complex data types are the same</item>
+        <item>The operators are the same, thus data manipulation is the same</item>
+        <item>The control structures are the same</item>
+        <item>Concepts of documentation and making code readable are the same</item>
+        <item>The use of test data to verify logical thinking and program results is similar</item>
+      </list>
+    </section>
+    <section id="id1166222151582">
+      <title>Definitions</title>
+    <definition id="fs-id1166220708459">
+      <term>procedural programming</term>
+      <meaning id="fs-id1166222490948">Aka modular structured programming. </meaning>
+    </definition>
+    <definition id="fs-id1166220979499">
+      <term>object oriented</term>
+      <meaning id="fs-id1166225339179">A programming approach that encapsulates data with functions. </meaning>
+    </definition>
+    </section>
+  </content>
+</document>

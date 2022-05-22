@@ -1,0 +1,93 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Arithmetic Assignment Operators</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m18743</md:content-id>
+  <md:title>Arithmetic Assignment Operators</md:title>
+  <md:abstract>A table showing the equivalent meaning for the arithmetic assignment operators.</md:abstract>
+  <md:uuid>45274e9b-7adf-4589-b427-17e31c90b576</md:uuid>
+</metadata>
+<featured-links>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit below.
+       Changes to the links section in the source will not be saved. -->
+    <link-group type="supplemental">
+      <link url="http://cnx.org/content/m18168/latest/" strength="2">Abbreviated Precedence Chart for C++ Operators</link>
+      <link url="http://cnx.org/content/m18785/latest/" strength="1">Bloodshed Dev-C++ 5 Compiler/IDE</link>
+    </link-group>
+    <link-group type="prerequisite">
+      <link url="http://cnx.org/content/m18725/latest/" strength="3">Assignment Operator</link>
+      <link url="http://cnx.org/content/m18706/latest/" strength="2">Arithmetic Operators</link>
+    </link-group>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit above.
+       Changes to the links section in the source will not be saved. -->
+</featured-links>
+<content>
+    <section id="id45847042">
+      <title>Overview of Arithmetic Assignment</title>
+      <para id="id46386146">The five <term>arithmetic assignment</term> operators are a form of short hand. Various textbooks call them "compound assignment operators" or "combined assignment operators". Their usage can be explaned in terms of the assignment operator and the arithmetic operators. In the table we will use the variable age and you can assume that it is of integer data type. </para>
+      <table id="id45453363" summary="">
+        <tgroup cols="2">
+          <colspec colnum="1" colname="c1"/>
+          <colspec colnum="2" colname="c2"/>
+          <tbody>
+            <row>
+              <entry>Arithmetic assignment examples:</entry>
+              <entry>Equivalent code:</entry>
+            </row>
+            <row>
+              <entry>
+                <code display="inline">age += 14;</code>
+              </entry>
+              <entry>
+                <code display="inline">age = age + 14;</code>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <code display="inline">age -= 14;</code>
+              </entry>
+              <entry>
+                <code display="inline">age = age - 14;</code>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <code display="inline">age *= 14;</code>
+              </entry>
+              <entry>
+                <code display="inline">age = age * 14;</code>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <code display="inline">age /= 14;</code>
+              </entry>
+              <entry>
+                <code display="inline">age = age / 14;</code>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <code display="inline">age %= 14;</code>
+              </entry>
+              <entry>
+                <code display="inline">age = age % 14;</code>
+              </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </section>
+    <section id="id46608166">
+      <title>Demonstration Program in C++</title>
+      <section id="id46634381">
+        <title>Creating a Folder or Sub-Folder for Source Code Files</title>
+        <para id="id46472140">Depending on your compiler/IDE, you should decide where to download and store source code files for processing. Prudence dictates that you create these folders as needed prior to downloading source code files. A suggested sub-folder for the <term>Bloodshed Dev-C++ 5 compiler/IDE</term> might be named:</para>
+        <list id="id46473508" list-type="bulleted">
+          <item>Demo_Programs</item>
+        </list>
+        <para id="id46640298">If you have not done so, please create the folder(s) and/or sub-folder(s) as appropriate.</para>
+      </section>
+      <section id="id46461740"><title>Download the Demo Program</title><para id="id46069550">Download and store the following file(s) to your storage device in the appropriate folder(s). Following the methods of your compiler/IDE, compile and run the program(s). Study the soruce code file(s) in conjunction with other learning materials.</para><para id="id45453010">Download from Connexions: <link document="m18743" resource="Demo_Arithmetic_Assignment.cpp">Demo_Arithmetic_Assignment.cpp</link></para></section>
+    </section>
+  </content>
+</document>

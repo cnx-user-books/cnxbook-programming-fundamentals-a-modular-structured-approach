@@ -1,0 +1,86 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Standard Libraries</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m19202</md:content-id>
+  <md:title>Standard Libraries</md:title>
+  <md:abstract>A general discussion of Standard Libraries with a demonstration program in C++ and an attachment containing other standard C++ library information.</md:abstract>
+  <md:uuid>4a4c530f-7d9e-4541-8f5b-b45183f52e5f</md:uuid>
+</metadata>
+<featured-links>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit below.
+       Changes to the links section in the source will not be saved. -->
+    <link-group type="supplemental">
+      <link url="http://www.fredosaurus.com/notes-cpp/io/omanipulators.html" strength="2">C++ Notes: I/O Manipulators</link>
+      <link url="http://cnx.org/content/m18785/latest/" strength="2">Bloodshed Dev-C++ 5 Compiler/IDE</link>
+    </link-group>
+    <link-group type="prerequisite">
+      <link url="http://cnx.org/content/m18920/latest/" strength="3">Integrated Development Environment</link>
+      <link url="http://cnx.org/content/m18835/latest/" strength="2">Standard Input and Output</link>
+      <link url="http://cnx.org/content/m18787/latest/" strength="2">Compiler Directives</link>
+      <link url="http://cnx.org/content/m19146/latest/" strength="2">Specific Task Functions</link>
+    </link-group>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit above.
+       Changes to the links section in the source will not be saved. -->
+</featured-links>
+<content>
+    <section id="id15263658">
+      <title>Overview of Standard Libraries</title>
+      <para id="id13411247">Many common or <term>standard functions</term>, whose definitions have been written, are ready to be used in any program.  They are organized into a group of functions (think of them as several books) and are collectively called a <emphasis>Standard Library</emphasis>  There are many function organized into several libraries  For example, within C++ many math functions exist and have been coded (and placed into libraries).  These functions were written by programmers and tested to insure that they work properly.  In most cases the functions were reviewed by several people to double and triple check to insure that they did what was expected.  We have the advantage of using these functions with <emphasis>confidence</emphasis> that they will work properly in our programs, thus saving us time and money.</para>
+      <para id="id20184428">A main program must establish the existence of functions used in that program. Depending on the programming language, there is a formal way to:</para>
+      <list id="id18398786" list-type="enumerated">
+        <item>define a function </item>
+        <item>declare a function (a prototype is a declaration to a compiler) </item>
+        <item>call a function </item>
+      </list>
+      <para id="id20500298"> When we create functions in our program, we usually see them in the following order in our source code listing:</para>
+      <list id="id18242591" list-type="enumerated">
+        <item>declare the function (prototype) </item>
+        <item>call the function </item>
+        <item>define the function </item>
+      </list>
+      <para id="id20249843">When we use functions created by others that have been organized into library, we include a header file in our program which contains the prototypes for the functions.  Just like functions that we create, we see them in the following order in our source code listing:</para>
+      <list id="id18209192" list-type="enumerated">
+        <item>declaring the function (prototype provided in the include file) </item>
+        <item>call the function (with parameter passing of values) </item>
+        <item>define the function (it is either defined in the header file or the linker program provides the actual object code from a Standard Library object area) </item>
+      </list>
+      <para id="id20162270">In most cases, the user can look at the prototype and understand exactly how the communications (parameter passing) into and out of the function will occur when the function is called.  Let's look at the math example of absolute value.  The prototype is:</para>
+        <para id="id15984838"> <code display="inline">int abs(int number);</code></para>
+      <para id="id14643384">Not wanting to have a long function name the designers named it: <emphasis>abs</emphasis> instead of "absolute".  This might seem to violate the identifier naming rule of using meaningful names, however when identifier names are established for standard libraries they are often shortened to a name that is easily understood by all who would be using them.  The function is of data type int, meaning that the function will return an integer value.  It is obvious that the integer value returned is the answer to the question, "What is the absolute value of the integer that is being passed into the function".  This function is passed only one value; an int number.  If I had two integer variables named apple and banana; and I wanted to store the absolute value of banana into apple; then a line of code to call this function would be:</para>
+        <para id="id19752508"> <code display="inline">apple = abs(banana);</code></para>
+      <para id="id20242036">Let's say it in English, pass the function absolute the value stored in variable banana and assign the returning value from the function to the variable apple. Thus, if you know the prototype you can usually properly call the function and use its returning value (if it has one) without ever seeing the definition of the code (i.e. the source code that tells the function how to get the answer; that is written by someone else; and either included in the header file or compiled and placed into an object library; and linked during the linking step of the Integrated Development Environment (IDE).</para>
+    </section>
+    <section id="id16481103">
+      <title>Demonstration Program in C++</title>
+      <section id="id19950664">
+        <title>Creating a Folder or Sub-Folder for Source Code Files</title>
+        <para id="id4075401">Depending on your compiler/IDE, you should decide where to download and store source code files for processing. Prudence dictates that you create these folders as needed prior to downloading source code files. A suggested sub-folder for the <term>Bloodshed Dev-C++ 5 compiler/IDE</term> might be named:</para>
+        <list id="id3977297" list-type="bulleted">
+          <item>Demo_Programs</item>
+        </list>
+        <para id="id9944188">If you have not done so, please create the folder(s) and/or sub-folder(s) as appropriate.</para>
+      </section>
+      <section id="id19800150">
+        <title>Download the Demo Program</title>
+        <para id="id6512483">Download and store the following file(s) to your storage device in the appropriate folder(s). You may need to right click on some of the links and select "Save Target As" in order to download some of the files. Following the methods of your compiler/IDE, compile and run the program(s). Study the source code and/or other file(s) in conjunction with other learning materials.</para>
+        <para id="id19996814">Download from Connexions: <link document="m19202" resource="Demo_Standard_Libraries.cpp">Demo_Standard_Libraries.cpp</link></para>
+        <para id="id21045918">Download from Connexions: <link document="m19202" resource="Demo_Standard_Libraries_Listing.txt">Demo_Standard_Libraries_Listing.txt</link></para>
+      </section>
+    </section>
+<section id="fs-id1172374599160">
+  <title>Definitions</title>
+    <definition id="fs-id1172373872725">
+      <term>Standard Library</term>
+      <meaning id="fs-id1172373939794">A set of specific task functions that have been added to the programming language for universal use.</meaning>
+    </definition>
+    <definition id="fs-id1172373989047">
+      <term>confidence</term>
+      <meaning id="fs-id1172374148507">The reliance that Standard Library functions work properly.</meaning>
+    </definition>
+    <definition id="fs-id1172374034905">
+      <term>abs</term>
+      <meaning id="fs-id1172374125911">A function within the cmath standard library in C++ which stands for absolute.</meaning>
+    </definition>
+</section>
+  </content>
+</document>

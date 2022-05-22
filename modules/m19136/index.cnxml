@@ -1,0 +1,123 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Pseudocode Examples for Functions</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m19136</md:content-id>
+  <md:title>Pseudocode Examples for Functions</md:title>
+  <md:abstract>Suggested pseudocode conventions for functions along with some examples.</md:abstract>
+  <md:uuid>e94bdb85-bdc0-4d3b-8a84-e75e5a673406</md:uuid>
+</metadata>
+<featured-links>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit below.
+       Changes to the links section in the source will not be saved. -->
+    <link-group type="supplemental">
+      <link url="http://cnx.org/content/m19623/latest/" strength="2">Flowcharting </link>
+    </link-group>
+    <link-group type="prerequisite">
+      <link url="http://cnx.org/content/m18648/latest/" strength="3">Pseudocode</link>
+    </link-group>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit above.
+       Changes to the links section in the source will not be saved. -->
+</featured-links>
+<content>
+    <section id="id12412450">
+      <title>Concept</title>
+      <para id="id13623000">No standard for pseudocode syntax exists. However, there are some commonly followed conventions to help make pseudocode written by one programmer easily understood by another programmer. The following describes a method for using pseudocode for functions that would be understood by programmers. Five concepts are:</para>
+      <list id="id8889141" list-type="bulleted">
+        <item>Use a <emphasis>beginning phrase word</emphasis> to start the function</item>
+        <item>Use a <emphasis>communication phrase word</emphasis> to identify the items being passed into the function</item>
+        <item>Use indentation to show the action part of the function</item>
+        <item>Use a <emphasis>communication phrase word</emphasis> to identify the items being passed out of the function</item>
+        <item>Use an <emphasis>ending phrase word</emphasis> to end the function</item>
+        <item>Use a <emphasis>calling phrase word</emphasis> to direct your program to use a fucntion</item>
+      </list>
+      <para id="id14529317">The following is a suggested outline of function phrase words:</para>
+      <table id="id4608755" summary="">
+        <tgroup cols="3">
+          <colspec colnum="1" colname="c1"/>
+          <colspec colnum="2" colname="c2"/>
+          <colspec colnum="3" colname="c3"/>
+          <tbody>
+            <row>
+              <entry>Item/Purpose</entry>
+              <entry>Starting Phrase Word</entry>
+              <entry>Ending Phrase Word</entry>
+            </row>
+            <row>
+              <entry>Beginning</entry>
+              <entry>Function</entry>
+              <entry>N/A</entry>
+            </row>
+            <row>
+              <entry>Communication In</entry>
+              <entry>Pass In:</entry>
+              <entry>none</entry>
+            </row>
+            <row>
+              <entry>Action</entry>
+              <entry>N/A</entry>
+              <entry>N/A</entry>
+            </row>
+            <row>
+              <entry>Communication Out</entry>
+              <entry>Pass Out:</entry>
+              <entry>none</entry>
+            </row>
+            <row>
+              <entry>Ending</entry>
+              <entry>N/A</entry>
+              <entry>Endfunction</entry>
+            </row>
+            <row>
+              <entry>Calling a Function</entry>
+              <entry>Call:</entry>
+              <entry>none</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </section>
+    <section id="id4667187">
+      <title>Examples</title>
+      <para id="id9558149">Here are some examples showing functions defined in pseudocode using our conventions as described above.</para>
+<example id="fs-id1165006046954">
+<title>pseudocode: Function with no parameter passing</title>
+<para id="fs-id1165012981526"><preformat id="fs-id1165006120310" display="block"><code>
+Function clear monitor
+  Pass In: nothing
+  Direct the operating system to clear the monitor
+  Pass Out: nothing
+Endfunction </code></preformat>
+</para>
+</example>
+<example id="fs-id1165006809992">
+<title>pseudocode: Function with parameter passing</title>
+<para id="fs-id6273802"><preformat id="fs-id1165006677260" display="block"><code>
+Function delay program so you can see the monitor
+  Pass In: integer representing tenths of a second
+  Using the operating system delay the program 
+  Pass Out: nothing
+Endfunction </code></preformat>
+</para>
+</example>
+<example id="fs-id1165005528188">
+<title>pseudocode: Function main calling the clear monitor function</title>
+<para id="fs-id1165012355144"><preformat id="fs-id1165017758657" display="block"><code>
+Function main
+  Pass In: nothing
+  Doing some lines of code
+  Call: clear monitor
+  Doing some lines of code
+  Pass Out: value zero to the operating system
+Endfunction </code></preformat>
+</para>
+</example>
+    </section>
+    <section id="id10605979">
+      <title>Definitions</title>
+    <definition id="fs-id6917482">
+      <term>phrase word</term>
+      <meaning id="fs-id8367018">Words used to make pseudocode logic clear to any reader.</meaning>
+    </definition>
+    </section>
+  </content>
+</document>

@@ -1,0 +1,53 @@
+Filename: Solution_Lab_02_Pseudocode.txt
+
+Purpose:  Bank Deposit Change Calculation
+
+Author:   Ken Busbee; © 2008 Kenneth Leroy Busbee
+
+Date:     Dec 24, 2008
+
+NOTE:     Academic Dishonesty Warning
+******************************************************
+Solution files are provided by the instructor to each
+individual student as needed. Students are not to 
+share these files with any other student.
+Not now, not later, not ever.  Don't share them.
+******************************************************
+
+Pseudocode = IPO Outline
+ 
+input
+   display a message asking user for the number of pennies they have
+   get the quantity of pennies from the keyboard
+   display a message asking user for the number of nickels they have
+   get the quantity of nickels from the keyboard
+   display a message asking user for the number of dimes they have
+   get the quantity of dimes from the keyboard
+   display a message asking user for the number of quarters they have
+   get the quantity of quarters from the keyboard
+ 
+processing
+   calculate the total value of all coins by 
+   adding the quantity of each denomination multiplied by its value
+   HINT: Each coins value is a floating-point data type,
+         a fraction of a dollar.
+                                    
+output
+   display the total value of all the coins with an appropriate message
+   pause so the user can see the answer
+
+******************************************************
+
+Potential Variables
+
+Data Type    Identifier Name
+*********    ***************
+integer      pennies
+integer      nickels
+integer      dimes
+integer      quarters
+double       total_value
+
+******************************************************
+End of file
+

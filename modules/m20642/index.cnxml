@@ -1,0 +1,97 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Practice 13: Test After Loops</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m20642</md:content-id>
+  <md:title>Practice 13: Test After Loops</md:title>
+  <md:abstract>Questions, exercises, problems, etc. that support this chapter in the "Programming Fundamentals - A Modular Structured Approach using C++" collection/textbook.</md:abstract>
+  <md:uuid>0f4c8319-6b30-48f5-bbec-f7540684c827</md:uuid>
+</metadata>
+
+<content>
+    <section id="id17054952">
+      <title>Learning Objectives</title>
+      <para id="id17054958">With 100% accuracy during a: memory building activity, exercises, lab assignment, problems, or timed quiz/exam; the student is expected to:</para>
+      <list id="id17054968" list-type="enumerated" number-style="arabic">
+        <item>Define the terms on the definitions as listed in the modules associated with this chapter.</item>
+        <item>Identify which selection control structures are test after iteration.</item>
+        <item>Be able to write pseudo code or flowcharting for the do while control structure.</item>
+        <item>Be able to write C++ source code for a do while control structure.</item>
+      </list>
+    </section>
+    <section id="id17055008">
+      <title>Memory Building Activities</title>
+      <para id="id17055014">Link to: <link window="new" document="m20642" resource="index.html">MBA 13</link></para>
+    </section>
+    <section id="id17055033">
+      <title>Exercises</title>
+<exercise id="fs-id14650252">
+  <problem id="fs-id16527476">
+    <list id="fs-id10328639" list-type="enumerated">
+      <title> Answer the following statements as either true or false:</title>
+        <item>The do while and repeat until structure act exactly the same.</item>
+        <item>Students sometimes confuse assignment and equality.</item>
+        <item>The repeat until looping control structure is available in all programming languages.</item>
+        <item>Because flags are often used, they are usually a special data type.</item>
+        <item>The do while is a test before loop.</item>
+    </list>
+  </problem>
+  <solution id="fs-id17249485">
+    <list id="fs-id17084609" list-type="enumerated">
+      <title>Answers:</title>
+        <item>false</item>
+        <item>true</item>
+        <item>false</item>
+        <item>false</item>
+        <item>false</item>
+    </list>
+  </solution>
+</exercise>
+    </section>
+    <section id="id17055044">
+      <title>Miscellaneous Items</title>
+      <para id="id17055051">Link to: <link window="new" document="m20642" resource="do_while_flow.gif">Animated gif showing a do while loop</link></para>
+    </section>
+    <section id="id17055069">
+      <title>Lab Assignment</title>
+      <section id="id17055076">
+        <title>Creating a Folder or Sub-Folder for Chapter 13 Files</title>
+        <para id="id17055083">Depending on your compiler/IDE, you should decide where to download and store source code files for processing. Prudence dictates that you create these folders as needed prior to downloading source code files. A suggested sub-folder for the <term>Bloodshed Dev-C++ 5 compiler/IDE</term> might be named:</para>
+        <list id="id17055107" list-type="bulleted">
+          <item>Chapter_13 within the folder named: Cpp_Source_Code_Files</item>
+        </list>
+        <para id="id17055122">If you have not done so, please create the folder(s) and/or sub-folder(s) as appropriate.</para>
+      </section>
+      <section id="id17055129">
+        <title>Download the Lab File(s)</title>
+        <para id="id17055135">Download and store the following file(s) to your storage device in the appropriate folder(s). You may need to right click on the link and select "Save Target As" in order to download the file.</para>
+        <para id="id16633471">Download from Connexions: <link document="m20642" resource="Lab_13_Pseudocode.txt">Lab_13_Pseudocode.txt</link></para>
+      </section>
+      <section id="id17055172">
+        <title>Detailed Lab Instructions</title>
+        <para id="id17055179">Read and follow the directions below carefully, and perform the steps in the order listed.</para>
+        <list id="id17055185" list-type="bulleted"><item>Create a source code file from the Lab_13_Pseudocode.txt file. Name it: Lab_13.cpp</item>
+	<item>Build (compile and run) your program.</item>
+	<item>After you have successfully written this program, if you are taking this course for college credit, follow the instructions from your professor/instructor for submitting it for grading.</item>
+</list>
+      </section>
+    </section>
+    <section id="id17055216">
+      <title>Problems</title>
+      <section id="id17055222">
+        <title>Problem 13a – Instructions</title>
+        <para id="id17055230">Flowchart the following pseudocode:</para>
+<example id="klbp1301">
+<title>pseudocode</title>
+<para id="klbp1302"><preformat id="klbp1303" display="block"><code>
+Do
+  Display "I like cheese cake!"
+  Display "Do it again? y or n ---&gt; "
+  Get answer from keyboard
+While answer is 'y'
+</code></preformat>
+</para>
+</example>
+      </section>
+    </section>
+  </content>
+</document>

@@ -1,0 +1,140 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Nested For Loops</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m20653</md:content-id>
+  <md:title>Nested For Loops</md:title>
+  <md:abstract>An explanation of nesting with an example of nested for loops.</md:abstract>
+  <md:uuid>ae79143e-4a31-4e47-a2e1-341f444ed384</md:uuid>
+</metadata>
+<featured-links>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit below.
+       Changes to the links section in the source will not be saved. -->
+    <link-group type="supplemental">
+      <link url="http://cnx.org/content/m18785/latest/" strength="1">Bloodshed Dev-C++ 5 Compiler/IDE</link>
+    </link-group>
+    <link-group type="prerequisite">
+      <link url="http://cnx.org/content/m20600/latest/" strength="3">For Loop</link>
+      <link url="http://cnx.org/content/m19951/latest/" strength="1">Nested If Then Else </link>
+    </link-group>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit above.
+       Changes to the links section in the source will not be saved. -->
+</featured-links>
+<content>
+    <section id="id20364258">
+      <title>General Discussion</title>
+      <section id="id21241504">
+        <title>Nested Control Structures</title>
+        <para id="id24800093">We are going to first introduce the concept of nested control structures. Nesting is a concept that places one item inside of another. Consider:</para>
+        <para id="id22253222"><preformat id="klb1230001" display="block"><code>
+if expression
+  true action
+else 
+  false action
+</code></preformat>
+        </para>
+        <para id="id3258187">This is the basic form of the if then else control structure. Now consider:</para>
+        <para id="id22257724"><preformat id="klb1230002" display="block"><code>
+if age is less than 18
+  you can't vote
+  if age is less than 16
+    you can't drive
+  else
+    you can drive
+else 
+  you can vote
+  if age is less than 21
+    you can't drink 
+  else
+    you can drink
+</code></preformat>
+</para>
+        <para id="id22180938">As you can see we simply included as part of the "true action" a statement and another if then else control structure. We did the same (nested another if then else) for the "false action". In our example we nested if then else control structures. Nesting could have an if then else within a while loop. Thus, the concept of nesting allows the mixing of the different categories of control structures.</para>
+        <para id="id18991458">Many complex logic problems require using nested control structures. By nesting control structures (or placing one inside another) we can accomplish almost any <emphasis>complex logic</emphasis> problem.</para>
+      </section>
+    </section>
+    <section id="id18778694">
+      <title>An Example – Nested for loops</title>
+      <para id="id20322927">Here is an example of a 12 by 12 multiplication table:</para>
+      <para id="id19686122"><preformat id="klb1230003" display="block"><code>
+         1 |   2 |   3 |   4 |   5 |   6 |   7 |   8 |   9 |  10 |  11 |  12 |
+     -------------------------------------------------------------------------
+   1 !   1 |   2 |   3 |   4 |   5 |   6 |   7 |   8 |   9 |  10 |  11 |  12 |
+   2 !   2 |   4 |   6 |   8 |  10 |  12 |  14 |  16 |  18 |  20 |  22 |  24 |
+   3 !   3 |   6 |   9 |  12 |  15 |  18 |  21 |  24 |  27 |  30 |  33 |  36 |
+   4 !   4 |   8 |  12 |  16 |  20 |  24 |  28 |  32 |  36 |  40 |  44 |  48 |
+   5 !   5 |  10 |  15 |  20 |  25 |  30 |  35 |  40 |  45 |  50 |  55 |  60 |
+   6 !   6 |  12 |  18 |  24 |  30 |  36 |  42 |  48 |  54 |  60 |  66 |  72 |
+   7 !   7 |  14 |  21 |  28 |  35 |  42 |  49 |  56 |  63 |  70 |  77 |  84 |
+   8 !   8 |  16 |  24 |  32 |  40 |  48 |  56 |  64 |  72 |  80 |  88 |  96 |
+   9 !   9 |  18 |  27 |  36 |  45 |  54 |  63 |  72 |  81 |  90 |  99 | 108 |
+  10 !  10 |  20 |  30 |  40 |  50 |  60 |  70 |  80 |  90 | 100 | 110 | 120 |
+  11 !  11 |  22 |  33 |  44 |  55 |  66 |  77 |  88 |  99 | 110 | 121 | 132 |
+  12 !  12 |  24 |  36 |  48 |  60 |  72 |  84 |  96 | 108 | 120 | 132 | 144 |
+</code></preformat>
+      </para>
+      <para id="id21171023">We might also see that the answers could be designed as a collection of cells (each cell being exactly six spaces wide). The C++ source code to produce the above is:</para>
+<example id="fs-id8620969"><title>C++ source code: nested for loops - multiplication table</title><para id="klb4560004"><preformat id="klb1230004" display="block"><code>
+cout &lt;&lt; "      ";
+for(across=1; across &lt;13; across++)
+  {
+  cout &lt;&lt; setw(4) &lt;&lt; across &lt;&lt; " |";
+  }
+cout &lt;&lt; endl;
+
+cout &lt;&lt; "      ";
+for(across=1; across &lt;13; across++)
+  {
+  cout &lt;&lt; "------";
+  }
+cout &lt;&lt; endl;
+
+for(down=1; down &lt;13; down++)
+  {
+  cout &lt;&lt; setw(4) &lt;&lt; down &lt;&lt; " !";
+  for(across=1; across &lt;13; across++)
+    {
+    cout &lt;&lt; setw(4) &lt;&lt; down*across &lt;&lt; " |";
+    }
+  cout &lt;&lt; endl;
+  }  
+</code></preformat>
+	</para>
+</example>
+      <figure id="id24821163"><media id="id24821163_media" alt="">
+		<image mime-type="image/jpg" src="../../media/graphics1-5f14.jpg" id="id24821163__onlineimage" height="450" width="600"/>
+	</media>
+	
+<caption>Colorized Code - multiplication table</caption></figure>
+      <para id="id20433611">
+        <figure id="id20280942"><media id="id20280942_media" alt="">
+		<image mime-type="image/jpg" src="../../media/graphics2-01ee.jpg" id="id20280942__onlineimage" height="450" width="600"/>
+	</media>
+	
+<caption>Colorized Output - multiplication table</caption></figure>
+      </para>
+    </section>
+    <section id="id23731928">
+      <title>Demonstration Program in C++</title>
+      <section id="id21498233">
+        <title>Creating a Folder or Sub-Folder for Source Code Files</title>
+        <para id="id2693505">Depending on your compiler/IDE, you should decide where to download and store source code files for processing. Prudence dictates that you create these folders as needed prior to downloading source code files. A suggested sub-folder for the <term>Bloodshed Dev-C++ 5 compiler/IDE</term> might be named:</para>
+        <list id="id24679204" list-type="bulleted">
+          <item>Demo_Programs</item>
+        </list>
+        <para id="id8675956">If you have not done so, please create the folder(s) and/or sub-folder(s) as appropriate.</para>
+      </section>
+      <section id="id24785700">
+        <title>Download the Demo Program</title>
+        <para id="id2812726">Download and store the following file(s) to your storage device in the appropriate folder(s). Following the methods of your compiler/IDE, compile and run the program(s). Study the source code file(s) in conjunction with other learning materials.</para>
+        <para id="id24250696">Download from Connexions: <link document="m20653" resource="Demo_Nested_For_Loops.cpp">Demo_Nested_For_Loops.cpp</link></para>
+      </section>
+    </section>
+    <section id="id2758839">
+      <title>Definitions</title>
+    <definition id="fs-id11686259">
+      <term>complex logic</term>
+      <meaning id="fs-id10755923"> Often solved with nested control structures. </meaning>
+    </definition>
+    </section>
+  </content>
+</document>

@@ -1,0 +1,91 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Test Data</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m18781</md:content-id>
+  <md:title>Test Data</md:title>
+  <md:abstract>An explanation of test data with an example developed from a simple program documented with pseudocode.</md:abstract>
+  <md:uuid>fb16839e-7f43-49cb-b8d4-bb1811f63b47</md:uuid>
+</metadata>
+<featured-links>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit below.
+       Changes to the links section in the source will not be saved. -->
+    <link-group type="supplemental">
+      <link url="http://cnx.org/content/m18648/latest/" strength="2">Pseudocode</link>
+    </link-group>
+    <link-group type="prerequisite">
+      <link url="http://cnx.org/content/m18686/latest/" strength="3">Program Design</link>
+    </link-group>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit above.
+       Changes to the links section in the source will not be saved. -->
+</featured-links>
+<content>
+    <section id="id1167333453426">
+      <title>Overview</title>
+      <para id="id1167333257185">Test data consists of the user providing some input values and predicting the outputs. This can be quite easy for a simple program and the test data can be used twice.</para>
+      <list id="id1167330811410" list-type="enumerated" number-style="arabic">
+        <item>to check the model to see if it produces the correct results (<emphasis>model checking</emphasis>)</item>
+        <item>to check the coded program to see if it produces the correct results (<emphasis>code checking</emphasis>)</item>
+      </list>
+      <para id="id1167333379079">Test data is developed by using the algorithm of the program. This algorithm is usually documented during the program design with either flowcharting or pseudocode. Here is the pseudocode in outline form describing the inputs, processing and outputs for a program used for painting rectangular buildings.</para>
+<example id="fs-id1171849350847">
+<title> Pseudocode using an IPO Outline for Painting a Rectangular Building</title>
+<para id="fs-id1171857194490"><preformat id="fs-id1171853025778" display="block"><code>
+Input
+  display a message asking user for the length of the building
+  get the length from the keyboard
+  display a message asking user for the width of the building
+  get the width from the keyboard
+  display a message asking user for the height of the building
+  get the height from the keyboard
+  display a message asking user for the price per gallon of paint
+  get the price per gallon of paint from the keyboard
+  display a message asking user for the sq ft coverage of a gallon of paint
+  get the sq ft coverage of a gallon of paint from the keyboard
+Processing
+  calculate the total area of the building by:
+    multiplying the length by height by 2
+    then multiply the width by height by 2
+    then add the two results together
+  calculate the number of gallons of paint needed by:
+    dividing the total area by the coverage per gallon
+    then round up to the next whole gallon
+  calculate the total cost of the paint by:
+    multiplying the total gallons needed by the price of one gallon of paint
+Output
+  display the number of gallons needed on the monitor
+  display the total cost of the paint on the monitor
+  pause so the user can see the answer</code></preformat>
+</para>
+</example>
+    </section>
+    <section id="id1167336044123">
+      <title>Creating Test Data and Model Checking</title>
+      <para id="id1167334260095">Test data is used to verify that the inputs, processing and outputs are working correctly. As test data is initially developed it can verify that the documented algorithm (pseudocode in the example we are doing) is correct. It helps us understand and even visualize the inputs, processing and outputs of the program.</para>
+      <para id="id1167334344196">Inputs: My building is 100 feet long by 40 feet wide and 10 feet in height and I selected paint costing $28.49 per gallon that will cover 250 square feet per gallon. We should verify that the pseudocode is prompting the user for this data.</para>
+      <para id="id1167334450153">Processing: Using my solar powered hand held calculator, I can calculate (or predict) the total area would be: (100 x 10 x 2 plus 40 x 10 x 2) or 2,800 sq ft. The total gallons of paint would be: (2800 / 250) or 11.2 gallons. But rounded up, I would need twelve (12) gallons of paint. The total cost would be: (28.49 times 12) or $341.88. We should verify that the pseudocode is performing the correct calculations.</para>
+      <para id="id1167333359162">Output: Only the significant information (number of gallons to buy and the total cost) are displayed for the user to see. We should verify that the appropriate information is being displayed.</para>
+    </section>
+    <section id="id1167334175727">
+      <title>Testing the Coded Program – Code Checking</title>
+      <para id="id1167334091788">The test data can be developed and used to test the algorithm that is documented (in our case our pseudocode) during the program design phase. Once the program is code with compiler and linker errors resolved, the programmer gets to play user and should test the program using the test data developed. When you run your program, how will you know that it is working properly? Did you properly plan your logic to accomplish your purpose? Even if your plan was correct, did it get converted correctly (coded) into the chosen programming language (in our case C++)? The answer (or solution) to all of these questions is our test data.</para>
+      <para id="id1167337752664">By developing test data we are predicting what the results should be, thus we can verify that our program is working properly. When we run the program we would enter the input values used in our test data. Hopefully the program will output the predicted values. If not then our problem could be any of the following:</para>
+      <list id="id1167333434468" list-type="enumerated" number-style="arabic">
+        <item>The plan (IPO outline or other item) could be wrong </item>
+        <item>The conversion of the plan to code might be wrong </item>
+        <item>The test data results were calculated wrong </item>
+      </list>
+      <para id="id1167332991017">Resolving problems of this nature can be the most difficult problems a programmer encounters. You must review each of the above to determine where the error is lies. Fix the error and re-test your program.</para>
+    </section>
+    <section id="id1167330792380">
+      <title>Definitions</title>
+    <definition id="fs-id1171850166322">
+      <term>model checking</term>
+      <meaning id="fs-id1171853009808">Using test data to check the design model (usually done in pseudocode).</meaning>
+    </definition>
+    <definition id="fs-id1171853616200">
+      <term>code checking</term>
+      <meaning id="fs-id1171853450515">Using test data to check the coded program in a specific language (like C++).</meaning>
+    </definition>
+    </section>
+  </content>
+</document>

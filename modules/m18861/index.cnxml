@@ -1,0 +1,206 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Modularization and C++ Program Layout</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m18861</md:content-id>
+  <md:title>Modularization and C++ Program Layout</md:title>
+  <md:abstract>An introduction of the concepts of modular programming with a simple example of program control and specific task functions using a C++ source code listing.  The general layout of a C++ program is described.</md:abstract>
+  <md:uuid>ca0d4194-4fb6-4986-808d-50c098702ca3</md:uuid>
+</metadata>
+<featured-links>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit below.
+       Changes to the links section in the source will not be saved. -->
+    <link-group type="prerequisite">
+      <link url="http://cnx.org/content/m18785/latest/" strength="2">Bloodshed Dev-C++ 5 Compiler/IDE</link>
+    </link-group>
+    <link-group type="supplemental">
+      <link url="http://www.webopedia.com/TERM/f/function.html" strength="2">Webopedia - function</link>
+    </link-group>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit above.
+       Changes to the links section in the source will not be saved. -->
+</featured-links>
+<content>
+    <section id="id20498278">
+      <title>Concept of Modularization</title>
+      <para id="id11107238">One of the most important concepts of programming is the ability to group some lines of code into a unit that can be included in our program. The original wording for this was a sub-program. Other names include: macro, sub-routine, procedure, module and function. We are going to use the term <emphasis>function</emphasis> for that is what they are called in the two predominant programming languages of today: C++ and Java. Functions are important because they allow us to take large complicated programs and to divide them into smaller manageable pieces. Because the function is a smaller piece of the overall program, we can concentrate on what we want it to do and test it to make sure it works properly. Generally functions fall into two categories:</para>
+      <list id="id21820630" list-type="enumerated" number-style="arabic">
+        <item><emphasis>Program Control</emphasis> - Functions used to simply sub divide and control the program. These functions are unique to the program being written. Other programs may use similar functions maybe even functions with the same name, but the content of the functions are almost always very different.</item>
+        <item><emphasis>Specific Task</emphasis> - Functions designed to be used with several programs. These functions perform a specific task and thus are useable in many different programs because the other programs also need to do the specific task. Specific task functions are sometimes referred to as building blocks. Because they are already coded and tested, we can use them with confidence to more efficiently write a large program.</item>
+      </list>
+      <para id="id20506092">The main program must establish the existence of functions used in that program. Depending on the programming language, there is a formal way to:</para>
+      <list id="id23561710" list-type="enumerated" number-style="arabic">
+        <item>define a function (it's <emphasis>definition</emphasis> or the code it will execute)</item>
+        <item><emphasis>call</emphasis> a function </item>
+        <item>declare a function (a <emphasis>prototype</emphasis> is a declaration to a complier) </item>
+      </list>
+      <para id="id21174298">Program Control functions normally do not communicate information to each other but use a common area for variable storage. Specific Task functions are constructed so that data can be communicated between the calling program piece (which is usually another function) and the function being called. This ability to communicate data is what allows us to build a specific task function that may be used in many programs. The rules for how the data is communicated in and out of a function vary greatly by programming language, but the concept is the same. The data items passed (or communicated) are called parameters. Thus the wording: <emphasis>parameter passing</emphasis>. The four data communication options include:</para>
+      <list id="id21820512" list-type="enumerated" number-style="arabic">
+        <item>no communication in with no communication out</item>
+        <item>some communication in with no communication out</item>
+        <item>some communication in with some communication out</item>
+        <item>no communication in with some communication out</item>
+      </list>
+    </section>
+    <section id="id21924252">
+      <title>Introduction of Functions within C++</title>
+      <para id="id20001666">We are going to consider a simple program that might be used for testing a compiler to make sure that it is installed correctly.</para>
+<example id="fs-id1168689606566">
+<title> Compiler_Test.cpp source code</title>
+<para id="fs-id1168689493052"><preformat id="fs-id7428023" display="block"><code>
+//******************************************************
+// Filename: Compiler_Test.cpp
+// Purpose:  Average the ages of two people
+// Author:   Ken Busbee; © Kenneth Leroy Busbee
+// Date:     Jan 5, 2009
+// Comment:  Main idea is to be able to 
+//           debug and run a program on your compiler.
+//******************************************************
+
+// Headers and Other Technical Items
+
+#include &lt;iostream&gt;  
+using namespace std;
+
+// Function Prototypes
+
+void pause(void);
+
+// Variables
+
+int     age1;
+int     age2;
+double  answer;
+
+//******************************************************
+// main
+//******************************************************
+
+int main(void)
+  {
+  // Input	
+  cout &lt;&lt; "\nEnter the age of the first person ---&gt;: ";
+  cin &gt;&gt; age1;
+  cout &lt;&lt; "\nEnter the age of the second person --&gt;: ";
+  cin &gt;&gt; age2;
+
+  // Process
+  answer = (age1 + age2) / 2.0;
+
+  // Output
+  cout &lt;&lt; "\nThe average of their ages is --------&gt;: ";
+  cout &lt;&lt; answer;
+
+  pause();
+  return 0;
+  }
+
+//******************************************************
+// pause
+//******************************************************
+
+void pause(void)
+  {
+  cout &lt;&lt; "\n\n";
+  system("PAUSE");
+  cout &lt;&lt; "\n\n";
+  return;
+  }
+
+//******************************************************
+// End of Program
+//******************************************************</code></preformat>
+</para>
+</example>
+      <para id="id21726338">This program has two functions, one from each of our categories. The technical layout of functions are the same, it is our distinction that creates the two categories based on how a function is being implemented.</para>
+      <section id="id20837891">
+        <title>Program Control Function</title>
+        <para id="id22397355">The main program piece in C++ program is a special function with the <emphasis>identifier name</emphasis> of main. The special or uniqueness of main as a function is that this is where the program starts executing code and this is where it usually stops executing code. It is usually the first function defined in a program and appears after the area used for includes, other technical items, declaration of prototypes, the listing of global constants and variables and any other items generally needed by the program. The code to define the function main is provided; however, it is not prototyped or usually called like other functions within a program. In this simple example, there are no other program control functions. </para>
+      </section>
+      <section id="id20805156">
+        <title>Specific Task Function</title>
+        <para id="id21891535">We often have the need to perform a specific task that might be used in many programs. In the Compile_Test.cpp source code above we have such a task that is used to stop the execution of the code until the user hits the enter key. The functions name is: pause. This function is not communicating any information between the calling function and itself, thus the use of the data type void.</para>
+<example id="fs-id1168689346159">
+<title>general layout of a function</title>
+<para id="fs-id8888265"><preformat id="fs-id1168689489069" display="block"><code>
+&lt;return value data type&gt; function identifier name(&lt;data type&gt; &lt;identifier name for input value&gt;)
+  {
+  lines of code;
+
+  return &lt;value&gt;;
+  }</code></preformat>
+</para>
+</example>
+        <para id="id21946377">There is no semi-colon after the first line. Semi-colons are used at the end of a statement in C++, but not on the first line when defining a function. Functions have a set of <emphasis>braces</emphasis> {} used for identifying a group or block of statements or lines of code. There are normally several lines of code within a function. Lines of code containing the instructions end in a semi-colon. Can you identify the definition of the pause function in the above program example? The pause function definition is after the function main. Though not technically required, most programs list all functions (program control or specific task) after the function main.</para>
+        <para id="id18038744">Let's identify the location where the function pause is called. The calling function is the function main and it towards the end of the function. The line looks like:</para>
+        <para id="id18869916">
+          <code display="inline">pause();</code>
+        </para>
+        <para id="id18121237">When you call a function you use its identifier name and a set of parentheses. You place any data items you are passing inside the parentheses, and in our example there are none. A semi-colon ends the statement or line of code. After our program is compiled and running, the lines of code in the function main are executed and when it gets to the calling of the pause function, the control of the program moves to the pause function and starts executing the lines of code in the pause function. When it’s done with the lines of code, it will return to the place in the program that called it (in our example the function main) and continue with the code in that function. </para>
+        <para id="id21775571">Once we know how to define a function and how to call a function, we usually will need to know how to declare a function to the compiler (called a prototype). Because of normal computer programming industry standards, programmers usually list the function main first with other functions defined after it. Then somewhere in the function main, we will call a function. When we convert our source code program to an executable version for running on our computer, the first step of the process is compiling. The compiler program demands to know what the communication will be between two functions when a function is called. It will know the communication (what going in and out as parameters) if the function being called has been defined. But, we have not defined that function yet; it is defined after the function main. To solve this problem, we show the compiler a prototype of what the function will look like (at least the communication features of the function) when we define it.</para>
+        <para id="id22291908">
+          <code display="inline">void pause(void);</code>
+        </para>
+        <para id="id21189985">This line of code looks exactly like the first line in our function definition with one important addition of a semi-colon. Prototypes (or declarations to the compiler of the communications of a function not yet defined) are placed near the top of the program before the function main. <emphasis>Summary concept: If you call a function before it is defined you must prototype it before it is called.</emphasis> Looking at our list of the three things you do in conjunction with a function in the order that they normally appear in a program, there is a formal way to:</para>
+        <list id="id21194510" list-type="enumerated" number-style="arabic">
+          <item>declare a function (a prototype is a communications declaration to a complier) </item>
+          <item>call a function </item>
+          <item>define a function </item>
+        </list>
+      </section>
+    </section>
+    <section id="id17165547">
+      <title>C++ Program Layout</title>
+      <para id="id22369786">From the above example, you can see that 2/3 of the program is the two functions. Most C++ programs have several items before the function main. As in the example, they often are:</para>
+      <list id="id20887090" list-type="enumerated" number-style="arabic">
+        <item>Documentation – Most programs have a comment area at the start of the program with a variety of comments pertinent to the program. Any line starting with two slashes // is a comment and the compiler software disregards everything from the // to the end of the line.</item>
+        <item>#include&lt;iostream&gt; – This line of code inserts a file into the source code. The file contains necessary code to be able to do simple input and output.</item>
+        <item>using namespace std – The C++ compiler has an area where it keeps the identifier names used in a program organized and it is called a namespace. There is a namespace created in conjunction with the iostream file called: std. This line informs the compiler to use the namespace std where the identifier names in the iostream are established.</item>
+        <item>Function prototypes have already been explained.</item>
+        <item>We need some variables (storage areas) for this program to work. They are defined next.</item>
+      </list>
+    </section>
+    <section id="id22121639">
+      <title>Definitions</title>
+    <definition id="fs-id1164229923368">
+      <term>modularization</term>
+      <meaning id="fs-id1164230979083">The ability to group some lines of code into a unit that can be included in our program.</meaning>
+    </definition>
+    <definition id="fs-id6611246">
+      <term>function</term>
+      <meaning id="fs-id2703998">What modules are called in the two predominant programming languages of today: C++ and Java.</meaning>
+    </definition>
+    <definition id="fs-id1164234935714">
+      <term>program control</term>
+      <meaning id="fs-id6090810">Functions used to simply sub divide and control the program.</meaning>
+    </definition>
+    <definition id="fs-id1164230892516">
+      <term>specific task</term>
+      <meaning id="fs-id1164226484466">Functions designed to be used with several programs.</meaning>
+    </definition>
+    <definition id="fs-id1164225432367">
+      <term>parameter passing</term>
+      <meaning id="fs-id7520713">How the data is communicated in to and out of a function.</meaning>
+    </definition>
+    <definition id="fs-id1164230067638">
+      <term>identifier name</term>
+      <meaning id="fs-id8849434">The name given by the programmer to identify a function or other program items such as variables.</meaning>
+    </definition>
+    <definition id="fs-id1164231210238">
+      <term>function prototype</term>
+      <meaning id="fs-id8157390">A function's communications declaration to a complier.</meaning>
+    </definition>
+    <definition id="fs-id6417714">
+      <term>function call</term>
+      <meaning id="fs-id2916466">A function's using or invoking of another function.
+</meaning>
+    </definition>
+    <definition id="fs-id5276259">
+      <term>function definition</term>
+      <meaning id="fs-id8829989">The code that defines what a function does.</meaning>
+    </definition>
+    <definition id="fs-id3162174">
+      <term>braces</term>
+      <meaning id="fs-id1164229133792">Used to identify a block of code in C++.</meaning>
+    </definition>
+    </section>
+  </content>
+</document>

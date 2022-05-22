@@ -1,0 +1,68 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>String Data Type</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m18656</md:content-id>
+  <md:title>String Data Type</md:title>
+  <md:abstract>An introduction to the string concept and it's use as a string constant.</md:abstract>
+  <md:uuid>6964d163-927f-4911-a1ce-37a0ec727040</md:uuid>
+</metadata>
+<featured-links>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit below.
+       Changes to the links section in the source will not be saved. -->
+    <link-group type="prerequisite">
+      <link url="http://cnx.org/content/m18653/latest/" strength="2">Data Types in C++</link>
+    </link-group>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit above.
+       Changes to the links section in the source will not be saved. -->
+</featured-links>
+<content>
+    <section id="id9735783">
+      <title>General Discussion</title>
+      <para id="id9735789">Technically, there is no string data type in the C++ programming language. However, the concept of a string data type makes it easy to handle strings of character data. A single character has some limitations. Many data items are not integers or floating-point values. The message <emphasis>Hi Mom!</emphasis> is a good example of a string. Thus, the need to handle a series of characters as a single piece of data (in English correctly called a datum). </para>
+      <para id="id9735823">In the "C" programming language all string were handled as an array of characters that end in an ASCII null character (the value 0 or the first character in the ASCII character code set). Associated with object oriented programming the string class has been added to C++ as a standard part of the programming language. This changed with the implementation with strings being stored as a length controlled item with a maximum length of 255 characters. Included in the C++ string class is the reserved word of <emphasis>string</emphasis> as if it were a data type. Some basics about strings include:</para>
+      <table id="id9735859" summary="">
+        <tgroup cols="2">
+          <colspec colnum="1" colname="c1"/>
+          <colspec colnum="2" colname="c2"/>
+          <tbody>
+            <row>
+              <entry>C++ Reserved Word</entry>
+              <entry>string</entry>
+            </row>
+            <row>
+              <entry>Represent</entry>
+              <entry>Series of characters (technically an array)</entry>
+            </row>
+            <row>
+              <entry>Size</entry>
+              <entry>Varies in length</entry>
+            </row>
+            <row>
+              <entry>Normal Signage</entry>
+              <entry>N/A</entry>
+            </row>
+            <row>
+              <entry>Domain (Values Allowed)</entry>
+              <entry>Extended ASCII Character Code Set</entry>
+            </row>
+            <row>
+              <entry>C++ syntax rule</entry>
+              <entry>Double quote marks for constants</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+      <para id="id9736002">For now, we will address only the use of strings as constants. Most modern compliers that are part of an Integrated Development Environment (IDE) will color the source code to help the programmer see different features more readily. Beginning programmers will use string constants to send messages to the monitor. A typical line of C++ code:</para>
+      <para id="id9736024"><code display="inline">cout &lt;&lt; "Hi Mom!";</code>
+</para>
+      <para id="id9736032">would have the "Hi Mom" colored (usually red) to emphasize that the item is a string. </para>
+    </section>
+    <section id="id9736048">
+      <title>Definitions</title>
+    <definition id="fs-id8720672">
+      <term> string</term>
+      <meaning id="fs-id8001870"> A series or array of characters as a single piece of data. </meaning>
+    </definition>
+    </section>
+  </content>
+</document>

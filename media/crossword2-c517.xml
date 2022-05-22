@@ -1,0 +1,14 @@
+&acrosstext=Across&
+&downtext=Down&
+&restarttext=Re-start&
+&finishtext=Finish&
+&word0=POINTER&
+&clue0=A variable that holds an address as its value.&
+&word1=DEREFERENCING&
+&clue1=The concept of using the item to which a pointer or address is pointing at.&
+&word2=REFERENCEVARIABLE&
+&clue2=Used with parameter passing by reference.&
+&word3=ADDRESSOPERATOR&
+&clue3=The ampersand.&
+&word4=INDIRECTIONOPERATOR&
+&clue4=The asterisk used for dereferencing a pointer.&

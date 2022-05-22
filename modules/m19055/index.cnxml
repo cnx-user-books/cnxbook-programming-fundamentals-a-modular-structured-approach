@@ -1,0 +1,19 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Author Acknowledgements</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m19055</md:content-id>
+  <md:title>Author Acknowledgements</md:title>
+  <md:abstract>This module contains the author acknowledgements for the "Programming Fundamentals - A Modular Structured Approach using C++" textbook/collection.</md:abstract>
+  <md:uuid>927a9b77-a3fe-45e2-9c17-d9c520491b79</md:uuid>
+</metadata>
+
+<content>
+    <para id="id10283313">I wish to acknowledge the many people who have helped me and have encouraged me in this project. </para>
+    <list id="id10043036" list-type="enumerated" number-style="arabic">
+      <item>Mr. Abass Alamnehe, who is a fellow faculty member at Houston Community College. He has encouraged the use of Connexions as an "open source" publishing concept. His comments on several modules have led directly to the improvement of the materials in this textbook/collection.</item>
+      <item>The hundreds (most likely a thousand plus) students that I have taken programming courses that I have taught since 1984. The languages include: COBOL, main frame IBM assembly, Intel assembly, Pascal, "C" and "C++". They have often suggested that I write my own book because they thought that I was explaining the subject matter better than the author of the textbook that we were using. Little did my students understand that directly or indirectly they aided in the improvement of the materials from which I taught as well as improving me as a teacher.</item>
+      <item>To my future students and all those that will use this textbook/collection. They will provide suggestions for improvement as well as being the thousand eyes identifying the hard to find typos, etc.</item>
+      <item>My wife, Carol, who supports me in all that I do. She has tolerated the many hours that I have spent in concentration on developing the modules that comprise this work. Without her support, this work would not have happened.</item>
+    </list>
+  </content>
+</document>

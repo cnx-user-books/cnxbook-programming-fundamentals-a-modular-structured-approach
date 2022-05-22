@@ -1,0 +1,123 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Case Control Structure</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m19963</md:content-id>
+  <md:title>Case Control Structure</md:title>
+  <md:abstract>An introduction to the case control structure and how it is implemented using a switch within the C++ programming language.</md:abstract>
+  <md:uuid>86f78597-f81f-463a-90a1-dda006795ad8</md:uuid>
+</metadata>
+<featured-links>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit below.
+       Changes to the links section in the source will not be saved. -->
+    <link-group type="supplemental">
+      <link url="http://cnx.org/content/m19947/latest/" strength="2">Branching Control Structures</link>
+    </link-group>
+    <link-group type="prerequisite">
+      <link url="http://cnx.org/content/m19951/latest/" strength="3">Nested If Then Else </link>
+      <link url="http://cnx.org/content/m19623/latest/" strength="2">Flowcharting </link>
+      <link url="http://cnx.org/content/m18649/latest/" strength="2">Pseudocode Examples for Control Structures</link>
+    </link-group>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit above.
+       Changes to the links section in the source will not be saved. -->
+</featured-links>
+<content>
+    <section id="id20986482">
+      <title>Traditional Case Control Structure</title>
+      <section id="id11615130">
+        <title>Multiway Selection using the Case Structure</title>
+        <para id="id22747136">One of the drawbacks of two way selection is that we can only consider two choices. But what do you do if you have more than two choices. Consider the following which has four choices:</para>
+        <para id="id14164528"><preformat id="klb7777001" display="block"><code>
+if age equal to 18
+  you can vote
+else
+  if age equal to 39
+    you're middle aged
+  else
+    if age equal to 65
+      consider retirement
+  else
+      age is un-important </code></preformat>
+        </para>
+        <para id="id16217601">You get an appropriate message depending on the value of age. The last item is referred to as the default. If the age is not equal to 18, 39 or 65 you get the default message. In some situations there is no default action. Consider this flowchart example:</para>
+        <figure id="id6590574">
+          <media id="id6590574_media" alt="">
+            <image mime-type="image/jpg" src="../../media/graphics1-a6bc.jpg" id="id6590574__onlineimage" height="450" width="600"/>
+          </media>
+        </figure>
+        <para id="id21705848">This flowchart is of the case control structure and is used for multiway selection. The decision box holds the variable age. The logic of the case is one of equality where in the value in the variable age is compared to the listed values in order from left to right. Thus, the value stored in age is compared to 18 or is "age equal to 18". If it is true, the logic flows down through the action and drops out at the bottom of the case structure. If the value of the test expression is false, it moves to the next listed value to the right and makes another comparison. It works exactly the same as our nested if then else structure.</para>
+      </section>
+      <section id="id21416675">
+        <title>C++ Code to Accomplish Multiway Selection</title>
+        <para id="id6183995">Using the same example as above, here is the C++ code to accomplish the case control structure. </para>
+<example id="fs-id27686425"><title>C++ source code - case structure with integers</title><para id="id21676392"><preformat id="klb7777002" display="block"><code>
+switch (age)
+  {
+  case 18: cout &lt;&lt; "\nYou can vote.";
+           break;
+  case 39: cout &lt;&lt; "\nYou're middle aged.";
+           break;
+  case 65: cout &lt;&lt; "\nConsider retirement.";
+           break;
+  default: cout &lt;&lt; "\nAge is un-important.";
+  } </code></preformat>
+	</para>
+</example>
+        <para id="id3491843">The first thing you should note is that the C++ programming language does not formally have a case control structure. It does have a switch control structure but it acts differently than the traditional case control structure. We use a break (which is a branching control structure) with the switch to make it act like the traditional case structure. This is one of the few allowable ways to use the switch with break within the C++ programming language to simulate the traditional case structure. All other uses of the switch or break are to be avoided if you are to stay within the bounds of good structured programming techniques. </para>
+        <para id="id8642187">The value in the variable age is compared to the first "case" (note: <emphasis>case</emphasis> is one of the C++ reserved words) which is the value 18 (also called the listed value) using an equality comparison or is "age equal to 18". If it is true, the cout is executed which displays “You can vote.” and the next line of code (the break) is done (which jumps us to the end of the control structure). If it is false, it moves on to the next case for comparison.</para>
+        
+      <para id="id939999">Most programming languages, including C++, require the listed values for the case control structure be of the integer family of data types. This basically means either an integer or character data type. Consider this example that uses character data type (choice is a character variable):</para>
+<example id="fs-id27686999"><title>C++ source code - case structure with characters</title><para id="id21676991"><preformat id="klb7777992" display="block"><code>
+switch (choice)
+  {
+  case 'A': cout &lt;&lt; "\nYou are an A student.";
+            break;
+  case 'B': cout &lt;&lt; "\nYou are a B student.";
+            break;
+  case 'C': cout &lt;&lt; "\nYou are a C student.";
+            break;
+  default:  cout &lt;&lt; "\nMaybe you should study harder.";
+  } </code></preformat>
+	</para>
+</example>
+      </section>
+    </section>
+    <section id="id9155430">
+      <title>Limitations of the Case Control Structure</title>
+      <para id="id9391773">Most programming languages, including C++, do not allow ranges of values for case like structures. Consider this flowcharting example that used ranges:</para>
+      <para id="id6695230"><figure id="id21672254"><media id="id21672254_media" alt=""><image mime-type="image/jpg" src="../../media/graphics2-e10b.jpg" id="id21672254__onlineimage" height="450" width="600"/></media></figure> Consider also the following pseudocode for the same logic:</para>
+      <para id="id9739466"><preformat id="klb7777003" display="block"><code>
+Case of age
+  0 to 17    Display "You can't vote."
+  18 to 64   Display "You’re in your working years."
+  65 +       Display "You should be retired."
+Endcase </code></preformat>
+        </para>
+      <para id="id13685054">Using the case control structure when using non integer family or ranges of values is allowed when designing a program and documenting that design with pseudocode or flowcharting. However, the implementation in most languages would follow a <term>nested if then else</term> approach with complex Boolean expressions. The logic of the above examples would look like this:</para>
+      <para id="id5903153"><preformat id="klb7777004" display="block"><code>
+if age &gt; 0 and age &lt;= to 17
+  display You can’t vote.
+else
+  if age is &gt;= 18 and age &lt;= 64
+    display You’re in your working years.
+  else
+    display You should be retired. </code></preformat>
+        </para>
+    </section>
+    <section id="id13419136">
+      <title>Good Structured Programming Methods</title>
+      <para id="id13707774">Most text book authors confirm that good structured programming techniques and habits are more important than concentrating on the technical possibilities and capabilities of the language that you are using to learn programming skills.  Remember, this module is concentrating on programming fundamentals and concepts and it uses the C++ programming language to build our initial programming skills.  It is not a created with the intent to cover the C++ programming language in detail, despite the fact that at times we have to cover C++ language mechanics.</para>
+    </section>
+<section id="fs-id21778039">
+  <title>Definitions</title>
+    <definition id="fs-id27174378">
+      <term>case</term>
+      <meaning id="fs-id24266892"> A control structure that does mulitway selection. </meaning>
+    </definition>
+    <definition id="fs-id27059584">
+      <term>switch</term>
+      <meaning id="fs-id27013209"> A C++ control structure that can be made to act like a case control structure. 
+ </meaning>
+    </definition>
+</section>
+  </content>
+</document>

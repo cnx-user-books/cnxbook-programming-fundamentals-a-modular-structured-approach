@@ -1,0 +1,86 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Practice 20: More Array Functions</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m21631</md:content-id>
+  <md:title>Practice 20: More Array Functions</md:title>
+  <md:abstract>Questions, exercises, problems, etc. that support this chapter in the "Programming Fundamentals - A Modular Structured Approach using C++" collection/textbook.</md:abstract>
+  <md:uuid>7c85542a-6b3e-48b2-9e2d-118d64a476e1</md:uuid>
+</metadata>
+
+<content>
+    <section id="id1172062647459">
+      <title>Learning Objectives</title>
+      <para id="id1172049163448">With 100% accuracy during a: memory building activity, exercises, lab assignment, problems, or timed quiz/exam; the student is expected to:</para>
+      <list id="id1172053527940" list-type="enumerated" number-style="arabic"><item>Define the terms on the definitions as listed in the modules associated with this chapter.</item>
+	<item>Within C++ source code be able to understand functions for arrays, specifically searching a array's values to see if a given value exists, finding the maximum value in an array and sorting an array.</item>
+	<item>Within C++ source code be able to create functions for arrays, specifically a function for finding the smallest value in an array.</item>
+	<item>Within C++ source code be able to modifying existing code to process different types of arrays.</item>
+</list>
+    </section>
+    <section id="id1172063643806">
+      <title>Memory Building Activities</title>
+      <para id="id1172050669172">Link to: <link window="new" document="m21631" resource="index.html">MBA 20</link></para>
+    </section>
+    <section id="id1172049141449">
+      <title>Exercises</title>
+<exercise id="fs-id23134869">
+  <problem id="fs-id22691407">
+    <list id="fs-id23218604" list-type="enumerated">
+      <title>Answer the following statements as either true or false:</title>
+        <item>Linear searches require complex algorithms.</item>
+        <item>Functions are often created for searching for the max and min values in an array. </item>
+        <item>The bubble sort is an easy way to arrange data an array.</item>
+        <item>There is only one method of bubble sorting.</item>
+        <item>Sorting an array is frequently done.</item>
+    </list>
+  </problem>
+  <solution id="fs-id17404277">
+    <list id="fs-id23028100" list-type="enumerated">
+      <title>Answers:</title>
+        <item>false</item>
+        <item>true</item>
+        <item>true</item>
+        <item>false</item>
+        <item>true</item>
+    </list>
+  </solution>
+</exercise>
+    </section>
+    <section id="id1172056156960">
+      <title>Miscellaneous Items</title>
+      <para id="id1172049178155">None at this time.</para>
+    </section>
+    <section id="id1172049122409">
+      <title>Lab Assignment</title>
+      <section id="id1172054850427">
+        <title>Creating a Folder or Sub-Folder for Chapter 20 Files</title>
+        <para id="id1172051907005">Depending on your compiler/IDE, you should decide where to download and store source code files for processing. Prudence dictates that you create these folders as needed prior to downloading source code files. A suggested sub-folder for the <term>Bloodshed Dev-C++ 5 compiler/IDE</term> might be named:</para>
+        <list id="id1172049102093" list-type="bulleted">
+          <item>Chapter_20 within the folder named: Cpp_Source_Code_Files</item>
+        </list>
+        <para id="id1172054645562">If you have not done so, please create the folder(s) and/or sub-folder(s) as appropriate.</para>
+      </section>
+      <section id="id1172053595642">
+        <title>Download the Lab File(s)</title>
+        <para id="id1172052705905">Download and store the following file(s) to your storage device in the appropriate folder(s). You may need to right click on the link and select "Save Target As" in order to download the file.</para>
+        <para id="id1172062908783">Download from Connexions: <link document="m21631" resource="Lab_20_Narrative_Description.txt">Lab_20_Narrative_Description.txt</link></para>
+      </section>
+      <section id="id1172049137215">
+        <title>Detailed Lab Instructions</title>
+        <para id="id1172053818252">Read and follow the directions below carefully, and perform the steps in the order listed.</para>
+        <list id="id1172049225116" list-type="bulleted">
+          <item>Create a source code file following the directions in the Lab_20_Narrative_Description.txt file. Name it: Lab_20.cpp</item>
+          <item>Build (compile and run) your program.</item>
+          <item>After you have successfully written this program, if you are taking this course for college credit, follow the instructions from your professor/instructor for submitting it for grading.</item>
+        </list>
+      </section>
+    </section>
+    <section id="id1172050580283">
+      <title>Problems</title>
+      <section id="id1172051825029">
+        <title>Problem 20a – Instructions</title>
+        <para id="id1172055062155">Give a short explanation of bubble sorting.</para>
+      </section>
+    </section>
+  </content>
+</document>

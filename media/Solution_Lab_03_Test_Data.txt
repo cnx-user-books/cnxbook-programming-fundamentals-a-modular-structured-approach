@@ -1,0 +1,37 @@
+Filename: Solution_Lab_03_Test_Data.txt
+
+Purpose:  Paint Your House Calculation
+
+Author:   Ken Busbee; © 2008 Kenneth Leroy Busbee
+
+Date:     Dec 24, 2008
+
+NOTE:     Academic Dishonesty Warning
+******************************************************
+Solution files are provided by the instructor to each
+individual student as needed. Students are not to 
+share these files with any other student.
+Not now, not later, not ever.  Don't share them.
+******************************************************
+
+Test Data
+
+                     Input                         
+Identifier Name      Value
+******************   *******
+length               100
+width                 40
+height                10
+price_gal_paint       28.49
+coverage_gal_paint   250
+******************   *******
+
+                     Output                         
+Identifier Name      Result
+******************   *******
+total_gal_paint       12
+total_cost           341.88
+
+******************************************************
+End of file
+

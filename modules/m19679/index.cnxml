@@ -1,0 +1,99 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>If Then Else</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m19679</md:content-id>
+  <md:title>If Then Else</md:title>
+  <md:abstract>An introduction to the if then else control structure.</md:abstract>
+  <md:uuid>ef7ed783-3f51-4629-a161-8b48c171d75c</md:uuid>
+</metadata>
+<featured-links>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit below.
+       Changes to the links section in the source will not be saved. -->
+    <link-group type="supplemental">
+      <link url="http://cnx.org/content/m19544/latest/" strength="3">Boolean Data Type</link>
+      <link url="http://cnx.org/content/m19549/latest/" strength="3">Relational Operators</link>
+    </link-group>
+    <link-group type="prerequisite">
+      <link url="http://cnx.org/content/m19628/latest/" strength="3">Structured Programming</link>
+    </link-group>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit above.
+       Changes to the links section in the source will not be saved. -->
+</featured-links>
+<content>
+    <section id="id19911606">
+      <title>Introduction to Two Way Selection</title>
+      <section id="id21048125">
+        <title>Traditional Two Way Selection</title>
+        <para id="id9756135">We are going to introduce the control structure from the selection category that is available in every high level language. It is called the <emphasis>if then else</emphasis> structure. Asking a question that has a true or false answer controls the if then else structure. It looks like this:</para>
+        <para id="id9810226"><preformat id="idklb22201" display="block"><code>
+if the answer to the question is true
+  then do this
+else because it's false
+  do this </code></preformat>
+        </para>
+        <para id="id19269884">In most languages the question (called a <term>test expression</term>) is a <term>Boolean expression</term>. The Boolean data type has two values – true and false. Let's rewrite the structure to consider this:</para>
+        <para id="id19483881"><preformat id="idklb22202" display="block"><code>
+if expression is true
+  then do this
+else because it's false
+  do this</code></preformat>
+</para>
+        <para id="id19511696">Some languages use reserved words of: "if", "then" and "else". Many eliminate the "then". Additionally the "do this" can be tied to true and false. You might see it as:</para>
+        <para id="id9348161"><preformat id="idklb22203" display="block"><code>
+if expression is true
+  action true
+else
+  action false</code></preformat>
+        </para>
+        <para id="id19836514">And most languages infer the "is true" you might see it as:</para>
+        <para id="id13115056"><preformat id="idklb22204" display="block"><code>
+if expression
+  action true
+else
+  action false</code></preformat>
+        </para>
+        <para id="id16738994">The above four forms of the control structure are saying the same thing. The else word is often not used in our English speaking today. However, consider the following conversation between a mother and her child.</para>
+        <para id="id9393212">Child asks, "Mommy, may I go out side and play?"</para>
+        <para id="id18319848">Mother answers, "If your room is clean then you may go outside and play or else you may go sit on a chair for five minutes as punishment for asking me the question when you knew your room was dirty."</para>
+        <para id="id19296094">Let's note that all of the elements are present to determine the action (or flow) that the child will be doing. Because the question (your room is clean) has only two possible answers (true or false) the actions are <emphasis>mutually exclusive</emphasis>. Either the child 1) goes outside and plays or 2) sits on a chair for five minutes. One of the actions is executed; never both of the actions.</para>
+      </section>
+      <section id="id19670024">
+        <title>One Choice – Implied Two Way Selection</title>
+        <para id="id11290118">Often the programmer will want to do something only if the expression is true, that is with no false action. The lack of a false action is also referred to as a "null else" and would be written as:</para>
+        <para id="id15650276"><preformat id="idklb22205" display="block"><code>
+if expression
+  action true 
+else 
+  do nothing </code></preformat>
+        </para>
+        <para id="id3365889">Because the "else do nothing" is implied, it is usually written in short form like:</para>
+        <para id="id17337279"><preformat id="idklb22206" display="block"><code>
+if expression
+  action true </code></preformat>
+        </para>
+      </section>
+    </section>
+    <section id="id11299994">
+      <title>Two Way Selection within C++</title>
+      <para id="id20357047">The syntax for the if then else control structure within the C++ programming language is:</para>
+      <para id="id20522485"><preformat id="idklb22207" display="block"><code>
+if (expression)
+  statement;
+else
+  statement; </code></preformat>
+      </para>
+      <para id="id11657987">Note: The test expression is within the parentheses, but this is not a function call. The parentheses are part of the control structure. Additionally, there is no semicolon after the parenthesis following the expression.</para>
+    </section>
+    <section id="id17853016">
+      <title>Definitions</title>
+<definition id="IfThenElsedef">
+  <term>if then else</term>
+  <meaning id="fs-id23933897">A two way selection control structure. </meaning>
+</definition>
+<definition id="MutuallyExclusivedef">
+  <term>mutually exclusive</term>
+  <meaning id="fs-id10560710">Items that do not overlap. Example: true and false.  </meaning>
+</definition>
+    </section>
+  </content>
+</document>

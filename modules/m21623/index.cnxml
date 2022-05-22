@@ -1,0 +1,128 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>File Input and Output</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m21623</md:content-id>
+  <md:title>File Input and Output</md:title>
+  <md:abstract>An introduction to file input and output with examples within the C++ programming language.</md:abstract>
+  <md:uuid>0558f9cc-1c6e-4413-a6d3-add617dd9b5b</md:uuid>
+</metadata>
+<featured-links>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit below.
+       Changes to the links section in the source will not be saved. -->
+    <link-group type="supplemental">
+      <link url="http://cnx.org/content/m18785/latest/" strength="1">Bloodshed Dev-C++ 5 Compiler/IDE</link>
+    </link-group>
+    <link-group type="prerequisite">
+      <link url="http://cnx.org/content/m21317/latest/" strength="3">Displaying Array Members</link>
+      <link url="http://cnx.org/content/m18835/latest/" strength="2">Standard Input and Output</link>
+      <link url="http://cnx.org/content/m20796/latest/" strength="1">String Class within C++</link>
+    </link-group>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit above.
+       Changes to the links section in the source will not be saved. -->
+</featured-links>
+<content>
+    <section id="id3822818">
+      <title>Overview of File I/O in C++</title>
+      <para id="id2445766">We need to understand how to open, read, write and close text files. The following File Input/Output terms are explained:</para>
+      <para id="id4181517"><emphasis>Text File</emphasis> – A file consisting of characters from the ASCII character code set. Text files (also know an ASCII text files) contain character data. When we create a text file we usually think of it consisting of a series of lines. On each line are several characters (including spaces, punctuation, etc.) and we generally end the line with a return (this a character within the ASCII character code set). The return is also known as the new line character. You are most likely already familiar with the escape code of \n which is used within C++ to indicate a return character when used with in a literal string with the cout.</para>
+      <para id="id2883530">A typical text file consisting of lines can be created by text editors (Notepad) or word processing programs (Microsoft Word). When using a word processor you must usually specify the output file as text (.txt) when saving it. Most <term>source code</term> files are ASCII text files with a unique file extension; such as C++ using .cpp, Pascal using .pas, Cobol using .cob, etc. Thus, most compiler/Integrated Development Environment software packages (such as the <emphasis>Bloodshed Dev-C++ 5 compiler/IDE</emphasis>) can be used to create ASCII text files.</para>
+      <para id="id2162243"><emphasis>Filename</emphasis> – The name and its extension. Most operating systems have restrictions on which characters can be used in filenames. Example for MS-DOS and Windows: Lab_05.txt </para>
+      <para id="id2955110">Because some operating systems do not allow spaces, we suggest that you use the <term>underscore</term> where needed for spacing in a filename.</para>
+      <para id="id4132376"><emphasis>Filespec</emphasis> – The location of a file along with its filename. It is short for file specification. Most operating systems have a set of rules on how to specify the drive and directory (or path through several directory levels) along with the filename. Example for MS-DOS and Windows: C:\myfiles\cosc_1436\Lab_05.txt</para>
+      <para id="id4181433">Because some operating systems do not allow spaces, we suggest that you use the <emphasis>underscore</emphasis> where needed when creating folders or sub-directories.</para>
+      <para id="id2382810"><emphasis>Open</emphasis> – Your program requesting the operating system to let it have access to an existing file or to open a new file. Within C++ this is accomplished by including the header file: &lt;fstream&gt; File Input/Output is handled in C++ by using a pre-defined class of data objects, similar to the way string data type is handled. This class of objects has both data type names and functions built to specifically accomplish opening and closing a file.</para>
+      <para id="id3971192">Within your program you create a local storage variable with the data type of fstream like this:</para>
+      <para id="id2367702">
+        <code display="inline">fstream inData;</code>
+      </para>
+      <para id="id4045306">This variable will be used to store the device token that the operating system assigns to the file being opened. Thus, opening a file uses a class member function call like this:</para>
+      <para id="id2233554"><code display="inline">inData.open("C:\\myfiles\\cosc_1436\\Lab_05.txt", ios::in);</code>
+</para>
+      <para id="id4068600">The two parameters passed to the function are the filespec and the method that you want to use the file (in this example as input). The function provides a returning value of a <emphasis>device token</emphasis> from the operating system and it is stored in the variable named inData.</para>
+      <para id="id2737615">It is considered good programming practice to determine if the file was opened properly. The device token should be a non zero value. It the operating system gives you the value of zero it was not able to open the file. The reason it usually can't open a file is because the filespec is wrong (misspelled or not typed case consistent in some operating systems) or the file is not stored in the location specified. We often test the device token by using an if then control structure with the action consisting of stopping the program if it is true that you got the zero. The first line of the if then control structure looks like this:</para>
+      <para id="id2455620">
+        <code display="inline">if (!inData)</code>
+      </para>
+      <para id="id4137368">Don’t be misled by the not operator. This reads "if it is true that the token stored in inData is zero". If inData is zero, noting zero is 1 or true. </para>
+      <para id="id4065654"><emphasis>Read</emphasis> – Moving data from a device that has been opened into a memory location defined in your program. When reading text files that have integer or floating-point constants, the operating systems converts the text symbols to a binary number. The operator used is the extraction or read operator. An example of reading is:</para>
+      <para id="id2263271">
+        <code display="inline">inData &gt;&gt; next_number</code>
+      </para>
+      <para id="id2884682">This expression is similar to reading from the standard input device (aka the keyboard):</para>
+      <para id="id4182797">
+        <code display="inline">cin &gt;&gt; next_number</code>
+      </para>
+      <para id="id4217074">The "cin" is a predefined device token associated with the Standard Input and Output devices. For our file reading example you might say, "Go to the device identified by the token stored in the inData variable and read in the next value storing it in the next_number variable within my program".</para>
+      <para id="id4187045"><emphasis>Write</emphasis> – Moving data from a memory location defined in your program to a device that has been opened. When writing integer or floating-point data types, the operating system converts the binary number into the proper text symbols. The operator used is the insertion or write operator. An example of writing is:</para>
+      <para id="id3068841">
+        <code display="inline">outData &lt;&lt; "Total is: " &lt;&lt; total &lt;&lt; endl;</code>
+      </para>
+      <para id="id2381492">This expression is similar to writing to the standard output device (aka the monitor):</para>
+      <para id="id4191218">
+        <code display="inline">cout &lt;&lt; "Total is: " &lt;&lt; total &lt;&lt; endl;</code>
+      </para>
+      <para id="id4212266">The "cout" is a predefined device token associated with the Standard Input and Output devices. For our file writing example you might say, "Go to the device identified by the token stored in the outData variable and write the items listed (the string constant then the value stored in my program variable named total then the endl or new line or the return character)".</para>
+      <para id="id4182756"><emphasis>Close</emphasis> – Your program requesting the operating system to release a file that was previously opened. There are two reasons to close a file. First, it releases the file and frees up the associated operation system resources. Second, if closing a file that was opened for output; it will clear the out the operating system’s buffer and insure that all of the data is physically stored in the output file. Some examples of closing files:</para>
+      <para id="id4214240">
+        <code display="inline">inData.close();</code>
+      </para>
+      <para id="id4128776">
+        <code display="inline">outData.close();</code>
+      </para>
+      <para id="id4133491">You need to study this module in conjunction with the demo file provided.</para>
+    </section>
+    <section id="id2977056">
+      <title>Demonstration Program in C++</title>
+      <section id="id4193676">
+        <title>Creating a Folder or Sub-Folder for Source Code Files</title>
+        <para id="id4193927">Depending on your compiler/IDE, you should decide where to download and store source code files for processing. Prudence dictates that you create these folders as needed prior to downloading source code files. A suggested sub-folder for the <term>Bloodshed Dev-C++ 5 compiler/IDE</term> might be named:</para>
+        <list id="id2246590" list-type="bulleted">
+          <item>Demo_Programs</item>
+        </list>
+        <para id="id4137780">If you have not done so, please create the folder(s) and/or sub-folder(s) as appropriate.</para>
+      </section>
+      <section id="id4054584">
+        <title>Download the Demo Program</title>
+        <para id="id4188385">Download and store the following file(s) to your storage device in the appropriate folder(s). Following the methods of your compiler/IDE, compile and run the program(s). Study the source code file(s) in conjunction with other learning materials. You may need to right click on the link and select "Save Target As" in order to download the file.</para>
+        <para id="id4234927">Download from Connexions: <link document="m21623" resource="Demo_File_IO.cpp">Demo_File_IO.cpp</link></para>
+        <para id="id2934603">Download from Connexions: <link document="m21623" resource="Demo_File_IO_Input.txt">Demo_File_IO_Input.txt</link></para>
+        <para id="id3951582">After you run the program use a text editor to examine the <emphasis>Demo_File_IO_Output.txt</emphasis> file created by the program. You should see the output as: <code display="inline">Total is: 33.3</code></para>
+      </section>
+    </section>
+    <section id="id4134729">
+      <title>Definitions</title>
+    <definition id="fs-id10529938">
+      <term>text file</term>
+      <meaning id="fs-id16949814">A file consisting of characters from the ASCII character code set.  </meaning>
+    </definition>
+    <definition id="fs-id10220429">
+      <term>filename</term>
+      <meaning id="fs-id10240450">The name and its extension.  </meaning>
+    </definition>
+    <definition id="fs-id22223306">
+      <term>filespec</term>
+      <meaning id="fs-id16044284">The location of a file along with its filename.  </meaning>
+    </definition>
+    <definition id="fs-id16165661">
+      <term>open</term>
+      <meaning id="fs-id15497612">Your program requesting the operating system to let it have access to an existing file or to open a new file.  </meaning>
+    </definition>
+    <definition id="fs-id21410968">
+      <term>device token</term>
+      <meaning id="fs-id20129834">A key value provided by the operating system to associate a device to your program.  </meaning>
+    </definition>
+    <definition id="fs-id13241215">
+      <term>read</term>
+      <meaning id="fs-id15439700"> Moving data from a device that has been opened into a memory location defined in your program.  </meaning>
+    </definition>
+    <definition id="fs-id15098542">
+      <term>write</term>
+      <meaning id="fs-id16733809"> Moving data from a memory location defined in your program to a device that has been opened.  </meaning>
+    </definition>
+    <definition id="fs-id16051581">
+      <term>close</term>
+      <meaning id="fs-id10051363"> Your program requesting the operating system to release a file that was previously opened.  </meaning>
+    </definition>
+    </section>
+  </content>
+</document>

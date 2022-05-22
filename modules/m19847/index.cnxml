@@ -1,0 +1,256 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Logical Operators</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m19847</md:content-id>
+  <md:title>Logical Operators</md:title>
+  <md:abstract>An introduction to the three common logical operators used in programming.</md:abstract>
+  <md:uuid>262f60cd-62b3-43de-9ee6-e0d589f7714a</md:uuid>
+</metadata>
+<featured-links>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit below.
+       Changes to the links section in the source will not be saved. -->
+    <link-group type="supplemental">
+      <link url="http://cnx.org/content/m20404/latest/" strength="3">Flag Concept</link>
+      <link url="http://cnx.org/content/m18168/latest/" strength="2">Abbreviated Precedence Chart for C++ Operators</link>
+    </link-group>
+    <link-group type="prerequisite">
+      <link url="http://cnx.org/content/m19544/latest/" strength="3">Boolean Data Type</link>
+      <link url="http://cnx.org/content/m18705/latest/" strength="2">Data Manipulation</link>
+      <link url="http://cnx.org/content/m18785/latest/" strength="1">Bloodshed Dev-C++ 5 Compiler/IDE</link>
+    </link-group>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit above.
+       Changes to the links section in the source will not be saved. -->
+</featured-links>
+<content>
+    <section id="id10235629">
+      <title>Overview of the Logical Operators</title>
+      <para id="id13207090">Within most languages, expressions that yield Boolean data type values are divided into two groups. One group uses the relational operators within their expressions and the other group uses logical operators within their expressions.</para>
+      <para id="id7828341">The logical operators are often used to help create a <term>test expression</term> that controls program flow. This type of expression is also known as a <term>Boolean expression</term> because they create a Boolean answer or value when evaluated. The answers to Boolean expressions within the C++ programming language are a value of either 1 for true or 0 for false. There are three common logical operators that give a Boolean value by manipulating other Boolean operand(s). Operator symbols and/or names vary with different programming languages. The C++ programming language operators with their meanings are:</para>
+      <table id="id14101414" summary="">
+        <tgroup cols="4">
+          <colspec colnum="1" colname="c1"/>
+          <colspec colnum="2" colname="c2"/>
+          <colspec colnum="3" colname="c3"/>
+          <colspec colnum="4" colname="c4"/>
+          <tbody>
+            <row>
+              <entry>C++ Operator</entry>
+              <entry>Meaning</entry>
+              <entry>Comment</entry>
+              <entry>Typing</entry>
+            </row>
+            <row>
+              <entry>&amp;&amp;</entry>
+              <entry>Logical and</entry>
+              <entry/>
+              <entry>two ampersands</entry>
+            </row>
+            <row>
+              <entry>||</entry>
+              <entry>Logical or</entry>
+              <entry/>
+              <entry>two vertical dashes or piping symbols</entry>
+            </row>
+            <row>
+              <entry>!</entry>
+              <entry>Logical not</entry>
+              <entry>unary</entry>
+              <entry>the exclamation point</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+      <note id="eip-394">The vertical dashes or piping symbol is found on the same key as the backslash \. You use the SHIFT key to get it. It is just above the Enter key on most keyboards. It may be a solid vertical line on some keyboards and show as a solid vertical line on some print fonts.</note><para id="id14229140">In most languages there are strict rules for forming proper logical expressions.  An example is:</para>
+      <para id="id14942895">
+        <code display="inline">6 &gt; 4 &amp;&amp; 2 &lt;= 14 </code>
+      </para>
+      <para id="id5457226">This expression has two relational operators and one logical operator.  Using the precedence of operator rules the two "relational comparison" operators will be done before the "logical and" operator.  Thus:</para>
+      <para id="id14874819">
+        <code display="inline">1 &amp;&amp; 1</code>
+      </para>
+      <para id="id14543798">or</para>
+      <para id="id14340490">
+        <code display="inline">true &amp;&amp; true</code>
+      </para>
+      <para id="id5428271">The final evaluation of the expression is:  1  meaning true.</para>
+      <para id="id14913058">We can say this in English as: It is true that six is greater than four and that two is less than or equal to fourteen.</para>
+      <para id="id14212408">When forming logical expressions programmers often use parentheses (even when not technically needed) to make the logic of the expression very clear.  Consider the above complex Boolean expression rewritten:</para>
+      <para id="id14212288">
+        <code display="inline">(6 &gt; 4) &amp;&amp; (2 &lt;= 14)</code>
+      </para>
+    </section>
+    <section id="id10063206">
+      <title>Truth Tables</title>
+      <para id="id13531882">A common way to show logical relationships is in truth tables.</para>
+      <table id="id14588061" summary="">
+      <title>Logical and (&amp;&amp;)</title>
+        <tgroup cols="3">
+          <colspec colnum="1" colname="c1"/>
+          <colspec colnum="2" colname="c2"/>
+          <colspec colnum="3" colname="c3"/>
+          <tbody>
+            <row>
+              <entry>
+                <emphasis>x</emphasis>
+              </entry>
+              <entry>
+                <emphasis>y</emphasis>
+              </entry>
+              <entry>
+                <emphasis>x &amp;&amp; y</emphasis>
+              </entry>
+            </row>
+            <row>
+              <entry>false</entry>
+              <entry>false</entry>
+              <entry>false</entry>
+            </row>
+            <row>
+              <entry>false</entry>
+              <entry>true</entry>
+              <entry>false</entry>
+            </row>
+            <row>
+              <entry>true</entry>
+              <entry>false</entry>
+              <entry>false</entry>
+            </row>
+            <row>
+              <entry>true</entry>
+              <entry>true</entry>
+              <entry>true</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+      <table id="id9756046" summary="">
+      <title>Logical or (||)</title>
+        <tgroup cols="3">
+          <colspec colnum="1" colname="c1"/>
+          <colspec colnum="2" colname="c2"/>
+          <colspec colnum="3" colname="c3"/>
+          <tbody>
+            <row>
+              <entry>
+                <emphasis>x</emphasis>
+              </entry>
+              <entry>
+                <emphasis>y</emphasis>
+              </entry>
+              <entry>
+                <emphasis>x ||y</emphasis>
+              </entry>
+            </row>
+            <row>
+              <entry>false</entry>
+              <entry>false</entry>
+              <entry>false</entry>
+            </row>
+            <row>
+              <entry>false</entry>
+              <entry>true</entry>
+              <entry>true</entry>
+            </row>
+            <row>
+              <entry>true</entry>
+              <entry>false</entry>
+              <entry>true</entry>
+            </row>
+            <row>
+              <entry>true</entry>
+              <entry>true</entry>
+              <entry>true</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+      <table id="id14952392" summary="">
+      <title>Logical not (!)</title>
+        <tgroup cols="2">
+          <colspec colnum="1" colname="c1"/>
+          <colspec colnum="2" colname="c2"/>
+          <tbody>
+            <row>
+              <entry>
+                <emphasis>x</emphasis>
+              </entry>
+              <entry>
+                <emphasis>!x</emphasis>
+              </entry>
+            </row>
+            <row>
+              <entry>false</entry>
+              <entry>true</entry>
+            </row>
+            <row>
+              <entry>true</entry>
+              <entry>false</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </section>
+    <section id="id13532708">
+      <title>Examples</title>
+      <para id="id7949396">I call this example of why I hate "and" and love "or". </para>
+      <para id="id13532843">Everyday as I came home from school on Monday through Thursday; I would ask my mother, "May I go outside and play?" She would answer, "If your room is clean and your homework is done then you may go outside and play." I learned to hate the word "and". I could manage to get one of the tasks done and have some time to play before dinner, but both of them… well, I hated "and". </para>
+      <para id="id7811357">On Friday my mother took a more relaxed view point and when asked if I could go outside and play she responded, "If your room is clean or your homework is done then you may go outside and play." I learned to clean my room quickly on Friday afternoon. Well needless to say, I loved "or". </para>
+      <para id="id14915375">For the next example, just imagine a teenager talking to their mother. During the conversation mom says, "After all, your Dad is reasonable!" The teenager says, "Reasonable. (short pause) Not." </para>
+      <para id="id10739965">Maybe college professors will think that all their students studied for the exam. Ha ha! Not. Well, I hope you get the point. </para>
+     <exercise id="idLogicalExpCh11">
+        <problem id="idLogicalExpCh11p">
+     <list id="LogicalexpqCh11" list-type="enumerated">
+       <title> Evaluate the following Logical Boolean expressions:</title>
+                 <item>25 &lt; 7 || 15 &gt; 36</item>
+                 <item>15 &gt; 36 || 3 &lt; 7</item>
+                 <item>14 &gt; 7 &amp;&amp; 5 &lt;= 5</item>
+                 <item>4 &gt; 3 &amp;&amp; 17 &lt;= 7</item>
+                 <item>! false</item>
+                 <item>! (13 != 7)</item>
+                 <item>9 != 7 &amp;&amp; ! 0</item>
+                 <item>5 &gt; &amp;&amp; 7</item>
+      </list>
+        </problem>
+        <solution id="idLogicalExpCh11s">
+     <list id="LogicalexpaCh11" list-type="enumerated"><title>Answers:</title><item>0</item>
+	<item>1</item>
+	<item>1</item>
+	<item>0</item>
+	<item>1</item>
+	<item>0</item>
+	<item>1</item>
+	<item> Error, there needs to be an operand between the operators &gt; and &amp;&amp;.</item>
+</list>
+        </solution>
+      </exercise>
+    </section>
+    <section id="id14542043">
+      <title>Demonstration Program in C++</title>
+      <section id="id14311493">
+        <title>Creating a Folder or Sub-Folder for Source Code Files</title>
+        <para id="id13897929">Depending on your compiler/IDE, you should decide where to download and store source code files for processing. Prudence dictates that you create these folders as needed prior to downloading source code files. A suggested sub-folder for the <term>Bloodshed Dev-C++ 5 compiler/IDE</term> might be named:</para>
+        <list id="id13240380" list-type="bulleted">
+          <item>Demo_Programs</item>
+        </list>
+        <para id="id13898195">If you have not done so, please create the folder(s) and/or sub-folder(s) as appropriate.</para>
+      </section>
+      <section id="id9390624">
+        <title>Download the Demo Program</title>
+        <para id="id11271850">Download and store the following file(s) to your storage device in the appropriate folder(s). You may need to right click on the link and select "Save Target As" in order to download the file. Following the methods of your compiler/IDE, compile and run the program(s). Study the source code file(s) in conjunction with other learning materials.</para>
+        <para id="id9404473">Download from Connexions: <link document="m19847" resource="Demo_Logical_Operators.cpp">Demo_Logical_Operators.cpp</link>
+</para>
+      </section>
+    </section>
+<section id="fs-id21403577">
+  <title>Definitions</title>
+    <definition id="fs-id21501614">
+      <term>logical operator</term>
+      <meaning id="fs-id21359875"> An operator used to create complex Boolean expressions. </meaning>
+    </definition>
+    <definition id="fs-id21151494">
+      <term>truth tables</term>
+      <meaning id="fs-id19214454"> A common way to show logical relationships. </meaning>
+    </definition>
+</section>
+  </content>
+</document>

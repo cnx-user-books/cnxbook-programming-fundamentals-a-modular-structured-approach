@@ -1,0 +1,32 @@
+Filename:    Lab_20_Narrative_Description.txt
+
+Purpose:     Creating an array function that gives the
+             minimum (smallest) value in the array.
+
+Author:      Ken Busbee; © 2009 Kenneth Leroy Busbee
+Date:        Apr 7, 2009
+Licensed by: Kenneth Leroy Busbee under a 
+             Creative Commons Attribution License (CC-BY 3.0)
+             http://creativecommons.org/licenses/by/3.0/
+*************************************************************
+
+You are to write a program named Lab_20.cpp that does the following:
+
+1. You will want to use the Demo_Finding_Array_Member.cpp as 
+   a starting point.  Make sure that you change the comments
+   to a correct filename, purpose, author and date, etc.
+
+2. You will use the Demo_Farm_Acres_Input.txt data file.
+
+3. Leave all of the existing code in place. You will be adding a 
+   function that returns an integer value after being passed an 
+   array and the number of array elements.  The value it should 
+   return is the minimum (smallest) value that is within the array.
+   The name of the function should be: min_array
+
+4. Display the minimum value within the function main following the 
+   display of the maximum value.
+
+*************************************************************
+End of file
+

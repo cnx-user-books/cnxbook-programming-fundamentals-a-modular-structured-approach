@@ -1,0 +1,78 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Array Data Type</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m21315</md:content-id>
+  <md:title>Array Data Type</md:title>
+  <md:abstract>An introduction to the array data type with some examples in the C++ programming language.</md:abstract>
+  <md:uuid>e1484707-3beb-4693-9605-352d2f8663cc</md:uuid>
+</metadata>
+<featured-links>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit below.
+       Changes to the links section in the source will not be saved. -->
+    <link-group type="supplemental">
+      <link url="http://cnx.org/content/m21316/latest/" strength="2">Array Index Operator</link>
+      <link url="http://cnx.org/content/m21317/latest/" strength="2">Displaying Array Members</link>
+    </link-group>
+    <link-group type="prerequisite">
+      <link url="http://cnx.org/content/m18653/latest/" strength="2">Data Types in C++</link>
+      <link url="http://cnx.org/content/m18690/latest/" strength="1">Sequence Operator</link>
+    </link-group>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit above.
+       Changes to the links section in the source will not be saved. -->
+</featured-links>
+<content>
+    <section id="id5887267">
+      <title>Overview</title>
+      <para id="id6018011">An <term>array</term> is a sequenced collection of elements of the same data type with a single identifier name. As such, the array data type belongs to the "Complex" category or family of data types. Arrays can have multiple axes (more than one axis). Each axis is a <emphasis>dimension</emphasis>. Thus a single dimension array is also known as a <emphasis>list</emphasis>. A two dimension array is commonly known as a <emphasis>table</emphasis> (a spreadsheet like Excel is a two dimension array). In real life there are occasions to have data organized into multiple dimensioned arrays. Consider a theater ticket with section, row and seat (three dimensions). This module will only cover the single dimension array. Most single dimension arrays are visualized vertically and are often called a list.</para>
+      <para id="id5689538">Most programmers are familiar with a special type of array called a <term>string</term>. Strings are basically a single dimension array of characters. Unlike other single dimension arrays, we usually envision a string as a horizontal stream of characters and not vertically as a list. Within C++ the string data type is a length-controlled array and is a pre-defined data class.</para>
+      <para id="id5606228">We refer to the individual values as members (or elements) of the array. Programming languages implement the details of arrays differently. Because there is only one identifier name assigned to the array, we have operators that allow us to reference or access the individual members of an array. The operator commonly associated with referencing array members is the <emphasis>index</emphasis> operator. It is important to learn how to define an array and initialize its members. Additionally, the <emphasis>sizeof</emphasis> operator is often used to calculate the number of members in an array.</para>
+    </section>
+    <section id="id5698148">
+      <title>Defining an Array in C++</title>
+      <para id="id5704078">Example:</para>
+      <para id="id5720046">
+        <code display="inline">int ages[5] = {49,48,26,19,16};</code>
+      </para>
+      <para id="id5678072">This is the <emphasis>defining of storage space</emphasis>. The square brackets (left [ and right ]) are used here to create the array with five integer members and the identifier name of ages. The assignment with braces (that is a block) establishes the initial values assigned to the members of the array. Note the use of the sequence or comma operator. We could have done it this way:</para>
+      <para id="id5982516">
+        <code display="inline">int ages[] = {49,48,26,19,16};</code>
+      </para>
+      <para id="id5980996">By leaving out the five and having initial values assigned, the compiler will know to create the array with five storage spaces because there are five values listed. This method is preferred because we can simply add members to or remove members from the array by changing the items inside of the braces. We could have also done this:</para>
+      <para id="id5981033">
+        <code display="inline">int ages[5];</code>
+      </para>
+      <para id="id5596849">This would have declared the storage space of five integers with the identifier name of ages but their initial values would have been unknown values (actually there would be values there but we don’t know what they would be and thus think of the values as garbage). We could assign values later in our program by doing this:</para>
+      <para id="id5674599">
+        <code display="inline">ages[0] = 49;</code>
+      </para>
+      <para id="id5705316">
+        <code display="inline">ages[1] = 48;</code>
+      </para>
+      <para id="id5706579">
+        <code display="inline">ages[2] = 26;</code>
+      </para>
+      <para id="id5886993">
+        <code display="inline">ages[3] = 19;</code>
+      </para>
+      <para id="id5683482">
+        <code display="inline">ages[4] = 16;</code>
+      </para>
+      <para id="id5691034"><note id="eip-id19086384">The members of the array go from 0 to 4; <emphasis>NOT</emphasis> 1 to 5. This is explained in more detail in another Connexions module that covers accessing array members and is listed in the supplemental links provided. See: Array Index Operator.</note></para>
+    </section>
+    <section id="id5705224">
+      <title>Definitions</title>
+    <definition id="fs-id17756753">
+      <term>dimension</term>
+      <meaning id="fs-id18523701">An axis of an array.  </meaning>
+    </definition>
+    <definition id="fs-id18626968">
+      <term>list</term>
+      <meaning id="fs-id17764664">A single dimension array.  </meaning>
+    </definition>
+    <definition id="fs-id17749899">
+      <term>table</term>
+      <meaning id="fs-id17763689">A two dimension array.  </meaning>
+    </definition>
+    </section>
+  </content>
+</document>

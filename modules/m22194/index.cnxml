@@ -1,0 +1,91 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Practice 24: OOP &amp; HPC</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m22194</md:content-id>
+  <md:title>Practice 24: OOP &amp; HPC</md:title>
+  <md:abstract>Questions, exercises, problems, etc. that support this chapter in the "Programming Fundamentals - A Modular Structured Approach using C++" collection/textbook.</md:abstract>
+  <md:uuid>0c756cc5-27a4-417e-b52b-046d5932fafa</md:uuid>
+</metadata>
+
+<content>
+    <section id="id1166221769277">
+      <title>Learning Objectives</title>
+      <para id="id2358536">With 100% accuracy during a: memory building activity, exercises, lab assignment, problems, or timed quiz/exam; the student is expected to:</para>
+      <list id="id1470391" list-type="enumerated" number-style="arabic">
+        <item>Define the terms on the definitions as listed in the modules associated with this chapter.</item>
+        <item>Gain an exposure to object-oriented programming.</item>
+        <item>Gain an exposure to high performance computing.</item>
+        <item>G iven general instructions, write the C++ code for a program that includes a general review of the textbook/collection/course.</item>
+      </list>
+    </section>
+    <section id="id1166220684652">
+      <title>Memory Building Activities</title>
+      <para id="id1166227850091">Link to: <link window="new" document="m22194" resource="index.html">MBA 24</link></para>
+    </section>
+    <section id="id3661960">
+      <title>Exercises</title>
+<exercise id="fs-id1166221177039">
+  <problem id="fs-id1166220489141">
+    <list id="fs-id1166221875365" list-type="enumerated">
+      <title>Answer the following statements as either true or false:</title>
+        <item>Procedural programming and object-oriented programming cannot be done with the same compiler/IDE.</item>
+        <item>Object-oriented programming encapsulates data and functions.</item>
+        <item>High Performance Computing is a new topic on the computer scene.</item>
+        <item>The concepts and examples of High Performance Computer are difficult to explain.</item>
+        <item>All programmers will need to know about parallel programming in the near future.</item>
+    </list>
+  </problem>
+  <solution id="fs-id1166222073667">
+    <list id="fs-id1166220978141" list-type="enumerated">
+      <title>Answers:</title>
+        <item>false</item>
+        <item>true</item>
+        <item>false</item>
+        <item>false</item>
+        <item>true</item>
+    </list>
+  </solution>
+</exercise>
+    </section>
+    <section id="id3676410">
+      <title>Miscellaneous Items</title>
+      <para id="id1166222226873">None at this time.</para>
+    </section>
+    <section id="id1254820">
+      <title>Lab Assignment</title>
+      <section id="id8067753">
+        <title>Creating a Folder or Sub-Folder for Chapter 24 Files</title>
+        <para id="id1166222591872">Depending on your compiler/IDE, you should decide where to download and store source code files for processing. Prudence dictates that you create these folders as needed prior to downloading source code files. A suggested sub-folder for the <term>Bloodshed Dev-C++ 5 compiler/IDE</term> might be named:</para>
+        <list id="id8108420" list-type="bulleted">
+          <item>Chapter_24 within the folder named: Cpp_Source_Code_Files</item>
+        </list>
+        <para id="id3541483">If you have not done so, please create the folder(s) and/or sub-folder(s) as appropriate.</para>
+      </section>
+      <section id="id1166219564335">
+        <title>Download the Lab File(s)</title>
+        <para id="id8435616">Download and store the following file(s) to your storage device in the appropriate folder(s). You may need to right click on the link and select "Save Target As" in order to download the file.</para>
+        <para id="id1166226339744">Download from Connexions: <link document="m22194" resource="Lab_24_Narrative_Description.txt">Lab_24_Narrative_Description.txt</link></para>
+      </section>
+      <section id="id4075976">
+        <title>Detailed Lab Instructions</title>
+        <para id="id8147998">Read and follow the directions below carefully, and perform the steps in the order listed.</para>
+        <list id="id3756992" list-type="bulleted">
+          <item>Create a source code file following the directions in the Lab_24_Narrative_Description.txt file. Name it: Lab_24.cpp</item>
+          <item>Build (compile and run) your program.</item>
+          <item>After you have successfully written this program, if you are taking this course for college credit, follow the instructions from your professor/instructor for submitting it for grading.</item>
+        </list>
+      </section>
+    </section>
+    <section id="id1220538">
+      <title>Problems</title>
+      <section id="id1166222544338">
+        <title>Problem 24a – Instructions</title>
+        <para id="id5911463">Describe the fundamental differences between procedural (modular structured) programming and object-oriented programming.</para>
+      </section>
+      <section id="id1166220756978">
+        <title>Problem 24b – Instructions</title>
+        <para id="id1166225478108">Explain why High Performance Computing is needed to predict tomorrow’s weather.</para>
+      </section>
+    </section>
+  </content>
+</document>

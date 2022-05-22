@@ -1,0 +1,58 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Compiler Directives</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m18787</md:content-id>
+  <md:title>Compiler Directives</md:title>
+  <md:abstract>A general explanation of pre-processor directives and how they are evaluated by the compiler.  Discussed are include and define.</md:abstract>
+  <md:uuid>4136c50a-7087-4ed9-9d2f-d82e3b71b69a</md:uuid>
+</metadata>
+<featured-links>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit below.
+       Changes to the links section in the source will not be saved. -->
+    <link-group type="supplemental">
+      <link url="http://cnx.org/content/m22204/latest/" strength="2">Conditional Compilation</link>
+    </link-group>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit above.
+       Changes to the links section in the source will not be saved. -->
+</featured-links>
+<content>
+    <section id="id7602378">
+      <title>General Discussion</title>
+      <para id="id3010656">A <emphasis>compiler directive</emphasis> is an instruction to the compiler to complete a task before formally starting to compile the program, thus they are sometimes called pre-processor directives. Among other items, during the pre-processor step the compiler is looking for compiler directives and processes them as they are encountered. After completing the tasks as directed, the compiler proceeds to its second step where it checks for syntax errors (violations of the rules of the language) and converts the source code into an object code that contains machine language instructions, a data area, and a list of items to be resolved when he object file is linked to other object files.</para>
+      <para id="id6194474">Within C++ the pound symbol or # as the first character of a line indicates that the next word is a directive (or command word) to be evaluated. The two most common compiler directives are:</para>
+      <list id="id7809345" list-type="enumerated" number-style="arabic">
+        <item><emphasis>include</emphasis> – with the item following include being the name of a file that is to be inserted at that place in the file. The files are often called "Header Files" because the include directive is normally inserted toward the top of the file (at the head) as one of the first items. </item>
+        <item><emphasis>define</emphasis> – with the item followed by an identifier name and a value. This identifier name and value is stored by the compiler and when it encounters the identifier name in the program it substitutes the value for the identifier name.</item>
+      </list>
+      <para id="id4074672">In the following example the include directive is inserting a file that contains code from the <term>Input-Output Stream</term> library. This file contains necessary code to use cout and cin for sending data to the monitor or getting data from the keyboard. </para>
+      <para id="id3499118">
+        <code display="inline">#include &lt;iostream&gt; </code>
+      </para>
+      <para id="id4857489">In the next example the define directive is being used to handle a constant (called a defined constant).</para>
+<example id="fs-id3137542">
+<title>Subtituting PI</title>
+<para id="fs-id8796121"><preformat id="fs-id2682630" display="block"><code>
+#define PI 3.14159
+....Later on in the program when it encounters PI
+....it will replace or substitute PI with the value 3.14159
+....For example:
+area_circle = radius * radius * PI;
+    would become:
+area_circle = radius * radius * 3.14159;</code></preformat>
+</para>
+</example>
+      <para id="id7261086">Of note, compiler directives in C++ do not have a semi-colon after them. Within C++ programming instructions or statements end with a semi-colon, but not compiler directives.</para>
+    </section>
+    <section id="id7471593">
+      <title>Definitions</title>
+    <definition id="fs-id3834973">
+      <term>compiler directive</term>
+      <meaning id="fs-id8798639">An instruction to the compiler to complete a task before formally starting to compile the program.</meaning>
+    </definition>
+    <definition id="fs-id3695301">
+      <term>include</term>
+      <meaning id="fs-id2847115">A compiler directive to insert the contents of a file into the program.</meaning>
+    </definition>
+    </section>
+  </content>
+</document>

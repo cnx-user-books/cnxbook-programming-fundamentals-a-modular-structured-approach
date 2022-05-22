@@ -1,0 +1,86 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Practice 22: Pointers</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m22153</md:content-id>
+  <md:title>Practice 22: Pointers</md:title>
+  <md:abstract>Questions, exercises, problems, etc. that support this chapter in the "Programming Fundamentals - A Modular Structured Approach using C++" collection/textbook.</md:abstract>
+  <md:uuid>c595ceb3-abe1-4c48-98d2-73af9dfd6f2e</md:uuid>
+</metadata>
+
+<content>
+    <section id="id4762007">
+      <title>Learning Objectives</title>
+      <para id="id3072597">With 100% accuracy during a: memory building activity, exercises, lab assignment, problems, or timed quiz/exam; the student is expected to:</para>
+      <list id="id4879784" list-type="enumerated" number-style="arabic">
+        <item>Define the terms on the definitions as listed in the modules associated with this chapter.</item>
+        <item>Acquire a general understanding of the pointer data type, the address and indirection operators, the concept of dereferencing.</item>
+        <item>Given pseudocode, write the C++ code for a program that uses reference variables.</item>
+      </list>
+    </section>
+    <section id="id6485007">
+      <title>Memory Building Activities</title>
+      <para id="id6601027">Link to: <link window="new" document="m22153" resource="index.html">MBA 22</link></para>
+    </section>
+    <section id="id6579566">
+      <title>Exercises</title>
+<exercise id="fs-id1164779322617">
+  <problem id="fs-id8852670">
+    <list id="fs-id1164771241958" list-type="enumerated">
+      <title>Answer the following statements as either true or false:</title>
+        <item>The address operator is the @ symbol.</item>
+        <item>Passing by reference should be used when there is only one item to be modified.</item>
+        <item>Variables of pointer data type are defined using an asterisk.</item>
+        <item>Using pointers with the indirection operator can be used instead of passing variables by reference.</item>
+        <item>There are two kinds of dereferencing – one with the indirection operator and the other with the index operator.</item>
+    </list>
+  </problem>
+  <solution id="fs-id1164779367664">
+    <list id="fs-id1164771205785" list-type="enumerated">
+      <title>Answers:</title>
+        <item>false</item>
+        <item>false</item>
+        <item>true</item>
+        <item>true</item>
+        <item>true</item>
+    </list>
+  </solution>
+</exercise>
+    </section>
+    <section id="id4778822">
+      <title>Miscellaneous Items</title>
+      <para id="id3785957">None at this time.</para>
+    </section>
+    <section id="id5527082">
+      <title>Lab Assignment</title>
+      <section id="id3265938">
+        <title>Creating a Folder or Sub-Folder for Chapter 22 Files</title>
+        <para id="id5303469">Depending on your compiler/IDE, you should decide where to download and store source code files for processing. Prudence dictates that you create these folders as needed prior to downloading source code files. A suggested sub-folder for the <term>Bloodshed Dev-C++ 5 compiler/IDE</term> might be named:</para>
+        <list id="id5693449" list-type="bulleted">
+          <item>Chapter_22 within the folder named: Cpp_Source_Code_Files</item>
+        </list>
+        <para id="id3268962">If you have not done so, please create the folder(s) and/or sub-folder(s) as appropriate.</para>
+      </section>
+      <section id="id4762815">
+        <title>Download the Lab File(s)</title>
+        <para id="id4894864">Download and store the following file(s) to your storage device in the appropriate folder(s). You may need to right click on the link and select "Save Target As" in order to download the file.</para>
+        <para id="id4506877">Download from Connexions: <link document="m22153" resource="Lab_22_Pseudocode.txt">Lab_22_Pseudocode.txt</link></para>
+      </section>
+      <section id="id3681312">
+        <title>Detailed Lab Instructions</title>
+        <para id="id1957715">Read and follow the directions below carefully, and perform the steps in the order listed.</para>
+        <list id="id6341616" list-type="bulleted">
+          <item>Create a source code file from the Lab_22_Pseudocode.txt file. Name it: Lab_22.cpp</item>
+          <item>Build (compile and run) your program.</item>
+          <item>After you have successfully written this program, if you are taking this course for college credit, follow the instructions from your professor/instructor for submitting it for grading.</item>
+        </list>
+      </section>
+    </section>
+    <section id="id4751789">
+      <title>Problems</title>
+      <section id="id2039261">
+        <title>Problem 22a – Instructions</title>
+        <para id="id3958139">Give a general explanation of the pointer data type and the use of addresses and dereferencing. Include both the indirection operator and the index operator in your discussion.</para>
+      </section>
+    </section>
+  </content>
+</document>

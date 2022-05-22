@@ -1,0 +1,72 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Compound Statement</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m19683</md:content-id>
+  <md:title>Compound Statement</md:title>
+  <md:abstract>An explanation for the need of compound statements within some programming languages.</md:abstract>
+  <md:uuid>6d9623cd-84a6-4216-98b2-da05635c5857</md:uuid>
+</metadata>
+<featured-links>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit below.
+       Changes to the links section in the source will not be saved. -->
+    <link-group type="prerequisite">
+      <link url="http://cnx.org/content/m18861/latest/" strength="3">Modularization and C++ Program Layout</link>
+      <link url="http://cnx.org/content/m19679/latest/" strength="3">If Then Else</link>
+    </link-group>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit above.
+       Changes to the links section in the source will not be saved. -->
+</featured-links>
+<content>
+    <section id="id15846993">
+      <title>The Need for a Compound Statement</title>
+      <para id="id17723763">For illustration we will use the syntax for the <term>if then else</term> control structure within the C++ programming language. However this problem generally exists for all control structures within any language that requires the use of compound statements. The syntax is:</para>
+      <para id="id17849635"><preformat id="kld440001" display="block"><code>
+if (expression)
+  statement;
+else
+  statement;</code></preformat>
+      </para>
+      <para id="id17830775">Within the C++ programming language there can be <emphasis>only one statement listed as the action part of a control structure</emphasis>. Often, we will want to do more than one statement. This problem is overcome by creating a <emphasis>compound statement</emphasis>. The brace symbols – the opening { and the closing } - are used to create a compound statement. For example:</para>
+      <para id="id7483930"><preformat id="kld440002" display="block"><code>
+if(expression)
+  {
+  statement;
+  statement;
+  }
+else
+  {
+  statement;
+  statement;
+  }</code></preformat>
+      </para>
+      <para id="id17830612">Because programmers often forget that they can have <emphasis>only one statement listed as the action part of a control structure</emphasis>; the C++ programming industry encourages the use of indentation (to see the action parts clearly) and the use of compound statements (<term>braces</term>), even if there is only one action. Thus:</para>
+      <para id="id17359918"><preformat id="kld440003" display="block"><code>
+if(expression)
+  {
+  statement;
+  }
+else
+  {
+  statement;
+  }</code></preformat>
+      </para>
+      <para id="id15841375">By writing code in this manner, if the programmer modifies the code by adding more statements to either the action true or the action false; they will not introduce either compiler or logic errors. Using indentation and braces should become standard practice for C++ programmers and programmers in any other language that require the use of compound statements with the control structures. </para>
+    </section>
+    <section id="id21235949">
+      <title>Other Uses of a Compound Statement</title>
+      <para id="id11019715">"A compound statement is a unit of code consisting of zero or more statements. It is also known as a <emphasis>block</emphasis>. The compound statement allows a group of statements to become one single entry. You used a compound statement in your first program when you formed the body of the function main. All C++ functions contain a compound statement known as the function body.</para>
+      <para id="id19293845">A compound statement consists of an opening brace, optional declarations, definitions, and statements, followed by a closing brace. Although all three are optional, one should be present."<footnote id="id11951366">Behrouz A. Forouzan and Richard F. Gilberg, <emphasis effect="underline">Computer Science A Structured Approach using C++ Second Edition</emphasis> (United States of America: Thompson – Brooks/Cole, 2004) 100.</footnote></para>
+    </section>
+    <section id="id17853016">
+      <title>Definitions</title>
+<definition id="CompoundStatementdef">
+  <term>compound statement</term>
+  <meaning id="fs-id23933897">A unit of code consisting of zero or more statements. </meaning>
+</definition>
+<definition id="blockdef">
+  <term>block</term>
+  <meaning id="fs-id10560710">Another name for a compound statement.  </meaning>
+</definition>
+    </section>
+  </content>
+</document>

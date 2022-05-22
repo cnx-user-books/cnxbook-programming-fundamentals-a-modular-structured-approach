@@ -1,0 +1,111 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Integer Division and Modulus</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m18717</md:content-id>
+  <md:title>Integer Division and Modulus</md:title>
+  <md:abstract>An explanation of integer division with an example of how this was learned in grade school as your first method of understanding division before fractions.  The modulus operator is explained.</md:abstract>
+  <md:uuid>6aa631d4-789c-4bec-9fad-1b7f61c269fa</md:uuid>
+</metadata>
+<featured-links>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit below.
+       Changes to the links section in the source will not be saved. -->
+    <link-group type="supplemental">
+      <link url="http://cnx.org/content/m18785/latest/" strength="1">Bloodshed Dev-C++ 5 Compiler/IDE</link>
+    </link-group>
+    <link-group type="prerequisite">
+      <link url="http://cnx.org/content/m18706/latest/" strength="2">Arithmetic Operators</link>
+    </link-group>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit above.
+       Changes to the links section in the source will not be saved. -->
+</featured-links>
+<content>
+    <section id="id21281441">
+      <title>Overview of Integer Division and Modulus</title>
+      <para id="id19516084">By the time we reach adulthood, we normally think of division as resulting in an answer that might have a fractional part (a floating-point data type). This type of division is known as <term>floating-point division</term>. However, division when both operands are of the integer data type acts differently on most computers and is called: <emphasis>integer division</emphasis>. Within the C++ programming language the following expression does not give the answer of 2.75 or 2 ¾.</para>
+      <example id="id9556210">
+        <para id="id20988462">
+          <code display="inline">11 / 4</code>
+        </para>
+      </example>
+      <para id="id23639290">Because both operands are of the integer data type the evaluation of the expression (or answer) would be 2 with no fractional part (it gets thrown away). Again, this type of division is call <emphasis>integer division</emphasis> and it is what you learned in grade school the first time you learned about division. </para>
+<definition id="IntegerDivisiondef"><term>integer division</term>
+	<meaning id="fs-id21026728">Division with no fractional parts. </meaning>
+</definition>
+      <figure id="id25059506">
+        <media id="id9556264" alt=""><image src="../../media/graphics1-38c7.jpg" mime-type="image/jpeg" height="200" width="200"/></media>
+        <caption>Integer division as learned in grade school.</caption>
+      </figure>
+      <para id="id25931575">In the real world of data manipulation there are some things that are always handled in whole units or numbers (integer data type).  <emphasis>Fractions just don’t exist.</emphasis>  To illustrate our example: I have 11 dollar coins to distribute equally to my 4 children.  How many do they each get?  Answer is 2 with me still having 3 left over (or with 3 still remaining in my hand).  The answer is not 2 ¾ each or 2.75 for each child.  The dollar coins are not divisible into fractional pieces. Don’t try thinking out of the box and pretend you’re a pirate. Using an axe and chopping the 3 remaining coins into pieces of eight. Then, giving each child 2 coins and 6 pieces of eight or 2 6/8 or 2 ¾ or 2.75. If you do think this way, I will change my example to cans of tomato soup. I dare you to try and chop up three cans of soup and give each kid ¾ of a can. Better yet, living things like puppy dogs. After you divide them up with an axe, most children will not want the ¾ of a dog. </para>
+      <para id="id22887788">What is <emphasis>modulus</emphasis>?  It's the other part of the answer for integer division.  It’s the remainder.  Remember in grade school you would say, "Eleven divided by four is two remainder three." In C++ programming language the symbol for the modulus operator is the percent sign (%).</para>
+      <example id="id8713948">
+        <para id="id18727400">
+          <code display="inline">11 % 4</code>
+        </para>
+      </example>
+      <para id="id25021421">Thus, the answer or value of this expression is 3 or the remainder part of integer division. </para>
+<definition id="modulusdef">
+  <term>modulus</term>
+  <meaning id="fs-id20664240">The remainder part of integer division. </meaning>
+</definition>
+      <para id="id22365987">Many compilers require that you have integer operands on both sides of the modulus operator or you will get a compiler error. In other words, it does not make sense to use the modulus operator with floating-point operands. </para>
+      <para id="idklbx1421">Don’t let the following items confuse you. </para>
+      <example id="idklbx948">
+        <para id="idklbx7400"><code display="inline">6 / 24 which is different from 6 % 24</code>
+</para>
+      </example>
+      <para id="idklby1421">How many times can you divide 24 into 6?  Six divied by 24 is zero. This is different from: What is the remainder of 6 divided by 24?  Six, the remainder part given by modulus. </para>
+      <exercise id="id23499204">
+        <problem id="id8714006">
+     <list id="divisionexpq" list-type="enumerated">
+       <title>Evaluate the following division expressions:</title>
+       <item>14 / 4</item>
+       <item>5 / 13</item>
+       <item>7 / 2.0</item>
+     </list>
+        </problem>
+        <solution id="id8714024">
+     <list id="divisionexpa" list-type="enumerated">
+       <title>Answers:</title>
+       <item>3</item>
+       <item>0</item>
+       <item>3.5 because one of the operands is a floating-point value, it is not integer division</item>
+     </list>
+        </solution>
+      </exercise>
+      <exercise id="id21993361">
+        <problem id="id9556432">
+     <list id="modulusexpq" list-type="enumerated">
+       <title>Evaluate the following modulus expressions:</title>
+       <item>14 % 4</item>
+       <item>5 % 13</item>
+       <item>7 % 2.0</item>
+     </list>
+        </problem>
+        <solution id="id9556451">
+     <list id="modulueexpa" list-type="enumerated">
+       <title>Answers:</title>
+       <item>2</item>
+       <item>5</item>
+       <item>"error" because most compilers require both operands to be of the integer data type</item>
+     </list>
+        </solution>
+      </exercise>
+    </section>
+    <section id="id27356725">
+      <title>Demonstration Program in C++</title>
+      <section id="id24033561">
+        <title>Creating a Folder or Sub-Folder for Source Code Files</title>
+        <para id="id22812327">Depending on your compiler/IDE, you should decide where to download and store source code files for processing. Prudence dictates that you create these folders as needed prior to downloading source code files. A suggested sub-folder for the <term>Bloodshed Dev-C++ 5 compiler/IDE</term> might be named:</para>
+        <list id="id19013767" list-type="bulleted">
+          <item>Demo_Programs</item>
+        </list>
+        <para id="id21583101">If you have not done so, please create the folder(s) and/or sub-folder(s) as appropriate.</para>
+      </section>
+      <section id="id18231261">
+        <title>Download the Demo Program</title>
+        <para id="id27034676">Download and store the following file(s) to your storage device in the appropriate folder(s). You may need to right click on the link and select "Save Target As" in order to download the file. Following the methods of your compiler/IDE, compile and run the program(s). Study the soruce code file(s) in conjunction with other learning materials.</para>
+        <para id="id27348046">Download from Connexions: <link document="m18717" resource="Demo_Integer_Division_and_Modulus.cpp">Demo_Integer_Division_and_Modulus.cpp</link></para>
+      </section>
+    </section>
+  </content>
+</document>

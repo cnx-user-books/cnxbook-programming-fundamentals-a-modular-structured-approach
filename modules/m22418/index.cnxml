@@ -1,0 +1,35 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Review: Foundation Topics Group: 1-5</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m22418</md:content-id>
+  <md:title>Review: Foundation Topics Group: 1-5</md:title>
+  <md:abstract>Review materials that support a group of chapters in the "Programming Fundamentals - A Modular Structured Approach using C++" collection/textbook.</md:abstract>
+  <md:uuid>dd039f4d-6125-489a-91b5-399555569f2a</md:uuid>
+</metadata>
+
+<content>
+    <section id="id5471793">
+      <title>Strategy Discussion</title>
+      <para id="id1170725572447">Exams vary depending on your instructor. Many will use the following:</para>
+      <list id="id1170724694462" list-type="enumerated" number-style="arabic">
+        <item>Definitions</item>
+        <item>Self-grading questions including true/false, multiple choice, short answer, etc. </item>
+        <item>Problems</item>
+      </list>
+      <para id="id1170725565691">The materials in this textbook/collection have covered these items at the end of every chapter within the <emphasis>Practice</emphasis> module for that chapter. We suggest the following test preparation strategies:</para>
+      <list id="id8964857" list-type="enumerated" number-style="arabic">
+        <item>If your professor is testing the definitions and expecting you to have them memorized, you should review the “Using the Flash Card Activity” within the “Study Habits that Build the Brain” module within the Appendix materials. Practice writing your definitions using the Flash Card Activity in the Memory Building Activities (MBAs) available within the <emphasis>Practice</emphasis> modules or in the Memory Building Activities within this <emphasis>Review</emphasis> module.</item>
+        <item>Do a quick review of any exercises within the Connexions modules or the <emphasis>Practice</emphasis> modules. Also review quizzes or exams that you have taken and pay special attention to making sure you understand why you missed a question.</item>
+        <item>If your professor has indicated that they might include a few of the problems presented within the <emphasis>Practice</emphasis> modules, make sure you have formulated a good answer for each problem. If authorized, collaborate with other students to improve your answers to the problems. Spend a moderate amount of time reviewing each problem with its answer before the exam.</item>
+      </list>
+    </section>
+    <section id="id1170735929533">
+      <title>Memory Building Activities</title>
+      <para id="id1170725824003">Link to: <link window="new" document="m22418" resource="index.html">MBA Review: Foundation Topics Group: 1-5</link></para>
+    </section>
+    <section id="id1170725560400">
+      <title>Miscellaneous Items</title>
+      <para id="id8926011">Link to: <link window="new" document="m22418" resource="Manipulation_Data_Part_1.pdf">Manipulation of Data Part 1</link></para>
+    </section>
+  </content>
+</document>

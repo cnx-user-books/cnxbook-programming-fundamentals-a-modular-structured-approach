@@ -1,0 +1,99 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Formatting Output</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m20660</md:content-id>
+  <md:title>Formatting Output</md:title>
+  <md:abstract>An explanation of formatting output (to cout) as used within a C++ program.</md:abstract>
+  <md:uuid>374a52bf-1c1e-4bbf-95e7-45120ea77bf4</md:uuid>
+</metadata>
+<featured-links>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit below.
+       Changes to the links section in the source will not be saved. -->
+    <link-group type="supplemental">
+      <link url="http://cnx.org/content/m18785/latest/" strength="1">Bloodshed Dev-C++ 5 Compiler/IDE</link>
+    </link-group>
+    <link-group type="prerequisite">
+      <link url="http://cnx.org/content/m18835/latest/" strength="2">Standard Input and Output</link>
+      <link url="http://cnx.org/content/m20600/latest/" strength="1">For Loop</link>
+    </link-group>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit above.
+       Changes to the links section in the source will not be saved. -->
+</featured-links>
+<content>
+    <section id="id8915715">
+      <title>General Discussion</title>
+      <para id="id7177584">Formatting of output is handled in different ways in the various languages used today. Many programming languages have different formatting instructions for the standard output device which is usually the monitor (going to a DOS black screen output box) versus using the monitor as a Graphical User Interface (GUI). File storage output is often handled similarly to the standard output device. All of this makes formatting of output very machine, output device and language dependent.</para>
+      <para id="id16030887">When teaching programming fundamentals, many professors prefer to use the standard output device. For the C++ programming language this means going to the monitor using a DOS black screen output box. </para>
+    </section>
+    <section id="id4444429">
+      <title>C++ Considerations using Standard Output (cout)</title>
+      <section id="id23887010">
+        <title>Text Wrapping and Vertical Spacing</title>
+        <para id="id20785537">There are two items used to keep output from filling up a line and <emphasis>wrapping</emphasis> on to the next line. They are:</para>
+        <list id="id20003694" list-type="bulleted">
+          <item>Using the escape code sequence of \n within your strings (text between as set of double quote marks).</item>
+          <item>Using the item from the iostream named: endl; which is short for end line.</item>
+        </list>
+        <para id="id17785945">Thus the programmer is responsible for making text show reasonably on the screen. Both of the above also allow for adequate <term>vertical spacing</term> when needed in your output.</para>
+      </section>
+      <section id="id12948512">
+        <title>Handling Floating-point Data Type</title>
+        <para id="id13163802">It is nice to have your output displayed so humans can read it (most humans are not use to scientific notation). There are three lines often inserted near the start of your code (first items in the function main) that can be used to direct the formatting of floating-point data. They are:</para>
+        <para id="id21537743">
+          <code display="inline">cout.setf(ios::fixed);</code>
+        </para>
+        <para id="id17750211">
+          <code display="inline">cout.setf(ios::showpoint);</code>
+        </para>
+        <para id="id23905511">
+          <code display="inline">cout.precision(n);</code>
+        </para>
+        <para id="id19671624">They do the following for the rest of your program:</para>
+        <list id="id19671630" list-type="bulleted">
+          <item>fixed – Do not use scientific notation but show floating-point values like integer values (numeral digits of 0 to 9 – no exponent notation).</item>
+          <item>showpoint – Always show a decimal point for floating-point values even if there is no fractional part.</item>
+          <item>precision – Always show this number of digits (change n to a number like 2) to the right of the decimal point. </item>
+        </list>
+      </section>
+      <section id="id5068968">
+        <title>Setting the Width for Numbers</title>
+        <para id="id13148433">Setting the width for integer family and floating-point family data types must be done for the output of each value. Assume in the following example that age is an integer data type and money is a floating-point data type.</para>
+        <para id="id19895975">
+          <code display="inline">cout &lt;&lt; setw(4) &lt;&lt; age &lt;&lt; endl;</code>
+        </para>
+        <para id="id16143803">
+          <code display="inline">cout &lt;&lt; setw(8) &lt;&lt; money &lt;&lt; endl;</code>
+        </para>
+        <para id="id23888559">Note that each value had to have its own setw(n) where n is an integer number telling it how many positions to use for the output. The iomanip header file (immediately shown) will need to be included in your program.</para>
+        <para id="id20914199"><code display="inline">#include&lt;iomanip&gt; // needed for the setw</code></para>
+      </section>
+    </section>
+    <section id="id21660688">
+      <title>Demonstration Program in C++</title>
+      <section id="id12734555">
+        <title>Creating a Folder or Sub-Folder for Source Code Files</title>
+        <para id="id18565977">Depending on your compiler/IDE, you should decide where to download and store source code files for processing. Prudence dictates that you create these folders as needed prior to downloading source code files. A suggested sub-folder for the <term>Bloodshed Dev-C++ 5 compiler/IDE</term> might be named:</para>
+        <list id="id20780422" list-type="bulleted">
+          <item>Demo_Programs</item>
+        </list>
+        <para id="id13368504">If you have not done so, please create the folder(s) and/or sub-folder(s) as appropriate.</para>
+      </section>
+      <section id="id20655653">
+        <title>Download the Demo Program</title>
+        <para id="id7429090">Download and store the following file(s) to your storage device in the appropriate folder(s). Following the methods of your compiler/IDE, compile and run the program(s). Study the source code file(s) in conjunction with other learning materials.</para>
+        <para id="id21018788">Download from Connexions: <link document="m20660" resource="Demo_Formatting_Output.cpp">Demo_Formatting_Output.cpp</link></para>
+      </section>
+    </section>
+    <section id="id13283507">
+      <title>Definitions</title>
+    <definition id="fs-id12234427">
+      <term>formatting</term>
+      <meaning id="fs-id7693496"> Modifying the way the output is displayed. </meaning>
+    </definition>
+    <definition id="fs-id12507278">
+      <term>wrapping</term>
+      <meaning id="fs-id4821470">When output is not vertically spaced properly. </meaning>
+    </definition>
+    </section>
+  </content>
+</document>

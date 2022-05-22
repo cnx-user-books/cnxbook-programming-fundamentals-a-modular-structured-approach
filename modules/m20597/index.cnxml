@@ -1,0 +1,63 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Repeat Until Loop</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m20597</md:content-id>
+  <md:title>Repeat Until Loop</md:title>
+  <md:abstract>An introduction to the repeat until control structure.</md:abstract>
+  <md:uuid>c958cc77-abf5-4e12-99a3-c1ddf2d6da61</md:uuid>
+</metadata>
+<featured-links>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit below.
+       Changes to the links section in the source will not be saved. -->
+    <link-group type="prerequisite">
+      <link url="http://cnx.org/content/m19623/latest/" strength="2">Flowcharting </link>
+      <link url="http://cnx.org/content/m19628/latest/" strength="2">Structured Programming</link>
+    </link-group>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit above.
+       Changes to the links section in the source will not be saved. -->
+</featured-links>
+<content>
+    <section id="id10372479">
+      <title>Introduction to Test After Loops</title>
+      <para id="id7944767">There are two commonly used test after loops in the iteration (or repetition) category of control structures. They are: do while and repeat until. This module covers the: repeat until.</para>
+      <section id="id7486356">
+        <title>Understanding Iteration in General – repeat until</title>
+        <para id="id13363124">The concept of iteration is connected to possibly wanting to repeat an action. Like all control structures we ask a question to control the execution of the loop. The term loop comes from the circular looping motion that occurs when using flowcharting. The basic form of the repeat until loop is as follows:</para>
+        <para id="id12722762"><preformat id="klb6660001" display="block"><code>
+repeat
+  some statements or action
+  some statements or action
+  some statements or action
+  update the flag
+until the answer to the question becomes true </code></preformat>
+        </para>
+        <para id="id5910211">In every language that I know the question (called a <term>test expression</term>) is a <term>Boolean expression</term>. The Boolean data type has two values – true and false. Let's rewrite the structure to consider this:</para>
+        <para id="id3253279"><preformat id="klb6660002" display="block"><code>
+repeat
+  some statements or action
+  some statements or action
+  some statements or action
+  update the flag
+until expression becomes true </code></preformat>
+        </para>
+        <para id="id25046146">Within the repeat until control structure there are three attributes of a properly working loop. They are:</para>
+        <list id="id18083483" list-type="bulleted"><item>Action or actions</item>
+<item>Update of the flag</item>
+<item>Test expression</item>
+</list>
+        <para id="id23145523">The English phrasing is, "You repeat the action until the expression becomes true". This is looping on the false. When the test expression becomes true, you stop the loop and go on with the next item in the program. Notice, because this is a test after loop the action will always happen <emphasis>at least once</emphasis>. It is called a "test after loop" because the test comes after the action. It is also sometimes called a post-test loop, meaning the test is post (or Latin for after) the action and update.</para>
+      </section>
+    </section>
+    <section id="id9572632">
+      <title>The repeat until Structure within C++</title>
+      <para id="id9381322">Well, it just does not exist. Most programming languages have either the do while or the repeat until control structures, but not both.</para>
+    </section>
+    <section id="id13353952">
+      <title>Definitions</title>
+    <definition id="fs-id7817482">
+      <term>repeat until</term>
+      <meaning id="fs-id11831244"> A test after iteration control structure that is not available in C++. </meaning>
+    </definition>
+    </section>
+  </content>
+</document>

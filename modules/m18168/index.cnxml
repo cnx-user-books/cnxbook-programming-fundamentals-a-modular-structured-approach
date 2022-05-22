@@ -1,0 +1,425 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Abbreviated Precedence Chart for C++ Operators</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m18168</md:content-id>
+  <md:title>Abbreviated Precedence Chart for C++ Operators</md:title>
+  <md:abstract>An abbreviated precedence chart for C++ operators typically used in a modular structured programming fundamentals course.</md:abstract>
+  <md:uuid>34a9f922-e91b-4c90-a819-c3003ca1d009</md:uuid>
+</metadata>
+<featured-links>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit below.
+       Changes to the links section in the source will not be saved. -->
+    <link-group type="prerequisite">
+      <link url="http://cnx.org/content/m18705/latest/" strength="2">Data Manipulation</link>
+    </link-group>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit above.
+       Changes to the links section in the source will not be saved. -->
+</featured-links>
+<content>
+    <para id="id1166980153528">An <term>operator</term> is a language-specific syntactical token (one or more symbols) that causes an action to be taken on one or more operands. The following item provides an abbreviated list of those C++ operators that are typically taught in a programming fundamentals course that teaches modular structured programming concepts.</para>
+    <para id="id4144077">The first column shows the precedence (the higher precedence is 1 or it goes first) and operators that have the same precedence also have the same associativity (the associativity is only listed once for the group of operators). Decrement is two minus signs, but some word processing software programs might have problems printing two minus signs and convert it to a double dash. Insertion (two &lt; signs) and extraction (two &gt; signs) might also have printing problems. These printing problems are noted in the comments with <emphasis>emphasized</emphasis> text.</para>
+    <table id="id1166982036752" summary="">
+      <tgroup cols="6">
+        <colspec colnum="1" colname="c1"/>
+        <colspec colnum="2" colname="c2"/>
+        <colspec colnum="3" colname="c3"/>
+        <colspec colnum="4" colname="c4"/>
+        <colspec colnum="5" colname="c5"/>
+        <colspec colnum="6" colname="c6"/>
+        <tbody>
+          <row>
+            <entry>
+              <emphasis>PR</emphasis>
+            </entry>
+            <entry>
+              <emphasis>OPERATOR NAME</emphasis>
+            </entry>
+            <entry>
+              <emphasis>SYMBOL(S)</emphasis>
+            </entry>
+            <entry>
+              <emphasis>COMMENTS</emphasis>
+            </entry>
+            <entry>
+              <emphasis>ASSOICIATIVITY</emphasis>
+            </entry>
+            <entry>
+              <emphasis>CONNEXIONS</emphasis>
+              <emphasis>MODULE</emphasis>
+            </entry>
+          </row>
+          <row>
+            <entry>1</entry>
+            <entry>function call</entry>
+            <entry>()</entry>
+            <entry/>
+            <entry>Left to Right</entry>
+            <entry>
+              <link document="m19145">m19145</link>
+            </entry>
+          </row>
+          <row>
+            <entry>1</entry>
+            <entry>index </entry>
+            <entry>[]</entry>
+            <entry>aka array index</entry>
+            <entry/>
+            <entry>
+              <link document="m21316">m21316</link>
+            </entry>
+          </row>
+          <row>
+            <entry>2</entry>
+            <entry>class member</entry>
+            <entry>.</entry>
+            <entry>a period</entry>
+            <entry>Right to Left</entry>
+            <entry>
+              <link document="m20796">m20796</link>
+            </entry>
+          </row>
+          <row>
+            <entry>2</entry>
+            <entry>postfix increment</entry>
+            <entry>++</entry>
+            <entry>unary</entry>
+            <entry/>
+            <entry>
+              <link document="m20499">m20499</link>
+            </entry>
+          </row>
+          <row>
+            <entry>2</entry>
+            <entry>postfix decrement</entry>
+            <entry>--</entry>
+            <entry>unary, <emphasis>two minus signs</emphasis></entry>
+            <entry/>
+            <entry>
+              <link document="m20499">m20499</link>
+            </entry>
+          </row>
+          <row>
+            <entry>3</entry>
+            <entry>indirection </entry>
+            <entry>*</entry>
+            <entry>unary, aka dereference</entry>
+            <entry>Right to Left</entry>
+            <entry>
+              <link document="m22152">m22152</link>
+            </entry>
+          </row>
+          <row>
+            <entry>3</entry>
+            <entry>address</entry>
+            <entry>&amp;</entry>
+            <entry>unary</entry>
+            <entry/>
+            <entry>
+              <link document="m22148">m22148</link>
+            </entry>
+          </row>
+          <row>
+            <entry>3</entry>
+            <entry>unary positive </entry>
+            <entry>+</entry>
+            <entry>unary, aka plus</entry>
+            <entry/>
+            <entry>
+              <link document="m20501">m20501</link>
+            </entry>
+          </row>
+          <row>
+            <entry>3</entry>
+            <entry>unary negative </entry>
+            <entry>-</entry>
+            <entry>unary, aka minus</entry>
+            <entry/>
+            <entry>
+              <link document="m20501">m20501</link>
+            </entry>
+          </row>
+          <row>
+            <entry>3</entry>
+            <entry>prefix increment</entry>
+            <entry>++</entry>
+            <entry>unary</entry>
+            <entry/>
+            <entry>
+              <link document="m20499">m20499</link>
+            </entry>
+          </row>
+          <row>
+            <entry>3</entry>
+            <entry>prefix decrement</entry>
+            <entry>--</entry>
+            <entry>unary, <emphasis>two minus signs</emphasis></entry>
+            <entry/>
+            <entry>
+              <link document="m20499">m20499</link>
+            </entry>
+          </row>
+          <row>
+            <entry>3</entry>
+            <entry>cast</entry>
+            <entry>(type)</entry>
+            <entry>unary</entry>
+            <entry/>
+            <entry>
+              <link document="m18744">m18744</link>
+            </entry>
+          </row>
+          <row>
+            <entry>3</entry>
+            <entry>sizeof</entry>
+            <entry>sizeof (type)</entry>
+            <entry>unary</entry>
+            <entry/>
+            <entry>
+              <link document="m18736">m18736</link>
+            </entry>
+          </row>
+          <row>
+            <entry>3</entry>
+            <entry>logical NOT</entry>
+            <entry>!</entry>
+            <entry>unary</entry>
+            <entry/>
+            <entry>
+              <link document="m19847">m19847</link>
+            </entry>
+          </row>
+          <row>
+            <entry>4</entry>
+            <entry>multiply</entry>
+            <entry>*</entry>
+            <entry/>
+            <entry>Left to Right</entry>
+            <entry>
+              <link document="m18706">m18706</link>
+            </entry>
+          </row>
+          <row>
+            <entry>4</entry>
+            <entry>divide</entry>
+            <entry>/</entry>
+            <entry/>
+            <entry/>
+            <entry>
+              <link document="m18706">m18706</link>
+            </entry>
+          </row>
+          <row>
+            <entry>4</entry>
+            <entry>modulus</entry>
+            <entry>%</entry>
+            <entry>remainder</entry>
+            <entry/>
+            <entry>
+              <link document="m18706">m18706</link>
+            </entry>
+          </row>
+          <row>
+            <entry>5</entry>
+            <entry>add</entry>
+            <entry>+</entry>
+            <entry/>
+            <entry>Left to Right</entry>
+            <entry>
+              <link document="m18706">m18706</link>
+            </entry>
+          </row>
+          <row>
+            <entry>5</entry>
+            <entry>subtract</entry>
+            <entry>-</entry>
+            <entry/>
+            <entry/>
+            <entry>
+              <link document="m18706">m18706</link>
+            </entry>
+          </row>
+          <row>
+            <entry>6</entry>
+            <entry>insertion</entry>
+            <entry>&lt;&lt;</entry>
+            <entry>writing, <emphasis>two less than signs</emphasis></entry>
+            <entry>Left to Right</entry>
+            <entry>
+              <link document="m18835">m18835</link>
+            </entry>
+          </row>
+          <row>
+            <entry>6</entry>
+            <entry>extraction</entry>
+            <entry>&gt;&gt;</entry>
+            <entry>reading, <emphasis>two greater than signs</emphasis></entry>
+            <entry/>
+            <entry>
+              <link document="m18835">m18835</link>
+            </entry>
+          </row>
+          <row>
+            <entry>7</entry>
+            <entry>less than</entry>
+            <entry>&lt;</entry>
+            <entry/>
+            <entry>Left to Right</entry>
+            <entry>
+              <link document="m19549">m19549</link>
+            </entry>
+          </row>
+          <row>
+            <entry>7</entry>
+            <entry>greater than</entry>
+            <entry>&gt;</entry>
+            <entry/>
+            <entry/>
+            <entry>
+              <link document="m19549">m19549</link>
+            </entry>
+          </row>
+          <row>
+            <entry>7</entry>
+            <entry>less than or equal to</entry>
+            <entry>&lt;=</entry>
+            <entry/>
+            <entry/>
+            <entry>
+              <link document="m19549">m19549</link>
+            </entry>
+          </row>
+          <row>
+            <entry>7</entry>
+            <entry>greater than or equal to</entry>
+            <entry>&gt;=</entry>
+            <entry/>
+            <entry/>
+            <entry>
+              <link document="m19549">m19549</link>
+            </entry>
+          </row>
+          <row>
+            <entry>8</entry>
+            <entry>equality</entry>
+            <entry>==</entry>
+            <entry>equal to</entry>
+            <entry>Left to Right</entry>
+            <entry>
+              <link document="m19549">m19549</link>
+            </entry>
+          </row>
+          <row>
+            <entry>8</entry>
+            <entry>inequality</entry>
+            <entry>!=</entry>
+            <entry>not equal to</entry>
+            <entry/>
+            <entry>
+              <link document="m19549">m19549</link>
+            </entry>
+          </row>
+          <row>
+            <entry>9</entry>
+            <entry>logical AND</entry>
+            <entry>&amp;&amp;</entry>
+            <entry/>
+            <entry>Left to Right</entry>
+            <entry>
+              <link document="m19847">m19847</link>
+            </entry>
+          </row>
+          <row>
+            <entry>10</entry>
+            <entry>logical OR</entry>
+            <entry>||</entry>
+            <entry/>
+            <entry>Left to Right</entry>
+            <entry>
+              <link document="m19847">m19847</link>
+            </entry>
+          </row>
+          <row>
+            <entry>11</entry>
+            <entry>conditional</entry>
+            <entry>? :</entry>
+            <entry>trinary</entry>
+            <entry>Left to Right</entry>
+            <entry>
+              <link document="m20811">m20811</link>
+            </entry>
+          </row>
+          <row>
+            <entry>12</entry>
+            <entry>assignment</entry>
+            <entry>=</entry>
+            <entry/>
+            <entry>Right to Left</entry>
+            <entry>
+              <link document="m18725">m18725</link>
+            </entry>
+          </row>
+          <row>
+            <entry>12</entry>
+            <entry>addition assignment</entry>
+            <entry>+=</entry>
+            <entry/>
+            <entry/>
+            <entry>
+              <link document="m18743">m18743</link>
+            </entry>
+          </row>
+          <row>
+            <entry>12</entry>
+            <entry>subtraction assignment</entry>
+            <entry>-=</entry>
+            <entry/>
+            <entry/>
+            <entry>
+              <link document="m18743">m18743</link>
+            </entry>
+          </row>
+          <row>
+            <entry>12</entry>
+            <entry>multiplication assignment</entry>
+            <entry>*=</entry>
+            <entry/>
+            <entry/>
+            <entry>
+              <link document="m18743">m18743</link>
+            </entry>
+          </row>
+          <row>
+            <entry>12</entry>
+            <entry>division assignment</entry>
+            <entry>/=</entry>
+            <entry/>
+            <entry/>
+            <entry>
+              <link document="m18743">m18743</link>
+            </entry>
+          </row>
+          <row>
+            <entry>12</entry>
+            <entry>modulus assignment</entry>
+            <entry>%=</entry>
+            <entry/>
+            <entry/>
+            <entry>
+              <link document="m18743">m18743</link>
+            </entry>
+          </row>
+          <row>
+            <entry>13</entry>
+            <entry>sequence or comma</entry>
+            <entry>,</entry>
+            <entry/>
+            <entry>Left to Right</entry>
+            <entry>
+              <link document="m18690">m18690</link>
+            </entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+  </content>
+</document>

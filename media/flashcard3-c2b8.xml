@@ -1,0 +1,159 @@
+<?xml version='1.0'?>
+<order>
+<color>E7E7F5</color>
+<showterm>true</showterm>
+<showdef>false</showdef>
+<customDeckText>Custom Deck</customDeckText>
+<wholeDeckText>Whole Deck</wholeDeckText>
+<showText>SHOW</showText>
+<addToText>Add to Custom</addToText>
+<showTermText>Show Term</showTermText>
+<showDefText>Show Definition</showDefText>
+<orderset value='1'>
+ <term>data type</term>
+ <def>Defines a set of values and a set of operations that can be applied on those values.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='2'>
+ <term>data type families</term>
+ <def>1) Nothing 2) Integer 3) Floating-Point 4) Complex</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='3'>
+ <term>domain</term>
+ <def>The set of allowed values for a data type.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='4'>
+ <term>integer</term>
+ <def>A data type representing whole numbers.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='5'>
+ <term>floating point</term>
+ <def>A data type representing numbers with fractional parts.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='6'>
+ <term>reserved word</term>
+ <def>Words that can not be used by the programmer as identifier names because they already have a specific meaning within the programming language.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='7'>
+ <term>constant</term>
+ <def>A data item whose value cannot change during the program's execution.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='8'>
+ <term>variable</term>
+ <def>A data item whose value can change during the program's execution.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='9'>
+ <term>expression</term>
+ <def>A valid sequence of operand(s) and operator(s) that reduces (or evaluates) to a single value.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='10'>
+ <term>operator</term>
+ <def>A language-specific syntactical token (usually a symbol) that causes an action to be taken on one or more operands.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='11'>
+ <term>operand</term>
+ <def>A value that receives the operator's action.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='12'>
+ <term>precedence</term>
+ <def>Determines the order in which the operators are allowed to manipulate the operands.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='13'>
+ <term>associativity</term>
+ <def>Determines the order in which the operators of the same precedence are allowed to manipulate the operands.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='14'>
+ <term>evaluation</term>
+ <def>The process of applying the operators to the operands and resulting in a single value.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='15'>
+ <term>parentheses</term>
+ <def>Change the order of evaluation in an expression. You do what's in the parentheses first.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='16'>
+ <term>assignment</term>
+ <def>An operator that changes the value of a modifiable data object.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='17'>
+ <term>implicit</term>
+ <def>A value that has its data type changed automatically.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='18'>
+ <term>explicit</term>
+ <def>Changing a value's data type with the cast operator.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='19'>
+ <term>promotion</term>
+ <def>Going from a smaller domain to a larger domain.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='20'>
+ <term>demotion</term>
+ <def>Going from a larger domain to a smaller domain.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='21'>
+ <term>truncation</term>
+ <def>The fractional part of a floating-point data type that is dropped when converted to an integer.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+</order>

@@ -1,0 +1,150 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>For Loop</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m20600</md:content-id>
+  <md:title>For Loop</md:title>
+  <md:abstract>An introduction to the for control structure with examples in the C++ programming language.</md:abstract>
+  <md:uuid>0fd861e3-3c68-4229-86c6-65143fc23ae0</md:uuid>
+</metadata>
+<featured-links>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit below.
+       Changes to the links section in the source will not be saved. -->
+    <link-group type="supplemental">
+      <link url="http://cnx.org/content/m18690/latest/" strength="1">Sequence Operator</link>
+    </link-group>
+    <link-group type="prerequisite">
+      <link url="http://cnx.org/content/m20499/latest/" strength="3">Increment and Decrement Operators</link>
+      <link url="http://cnx.org/content/m20598/latest/" strength="3">While Loop</link>
+      <link url="http://cnx.org/content/m19623/latest/" strength="2">Flowcharting </link>
+      <link url="http://cnx.org/content/m19628/latest/" strength="2">Structured Programming</link>
+      <link url="http://cnx.org/content/m19683/latest/" strength="1">Compound Statement</link>
+    </link-group>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit above.
+       Changes to the links section in the source will not be saved. -->
+</featured-links>
+<content>
+    <section id="id13772142">
+      <title>Introduction to Test Before Loops</title>
+      <para id="id5975390">There are two commonly used test before loops in the iteration (or repetition) category of control structures. They are: while and for. This module covers the: for.</para>
+      <section id="id3755801">
+        <title>Understanding Iteration in General – for</title>
+        <para id="id15300475">In most programming languages the for loop is used exclusively for counting; that is to repeat a loop action as it either counts up or counts down. There is a starting value and a stopping value. The question that controls the loop is a <term>test expression</term> that compares the starting value to the stopping value. This expression is a Boolean expression and is usually using the relational operators of either less than (for counting up) or greater than (for counting down). The term loop comes from the circular looping motion that occurs when using flowcharting. The basic form of the for loop (counting up) is as follows:</para>
+        <para id="id14498372"><preformat id="klb1230001" display="block"><code>
+for
+  initialization of the starting value
+  starting value is less than the stopping value
+  some statements or action
+  some statements or action
+  some statements or action
+  increment the starting value
+</code></preformat>
+        </para>
+        <para id="id16190609">It might be best to understand the for loop by understanding a while loop acting like a counting loop. Let's consider;</para>
+        <para id="id14731560"><preformat id="klb1230002" display="block"><code>
+initialization of the starting value 
+while the starting value is less than the stopping value
+  some statements or action
+  some statements or action
+  some statements or action
+  increment the starting value
+</code></preformat>
+        </para>
+        <para id="id14296837">Within the for control structure there are four attributes to a properly working loop. They are:</para>
+        <list id="id14276326" list-type="bulleted"><item>Initializing the flag – done once</item>
+	<item>Test expression</item>
+	<item>Action or actions</item>
+	<item>Update of the flag</item>
+</list>
+        <para id="id14528923">The initialization of the flag is not technically part of the while control structure, but it is usually part of the for control structure. The English phrasing is, "For x is 1; x less than 3; do the following actions; increment x; loop back to the test expression". This is doing the action on the true. When the test expression is false, you stop the loop and go on with the next item in the program. Notice, because this is a test before loop the action <emphasis>might not happen</emphasis>. It is called a <term>test before loop</term> because the test comes before the action. It is also sometimes called a pre-test loop, meaning the test is pre (or Latin for before) the action and update.</para>
+      </section>
+    </section>
+    <section id="id13440299">
+      <title>The for Structure within C++</title>
+      <section id="id13900570">
+        <title>Syntax</title>
+        <para id="id14837003">The syntax of the for loop control structure within the C++ programming language is:</para>
+        <para id="id14515545"><preformat id="klb1230003" display="block"><code>
+for (initializations; expression; updates)
+  {
+  statement;
+  statement;
+  statement;
+  }
+</code></preformat>
+        </para>
+        <para id="id14897012"><note id="fs-id1169665973043">The initializations, test expression and updates are within the parentheses (each separated by a semi-colon), but this is not a function call. The parentheses are part of the control structure. Additionally, there is not a semicolon after the parenthesis following the expression.</note></para>
+      </section>
+      <section id="id14232414">
+        <title>An Example</title>
+<example id="fs-id1169665966207">
+<title>C++ source code: for</title>
+<para id="klb4560004"><preformat id="klb1230004" display="block"><code>
+for (counter = 0; counter &lt; 5; counter++)
+  {
+  cout &lt;&lt; "\nI love ice cream!";
+  }
+</code></preformat>
+</para>
+</example>
+        <para id="id11869565">The four attributes of a test before loop (remember the for loop is one example of a test before loop) are present.</para>
+        <list id="eip-574"><item>The initialization of the flag to a value of 0.</item>
+	<item>The test is the less than relational comparison of the value in the flag variable to the constant value of 5.</item>
+	<item>The action part consists of the 1 line of output.</item>
+	<item>The update of the flag is done with the increment operator.</item></list><para id="id14037508">Using indentation with the alignment of the loop actions is normal industry practice within the C++ community.</para>
+      </section>
+      <section id="id13902842">
+        <title>Infinite Loops</title>
+        <para id="id9663235">At this point it's worth mentioning that good programming always provides for a method to insure that the loop question will eventually be false so that the loop will stop executing and the program continues with the next line of code. However, if this does not happen then the program is in an infinite loop. Infinite loops are a bad thing. Consider the following code:</para>
+<example id="fs-id1169667899332">
+<title>C++ source code: infinite loop</title>
+<para id="klb4560005"><preformat id="klb1230005" display="block"><code>
+for (counter = 0; counter &lt; 5;)
+  {
+  cout &lt;&lt; "\nI love ice cream!";
+  }
+</code></preformat>
+</para>
+</example>
+        <para id="id13348961">The programmer assigned a value to the flag during the initialization step which is correct. However, he forgot to update the flag (the update step is missing). Every time the test expression is asked it will always be true. Thus, an infinite loop because the programmer did not provide a way to exit the loop (he forgot to update the flag).</para>
+      </section>
+      <section id="id13752722">
+        <title>Multiple Items in the Initialization and Update</title>
+        <para id="id13011088">The following shows the use of the sequence operator to separate the multiple initializations and multiple updates. This is not available in most languages, thus is more unique to the C++ programming language.</para><example id="fs-id1169665878318">
+<title>C++ source code: for with multiple initializations and updates</title>
+<para id="klb4560006"><preformat id="klb1230006" display="block"><code>
+for (x = 0, y = 10; x &lt; 10; x++, y--)
+  {
+  cout &lt;&lt; x * y &lt;&lt; endl;
+  }
+</code></preformat>
+</para>
+</example>
+      </section>
+    </section>
+    <section id="id13657880">
+      <title>Counting Loop Conversion – a while into a for </title>
+      <para id="id13900522">Below is a color coded the conversion of a while loop that displays a message exactly three times (which is a counting loop) into a for loop using C++ programming language syntax. The four loop attributes are color highlighted as follows:</para>
+      <para id="id14263683">
+        <figure id="id14037892">
+          <media id="id14037892_media" alt="">
+            <image mime-type="image/jpg" src="../../media/graphics1-a9a0.jpg" id="id14037892__onlineimage" height="450" width="600"/>
+          </media>
+        </figure>
+      </para>
+    </section>
+    <section id="id13530980">
+      <title>Miscellaneous Information about the for Structure</title>
+      <para id="id10694093">Many languages (Pascal, FORTRAN, and other) have a for loop structure that is used exclusively for counting. The for loop in the C++ programming language is much more versatile and can be used (and generally is used) in place of the while loop structure. In reality a counting loop is just a particular use of a while loop.</para>
+      <para id="id16196546">The name for comes from mathematics’ method of writing an iteration (or repetition). In math we would say: “For the variable i starts at a given value and repeats an action increasing the value of i until i is executed for the stopping value”. Usually written in math as:</para>
+      <para id="id14262736">for i = 1 to 5 do some action</para>
+      <para id="id11738072">Note: here the = means equals not assignment. Another way to say it is that i varies from 1 to 5.</para>
+    </section>
+    <section id="id14038133">
+      <title>Definitions</title>
+    <definition id="fs-id24705148">
+      <term>for</term>
+      <meaning id="fs-id23404671"> A test before iteration control structure typically used for counting. </meaning>
+    </definition>
+    </section>
+  </content>
+</document>

@@ -1,0 +1,82 @@
+<?xml version='1.0'?>
+<order>
+<color>E7E7F5</color>
+<showterm>true</showterm>
+<showdef>false</showdef>
+<customDeckText>Custom Deck</customDeckText>
+<wholeDeckText>Whole Deck</wholeDeckText>
+<showText>SHOW</showText>
+<addToText>Add to Custom</addToText>
+<showTermText>Show Term</showTermText>
+<showDefText>Show Definition</showDefText>
+<orderset value='1'>
+ <term>increment</term>
+ <def>Adding one to the value of a variable.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='2'>
+ <term>decrement</term>
+ <def>Subtracting one from the value of a variable.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='3'>
+ <term>postfix</term>
+ <def>Placing the increment or decrement operator to the right of the operand.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='4'>
+ <term>prefix</term>
+ <def>Placing the increment or decrement operator to the left of the operand.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='5'>
+ <term>while</term>
+ <def>A test before iteration control structure available in C++.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='6'>
+ <term>loop attributes</term>
+ <def>Items associated with iteration or looping control structures.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='7'>
+ <term>initialize item</term>
+ <def>An attribute of iteration control structures.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='8'>
+ <term>might not happen</term>
+ <def>Indicating that test before loops might not execute the action.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='9'>
+ <term>event controlled</term>
+ <def>Using user input to control a loop.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='10'>
+ <term>counting controlled</term>
+ <def>Using a variable to count up or down to control a loop.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+</order>

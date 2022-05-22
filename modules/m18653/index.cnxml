@@ -1,0 +1,157 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Data Types in C++</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m18653</md:content-id>
+  <md:title>Data Types in C++</md:title>
+  <md:abstract>An introduction to data types within the C++ programming language.</md:abstract>
+  <md:uuid>3ae14342-6d05-498a-b69c-6891c22586b3</md:uuid>
+</metadata>
+<featured-links>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit below.
+       Changes to the links section in the source will not be saved. -->
+    <link-group type="supplemental">
+      <link url="http://cnx.org/content/m18655/latest/" strength="3">Void Data Type</link>
+      <link url="http://cnx.org/content/m18654/latest/" strength="3">Integer Data Type</link>
+      <link url="http://cnx.org/content/m18657/latest/" strength="3">Floating-Point Data Type</link>
+      <link url="http://cnx.org/content/m18656/latest/" strength="3">String Data Type</link>
+      <link url="http://cnx.org/content/m18669/latest/" strength="2">Character Data Type</link>
+      <link url="http://cnx.org/content/m19544/latest/" strength="2">Boolean Data Type</link>
+      <link url="http://cnx.org/content/m21315/latest/" strength="2">Array Data Type</link>
+      <link url="http://cnx.org/content/m22151/latest/" strength="2">Pointer Data Type</link>
+      <link url="http://softpixel.com/~cwright/programming/datatypes.c.php" strength="1">Basic C and C++ Data Types</link>
+      <link url="http://en.wikipedia.org/wiki/Datatype" strength="1">Wikipedia - Data Type</link>
+    </link-group>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit above.
+       Changes to the links section in the source will not be saved. -->
+</featured-links>
+<content>
+    <section id="id1164502340833">
+      <title>General Discussion</title>
+      <para id="id7802186">Our interactions (inputs and outputs) of a program are treated in many languages as a stream of bytes. These bytes represent data that can be interpreted as representing values that we understand. Additionally, within a program we process this data in various ways such as adding them up or sorting them. This data comes in different forms. Examples include: yourname which is a string of characters; your age which is usually an integer; or the amount of money in your pocket which is usually a value measured in dollars and cents (something with a fractional part). A major part of understanding how to design and code programs in centered in understanding the types of data that we want to manipulate and how to manipulate that data.</para>
+      <para id="id5031045">"A <emphasis>type</emphasis> defines a set of values and a set of operations that can be applied on those values. The set of values for each type is known as the domain for that type."<footnote id="id1164496748933">Behrouz A. Forouzan and Richard F. Gilberg, <emphasis effect="underline">Computer Science A Structured Approach using C++ Second Edition</emphasis> (United States of America: Thompson – Brooks/Cole, 2004) 33.</footnote> The four major families of data include:</para>
+      <list id="id1164507699965" list-type="bulleted">
+        <item>Nothing</item>
+        <item>Integer</item>
+        <item>Floating-point</item>
+        <item>Complex</item>
+      </list>
+      <para id="id1164502169767">The C++ programming language identifies five data types as standard data types:</para>
+      <list id="id1164496985840" list-type="bulleted">
+        <item>Void</item>
+        <item>Boolean</item>
+        <item>Character</item>
+        <item>Integer</item>
+        <item>Floating-point</item>
+      </list>
+      <para id="id3639700">The standard data types and the complex data types within C++ have a series of attributes, which include:</para>
+      <list id="id3098795" list-type="bulleted">
+        <item>C++ Reserved or Key Word</item>
+        <item>Domain – the allowed values</item>
+        <item>Signage – do they allow negative numbers or only positive numbers</item>
+        <item>Meaning – i.e. What do they represent</item>
+        <item>Rules of Definition – What special characters indicate the data type</item>
+        <item>Size – in terms of the number of bytes of storage used in the memory</item>
+        <item>Operations Allowed – i.e. Which operators can I use on the data type</item>
+      </list>
+      <para id="id1164506274290">Placing some of the above into a summary table, we get:</para>
+      <table id="id5814228" summary="">
+        <tgroup cols="5">
+          <colspec colnum="1" colname="c1"/>
+          <colspec colnum="2" colname="c2"/>
+          <colspec colnum="3" colname="c3"/>
+          <colspec colnum="4" colname="c4"/>
+          <colspec colnum="5" colname="c5"/>
+          <tbody>
+            <row>
+              <entry>Family</entry>
+              <entry>Data Type</entry>
+              <entry>Reserved Word</entry>
+              <entry>Represents</entry>
+              <entry>Standard Type</entry>
+            </row>
+            <row>
+              <entry>Nothing</entry>
+              <entry>Null or nothing</entry>
+              <entry>void</entry>
+              <entry>No data</entry>
+              <entry>Yes</entry>
+            </row>
+            <row>
+              <entry>Integer</entry>
+              <entry>Boolean</entry>
+              <entry>bool</entry>
+              <entry>Logical true and false</entry>
+              <entry>Yes</entry>
+            </row>
+            <row>
+              <entry>Integer</entry>
+              <entry>Character</entry>
+              <entry>char</entry>
+              <entry>Single characters</entry>
+              <entry>Yes</entry>
+            </row>
+            <row>
+              <entry>Integer</entry>
+              <entry>Integer</entry>
+              <entry>int</entry>
+              <entry>Whole numbers </entry>
+              <entry>Yes</entry>
+            </row>
+            <row>
+              <entry>Floating Point</entry>
+              <entry>Floating Point</entry>
+              <entry>float</entry>
+              <entry>Fractional numbers</entry>
+              <entry>Yes</entry>
+            </row>
+            <row>
+              <entry>Complex</entry>
+              <entry>String</entry>
+              <entry>string</entry>
+              <entry>A sequence (sting them along) of characters</entry>
+              <entry>No</entry>
+            </row>
+            <row>
+              <entry>Complex</entry>
+              <entry>Array</entry>
+              <entry>N/A</entry>
+              <entry>A collection of elements of the same data type</entry>
+              <entry>No</entry>
+            </row>
+            <row>
+              <entry>Complex</entry>
+              <entry>Pointer</entry>
+              <entry>N/A</entry>
+              <entry>A value that points to a location (an address) within the data area</entry>
+              <entry>No</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+      <para id="id1164508439704">The five standard data types usually exist in most programming languages and act or behave similarly from language to language. Most courses of study for a programming course or language will explain the standard data types first. After they are learned, the complex data types are introduced.</para>
+      <para id="id3486562">The Boolean, character and integer data types are identified as belonging to the Integer Family. These data types are all represented by integer numbers and thus act or behave similarly.</para>
+    </section>
+    <section id="id1164497228772">
+      <title>Definitions</title>
+    <definition id="fs-id7679280">
+      <term>data type</term>
+      <meaning id="fs-id7636704">Defines a set of values and a set of operations that can be applied on those values.</meaning>
+    </definition>
+    <definition id="fs-id1164009087267"><term>data type families</term>
+	<meaning id="fs-id1164009282911">1) Nothing 2) Integer 3) Floating-Point 4) Complex</meaning>
+</definition>
+    <definition id="fs-id1164009285041">
+      <term>domain</term>
+      <meaning id="fs-id4759706">The set of allowed values for a data type.</meaning>
+    </definition>
+    <definition id="fs-id7609263">
+      <term>integer</term>
+      <meaning id="fs-id1164008879842">A data type representing whole numbers.</meaning>
+    </definition>
+    <definition id="fs-id8603314">
+      <term>floating point</term>
+      <meaning id="fs-id1164011164575">A data type representing numbers with fractional parts.</meaning>
+    </definition>
+    </section>
+  </content>
+</document>

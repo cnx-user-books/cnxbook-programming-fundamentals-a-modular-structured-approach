@@ -1,0 +1,115 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Relational Operators</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m19549</md:content-id>
+  <md:title>Relational Operators</md:title>
+  <md:abstract>An introduction to the six common relational operators used in programming.</md:abstract>
+  <md:uuid>27dee7f9-5b89-49f2-8c93-c8e3583b22e5</md:uuid>
+</metadata>
+<featured-links>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit below.
+       Changes to the links section in the source will not be saved. -->
+    <link-group type="supplemental">
+      <link url="http://cnx.org/content/m20404/latest/" strength="3">Flag Concept</link>
+      <link url="http://cnx.org/content/m18168/latest/" strength="2">Abbreviated Precedence Chart for C++ Operators</link>
+      <link url="http://cnx.org/content/m18785/latest/" strength="1">Bloodshed Dev-C++ 5 Compiler/IDE</link>
+    </link-group>
+    <link-group type="prerequisite">
+      <link url="http://cnx.org/content/m19544/latest/" strength="3">Boolean Data Type</link>
+      <link url="http://cnx.org/content/m18705/latest/" strength="2">Data Manipulation</link>
+      <link url="http://cnx.org/content/m18744/latest/" strength="2">Data Type Conversions</link>
+    </link-group>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit above.
+       Changes to the links section in the source will not be saved. -->
+</featured-links>
+<content>
+    <section id="id5473667">
+      <title>Overview of the Relational Operators</title>
+      <para id="id5473673">The relational operators are often used to create a <term>test expression</term> that controls program flow. This type of expression is also known as a <term>Boolean expression</term> because they create a Boolean answer or value when evaluated. There are six common relational operators that give a Boolean value by comparing (showing the relationship) between two operands. If the operands are of different data types, implicit promotion occurs to convert the operands to the same data type. </para>
+<definition id="RelationalOperatordef">
+  <term>relational operator</term>
+  <meaning id="fs-id20302425">An operator that gives a Boolean value by evaluating the relationship between two operands. </meaning>
+</definition>
+      <para id="id5748679">Operator symbols and/or names vary with different programming languages. The C++ programming language operators with their meanings are:</para>
+      <table id="id5817767" summary="">
+        <tgroup cols="2">
+          <colspec colnum="1" colname="c1"/>
+          <colspec colnum="2" colname="c2"/>
+          <tbody>
+            <row>
+              <entry>C++ Operator</entry>
+              <entry>Meaning</entry>
+            </row>
+            <row>
+              <entry>&lt;</entry>
+              <entry>less than</entry>
+            </row>
+            <row>
+              <entry>&gt;</entry>
+              <entry>greater than</entry>
+            </row>
+            <row>
+              <entry>&lt;=</entry>
+              <entry>less than or equal to</entry>
+            </row>
+            <row>
+              <entry>&gt;=</entry>
+              <entry>greater than or equal to</entry>
+            </row>
+            <row>
+              <entry>==</entry>
+              <entry>equality (equal to)</entry>
+            </row>
+            <row>
+              <entry>!=</entry>
+              <entry>inequality (not equal to)</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+     <exercise id="id23499204">
+        <problem id="id8714006">
+          <list id="Booleanexpq" list-type="enumerated">
+            <title> Evaluate the following Boolean expressions:</title>
+            <item>9 &lt; 25</item>
+            <item>9 &lt; 3</item>
+            <item>9 &gt; 14</item>
+            <item>9 &lt;= 17</item>
+            <item>9 &gt;= 25</item>
+            <item>9 == 13</item>
+            <item>9 != 13</item>
+            <item>9 !&lt; 25</item>
+          </list>
+        </problem>
+        <solution id="id8714024">
+          <list id="Booleanexpa" list-type="enumerated"><title>Answers:</title><item>1</item>
+	<item>0</item>
+	<item>0</item>
+	<item>1</item>
+	<item>0</item>
+	<item>0</item>
+	<item>1</item>
+	<item> Error, the "not less than" is not a valid operator.</item>
+</list>
+        </solution>
+      </exercise>
+      <para id="id5819729">The answers to Boolean expressions within the C++ programming language are a value of either 1 for true or 0 for false.</para>
+      <para id="id5819738">Be careful.  In math you are familiar with using this symbol = to mean equal and ≠ to mean not equal.  In the C++ programming language the ≠ is not used and the = symbol means assignment.</para>
+    </section>
+    <section id="id5819753">
+      <title>Demonstration Program in C++</title>
+      <section id="id5821760">
+        <title>Creating a Folder or Sub-Folder for Source Code Files</title>
+        <para id="id5821767">Depending on your compiler/IDE, you should decide where to download and store source code files for processing. Prudence dictates that you create these folders as needed prior to downloading source code files. A suggested sub-folder for the <term>Bloodshed Dev-C++ 5 compiler/IDE</term> might be named:</para>
+        <list id="id5821790" list-type="bulleted"><item>Demo_Programs</item>
+</list>
+        <para id="id5821799">If you have not done so, please create the folder(s) and/or sub-folder(s) as appropriate.</para>
+      </section>
+      <section id="id5821806">
+        <title>Download the Demo Program</title>
+        <para id="id5821813">Download and store the following file(s) to your storage device in the appropriate folder(s). You may need to right click on the link and select "Save Target As" in order to download the file. Following the methods of your compiler/IDE, compile and run the program(s). Study the source code file(s) in conjunction with other learning materials.</para>
+        <para id="id5821829">Download from Connexions: <link document="m19549" resource="Demo_Relational_Operators.cpp">Demo_Relational_Operators.cpp</link></para>
+      </section>
+    </section>
+  </content>
+</document>

@@ -1,0 +1,47 @@
+Filename:    Lab_10_Pseudocode.txt
+
+Purpose:     Introduce Control Structures
+             if then else and while
+
+Author:      Ken Busbee; © 2009 Kenneth Leroy Busbee
+Date:        Feb 24, 2009
+Licensed by: Kenneth Leroy Busbee under a 
+             Creative Commons Attribution License (CC-BY 3.0)
+             http://creativecommons.org/licenses/by/3.0/
+******************************************************
+
+Pseudocode = IPO Outline
+ 
+input
+  display a message asking user thier age
+  get the users age from the keyboard
+ 
+processing
+  none
+                                    
+output
+  if age greater than 17
+    display "You can vote."
+  else
+    display "You can't vote."
+  endif
+
+  counter is assigned 0
+  while counter is less than 5
+    display "\nI love computers!"
+    increment counter
+  endwhile
+  
+  pause so the user can see the answer
+
+******************************************************
+
+Potential Variables
+
+Data Type    Identifier Name
+*********    ***************
+integer      age
+integer      counter
+
+******************************************************
+End of file

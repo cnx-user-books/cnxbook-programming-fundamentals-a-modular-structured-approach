@@ -1,0 +1,229 @@
+<?xml version='1.0'?>
+<order>
+<color>E7E7F5</color>
+<showterm>true</showterm>
+<showdef>false</showdef>
+<customDeckText>Custom Deck</customDeckText>
+<wholeDeckText>Whole Deck</wholeDeckText>
+<showText>SHOW</showText>
+<addToText>Add to Custom</addToText>
+<showTermText>Show Term</showTermText>
+<showDefText>Show Definition</showDefText>
+<orderset value='1'>
+ <term>phrase word</term>
+ <def>Words used to make pseudocode logic clear to any reader.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='2'>
+ <term>hierarchy chart</term>
+ <def>Convey the relationship or big picture of the various functions in a program.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='3'>
+ <term>structure chart</term>
+ <def>Another name for a hierarchy chart.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='4'>
+ <term>common area</term>
+ <def>An area of the program where variables and constants are defined so that they are available to all functions.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='5'>
+ <term>void data type</term>
+ <def>A data type that has no values or operators and is used to represent nothing.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='6'>
+ <term>documentation</term>
+ <def>A method of preserving information useful to others in understanding an information system or part thereof.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='7'>
+ <term>vertical alignment</term>
+ <def>A method of listing items vertically so that they are easier to read quickly.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='8'>
+ <term>comments</term>
+ <def>Information inserted into a source code file for documentation of the program.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='9'>
+ <term>banners</term>
+ <def>A set of comment lines used to help separate the functions and other sections of a program.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='10'>
+ <term>braces</term>
+ <def>Used to identify a block of code in C++.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='11'>
+ <term>indention</term>
+ <def>A method used to make sections of source code more visible.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='12'>
+ <term>meaningful</term>
+ <def>A rule that says identifier names must be easily understood by another reading the source code.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='13'>
+ <term>consistent</term>
+ <def>A rule that says to type identifier names in upper and lower case consistently through out your source code.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='14'>
+ <term>user defined library</term>
+ <def>A file containing specific task functions created by individuals to be used in many programs.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='15'>
+ <term>global scope</term>
+ <def>Data storage defined outside of a function.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='16'>
+ <term>local scope</term>
+ <def>Data storage defined inside of a function.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='17'>
+ <term>data area</term>
+ <def>A part of an object code file used for storage of data. </def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='18'>
+ <term>stack</term>
+ <def>A part of the computer's memory used for storage of data.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='19'>
+ <term>scope</term>
+ <def>The area of a source code file where an identifier name is recognized. </def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='20'>
+ <term>udst</term>
+ <def>User Defined Specific Task</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='21'>
+ <term>testing shell</term>
+ <def>A program used to create specific task functions. </def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='22'>
+ <term>header file</term>
+ <def>A file that contains items we want to have included toward the top of our source code.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='23'>
+ <term>standard library</term>
+ <def>A set of specific task functions that have been added to the programming language for universal use.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='24'>
+ <term>confidence</term>
+ <def>The reliance that Standard Library functions work properly.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='25'>
+ <term>abs</term>
+ <def>A function within the cmath standard library in C++ which stands for absolute.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='26'>
+ <term>character</term>
+ <def>A data type representing single text characters like the alphabet, numeral digits, punctuation, etc.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='27'>
+ <term>ASCII</term>
+ <def>American Standard Code for Information Interchange</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='28'>
+ <term>single quote marks</term>
+ <def>Used to create character type data within the C++ programming language.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='29'>
+ <term>sizeof</term>
+ <def>An operator that tells you how many bytes a data type occupies in storage.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='30'>
+ <term>typedef</term>
+ <def>Allows the programmer to create an alias, or synonym, for an existing data type.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='31'>
+ <term>sequence</term>
+ <def>An operator used to separate multiple occurrences of an item.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+</order>

@@ -1,0 +1,66 @@
+Filename:    Lab_22_Pseudocode.txt
+
+Purpose:     Passing by Reference - Date Information
+
+Author:      Ken Busbee; © 2009 Kenneth Leroy Busbee
+Date:        Apr 18, 2009
+Licensed by: Kenneth Leroy Busbee under a 
+             Creative Commons Attribution License (CC-BY 3.0)
+             http://creativecommons.org/licenses/by/3.0/
+******************************************************
+
+Function main
+  Pass In: nothing
+  Display "What is your birthdate?"
+  Call: get_date passing by reference your month day and year
+  Display "What is your friends birthdate?"
+  Call: get_date passing by reference your friend's month day and year
+  Display a blank line.
+  Display "Your birth date is: "
+  Display your month day and year with a slash between the items
+          Like this: 12/25/1999
+  Display a blank line.
+  Display "Your friend's birth date is: "
+  Display your friend's month day and year with a slash between the items
+  Call: pause_m
+  Pass Out: zero to the OS
+Endfunction
+
+********************
+
+Function get_date
+  Pass In: By reference: month, day and year
+  Display a blank line.
+  Display "Enter the month ---->: "
+  Get the response for the month from the keyboard
+  Display "Enter the day ------>: "
+  Get the response for the day from the keyboard
+  Display "Enter the year ----->: "
+  Get the response for the year from the keyboard
+  
+  Display a blank line.
+  Pass Out: nothing
+Endfuction
+
+********************
+
+pause_m
+is a functions defined in the udst_monitor.h
+either include the header file or 
+add the function pause to your program
+
+******************************************************
+
+Potential Variables
+
+Data Type    Identifier Name
+*********    ***************
+integer      user_b_month
+integer      user_b_day
+integer      user_b_year
+integer      friend_b_month
+integer      friend_b_day
+integer      friend_b_year
+
+******************************************************
+End of file

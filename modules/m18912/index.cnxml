@@ -1,0 +1,207 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Documentation and Making Source Code Readable</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m18912</md:content-id>
+  <md:title>Documentation and Making Source Code Readable</md:title>
+  <md:abstract>A source code listing and discussion of several items that make source code easier to read and maintain.</md:abstract>
+  <md:uuid>33b77eba-3442-4dee-bac8-9faeee3b0ab0</md:uuid>
+</metadata>
+<featured-links>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit below.
+       Changes to the links section in the source will not be saved. -->
+    <link-group type="prerequisite">
+      <link url="http://cnx.org/content/m18861/latest/" strength="3">Modularization and C++ Program Layout</link>
+    </link-group>
+    <link-group type="supplemental">
+      <link url="http://cnx.org/content/m18692/latest/" strength="3">Identifier Names</link>
+      <link url="http://cnx.org/content/m18690/latest/" strength="2">Sequence Operator</link>
+      <link url="http://cnx.org/content/m18741/latest/" strength="2">Typedef - An Alias</link>
+    </link-group>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit above.
+       Changes to the links section in the source will not be saved. -->
+</featured-links>
+<content>
+    <section id="id1167489812913">
+      <title>General Discussion</title>
+      <para id="id1167495755715">We are going to consider a simple program that might be used for testing a compiler to make sure that it is installed correctly.</para>
+<example id="fs-id10324711">
+<title> Compiler_Test.cpp source code</title>
+<para id="fs-id16604566"><preformat id="fs-id8123681" display="block"><code>
+//******************************************************
+// Filename: Compiler_Test.cpp
+// Purpose:  Average the ages of two people
+// Author:   Ken Busbee; © Kenneth Leroy Busbee
+// Date:     Jan 5, 2009
+// Comment:  Main idea is to be able to 
+//           debug and run a program on your compiler.
+//******************************************************
+
+// Headers and Other Technical Items
+
+#include &lt;iostream&gt;  
+using namespace std;
+
+// Function Prototypes
+
+void pause(void);
+
+// Variables
+
+int     age1;
+int     age2;
+double  answer;
+
+//******************************************************
+// main
+//******************************************************
+
+int main(void)
+  {
+  // Input	
+  cout &lt;&lt; "\nEnter the age of the first person ---&gt;: ";
+  cin &gt;&gt; age1;
+  cout &lt;&lt; "\nEnter the age of the second person --&gt;: ";
+  cin &gt;&gt; age2;
+
+  // Process
+  answer = (age1 + age2) / 2.0;
+
+  // Output
+  cout &lt;&lt; "\nThe average of their ages is --------&gt;: ";
+  cout &lt;&lt; answer;
+
+  pause();
+  return 0;
+  }
+
+//******************************************************
+// pause
+//******************************************************
+
+void pause(void)
+  {
+  cout &lt;&lt; "\n\n";
+  system("PAUSE");
+  cout &lt;&lt; "\n\n";
+  return;
+  }
+
+//******************************************************
+// End of Program
+//******************************************************</code></preformat>
+</para>
+</example>
+      <para id="id1167493632249">Within the programming industry there is a desire to make software programs easy to maintain. The desire centers in money. Simply put, it costs less money to maintain a well written program. One important aspect of program maintenance is making source code listings clear and as easy to read as possible. To that end we will consider the following:</para>
+      <list id="id1167493965172" list-type="enumerated" number-style="arabic">
+        <item>Documentation</item>
+        <item>Vertical Alignment</item>
+        <item>Appropriate use of Comments</item>
+        <item>Banners for Functions</item>
+        <item>Block Markers on Lines by Themselves</item>
+        <item>Indent Block Markers</item>
+        <item>Meaningful Identifier Names Consistently Typed</item>
+        <item>Appropriate use of Typedef</item>
+      </list>
+      <para id="id1167493670743">The above items are not needed in order for the source code to compile. Technically the compiler does not read the source code the way humans read the source code. But that is exactly the point; the desire is to make the source code easier for humans to read. You should not be confused between what is possible (technically will compile) and what is ok (acceptable good programming practice that leads to readable code). Let's cover each item in more detail.</para>
+      <section id="id1167493597547">
+        <title>Documentation</title>
+        <para id="id1167488571290">Documentation is usually placed at the top of the program using several comment lines. The amount of information would vary based on the requirements or standards of the company who is paying its employees or independent contractors to write the code. Notice the indication of revision dates.</para>
+      </section>
+      <section id="id1167489751925">
+        <title>Vertical Alignment</title>
+        <para id="id1167487938848">You see this within the documentation area. All of the items are aligned up within the same column. This vertical alignment occurs again when the variables are defined. When declaring variable or constants many textbooks put several items on one line; like this:</para>
+<example id="fs-id17324418">
+<title>Common Textbook Defining of Variables</title>
+<para id="fs-id18349382"><preformat id="fs-id6525914" display="block"><code>
+float  length, width, height, price_gal_paint, total_area, total_cost;
+int  coverage_gal_paint, total_gal_paint;</code></preformat>
+</para>
+</example>
+        <para id="id1167489360257">However common this is in textbooks, it would generally not be acceptable to standards used in most companies. You should declare each item on its own line; like this:</para>
+<example id="fs-id4282094">
+<title>Proper Defining of Variables with Vertical Alignment</title>
+<para id="fs-id4235422"><preformat id="fs-id7691732" display="block"><code>
+float  length;
+float  width;
+float  height;
+float  price_gal_paint;
+int    coverage_gal_paint;
+float  total_area;
+int    total_gal_paint;
+float  total_cost;</code></preformat>
+</para>
+</example>
+        <para id="id1167489645987">This method of using one item per line is more readable by humans. It is quicker to find an identifier name, because you can read the list vertically faster than searching horizontally. Some programmers list them in alphabetic order, especially when the number of variables exceeds about twenty.</para>
+        <para id="id1167496204033">The lines of code inside either function are also aligned vertically and indented two spaces from the left. The indentation helps set the block off visually.</para>
+      </section>
+      <section id="id1167489723001">
+        <title>Appropriate use of Comments</title>
+        <para id="id1167491776550">You can see through the source code short little comments that describe an area or section. Note the use of input, processing and output which are part of the IPO concept within the program design.</para>
+      </section>
+      <section id="id1167497276388">
+        <title>Banners for Functions</title>
+        <para id="id1167496153467">Note the use of comments in the form of a banner before each function.</para>
+<example id="fs-id13186790">
+<title>Comments as a Banner</title>
+<para id="fs-id7470718"><preformat id="fs-id7599769" display="block"><code>
+//******************************************************
+// main
+//******************************************************</code></preformat>
+</para>
+</example>
+        <para id="id1167489549971">The function name is placed with two lines of asterisks. It makes it extremely easy to find each function definition because you don’t have to read the functions to see where the one ends and the next one begins. You can quickly read the function names within the banners. </para>
+      </section>
+      <section id="id1167488957852">
+        <title>Block Markers on Lines by Themselves</title>
+        <para id="id1167488114366">Within many languages there is a method to identify a group of programming statements as a unit. With C++ the functions use a set of symbols, the braces {}, to identify a block of code, sometimes referred to as a compound statement. Braces are used in other aspects of programs, but for now we will look at this simple example. These braces have a tendency to cause problems, especially when they don’t have a proper opening brace associated with a proper closing brace. To solve that problem many programmers simply put a brace on a line by itself and make sure the opening brace and closing brace are in the same vertical column.</para>
+      </section>
+      <section id="id1167489842144">
+        <title>Indent Block Markers</title>
+        <para id="id1167494793562">A block of code associated with a function or with a control structure is indented two or three spaces. When blocks of code are nested each nesting is indented two or three spaces. In our example above the blocks of code for the function definitions are indented two spaces.</para>
+      </section>
+      <section id="id1167489247083">
+        <title>Meaningful Identifier Names Consistently Typed</title>
+        <para id="id1167495019015">As the name implies "identifier names" should clearly identify who (or what) you are talking about. Calling you spouse "Snooky" may be meaningful to only you. Others might need to see her full name (Jane Mary Smith) to appropriately identify who you are talking about. The same concept in programming is true. Variables, constants, functions, typedefs and other items should use meaningful identifier names. Additionally, those names should be typed consistently in terms of upper and lower case as they are used in the program. Don't define a variable as: Pig and then type it later on in your program as: pig.</para>
+      </section>
+      <section id="id1167488817103">
+        <title>Appropriate use of Typedef</title>
+        <para id="id1167490025556">Many programming languages have a command that allows for the creation of an identifier name that represents a data type. The new identifier name is described or connected to a real data type. This feature is not demonstrated in the code above and is often a confusing concept. It is a powerful way to help document a program so that it is meaningful, but is often used by more experienced programmers. </para>
+      </section>
+    </section>
+    <section id="id1167493684916">
+      <title>Definitions</title>
+    <definition id="fs-id6230093">
+      <term>documentation</term>
+      <meaning id="fs-id16624341">A method of preserving information useful to others in understanding an information system or part thereof. </meaning>
+    </definition>
+    <definition id="fs-id10717513">
+      <term>vertical alignment</term>
+      <meaning id="fs-id8230088">A method of listing items vertically so that they are easier to read quickly.</meaning>
+    </definition>
+    <definition id="fs-id22744550">
+      <term>comments</term>
+      <meaning id="fs-id13402165">Information inserted into a source code file for documentation of the program.</meaning>
+    </definition>
+    <definition id="fs-id4779951">
+      <term>banners</term>
+      <meaning id="fs-id8202323">A set of comment lines used to help separate the functions and other sections of a program. </meaning>
+    </definition>
+    <definition id="fs-id17372806">
+      <term>braces</term>
+      <meaning id="fs-id17269694">Used to identify a block of code in C++.</meaning>
+    </definition>
+    <definition id="fs-id22745550">
+      <term>indention</term>
+      <meaning id="fs-id13458251">A method used to make sections of source code more visible.</meaning>
+    </definition>
+    <definition id="fs-id10858625">
+      <term>meaningful</term>
+      <meaning id="fs-id22479666">A rule that says identifier names must be easily understood by another reading the source code.</meaning>
+    </definition>
+    <definition id="fs-id11386736">
+      <term>consistent</term>
+      <meaning id="fs-id17382767">A rule that says to type identifier names in upper and lower case consistently throughout your source code. </meaning>
+    </definition>
+    </section>
+  </content>
+</document>

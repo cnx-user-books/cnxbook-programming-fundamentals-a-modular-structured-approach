@@ -1,0 +1,38 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Review: Structured Programming Group: 10-16</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m21653</md:content-id>
+  <md:title>Review: Structured Programming Group: 10-16</md:title>
+  <md:abstract>Review materials that support a group of chapters in the "Programming Fundamentals - A Modular Structured Approach using C++" collection/textbook.</md:abstract>
+  <md:uuid>aaea51a5-4ad1-4224-b4fd-655036ac66fd</md:uuid>
+</metadata>
+
+<content>
+    <section id="id18851306">
+      <title>Strategy Discussion</title>
+      <para id="id20488605">Exams vary depending on your instructor. Many will use the following:</para>
+      <list id="id20488611" list-type="enumerated" number-style="arabic">
+        <item>Definitions</item>
+        <item>Self-grading questions including true/false, multiple choice, short answer, etc. </item>
+        <item>Problems</item>
+      </list>
+      <para id="id21980240">The materials in this textbook/collection have covered these items at the end of every chapter within the <emphasis>Practice</emphasis> module for that chapter. We suggest the following test preparation strategies:</para>
+      <list id="id21904881" list-type="enumerated" number-style="arabic"><item>If your professor is testing the definitions and expecting you to have them memorized, you should review the "Using the Flash Card Activity" within the "Study Habits that Build the Brain" module within the Appendix materials. Practice writing your definitions using the Flash Card Activity in conjunction with the Memory Building Activities (MBAs) available within the <emphasis>Practice</emphasis> modules or in the Memory Building Activities within this <emphasis>Review</emphasis> module.</item>
+	<item>Do a quick review of any exercises within the Connexions modules or the <emphasis>Practice</emphasis> moudles.  Also review quizzes or exams that you have taken and pay special attention to making sure you understand why you missed a question.</item>
+	<item>If your professor has indicated that they might include a few of the problems presented within the <emphasis>Practice</emphasis> modules, make sure you have formulated a good answer for each problem. If authorized, collaborate with other students to improve your answers to the problems. Spend a moderate amount of time reviewing each problem with its answer before the exam.</item>
+</list>
+    </section>
+    <section id="id21926985">
+      <title>Memory Building Activities</title>
+      <para id="id21926991">Link to: <link window="new" document="m21653" resource="index.html">MBA Review: Structured Programming Group: 10-16</link></para>
+    </section>
+    <section id="id14910743">
+      <title>Miscellaneous Items</title>
+      <para id="id14910749">Link to: <link window="new" document="m21653" resource="if_then_else_flow.gif">Animated gif showing an if then else</link></para>
+      <para id="id20097632">Link to: <link window="new" document="m21653" resource="do_while_flow.gif">Animated gif showing a do while loop</link></para>
+      <para id="id21971635">Link to: <link window="new" document="m21653" resource="while_flow.gif">Animated gif showing a while loop</link></para>
+      <para id="idklb00001">Link to: <link window="new" document="m21653" resource="Manipulation_Data_Part_2.pdf">Manipulation of Data Part 2</link></para>
+      <para id="idklb00002">Link to: <link window="new" document="m21653" resource="Manipulation_Data_Part_3.pdf">Manipulation of Data Part 3</link></para>
+</section>
+  </content>
+</document>

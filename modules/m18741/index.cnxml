@@ -1,0 +1,55 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Typedef - An Alias</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m18741</md:content-id>
+  <md:title>Typedef - An Alias</md:title>
+  <md:abstract>An explanation of typedef being used to create an alias data type.</md:abstract>
+  <md:uuid>bfe4bbc7-086f-42eb-bcf5-a52e60fcbd83</md:uuid>
+</metadata>
+<featured-links>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit below.
+       Changes to the links section in the source will not be saved. -->
+    <link-group type="example">
+      <link url="http://cnx.org/content/m21629/latest/" strength="2">Versatile Code with Typedef</link>
+    </link-group>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit above.
+       Changes to the links section in the source will not be saved. -->
+</featured-links>
+<content>
+    <section id="id2351864">
+      <title>General Discussion</title>
+      <para id="id3849791">The typedef statement allows the programmer to create an alias, or synonym, for an existing data type. This can be useful in documenting a program. The C++ programming language syntax is:</para>
+        <para id="id6276172">
+          <code display="inline">typedef &lt;the real data type&gt; &lt;the alias identifier name&gt;; </code>
+        </para>
+      <para id="id7986150">Let's say a programmer is using a double data type to store the amount of money that is being used for various purposes in a program. He might define the variables as follows:</para>
+<example id="fs-id1165749348920">
+<title>Regular Definition of Variables</title>
+<para id="fs-id1165749351109"><preformat id="fs-id1165749355713" display="block"><code>
+double  income;
+double  rent;
+double  vacation;</code></preformat>
+</para>
+</example>
+      <para id="id7405816">However, he might use the typedef statement and define the variables as follows:</para>
+<example id="fs-id1165740462991">
+<title>Using typedef when Defining Variables</title>
+<para id="fs-id1165750462002"><preformat id="fs-id1165740438180" display="block"><code>
+typedef double cash;
+    the typedef must be defined before its use
+cash  income;
+cash  rent;
+cash  vacation;</code></preformat>
+</para>
+</example>
+      <para id="id3181440">The typedef statement is not used very often by beginning programmers. It usually creates more confusion than needed, thus stick to using the normal data types at first.</para>
+    </section>
+    <section id="id3052674">
+      <title>Definitions</title>
+    <definition id="fs-id1165740724406">
+      <term>typedef</term>
+      <meaning id="fs-id1165740697848">Allows the programmer to create an alias, or synonym, for an existing data type.</meaning>
+    </definition>
+    </section>
+  </content>
+</document>

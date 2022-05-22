@@ -1,0 +1,90 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Practice 16: String Class, Unary Positive and Negative</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m20810</md:content-id>
+  <md:title>Practice 16: String Class, Unary Positive and Negative</md:title>
+  <md:abstract>Questions, exercises, problems, etc. that support this chapter in the "Programming Fundamentals - A Modular Structured Approach using C++" collection/textbook.</md:abstract>
+  <md:uuid>afcf8491-8c58-4577-8f5c-de20b76e5eda</md:uuid>
+</metadata>
+
+<content>
+    <section id="id18312735">
+      <title>Learning Objectives</title>
+      <para id="id7686346">With 100% accuracy during a: memory building activity, exercises, lab assignment, problems, or timed quiz/exam; the student is expected to:</para>
+      <list id="id17352452" list-type="enumerated" number-style="arabic">
+        <item>Define the terms on the definitions as listed in the modules associated with this chapter.</item>
+        <item>Identify which operators are allowed with the string class.</item>
+        <item>Understand the unary positive and unary negative operators.</item>
+      </list>
+    </section>
+    <section id="id16231938">
+      <title>Memory Building Activities</title>
+      <para id="id18284580">Link to: <link window="new" document="m20810" resource="index.html">MBA 16</link></para>
+    </section>
+    <section id="id17330715">
+      <title>Exercises</title>
+<exercise id="fs-id10833574">
+  <problem id="fs-id12822683">
+    <list id="fs-id10844484" list-type="enumerated">
+      <title> Evaluate the following items involving unary positive and unary negative:</title>
+        <item>+13 - -2</item>
+        <item>-10 + 14</item>
+        <item>4 + - 3</item>
+        <item>+8 - * +5</item>
+  </list>
+  </problem>
+  <solution id="fs-id10912690">
+    <list id="fs-id10826960" list-type="enumerated"><title>Answers:</title><item>15</item>
+	<item>4</item>
+	<item>1</item>
+	<item>Error, no operand between subtraction and multiplication.</item>
+</list>
+  </solution>
+</exercise>
+    </section>
+    <section id="id17401796">
+      <title>Miscellaneous Items</title>
+      <para id="id16708459">None at this time.</para>
+    </section>
+    <section id="id16708464">
+      <title>Lab Assignment</title>
+      <section id="id16811536">
+        <title>Creating a Folder or Sub-Folder for Chapter 16 Files</title>
+        <para id="id15926314">Depending on your compiler/IDE, you should decide where to download and store source code files for processing. Prudence dictates that you create these folders as needed prior to downloading source code files. A suggested sub-folder for the <term>Bloodshed Dev-C++ 5 compiler/IDE</term> might be named:</para>
+        <list id="id17393304" list-type="bulleted">
+          <item>Chapter_16 within the folder named: Cpp_Source_Code_Files</item>
+        </list>
+        <para id="id16709733">If you have not done so, please create the folder(s) and/or sub-folder(s) as appropriate.</para>
+      </section>
+      <section id="id16776117">
+        <title>Download the Lab File(s)</title>
+        <para id="id16859345">Download and store the following file(s) to your storage device in the appropriate folder(s). You may need to right click on the link and select "Save Target As" in order to download the file.</para>
+        <para id="id17393631">Download from Connexions: <link document="m20810" resource="Lab_16_Pseudocode.txt">Lab_16_Pseudocode.txt</link></para>
+      </section>
+      <section id="id18296448">
+        <title>Detailed Lab Instructions</title>
+        <para id="id16741670">Read and follow the directions below carefully, and perform the steps in the order listed.</para>
+        <list id="id18284687" list-type="bulleted">
+          <item>Create a source code file from the Lab_16_Pseudocode.txt file. Name it: Lab_16.cpp</item>
+          <item>Build (compile and run) your program.</item>
+          <item>After you have successfully written this program, if you are taking this course for college credit, follow the instructions from your professor/instructor for submitting it for grading.</item>
+        </list>
+      </section>
+    </section>
+    <section id="id17392535">
+      <title>Problems</title>
+      <section id="id16797012">
+        <title>Problem 16a – Instructions</title>
+        <para id="id16724784">Describe the normal C++ operators allowed with the string data type.</para>
+      </section>
+      <section id="id16936268">
+        <title>Problem 16b – Instructions</title>
+        <para id="id16728874">Describe why unary positive is worthless.</para>
+      </section>
+      <section id="id15903351">
+        <title>Problem 16c – Instructions</title>
+        <para id="id16719636">Describe how unary negative works.</para>
+      </section>
+    </section>
+  </content>
+</document>

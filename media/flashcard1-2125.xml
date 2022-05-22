@@ -1,0 +1,61 @@
+<?xml version='1.0'?>
+<order>
+<color>E7E7F5</color>
+<showterm>true</showterm>
+<showdef>false</showdef>
+<customDeckText>Custom Deck</customDeckText>
+<wholeDeckText>Whole Deck</wholeDeckText>
+<showText>SHOW</showText>
+<addToText>Add to Custom</addToText>
+<showTermText>Show Term</showTermText>
+<showDefText>Show Definition</showDefText>
+<orderset value='1'>
+ <term>for</term>
+ <def>A test before iteration control structure typically used for counting.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='2'>
+ <term>complex logic</term>
+ <def>Often solved with nested control structures.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='3'>
+ <term>formatting</term>
+ <def>Modifying the way the output is displayed.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='4'>
+ <term>wrapping</term>
+ <def>When output is not vertically spaced properly.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='5'>
+ <term>circular nature</term>
+ <def>Connecting the negative and positive ends of the domain of an integer family data type.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='6'>
+ <term>loop control</term>
+ <def>Making sure the attributes of a loop are properly handled.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='7'>
+ <term>modular arithmetic</term>
+ <def>A system of arithmetic for integers where numbers ""wrap around".</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+</order>

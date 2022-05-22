@@ -1,0 +1,78 @@
+! SoftChalk LessonBuilder TIV File (C)2003-2008
+! ================ DO NOT EDIT ================
+
+act_item=3
+
+act_num=1
+act_type=2
+items=6
+colorChoice=_B
+showList=false
+showFlashCardTerm=true
+showFlashCardDef=false
+useFlashBigText=false
+instructions=Click 'Show' to see the hidden portion.
+wordPair[1]=character|A data type representing single text characters like the alphabet, numeral digits, punctuation, etc.|noimage
+wordPair[2]=ASCII|American Standard Code for Information Interchange|noimage
+wordPair[3]=single quote marks|Used to create character type data within the C++ programming language.|noimage
+wordPair[4]=sizeof|An operator that tells you how many bytes a data type occupies in storage.|noimage
+wordPair[5]=typedef|Allows the programmer to create an alias, or synonym, for an existing data type.|noimage
+wordPair[6]=sequence|An operator used to separate multiple occurrences of an item.|noimage
+inline=false
+points=0
+showRestart=true
+sqrsize=20
+adaDescription=
+playFeedback=true
+hotspotWidth=450
+hotspotHeight=500
+
+act_num=2
+act_type=6
+items=6
+colorChoice=_B
+showList=false
+showFlashCardTerm=true
+showFlashCardDef=false
+useFlashBigText=false
+instructions=Solve the crossword puzzle.
+wordPair[1]=character|A data type representing single text characters like the alphabet, numeral digits, punctuation, etc.
+wordPair[2]=ASCII|American Standard Code for Information Interchange
+wordPair[3]=sizeof|An operator that tells you how many bytes a data type occupies in storage.
+wordPair[4]=typedef|Allows the programmer to create an alias, or synonym, for an existing data type.
+wordPair[5]=sequence|An operator used to separate multiple occurrences of an item.
+wordPair[6]=SingleQuoteMarks|Used to create character type data within the C++ programming language.
+inline=false
+points=0
+showRestart=true
+sqrsize=20
+adaDescription=
+playFeedback=true
+hotspotWidth=450
+hotspotHeight=500
+
+act_num=3
+act_type=3
+items=6
+colorChoice=_B
+showList=false
+showFlashCardTerm=true
+showFlashCardDef=false
+useFlashBigText=false
+instructions=Click and drag to highlight a found word from the list.
+seekawordHintOption=true
+wordPair[1]=character
+wordPair[2]=ASCII
+wordPair[3]=SingleQuoteMarks
+wordPair[4]=sizeof
+wordPair[5]=typedef
+wordPair[6]=sequence
+inline=false
+points=0
+showRestart=true
+sqrsize=20
+adaDescription=
+playFeedback=true
+hotspotWidth=450
+hotspotHeight=500
+

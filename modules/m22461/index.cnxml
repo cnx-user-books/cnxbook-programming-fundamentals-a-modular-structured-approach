@@ -1,0 +1,87 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Practice 9: Character Data, Sizeof, Typedef, Sequence</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m22461</md:content-id>
+  <md:title>Practice 9: Character Data, Sizeof, Typedef, Sequence</md:title>
+  <md:abstract>Questions, exercises, problems, etc. that support this chapter in the "Programming Fundamentals - A Modular Structured Approach using C++" collection/textbook.</md:abstract>
+  <md:uuid>4baa071b-b1d2-45e1-8247-41093ac791f1</md:uuid>
+</metadata>
+
+<content>
+    <section id="id1170467902543">
+      <title>Learning Objectives</title>
+      <para id="id1170472088342">With 100% accuracy during a: memory building activity, exercises, lab assignment, problems, or timed quiz/exam; the student is expected to:</para>
+      <list id="id8621475" list-type="enumerated" number-style="arabic">
+        <item>Define the terms on the definitions as listed in the modules associated with this chapter.</item>
+        <item>Given appropriate documents produced by a System Analyst, create planning documents (pseudocode and test data), then a source code program that accomplishes the goals of the program.</item>
+      </list>
+    </section>
+    <section id="id1170475610320">
+      <title>Memory Building Activities</title>
+      <para id="id1170468039894">Link to: <link window="new" document="m22461" resource="index.html">MBA 09</link></para>
+    </section>
+    <section id="id4600057">
+      <title>Exercises</title>
+<exercise id="fs-id4225551">
+  <problem id="fs-id9849741">
+    <list id="fs-id6154915" list-type="enumerated"><title>Answer the following statements as either true or false:</title><item>The character data type in C++ uses the double quote marks, like:  char grade = "A";</item>
+	<item>Sizeof is an operator that tells you how many bytes a data type occupies in storage.</item>
+	<item>Typedef helps people who can't hear and is one of the standard accommodation features of a programming language for people with a learning disability.</item>
+	<item>The sequence operator should be used when defining variables in order to save space.</item>
+	<item>Programming can be both enjoyable and frustrating.</item>
+</list>
+  </problem>
+  <solution id="fs-id5905947">
+    <list id="fs-id8921932" list-type="enumerated">
+      <title>Answers:</title>
+        <item>false</item>
+        <item>true</item>
+        <item>false</item>
+        <item>false</item>
+        <item>true</item>
+    </list>
+  </solution>
+</exercise>
+    </section>
+    <section id="id1170472216883">
+      <title>Miscellaneous Items</title>
+      <para id="id1170468695697">None at this time.</para>
+    </section>
+    <section id="id1170473650360">
+      <title>Lab Assignment</title>
+      <section id="id1170465898590">
+        <title>Creating a Folder or Sub-Folder for Chapter 09 Files</title>
+        <para id="id7793357">Depending on your compiler/IDE, you should decide where to download and store source code files for processing. Prudence dictates that you create these folders as needed prior to downloading source code files. A suggested sub-folder for the <term>Bloodshed Dev-C++ 5 compiler/IDE</term> might be named:</para>
+        <list id="id1170475596646" list-type="bulleted">
+          <item>Chapter_09 within the folder named: Cpp_Source_Code_Files</item>
+        </list>
+        <para id="id3469025">If you have not done so, please create the folder(s) and/or sub-folder(s) as appropriate.</para>
+      </section>
+      <section id="id1170466611269">
+        <title>Download the Lab File(s)</title>
+        <para id="id1170471416033">Download and store the following file(s) to your storage device in the appropriate folder(s). You may need to right click on the link and select "Save Target As" in order to download the file.</para>
+        <para id="id1170472047223">Download from Connexions: <link document="m22461" resource="Lab_09_Narrative_Description.txt">Lab_09_Narrative_Description.txt</link></para>
+        <para id="id1170472232924">Download from Connexions: <link document="m22461" resource="Lab_09_Aerial_View_Center_Pivot_Irrigation.jpg">Lab_09_Aerial_View_Center_Pivot_Irrigation.jpg</link></para>
+        <para id="id8667352">Download from Connexions: <link document="m22461" resource="Lab_09_Hierarchy_Chart.jpg">Lab_09_Hierarchy_Chart.jpg</link></para>
+      </section>
+      <section id="id6541009">
+        <title>Detailed Lab Instructions</title>
+        <para id="id1170473488696">Read and follow the directions below carefully, and perform the steps in the order listed.</para>
+        <list id="id1170472043911" list-type="bulleted"><item>Review the Connexions module "Systems Development Life Cycle" within the Chapter 1 materials. Think of yourself as a programmer assigned to a project during the Implementation phase with your professor as the System Analyst.</item>
+	<item>Navigate to your sub-folder: Chapter_09. Review the first two items provided by the system analyst which he produced during the Design phase of the Systems Development Life Cycle. These two documents historically would have been printed and be placed into a program documentation folder. The items you produce in creating the program would be added to the folder. However, shifting to our paperless view of the world, today these items might be created and stored electronically in electronic folders (which is basically what we are doing by using our sub-folder titled: Chapter_09). The third item, the hierarchy chart, would normally be produced by the programmer. However, given your inexperience, the system analyst has created it for you. Make sure you understand what the program is to do. Any questions ask the system analyst (aka your professor).</item></list>
+        <note id="eip-290">The narrative description for this lab assignment describes how farmers in the mid-west part of the United States irrigate a piece of land using a circular irrigation system. This practice also known to as center pivot irrigation is not unique to the United States. Google "map Qatar", click on the map and switch to the "Satellite" view, zoom in and notice that there are several spots in this small middle eastern country where this type of irrigation is being used. "These systems are found and used in all parts of the world..." which supports the appropriateness of this programming problem to all students.</note><list id="id1170468853824" list-type="bulleted"><item>Design the program and create your test data by building a <emphasis>Lab_09_Pseudocode.txt</emphasis> file and a <emphasis>Lab_09_Test_Data.txt</emphasis> file. WARNING: Don't touch the compiler/IDE. Don't start by creating the source code file. Creating the source code then producing the planning documentation afterwards is a bad habit that beginning programmers often acquire. NOTE: In your pseudocode document you do not need to create any pseudocode for the Standard Library or User Library functions. Just indicate that you call them from the Program Control functions. If needed, review the Connexions module "Pseudocode Examples for Functions" within the Chapter 6 materials. HINT: Copying the pseudocode and test data files from the Chapter 06 folder might be a good way to start building these items.</item>
+	<item>After you have successfully planned the document and created your test data; create the source code file naming it: <emphasis>Lab_09.cpp </emphasis>HINTS: Using a previous source code file as your starting file makes sense. The file in the Chapter 06 folder might be a good start. You might want to copy some of the include information from the Verify Header code in Chapter 08 into your Lab 09 source code file. </item>
+<item>Build (compile and run) your program.</item>
+	<item>After you have successfully written this program, if you are taking this course for college credit, follow the instructions from your professor/instructor for submitting it for grading.</item>
+</list>
+      </section>
+    </section>
+    <section id="id1170472013426">
+      <title>Problems</title>
+      <section id="id1170473606704">
+        <title>Problem 09a – Instructions</title>
+        <para id="id1170468860720">The sequence operator can be used when declaring multiple identifier names for variables or constants of the same data type. Is this a good or bad programming habit and why?</para>
+      </section>
+    </section>
+  </content>
+</document>

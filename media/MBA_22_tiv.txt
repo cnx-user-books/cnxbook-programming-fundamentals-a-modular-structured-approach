@@ -1,0 +1,75 @@
+! SoftChalk LessonBuilder TIV File (C)2003-2008
+! ================ DO NOT EDIT ================
+
+act_item=3
+
+act_num=1
+act_type=2
+items=5
+colorChoice=_B
+showList=false
+showFlashCardTerm=true
+showFlashCardDef=false
+useFlashBigText=false
+instructions=Click 'Show' to see the hidden portion.
+wordPair[1]=address operator|The ampersand or &.|noimage
+wordPair[2]=pointer|A variable that holds an address as its value.|noimage
+wordPair[3]=reference variable|Used with parameter passing by reference.|noimage
+wordPair[4]=indirection operator|The asterisk used for dereferencing a pointer.|noimage
+wordPair[5]=dereferencing|The concept of using the item to which a pointer or address is pointing at.|noimage
+inline=false
+points=0
+showRestart=true
+sqrsize=20
+adaDescription=
+playFeedback=true
+hotspotWidth=450
+hotspotHeight=500
+
+act_num=2
+act_type=6
+items=5
+colorChoice=_B
+showList=false
+showFlashCardTerm=true
+showFlashCardDef=false
+useFlashBigText=false
+instructions=Solve the crossword puzzle.
+wordPair[1]=pointer|A variable that holds an address as its value.
+wordPair[2]=dereferencing|The concept of using the item to which a pointer or address is pointing at.
+wordPair[3]=ReferenceVariable|Used with parameter passing by reference.
+wordPair[4]=AddressOperator|The ampersand.
+wordPair[5]=IndirectionOperator|The asterisk used for dereferencing a pointer.
+inline=false
+points=0
+showRestart=true
+sqrsize=20
+adaDescription=
+playFeedback=true
+hotspotWidth=450
+hotspotHeight=500
+
+act_num=3
+act_type=3
+items=5
+colorChoice=_B
+showList=false
+showFlashCardTerm=true
+showFlashCardDef=false
+useFlashBigText=false
+instructions=Click and drag to highlight a found word from the list.
+seekawordHintOption=true
+wordPair[1]=AddressOperator
+wordPair[2]=pointer
+wordPair[3]=ReferenceVariable
+wordPair[4]=IndirectionOperator
+wordPair[5]=dereferencing
+inline=false
+points=0
+showRestart=true
+sqrsize=20
+adaDescription=
+playFeedback=true
+hotspotWidth=450
+hotspotHeight=500
+

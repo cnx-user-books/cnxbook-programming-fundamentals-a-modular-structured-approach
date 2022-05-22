@@ -1,0 +1,62 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Sequence Operator</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m18690</md:content-id>
+  <md:title>Sequence Operator</md:title>
+  <md:abstract>Outlines several uses of the sequence operator within the C++ programming language.</md:abstract>
+  <md:uuid>daea26a9-29f8-4388-85d2-8a8c3dac44b9</md:uuid>
+</metadata>
+<featured-links>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit below.
+       Changes to the links section in the source will not be saved. -->
+    <link-group type="supplemental">
+      <link url="http://cnx.org/content/m18168/latest/" strength="2">Abbreviated Precedence Chart for C++ Operators</link>
+    </link-group>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit above.
+       Changes to the links section in the source will not be saved. -->
+</featured-links>
+<content>
+    <section id="id1169801858525">
+      <title>General Discussion</title>
+      <para id="id5661549">The <emphasis>sequence</emphasis> (or comma) operator is used to separate items. It has several uses, four of which are listed then demonstrated:</para>
+      <list id="id7219672" list-type="enumerated" number-style="arabic"><item>To separate identifier names when declaring variables or constants</item>
+	<item>To separate several parameters being passed into a function</item>
+	<item>To separate several initialization items or update items in a for loop</item>
+	<item>Separate values during the initialization of an array</item>
+</list>
+      <para id="id4501712">This first example is often seen in textbooks, but this method of declaring variables is not preferred. It is difficult to quickly read the identifier names.</para>
+      <para id="id5881380">
+        <code display="inline">int pig, dog, cat, rat; </code>
+      </para>
+      <para id="id7145894">The following vertical method of declaring variables or constants is preferred.</para>
+<example id="fs-id15737950">
+<title>Preferred Vertical Method of Defining Variables</title>
+<para id="fs-id14869883"><preformat id="fs-id14869884" display="block"><code>
+int  pig;
+int  dog;
+int  cat;
+int  rat;</code></preformat>
+</para>
+</example>
+      <para id="id1169802536837">The data types and identifier names (known as parameters) are separated from each other. This example is a function prototype.</para>
+      <para id="id5805048">
+        <code display="inline">double area_trapezoid(double base, double height, double top);</code>
+      </para>
+      <para id="id1169794958382">In the syntax of a for loop you have three parts each separated by a semi-colon. The first is the initialization area which could have more than one initialization. The last is the update area which could have more than one update. Mutiple initializations or updates use the comma to separate them. This example is only the first line of a for loop.</para>
+      <para id="id1169795238116">
+        <code display="inline">for(x = 1, y = 5; x &lt; 15; x++, y++)</code>
+      </para>
+      <para id="id6447886">The variable ages is an array of integers. Initial values are assigned using block markers with the values separated from each other using a comma.</para>
+      <para id="id5714914">
+        <code display="inline">int ages[] = {2,4,6,29,32};</code>
+      </para>
+    </section>
+    <section id="id6515358">
+      <title>Definitions</title>
+    <definition id="fs-id15548265">
+      <term>sequence</term>
+      <meaning id="fs-id15820152">An operator used to separate multiple occurrences of an item.</meaning>
+    </definition>
+    </section>
+  </content>
+</document>

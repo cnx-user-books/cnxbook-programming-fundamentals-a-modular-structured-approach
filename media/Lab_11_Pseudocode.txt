@@ -1,0 +1,54 @@
+Filename:    Lab_11_Pseudocode.txt
+
+Purpose:     Practice with if then else
+
+Author:      Ken Busbee; © 2009 Kenneth Leroy Busbee
+Date:        Feb 25, 2009
+Licensed by: Kenneth Leroy Busbee under a 
+             Creative Commons Attribution License (CC-BY 3.0)
+             http://creativecommons.org/licenses/by/3.0/
+******************************************************
+
+Pseudocode = IPO Outline
+ 
+input
+  display a message asking user thier age
+  get the users age from the keyboard
+  display a message asking user for thier friend's age
+  get the users friends age from the keyboard
+ 
+processing
+  none
+                                    
+output
+  if age_user greater than 39
+    display "You are over the hill."
+  else
+    display "You are still young."
+  endif
+
+  if age_friend greater than 17
+    display "Your friend can vote."
+  endif
+
+  if age_user equal to age_friend
+    display "You and your friend are the same age."
+    display "You should celebrate together."
+  else
+    display "You and your friend are not the same age."
+    display "You should party together anyway."
+  endif
+  
+  pause so the user can see the answer
+
+******************************************************
+
+Potential Variables
+
+Data Type    Identifier Name
+*********    ***************
+integer      age_user
+integer      age_friend
+
+******************************************************
+End of file

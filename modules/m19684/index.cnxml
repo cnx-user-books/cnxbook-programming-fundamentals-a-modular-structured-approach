@@ -1,0 +1,235 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Orientation and Syllabus</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m19684</md:content-id>
+  <md:title>Orientation and Syllabus</md:title>
+  <md:abstract>An orientaiton to the textbook/collection "Programming Fundamentals - A Modular Structured Approach using C++" when used as a course.</md:abstract>
+  <md:uuid>1c38e014-d3df-4476-bca0-d5dc000aee91</md:uuid>
+</metadata>
+
+<content>
+    <section id="id1169867858949">
+      <title>Orientation</title>
+      <section id="id1169867935002">
+        <title>Textbook/Collection Layout</title>
+        <para id="id1169865585984">The approach of this course will be to take the student through a progression of materials that will allow the student to develop the skills of programming. The basic unit of study is a Connexions module. Several modules are collected into a chapter. The chapters are divided into five groups. </para>
+        <table id="id1169854120583" summary="Table listing the quanitiy of modules in various sections.">
+<tgroup cols="3"><colspec colnum="1" colname="c1"/>
+	<colspec colnum="2" colname="c2"/>
+	<colspec colnum="3" colname="c3"/>
+	<tbody>
+		<row>
+			<entry>
+				<emphasis>Group Title</emphasis>
+			</entry>
+			<entry>
+				<emphasis>Chapters</emphasis>
+			</entry>
+			<entry>
+				<emphasis>Modules</emphasis>
+			</entry>
+		</row>
+		<row>
+			<entry>Pre-Chapter Items</entry>
+			<entry>N/A</entry>
+			<entry>4</entry>
+		</row>
+		<row>
+			<entry>Foundation Topics</entry>
+			<entry>1-5</entry>
+			<entry>27</entry>
+		</row>
+		<row>
+			<entry>Modular Programming</entry>
+			<entry>6-9</entry>
+			<entry>17</entry>
+		</row>
+		<row>
+			<entry>Structured Programming</entry>
+			<entry>10-16</entry>
+			<entry>30</entry>
+		</row>
+		<row>
+			<entry>Intermediate Topics</entry>
+			<entry>17-21</entry>
+			<entry>17</entry>
+		</row>
+		<row>
+			<entry>Advanced Topics</entry>
+			<entry>22-24</entry>
+			<entry>11</entry>
+		</row>
+		<row>
+			<entry>Review Materials</entry>
+			<entry>N/A</entry>
+			<entry>5</entry>
+		</row>
+		<row>
+			<entry>Appendix</entry>
+			<entry>N/A</entry>
+			<entry>7</entry>
+		</row>
+		<row>
+			<entry>
+				<emphasis>Total Modules</emphasis>
+			</entry>
+			<entry>
+				<emphasis>N/A</emphasis>
+			</entry>
+			<entry>
+				<emphasis>118</emphasis>
+			</entry>
+		</row>
+	</tbody>
+
+</tgroup>
+</table><para id="eip-468">Some professors using this textbook/collection might decide to eliminate certain modules or chapters.  Some may eliminate the entire Advanced Topics group.  Other professors may choose to add additional study materials.  The advantage of this textbook/collection is that it may be adapted by professors to suit the needs of their students.</para>
+      </section>
+      <section id="id1169854404350">
+        <title>Chapter Layout</title>
+        <para id="id1169856342981">Each chapter will usually flow from:</para>
+        <list id="id1169859999567" list-type="enumerated" number-style="arabic">
+          <item>One or more Connexions modules built for independent delivery.</item>
+          <item>A Connexions Practice module built specifically for this textbook/collection.</item>
+        </list>
+        <para id="id1169857641613">As you proceed with the Connexions modules that comprise a chapter, you should:</para>
+        <list id="id1169846272633" list-type="bulleted"><item>Complete any tasks/demos that require downloading items.</item>
+	<item>Do any exercises.</item>
+	<item>Create 3x5 study cards for all definitions. When this material is used as a textbook for a course the definitions are to be memorized. Confirm this with your professor.</item>
+</list>
+        <para id="id1169870171578">As you start the Practice module you will usually encounter:</para>
+        <list id="id1169855364207" list-type="bulleted"><item>Learning Objectives</item>
+	<item>Memory Building Activities aka MBAs Link – These could consist of any of the following types of interactive computer activities: flash card, crossword puzzle, seek a word, drag n drop, labeling, ordering or sorting. When the materials are used as a textbook for a course, it is imperative that students do a variety of repetitive activities in order to memorize basic course material. Besides, have fun learning.</item>
+	<item>Exercises – In addition to any exercises within the study modules that you completed before the practice module, there will be at least one exercise for students to complete.</item>
+	<item>Miscellaneous Items – These will exist for some of the chapters.</item>
+	<item>Lab Assignment – Usually, completed on one's own efforts. Review the instructions/restrictions from your professor/teacher if using this for a high school or college credit course. </item>
+	<item>Problems – The intent of this activity is for students to formulate their own answers. Thus, solutions to the problems will not be provided. When the materials are used as a textbook for a course, the professor/teacher may assign students to a "Study Group" or let students form study groups to discuss their solutions with each other. If you are using this for a high school or college credit course, verify that you may work as team at solving the problems. This type of approved activity is called "authorized collusion" and is not a violation of "Academic or Scholastic Dishonesty" rules.</item>
+</list>
+        <para id="id1169854314686">A professor using this textbook/collection/course will most likely have additional lab assignments, quizzes and exams that would be used in calculating your grade.</para>
+      </section>
+      <section id="id1169864445404">
+        <title>Connexions Module Reading List</title>
+        <para id="id1169855439094">The modules in this textbook/collection have had content reviewed and are believed to be sufficient, thus <emphasis>no additional textbook is required</emphasis>. However, some students desire additional references or reading. The author has used several textbooks over the years for teaching "COSC1436 – Programming Fundamentals I" course at Houston Community College and at the Community College of Qatar. A reading reference list has been prepared and includes references for the following textbooks:</para>
+        <list id="id1169860083015" list-type="enumerated" number-style="arabic"><item>Starting Out with C++ Early Objects, by: Tony Gaddis et. al., 7<sup>th</sup> Edition, International Edition, ISBN: 978-0-13-137714-1</item>
+<item>Starting Out with C++ Early Objects, by: Tony Gaddis et. al., 6<sup>th</sup> Edition, ISBN: 0-321-51238-3</item>
+	<item>Starting Out with C++ Early Objects, by: Tony Gaddis et. al., 5<sup>th</sup> Edition, ISBN: 0-321-38348-6</item>
+	<item>Computer Science – A structured Approach using C++, by: Behrouz A. Forouzan et. al., 2<sup>nd</sup> Edition, ISBN: 0-534-37480-8</item>
+</list>
+        <para id="id1169859767151">These textbooks are typically available in the used textbook market at a reasonable price. You may use any one of the three books. If you acquire one of the above <emphasis>optional</emphasis> traditional textbooks, you may want to download and store the following file to your storage device (disk drive or flash drive) in an appropriate folder.</para>
+        <para id="id1169869995084">Download from Connexions: <link window="new" document="m19684" resource="Connexions_Module_Reading_List_col10621_V2.pdf">Connexions_Module_Reading_List_col10621.pdf</link></para>
+      </section>
+    </section>
+    <section id="id1169854514053">
+      <title>Syllabus</title>
+      <para id="id1169863307715">The syllabus for a course that is for credit will be provided by your specific course professor. If you are using this textbook/collection for non-credit as self-study, we have some suggestions:</para>
+      <list id="id1169866542113" list-type="enumerated" number-style="arabic">
+        <item>Plan regular study periods</item>
+        <item>Review the three (3) Pre-Chapter Items modules</item>
+        <item>Review the last four (4) modules in the Appendix</item>
+        <item>Proceed with Chapter 1 going through all 24 chapters </item>
+        <item>Do all of the demo programs as you encounter them</item>
+        <item>Memorize all of the terms and definitions</item>
+        <item>Do all lab assignments</item>
+        <item>Prepare answers to all of the problems in the Practice modules</item>
+        <item>At the end of every section, do the Review module</item>
+      </list>
+      <para id="id1169854437868">These is no magic way to learn about computer programming other than to immerse yourself into regular study and <emphasis>study includes more than casual reading</emphasis>. To help you keep track of your study, we have included a check off list for the textbook/collection.</para>
+      <table id="id1169864221866" summary="Table listing the quanitiy of modules in various sections.">
+<tgroup cols="3"><colspec colnum="1" colname="c1"/>
+	<colspec colnum="2" colname="c2"/>
+	<colspec colnum="3" colname="c3"/>
+	<tbody>
+		<row>
+			<entry>
+				<emphasis>Check </emphasis>
+			</entry>
+			<entry>
+				<emphasis>Description</emphasis>
+			</entry>
+			<entry>
+				<emphasis># Modules</emphasis>
+			</entry>
+		</row>
+		<row>
+			<entry/>
+			<entry>Pre-Chapter Items</entry>
+			<entry>4</entry>
+		</row>
+		<row>
+			<entry/>
+			<entry>Last four Appendix Items</entry>
+			<entry>4</entry>
+		</row>
+		<row>
+			<entry/>
+			<entry>Chapters 1 to 5</entry>
+			<entry>27</entry>
+		</row>
+		<row>
+			<entry/>
+			<entry>Review Materials for 1 to 5</entry>
+			<entry>1</entry>
+		</row>
+		<row>
+			<entry/>
+			<entry>Chapters 6 to 9</entry>
+			<entry>17</entry>
+		</row>
+		<row>
+			<entry/>
+			<entry>Review Materials for 6 to 9</entry>
+			<entry>1</entry>
+		</row>
+		<row>
+			<entry/>
+			<entry>Chapters 10 to 16</entry>
+			<entry>30</entry>
+		</row>
+		<row>
+			<entry/>
+			<entry>Review Materials for 10 to 16</entry>
+			<entry>1</entry>
+		</row>
+		<row>
+			<entry/>
+			<entry>Chapters 17 to 21</entry>
+			<entry>17</entry>
+		</row>
+		<row>
+			<entry/>
+			<entry>Review Materials for 17 to 21</entry>
+			<entry>1</entry>
+		</row>
+		<row>
+			<entry/>
+			<entry>Chapters 22 to 24</entry>
+			<entry>11</entry>
+		</row>
+		<row>
+			<entry/>
+			<entry>Review Materials for 22 to 24</entry>
+			<entry>1</entry>
+		</row>
+		<row>
+			<entry/>
+			<entry>First three Appendix Items</entry>
+			<entry>3</entry>
+		</row>
+		<row>
+			<entry>
+				<emphasis>N/A</emphasis>
+			</entry>
+			<entry>
+				<emphasis>Total Modules</emphasis>
+			</entry>
+			<entry>
+				<emphasis>118</emphasis>
+			</entry>
+		</row>
+	</tbody>
+
+</tgroup>
+</table>
+    </section>
+  </content>
+</document>

@@ -1,0 +1,75 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Multidimensional Arrays</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m22203</md:content-id>
+  <md:title>Multidimensional Arrays</md:title>
+  <md:abstract>An introduction and example of multidimensional arrays as used within the C++ programming language.</md:abstract>
+  <md:uuid>9f34c100-55d3-4ea4-a77f-c956a713c4b9</md:uuid>
+</metadata>
+<featured-links>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit below.
+       Changes to the links section in the source will not be saved. -->
+    <link-group type="supplemental">
+      <link url="http://cnx.org/content/m18785/latest/" strength="1">Bloodshed Dev-C++ 5 Compiler/IDE</link>
+    </link-group>
+    <link-group type="prerequisite">
+      <link url="http://cnx.org/content/m21316/latest/" strength="2">Array Index Operator</link>
+      <link url="http://cnx.org/content/m21315/latest/" strength="2">Array Data Type</link>
+    </link-group>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit above.
+       Changes to the links section in the source will not be saved. -->
+</featured-links>
+<content>
+    <section id="id1165582962343">
+      <title>Overview</title>
+      <para id="id1165578313393">An <term>array</term> is a sequenced collection of elements of the same data type with a single identifier name. As such, the array data type belongs to the "Complex" category or family of data types. Arrays can have multiple axes (more than one axis). Each axis is a <emphasis>dimension</emphasis>. Thus a single dimension array is also known as a <emphasis>list</emphasis>. A two dimension array is commonly known as a <emphasis>table</emphasis> (a spreadsheet like Excel is a two dimension array). In real life there are occasions to have data organized into multiple dimensioned arrays. Consider a theater ticket with section, row and seat (three dimensions).</para>
+      <para id="id1165578934853">We refer to the individual values as members (or elements) of the array. Programming languages implement the details of arrays differently. Because there is only one identifier name assigned to the array, we have operators that allow us to reference or access the individual members of an array. </para>
+      <para id="id1165578208744">The operator commonly associated with referencing an <emphasis>array member</emphasis> is the <emphasis>index</emphasis> operator. It is important to learn how to define an array and initialize its members. The index operator is a set of square brackets with an integer value between the brackets that represents the <emphasis>offset</emphasis> from the front of the array.</para>
+      <para id="id1165580224766">Multidimensional arrays use one set of square brackets per dimension or axis of the array. For example a table which has two dimensions would use two sets of square brackets to define the array variable and two sets of square brackets for the index operators to access the members of the array.</para>
+      <para id="id1165578935525">Because of the complexity for multidimensional arrays, the demonstration program shows a two dimension array and you should study it in conjunction with this module.</para>
+    </section>
+    <section id="id4610767">
+      <title>Demonstration Program in C++</title>
+      <section id="id1165578918277">
+        <title>Creating a Folder or Sub-Folder for Source Code Files</title>
+        <para id="id2052392">Depending on your compiler/IDE, you should decide where to download and store source code files for processing. Prudence dictates that you create these folders as needed prior to downloading source code files. A suggested sub-folder for the <term>Bloodshed Dev-C++ 5 compiler/IDE</term> might be named:</para>
+        <list id="id1165579036534" list-type="bulleted">
+          <item>Demo_Programs</item>
+        </list>
+        <para id="id1165579079586">If you have not done so, please create the folder(s) and/or sub-folder(s) as appropriate.</para>
+      </section>
+      <section id="id1165579257502">
+        <title>Download the Demo Program</title>
+        <para id="id1165577973598">Download and store the following file(s) to your storage device in the appropriate folder(s). Following the methods of your compiler/IDE, compile and run the program(s). Study the source code file(s) in conjunction with other learning materials. You may need to right click on the link and select "Save Target As" in order to download the file.</para>
+        <para id="id8874256">Download from Connexions: <link document="m22203" resource="Demo_Multidimension_Arrays.cpp">Demo_Multidimension_Arrays.cpp</link></para>
+      </section>
+    </section>
+    <section id="id1165579350180">
+      <title>Definitions</title>
+    <definition id="fs-id1166227443725">
+      <term>dimension</term>
+      <meaning id="fs-id1166223862623">An axis of an array.</meaning>
+    </definition>
+    <definition id="fs-id1166226397517">
+      <term>list</term>
+      <meaning id="fs-id1166221586207">A single dimension array.</meaning>
+    </definition>
+    <definition id="fs-id5579170">
+      <term>table</term>
+      <meaning id="fs-id1166221198234">A two dimension array.</meaning>
+    </definition>
+    <definition id="fs-id3519136">
+      <term>array member</term>
+      <meaning id="fs-id1166221164687">An element or value in an array.  </meaning>
+    </definition>
+    <definition id="fs-id1166220529687">
+      <term>index</term>
+      <meaning id="fs-id1166225163781">An operator that allows us to reference a member of an array.  </meaning>
+    </definition>
+    <definition id="fs-id1166224065267">
+      <term>offset</term>
+      <meaning id="fs-id1166225462038">The method of referencing array members by starting at zero.   </meaning>
+    </definition>
+    </section>
+  </content>
+</document>

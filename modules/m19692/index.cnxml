@@ -1,0 +1,84 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Practice 10: Introduction to Structured Programming</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m19692</md:content-id>
+  <md:title>Practice 10: Introduction to Structured Programming</md:title>
+  <md:abstract>Questions, exercises, problems, etc. that support this chapter in the "Programming Fundamentals - A Modular Structured Approach using C++" collection/textbook.</md:abstract>
+  <md:uuid>42c87597-3005-4725-8bb3-3d172a4fdaa8</md:uuid>
+</metadata>
+
+<content>
+    <section id="id3397049">
+      <title>Learning Objectives</title>
+      <para id="id4285674">With 100% accuracy during a: memory building activity, exercises, lab assignment, problems, or timed quiz/exam; the student is expected to:</para>
+      <list id="id7538695" list-type="enumerated" number-style="arabic">
+        <item>Define the terms on the definitions as listed in the modules associated with this chapter.</item>
+        <item>Given pseudocode, write the C++ code for a program that uses if then else and while control structures.</item>
+      </list>
+    </section>
+    <section id="id15115617">
+      <title>Memory Building Activities</title>
+      <para id="id1482920x">Link to: <link window="new" document="m19692" resource="index.html">MBA 10</link></para>
+    </section>
+    <section id="id14555270">
+      <title>Exercises</title>
+<exercise id="fs-id22483898">
+  <problem id="fs-id20802768">
+    <list id="fs-id22864625" list-type="enumerated">
+      <title> Answer the following statements as either true or false:</title>
+        <item>There are only two categories of control structures.</item>
+        <item>Branching control structures are rarely used in good structured programming.</item>
+        <item>If then else is a multiway selection control structure.</item>
+        <item>The while control structure is part of the branching category.</item>
+        <item>Pseudocode is better than flowcharting.</item>
+    </list>
+  </problem>
+  <solution id="fs-id22225798">
+    <list id="fs-id20438712" list-type="enumerated">
+      <title>Answers:</title>
+        <item>false</item>
+        <item>true</item>
+        <item>false</item>
+        <item>false</item>
+        <item>false</item>
+    </list>
+  </solution>
+</exercise>
+    </section>
+    <section id="id3934770">
+      <title>Miscellaneous Items</title>
+      <para id="id4271224">None at this time.</para>
+    </section>
+    <section id="id4550720">
+      <title>Lab Assignment</title>
+      <section id="id10054221">
+        <title>Creating a Folder or Sub-Folder for Chapter 10 Files</title>
+        <para id="id3445193">Depending on your compiler/IDE, you should decide where to download and store source code files for processing. Prudence dictates that you create these folders as needed prior to downloading source code files. A suggested sub-folder for the <term>Bloodshed Dev-C++ 5 compiler/IDE</term> might be named:</para>
+        <list id="id3583082" list-type="bulleted">
+          <item>Chapter_10 within the folder named: Cpp_Source_Code_Files</item>
+        </list>
+        <para id="id3339212">If you have not done so, please create the folder(s) and/or sub-folder(s) as appropriate.</para>
+      </section>
+      <section id="id4896124">
+        <title>Download the Lab File(s)</title>
+        <para id="id4628129">Download and store the following file(s) to your storage device in the appropriate folder(s). You may need to right click on the link and select "Save Target As" in order to download the file.</para>
+        <para id="id12549660">Download from Connexions: <link document="m19692" resource="Lab_10_Pseudocode.txt">Lab_10_Pseudocode.txt</link></para>
+      </section>
+      <section id="id3591482">
+        <title>Detailed Lab Instructions</title>
+        <para id="id7263785">Read and follow the directions below carefully, and perform the steps in the order listed.</para>
+        <list id="id12471505" list-type="bulleted"><item>Create a source code file from the Lab_10_Pseudocode.txt file. Name it: Lab_10.cpp</item>
+	<item>Build (compile and run) your program.</item>
+	<item>After you have successfully written this program, if you are taking this course for college credit, follow the instructions from your professor/instructor for submitting it for grading.</item>
+</list>
+      </section>
+    </section>
+    <section id="id4281217">
+      <title>Problems</title>
+      <section id="id4633277">
+        <title>Problem 10a – Instructions</title>
+        <para id="id3613097">List the four categories of control structures and provide a brief description of each category.</para>
+      </section>
+    </section>
+  </content>
+</document>

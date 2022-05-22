@@ -1,0 +1,67 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Recursion vs Iteration</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m20814</md:content-id>
+  <md:title>Recursion vs Iteration</md:title>
+  <md:abstract>An introduction to recursion with the alternate method of using a for loop as the solution to a repetitive algorithm.  C++ programming code for factorial is included.</md:abstract>
+  <md:uuid>d4ea04ad-cabf-4907-9f6f-3b89d4079328</md:uuid>
+</metadata>
+<featured-links>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit below.
+       Changes to the links section in the source will not be saved. -->
+    <link-group type="supplemental">
+      <link url="http://en.wikipedia.org/wiki/Recursion" strength="2">Wikipedia - Recursion</link>
+      <link url="http://en.wikipedia.org/wiki/Factorial" strength="2">Wikipedia - Factorial</link>
+      <link url="http://cnx.org/content/m18785/latest/" strength="1">Bloodshed Dev-C++ 5 Compiler/IDE</link>
+    </link-group>
+    <link-group type="prerequisite">
+      <link url="http://cnx.org/content/m20600/latest/" strength="3">For Loop</link>
+    </link-group>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit above.
+       Changes to the links section in the source will not be saved. -->
+</featured-links>
+<content>
+    <section id="id27211050">
+      <title>Repetitive Algorithms</title>
+      <para id="id27210269">"In general, there are two approaches to writing repetitive algorithms. One uses loops; the other uses recursion. <emphasis>Recursion</emphasis> is a repetitive process in which a function calls itself. Both approaches provide repetition, and either can be converted to the other's approach."<footnote id="id27210655">Behrouz A. Forouzan and Richard F. Gilberg, <emphasis effect="underline">Computer Science A Structured Approach using C++ Second Edition</emphasis> (United States of America: Thompson – Brooks/Cole, 2004) 265.</footnote> Iteration is one of the categories of control structures.  It allows for the processing of some action zero to many times.  Iteration is also known as looping and repetition. The math term "to iterate" means to perform the statement parts of the loop. Many problems/tasks require the use of repetitive algorithms.  With most programming languages this can be done with either:</para>
+      <list id="id25859310" list-type="enumerated" number-style="arabic">
+        <item>looping control structures, specifically the for loop (an iterative approach)</item>
+        <item>recursive calling of a function </item>
+      </list>
+      <para id="id25773116">Using repetitive algorithms as the solution method occurs in many mathematical oriented problems.  These in include factorial, Fibonacci numbers, and the Towers of Hanoi problem. Solutions to these problems are often only presented in terms of using the recursive method. However, "… you should understand the two major limitations of recursion. First, recursive solutions may involve extensive overhead because they use function calls. Second, each time you make a call you use up some of your memory allocation. If the recursion is deep – that is, if there is a large number of recursive calls – then you may run out of memory. Both the factorial and Fibonacci numbers solutions are better developed iteratively."<footnote id="id25771068">Behrouz A. Forouzan and Richard F. Gilberg, <emphasis effect="underline">Computer Science A Structured Approach using C++ Second Edition</emphasis> (United States of America: Thompson – Brooks/Cole, 2004) 272.</footnote></para>
+      <para id="id25711849">Understanding how recursion or the iterative approaches work will be left to others. They are usually covered in detail as part of studying data structures. Our goal in covering them is to:</para>
+      <list id="id27589826" list-type="enumerated" number-style="arabic">
+        <item>Provide you with a definition of recursion</item>
+        <item>Introduce the alternate solution approach of iteration</item>
+      </list>
+      <para id="id27643598">The following demonstration program shows both solutions for 8! (eight factorial). </para>
+    </section>
+    <section id="id27698545">
+      <title>Demonstration Program in C++</title>
+      <section id="id26742485">
+        <title>Creating a Folder or Sub-Folder for Source Code Files</title>
+        <para id="id25237145">Depending on your compiler/IDE, you should decide where to download and store source code files for processing. Prudence dictates that you create these folders as needed prior to downloading source code files. A suggested sub-folder for the <term>Bloodshed Dev-C++ 5 compiler/IDE</term> might be named:</para>
+        <list id="id24429602" list-type="bulleted">
+          <item>Demo_Programs</item>
+        </list>
+        <para id="id24429888">If you have not done so, please create the folder(s) and/or sub-folder(s) as appropriate.</para>
+      </section>
+      <section id="id25500674">
+        <title>Download the Demo Program</title>
+        <para id="id25650899">Download and store the following file(s) to your storage device in the appropriate folder(s). Following the methods of your compiler/IDE, compile and run the program(s). Study the source code file(s) in conjunction with other learning materials.</para>
+        <para id="id18024652">Download from Connexions: <link document="m20814" resource="Demo_Factorial.cpp">Demo_Factorial.cpp</link></para>
+      </section>
+    </section>
+    <section id="id24439630">
+      <title>Definitions</title>
+    <definition id="fs-id8168477">
+      <term>recursion</term>
+      <meaning id="fs-id8796307">A repetitive process in  which a function calls itself.  </meaning>
+    </definition>
+    <definition id="fs-id8172254">
+      <term>factorial</term>
+      <meaning id="fs-id7746913">A math problem that often is solved using recursion.  </meaning>
+    </definition>
+    </section>
+  </content>
+</document>

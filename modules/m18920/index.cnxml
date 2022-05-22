@@ -1,0 +1,107 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Integrated Development Environment</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m18920</md:content-id>
+  <md:title>Integrated Development Environment</md:title>
+  <md:abstract>An explanation of how an IDE processes a source code file into a program that runs on the computer. Categories of errors are discussed and demonstrated with C++ source code files that can be downloaded for practice.</md:abstract>
+  <md:uuid>fe92b40a-91ad-4df0-9b86-98083ec589cc</md:uuid>
+</metadata>
+<featured-links>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit below.
+       Changes to the links section in the source will not be saved. -->
+    <link-group type="prerequisite">
+      <link url="http://cnx.org/content/m18785/latest/" strength="2">Bloodshed Dev-C++ 5 Compiler/IDE</link>
+    </link-group>
+    <link-group type="supplemental">
+      <link url="http://cnx.org/content/m18861/latest/" strength="3">Modularization and C++ Program Layout</link>
+      <link url="http://cnx.org/content/m18781/latest/" strength="3">Test Data</link>
+      <link url="http://cnx.org/content/m18787/latest/" strength="2">Compiler Directives</link>
+    </link-group>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit above.
+       Changes to the links section in the source will not be saved. -->
+</featured-links>
+<content>
+    <section id="id21391656">
+      <title>IDE Overview</title>
+      <para id="id17689398">High-level language programs are usually written (coded) as ASCII text into a source code file.  A unique file extension (Examples: .asm .cob .for .pas .c .cpp) is used to identify it as a source code file.  As you can guess for our examples – Assembly, COBOL, FORTRAN, Pascal, "C" and "C++" however, they are just ASCII text files (other text files usually use the extension of .txt).  The source code produced by the programmer must be converted to an executable machine code file specifically for the computer’s CPU (usually an Intel or Intel compatible CPU within today’s world of micro computers). There are several steps in getting a program from its source code stage to running the program on your computer. Historically, we had to use several software programs (a text editor, a compiler, a linker and operating system commands) to make the conversion and run our program. However, today all those software programs with their associated tasks have been <emphasis>integrated</emphasis> into one program usually called a compiler. However, this one compiler program is really many software items that create an <emphasis>environment</emphasis> used by programmers to <emphasis>develop</emphasis> software. Thus the name: <term>Integrated Development Environment</term> or IDE.</para>
+      <para id="id24298317">The following figure shows the progression of activity in an IDE as a programmer enters the source code and then directs the IDE to compile and run the program. </para>
+      <figure id="id4921881">
+        <media id="id1167531678943" alt=""><image src="../../media/graphics1-5bb0.jpg" mime-type="image/jpeg" height="450" width="600"/></media>
+        <caption>Integrated Development Environment or IDE</caption>
+      </figure>
+      <para id="id20655177">Upon starting the IDE software the programmer usually indicates he wants to open a file for editing as source code. As they make changes they might either do a "save as" or "save". When they have finished entering the source code, they usually direct the IDE to "compile &amp; run" the program. The IDE does the following steps:</para>
+      <list id="id24121068" list-type="enumerated"><item>If there are any unsaved changes to the source code file it has the <emphasis>test editor</emphasis> save the changes.</item>
+	<item>The <emphasis>compiler</emphasis> opens the source code file and does its <emphasis>first step</emphasis> which is executing the <emphasis>pre-processor</emphasis> compiler directives and other steps needed to get the file ready for the second step. The #include will insert header files into the code at this point. If it encounters an error, it stops the process and returns the user to the source code file within the text editor with an error message. If no problems encountered it saves the source code to a temporary file called a translation unit.</item>
+	<item>The <emphasis>compiler</emphasis> opens the translation unit file and does its <emphasis>second step</emphasis> which is <emphasis>converting</emphasis> the programming language code to machine instructions for the CPU, a data area and a list of items to be resolved by the linker. Any problems encounted (usually a syntax or violation of the programming language rules) stops the process and returns the user to the source code file within the text editor with an error message. If no problems encountered it saves the machine instructions, data area and linker resolution list as an object file.</item>
+	<item>The <emphasis>linker</emphasis> opens the program object file and links it with the library object files as needed. Unless all linker items are resolved, the process stops and returns the user to the source code file within the text editor with an error message. If no problems encountered it saves the linked objects as an executable file.</item>
+	<item>The IDE directs the operating system’s program called the <emphasis>loader</emphasis> to load the executable file into the computer's memory and have the Central Processing Unit (CPU) start processing the instructions. As the user interacts with the program, entering his test data, he might discover that the outputs are not correct. These types of errors are called logic errors and would require him to return to the source code to change the algorithm.</item>
+</list>
+    </section>
+    <section id="id22812882">
+      <title>Resolving Errors</title>
+      <para id="id19769031">Despite our best efforts at becoming perfect programmers, we will create errors. Solving these errors is known as <emphasis>debugging</emphasis> your program. The three types of errors in the order that they occur are:</para>
+      <list id="id3486688" list-type="enumerated">
+        <item>Compiler</item>
+        <item>Linker</item>
+        <item>Logic</item>
+      </list>
+      <para id="id7167443">There are two types of compiler errors; pre-processor (1st step) and conversion (2nd step). A review of Figure 1 above shows the four arrows returning to the source code so that the programmer can correct the mistake.</para>
+      <para id="id20232803">During the conversion (2nd step) the complier might give a <emphasis>warning</emphasis> message which in some cases may not be a problem to worry about.  For example: Data type demotion may be exactly what you want your program to do, but most compilers give a warning message. Warnings don't stop the compiling process but as their name implies, they should be reviewed.</para>
+      <para id="id22128853">The next three figures show IDE monitor interaction for the <emphasis>Bloodshed Dev-C++ 5 compiler/IDE</emphasis>.</para>
+      <figure id="id21675976">
+        <media id="id1167533422396" alt=""><image src="../../media/graphics2-ef0d.png" mime-type="image/png" height="405" width="599"/></media>
+        <caption>Compiler Error (the red line is where the complier stopped)</caption>
+      </figure>
+      <figure id="id23040524">
+        <media id="id1167526764585" alt=""><image src="../../media/graphics3.png" mime-type="image/png" height="405" width="599"/></media>
+        <caption>Linker Error (no red line with an error message describing linking problem)</caption>
+      </figure>
+      <figure id="id15300073"><media id="id1167528427328" alt=""><image src="../../media/graphics4.png" mime-type="image/png" height="375" width="600"/></media>
+	
+<caption>Logic Error (from the output within the "Black Box" area)</caption></figure>
+    </section>
+    <section id="id16008587">
+      <title>Demonstration Program in C++</title>
+      <section id="id21837296">
+        <title>Creating a Folder or Sub-Folder for Source Code Files</title>
+        <para id="id23271649">Depending on your compiler/IDE, you should decide where to download and store source code files for processing. Prudence dictates that you create these folders as needed prior to downloading source code files. A suggested sub-folder for the <term>Bloodshed Dev-C++ 5 compiler/IDE</term> might be named:</para>
+        <list id="id18897067" list-type="bulleted">
+          <item>Demo_Programs</item>
+        </list>
+        <para id="id23266560">If you have not done so, please create the folder(s) and/or sub-folder(s) as appropriate.</para>
+      </section>
+      <section id="id21945454"><title>Download the Demo Program</title><para id="id24526619">Download and store the following file(s) to your storage device in the appropriate folder(s). Following the methods of your compiler/IDE, compile and run the program(s). Study the soruce code file(s) in conjunction with other learning materials.</para><para id="id23807505">Download from Connexions: <link document="m18920" resource="Demo_Pre_Processor_Compiler_Errors.cpp">Demo_Pre_Processor_Compiler_Errors.cpp</link></para><para id="id21804468">Download from Connexions: <link document="m18920" resource="Demo_Compiler_Conversion_Errors.cpp">Demo Compiler_Conversion_Errors.cpp</link></para><para id="id23872866">Download from Connexions: <link document="m18920" resource="Demo_Linker_Errors.cpp">Demo_Linker_Errors.cpp</link></para><para id="id23347259">Download from Connexions: <link document="m18920" resource="Demo_Logic_Errors.cpp">Demo_Logic_Errors.cpp</link></para></section>
+    </section>
+<section id="fs-id7911204">
+  <title>Definitions</title>
+    <definition id="fs-id2012031">
+      <term>text editor</term>
+      <meaning id="fs-id6293525">A software program for creating and editing ASCII text files.</meaning>
+    </definition>
+    <definition id="fs-id7787494">
+      <term>compiler</term>
+      <meaning id="fs-id4225646">Converts source code to object code.</meaning>
+    </definition>
+    <definition id="fs-id5762828">
+      <term>pre-processor</term>
+      <meaning id="fs-id2170384">The first step the complier does in converting source code to object code.</meaning>
+    </definition>
+    <definition id="fs-id8454497">
+      <term>linker</term>
+      <meaning id="fs-id8160822">Connects or links object files into an executable file.</meaning>
+    </definition>
+    <definition id="fs-id8113381">
+      <term>loader</term>
+      <meaning id="fs-id8124137">Part of the operating system that loads executable files into memory and direct the CPU to start running the program.</meaning>
+    </definition>
+    <definition id="fs-id8562848">
+      <term>debugging</term>
+      <meaning id="fs-id2038842">The process of removing errors from a program. 1) compiler 2) linker 3) logic</meaning>
+    </definition>
+    <definition id="fs-id8482026">
+      <term>warning</term>
+      <meaning id="fs-id7084915">A compiler alert that there might be a problem.</meaning>
+    </definition>
+</section>
+  </content>
+</document>

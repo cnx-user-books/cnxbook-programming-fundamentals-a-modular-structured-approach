@@ -1,0 +1,87 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Practice 4: Often Used Data Types</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m22456</md:content-id>
+  <md:title>Practice 4: Often Used Data Types</md:title>
+  <md:abstract>Questions, exercises, problems, etc. that support this chapter in the "Programming Fundamentals - A Modular Structured Approach using C++" collection/textbook.</md:abstract>
+  <md:uuid>4683b3b9-5fe7-437e-8a41-8ff2a2e05393</md:uuid>
+</metadata>
+
+<content>
+    <section id="id1170658495604">
+      <title>Learning Objectives</title>
+      <para id="id7456294">With 100% accuracy during a: memory building activity, exercises, lab assignment, problems, or timed quiz/exam; the student is expected to:</para>
+      <list id="id1170656842427" list-type="enumerated" number-style="arabic">
+        <item>Define the terms on the definitions as listed in the modules associated with this chapter.</item>
+        <item>Design a program, to include: understanding the problem, completing Internet research as appropriate, create a pseudocode document and create a test data document.</item>
+        <item>Write the C++ code for a program using appropriate planning documentation that you or another has designed.</item>
+      </list>
+    </section>
+    <section id="id1170668651866">
+      <title>Memory Building Activities</title>
+      <para id="id1170664520995">Link to: <link window="new" document="m22456" resource="index.html">MBA 04</link></para>
+    </section>
+    <section id="id1170660058622">
+      <title>Exercises</title>
+<exercise id="fs-id5125888">
+  <problem id="fs-id1168843492079">
+    <list id="fs-id1168844179138" list-type="enumerated">
+      <title>Answer the following statements as either true or false:</title>
+        <item>Integer data types are stored with a mantissa and an exponent.</item>
+        <item>Strings are identified by single quote marks.</item>
+        <item>An operand is a value that receives the operator’s action.</item>
+        <item>Arithmetic assignment is a shorter way to write some expressions.</item>
+        <item>Integer division is rarely used in computer programming.</item>
+    </list>
+  </problem>
+  <solution id="fs-id8215220">
+    <list id="fs-id1168844996377" list-type="enumerated">
+      <title>Answers:</title>
+        <item>false</item>
+        <item>false</item>
+        <item>true</item>
+        <item>true</item>
+        <item>false</item>
+    </list>
+  </solution>
+</exercise>
+    </section>
+    <section id="id1170657049592">
+      <title>Miscellaneous Items</title>
+      <para id="id1170661052756">None at this time.</para>
+    </section>
+    <section id="id1170660691239">
+      <title>Lab Assignment</title>
+      <section id="id1170660211133">
+        <title>Creating a Folder or Sub-Folder for Chapter 04 Files</title>
+        <para id="id1170665862712">Depending on your compiler/IDE, you should decide where to download and store source code files for processing. Prudence dictates that you create these folders as needed prior to downloading source code files. A suggested sub-folder for the <term>Bloodshed Dev-C++ 5 compiler/IDE</term> might be named:</para>
+        <list id="id1170665753274" list-type="bulleted">
+          <item>Chapter_04 within the folder named: Cpp_Source_Code_Files</item>
+        </list>
+        <para id="id1170656785886">If you have not done so, please create the folder(s) and/or sub-folder(s) as appropriate.</para>
+      </section>
+      <section id="id1170664000028">
+        <title>Detailed Lab Instructions</title>
+        <para id="id2956991">Read and follow the directions below carefully, and perform the steps in the order listed.</para>
+        <list id="id6031335" list-type="bulleted">
+          <item>The Problem/Task – I have a friend who is visiting from Europe and he does not understand Fahrenheit temperatures.  We need to write a program that allows him to enter the temperature in Fahrenheit (as announced on TV or radio) and convert it to Celsius.  Clue 1:  Fahrenheit water freezes at 32 degrees and boils at 212 degrees.  Celsius water freezes a zero (0) degrees and boils at 100 degrees.  Google the internet (how to convert Fahrenheit to Celsius) if you need more help.  Clue 2: You can also use Internet sites to do a conversion and thus create your test data.</item>
+          <item>You only need two variables in this program: Fahrenheit and Celsius both of which should be the integer data type. When you convert the Fahrenheit to Celsius you will need to use a floating-point expression doing floating-point calculations for precision. Additionally we want to round up or down the Celsius answer by adding 0.5 to the calculation expression.</item>
+        </list>
+        <list id="id1170664578625" list-type="bulleted">
+          <item>Within your sub-folder: Chapter_04 you will need to create three files: <emphasis>Lab_04_Pseudocode.txt</emphasis> and <emphasis>Lab_04_Test_Data.txt</emphasis> and <emphasis>Lab_04.cpp</emphasis> NOTE: It will be easier to copy some previous files from another assignment and use those copies by renaming them and modifying them as appropriate. The professor is expecting the items you create to have a similar format to those we have been using in the course.</item>
+          <item>Create your pseudocode, test data and source code files.</item>
+          <item>Build (compile and run) your program. You have successfully written this program when it runs with your test data and gives the predicted results.</item>
+          <item>After you have successfully written this program, if you are taking this course for college credit, follow the instructions from your professor/instructor for submitting it for grading.</item>
+        </list>
+      </section>
+    </section>
+    <section id="id1170663319830">
+      <title>Problems</title>
+      <section id="id1170661928690">
+        <title>Problem 04a – Instructions</title>
+        <para id="id7222028">Decide on the data type and identifier names for the following:</para>
+        <para id="id1930023">Problem: A men's clothing store that caters to the very rich wants to create a data base for its customers that records clothing measurements. They need to record information for shoes, socks, pants, dress shirts and casual shirts. HINT: You may need more than 5 data items.</para>
+      </section>
+    </section>
+  </content>
+</document>

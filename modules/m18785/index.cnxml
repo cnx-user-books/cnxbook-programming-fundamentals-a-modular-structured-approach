@@ -1,0 +1,116 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Bloodshed Dev-C++ 5 Compiler/IDE</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m18785</md:content-id>
+  <md:title>Bloodshed Dev-C++ 5 Compiler/IDE</md:title>
+  <md:abstract>An introduction to the Bloodshed Dev-C++ 5 compiler/IDE (Integrated Development Environment) listing the advantages of using an open source compiler that works on a flash drive.  The software along with installation instructions and a test program are included.</md:abstract>
+  <md:uuid>7a23e5bb-e4a9-4b4c-afeb-8d084fe0790d</md:uuid>
+</metadata>
+<featured-links>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit below.
+       Changes to the links section in the source will not be saved. -->
+    <link-group type="supplemental">
+      <link url="http://cnx.org/content/col10621/latest/" strength="3">Programming Fundamentals - A Modular Structured Approach using C++</link>
+    </link-group>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit above.
+       Changes to the links section in the source will not be saved. -->
+</featured-links>
+<content>
+    <section id="id13379260">
+      <title>Introduction</title>
+      <para id="id18812577">Microsoft and Borland are the two reputable names within the programming world for compilers. They sell compiler software for many programming languages. For the C++ programming language, the Microsoft Visual Studio which includes C++ and Borland C++ Builder are excellent compilers. Often with textbooks or free via the internet; you can get Microsoft’s Visual C++ Express or Borland’s Personal Edition version of a compiler. However, installing either of these compliers can be complex. Microsoft’s Visual Studio compiler often creates a variety of installation problems (such as making sure the operating system and .net components are current) thus making it difficult for students to install at home. These compliers require you to build a project to encompass every program. Using a commercially sold compiler that professional programmers would consider using for project development is fine for professionals but often confusing to beginners. Eventually, if you are going to become a professional programmer, you will need to become familiar with the commercially sold compilers.</para>
+      <para id="id17741373">We suggest that beginning students consider one of the easier to install compiler software packages for use in a programming fundamentals course. The best option we have found is an <emphasis>open source</emphasis> compiler/IDE (Integrated Development Environment) named: <term>Bloodshed Dev-C++ 5 compiler/IDE</term>.</para>
+<definition id="opensourcedef">
+  <term>open source</term>
+  <meaning id="fs-id25245518">Group development of source code for software that is made available to the public at no cost.</meaning>
+</definition>
+    </section>
+    <section id="id15686863">
+      <title>Bloodshed Dev-C++ 5 compiler/IDE</title>
+      <para id="id10933890">Advantages: Can be installed on Windows 95/98/NT/2000/XP operating systems. I have it installed on Windows Vista operating system, thus it can work with slower processors and almost any Windows operating system. It only requires about 80 MB of storage space (usually enough for the compiler with all of its files and storage room for several of your programs). It is very easy to install and easy to use.  Does not require the use of a "project"; thus individual source code files can be easily compiled.</para>
+      <para id="id17772283">Disadvantages: Would not normally be used by professional programmers, but is sufficient for a beginning computer programming course and is a full-featured compiler/IDE.</para>
+      <para id="id20808371"><emphasis>Unique Advantage:</emphasis> Can be installed and run on a flash drive, thus giving the student the ability to work on their lab assignments on any computer that has a USB port. This can give the student <emphasis>portability</emphasis>, being able to do lab assignments at home, work, library, open lab, classroom, friend’s house, etc.</para>
+<definition id="portabilitydef">
+  <term>portability</term>
+  <meaning id="fs-id8393802">The ability to transport software on a flash drive and thus use it on various machines.</meaning>
+</definition>
+    </section>
+    <section id="id11255205">
+      <title>Preparation before Installation</title>
+      <section id="id12131814">
+        <title>Creating the Needed Folders and Sub-Folders</title>
+        <para id="id24918632">You need to get the <emphasis>software</emphasis> and a C++ <emphasis>source code</emphasis> program that has been tested and is error free. You will need about 80MB of storage space. We suggest that you create <emphasis>two folders</emphasis> on your hard drive or flash drive depending on which installation you choose. If on a flash drive create them at the root level of the drive. If on your home machine, you can use the folder area set up by the operating system for you as a user. Name them:</para>
+        <list id="id20123233" list-type="bulleted">
+          <item>Cpp_Software_Download</item>
+          <item>Cpp_Source_Code_Files</item>
+        </list>
+        <para id="id17984360">Within the Cpp_Source_Code_Files folder, create a sub-folder named:</para>
+        <list id="id18188664" list-type="bulleted">
+          <item>Compiler_Test</item>
+        </list>
+        <para id="id18905218">To help you keep files organized, you will want to create other sub-folders for storing source code files. We suggest you create at least two other sub-folder to be used with Connexions' related modules. Within the Cpp_Source_Code_Files, create sub-folders named:</para>
+        <list id="id9041156" list-type="bulleted">
+          <item>Demo_Programs</item>
+          <item>Monitor_Header</item>
+        </list>
+<definition id="folderdef">
+  <term>folder</term>
+  <meaning id="fs-id10386864">A named area for storage of documents or other files on a disk drive or flash drive.</meaning>
+</definition>
+<definition id="sourcecodedef">
+  <term>source code</term>
+  <meaning id="fs-id13916323">Any collection of statements or declarations written in some human-readable computer programming language.</meaning>
+</definition>
+      </section>
+      <section id="id23639492">
+        <title>Getting the Software</title>
+        <para id="id19435814">The full version of the software is named: Dev-C++ 5.0 beta 9.2 (4.9.9.2) (9.0 MB) with Mingw/GCC 3.4.2 You can either download it from Bloodshed or download the version as of 12/8/2008 that is stored on the Connexions web site. Store it in the Cpp_Software_Download folder you created. The software is approximately 9.1 MB and will take several minutes to download if you are using a dial-up modem connection.
+<note id="fs-id15145110" type="tip">The software has not significantly changed since 2007 and the Connexions version will be sufficient for most users. The Bloodshed link requires some additional navigation to get to the software download. Thus, because it is significantly easier, we recommend that you download the software from the Connections web site. 
+</note>
+ </para>
+        <para id="id18146334">Link to Bloodshed: <link window="new" url="http://www.bloodshed.net/dev/devcpp.html">http://www.bloodshed.net/dev/devcpp.html</link></para>
+        <para id="id19891684">Download from Connexions: <link document="m18785" resource="devcpp-4.9.9.2_setup.exe">devcpp-4.9.9.2_setup.exe</link></para>
+      </section>
+      <section id="id11365431">
+        <title>Getting a C++ Source Code File</title>
+        <para id="id11669450">Listed below is a C++ source code file titled: Compiler_Test.cpp It has been prepared for Connexions web delivery. Download and store it in the Compiler_Test sub-folder you created. You may need to right click on the link and select "Save Target As" in order to download the file.</para>
+        <para id="id23822009">Download from Connexions: <link document="m18785" resource="Compiler_Test.cpp">Compiler_Test.cpp</link></para>
+      </section>
+    </section>
+    <section id="id18023235">
+      <title>Installation Instructions for Bloodshed Dev-C++ 5 compiler/IDE</title>
+      <para id="id5337505">The Version 5 which is well tested (don’t let the beta release scare you) and should work on a variety of machines and various Microsoft Operating systems including Windows 98, Windows 2000, Windows XP and Windows Vista. Below are installation instructions for installing it on a machine or installing it on a flash drive. We don’t suggest trying to switch between the machine drive and flash drive. If it is installed on the machine drive and you try installing it on a flash drive, it creates problems and will not work perperly. Either install it on the flash drive to gain your portability or install it on your machine. </para>
+      <section id="id18068740">
+        <title> Computer Installation Instructions</title>
+        <list id="id22794734" list-type="enumerated"><item>Navigate to the Cpp_Software_Download folder and run the <term>devcpp-4.9.9.2_setup.exe</term> software by double cliking on the filename. </item>
+	<item>Use common sense and answer the installation prompts. NOTE THE FOLLOWING TWO ITEMS:</item>
+	<item>When it gets to the "Choose Install Location" use the default software location of: <term>C:\Dev-Cpp\</term> (or select the location you want to store the installed program but use the default unless you are familiar with installing software).</item>
+	<item>When it asks: "Do you want to install Dev C++ for all users on this computer?" answer "Yes".</item>
+	<item>After it installs, it will ask some "first time configuration" questions. Again, use common sense and answer the questions. NOTE THE FOLLOWING ITEM:</item>
+	<item>Answer "No" to the retrieve information from header files. </item>
+	<item>It will start your compiler/IDE with a "Tip of the day". We suggest you check the box in the lower left and select "Close".</item>
+	<item>Close your compiler/IDE by using the normal red "X" box. We want to show you how to start your compiller normally.</item>
+	<item>You start your compiler software similar to starting any software loaded on your machine ("Start" then "All Programs" then "Bloodshed Dev-C++" then "Dev-C++"). </item>
+	<item>On the menus at the top – Select "File" then "Open project or file" then navigate to where your source code file (Compiler_Test.cpp) is stored on your hard drive. See the suggested folder name above. Select the source code file and open it. </item>
+	<item>You should see the source code listing. Press F9 key or select the "Execute" then "Compile &amp; Run" from the menus at the top. A black screen box should appear and you answer questions appropriately to run the program. When you are done running your program the black screen box goes away.</item>
+</list>
+      </section>
+      <section id="id17452591">
+        <title>Flash Drive Installation Instructions</title>
+        <list id="id16610463" list-type="enumerated"><item>Navigate to the Cpp_Software_Download folder and run the <term>devcpp-4.9.9.2_setup.exe</term> software by double cliking on the filename.</item>
+	<item>Use common sense and answer the installation prompts. NOTE THE FOLLOWING TWO ITEMS:</item>
+	<item>When it gets to the "Choose Install Location" you can see that the default software location of: <term>C:\Dev-Cpp\</term> however, it needs to be changed. Change the "Destination Directory" by selecting changing the default software location from: <term>C:\Dev-Cpp\</term> to <term>DriveLetter:\Dev-Cpp\</term> (where the <term>DriveLetter </term>is the drive that represents your flash drive). </item>
+	<item>When it asks: "Do you want to install Dev C++ for all users on this computer?" answer "No". </item>
+	<item>After it installs, it will ask some "first time configuration" questions. Again, use common sense and answer the questions. NOTE THE FOLLOWING ITEM:</item>
+	<item>Answer "No" to the retrieve information from header files.</item>
+	<item>It will start your compiler/IDE with a "Tip of the day". We suggest you check the box in the lower left and select "Close".</item>
+	<item>Close your compiler/IDE by using the normal red "X" box. We want to show you how to start your compiller normally.</item>
+	<item>To start your compiler software you navigate to the "Dev-Cpp" folder on your flash drive and select the "devcpp.exe" application. NOTE: When using the flash drive you should not try starting the compiler by double clicking on a C++ source code file. This method works on a machine installation but does not work on a flash drive installation.</item>
+	<item>On the menus at the top – Select "File" then "Open project or file" then navigate to where your source code file (Compiler_Test.cpp) is stored on your flash drive. See the suggested folder name above. Select the source code file and open it. </item>
+	<item>You should see the source code listing. Press F9 key or select the "Execute" then "Compile &amp; Run" from the menus at the top. A black screen box should appear and you answer questions appropriately to run the program. When you are done running your program the black screen box goes away. </item>
+</list>
+      </section>
+    </section>
+    
+  </content>
+</document>

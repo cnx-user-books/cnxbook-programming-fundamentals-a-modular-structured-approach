@@ -1,0 +1,111 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Practice 11: Two Way Selection</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m19764</md:content-id>
+  <md:title>Practice 11: Two Way Selection</md:title>
+  <md:abstract>Questions, exercises, problems, etc. that support this chapter in the "Programming Fundamentals - A Modular Structured Approach using C++" collection/textbook.</md:abstract>
+  <md:uuid>094e91a2-6882-4e3f-984e-d83002b08050</md:uuid>
+</metadata>
+
+<content>
+    <section id="id18935722">
+      <title>Learning Objectives</title>
+      <para id="id18935728">With 100% accuracy during a: memory building activity, exercises, lab assignment, problems, or timed quiz/exam; the student is expected to:</para>
+      <list id="id18935738" list-type="enumerated" number-style="arabic">
+        <item>Define the terms on the definitions as listed in the modules associated with this chapter.</item>
+        <item>Given pseudocode, write the C++ code for a program that uses the if then else control structure.</item>
+      </list>
+    </section>
+    <section id="id18935760">
+      <title>Memory Building Activities</title>
+      <para id="id18935766">Link to: <link window="new" document="m19764" resource="index.html">MBA 11</link></para>
+    </section>
+    <section id="id18935785">
+      <title>Exercises</title>
+     <exercise id="idBooleanExpCh11">
+        <problem id="idBooleanExpCh11p">
+     <list id="BooleanexpqCh11" list-type="enumerated">
+       <title> Evaluate the following Boolean expressions:</title>
+       <item>25 &lt; 7</item>
+                 <item>3 &lt; 7</item>
+                 <item>14 &gt; 7</item>
+                 <item>17 &lt;= 7</item>
+                 <item>25 &gt;= 7</item>
+                 <item>13 == 7</item>
+                 <item>9 != 7</item>
+                 <item>5 !&gt; 7</item>
+      </list>
+        </problem>
+        <solution id="idBooleanExpCh11s">
+     <list id="BooleanexpaCh11" list-type="enumerated"><title>Answers:</title><item>0</item>
+	<item>1</item>
+	<item>1</item>
+	<item>0</item>
+	<item>1</item>
+	<item>0</item>
+	<item>1</item>
+	<item> Error, the “not greater than” is not a valid operator.</item>
+</list>
+        </solution>
+      </exercise>
+    </section>
+    <section id="id18935796">
+      <title>Miscellaneous Items</title>
+      <para id="fs-id21768319">Link to: <link window="new" document="m19764" resource="if_then_else_flow.gif">Animated gif showing if then else</link></para>
+      <para id="idklb11901">Link to: <link window="new" document="m19764" resource="Manipulation_Data_Part_2.pdf">Manipulation of Data Part 2</link></para>
+    </section>
+    <section id="id18935808">
+      <title>Lab Assignment</title>
+      <section id="id18935814">
+        <title>Creating a Folder or Sub-Folder for Chapter 11 Files</title>
+        <para id="id18935822">Depending on your compiler/IDE, you should decide where to download and store source code files for processing. Prudence dictates that you create these folders as needed prior to downloading source code files. A suggested sub-folder for the <term>Bloodshed Dev-C++ 5 compiler/IDE</term> might be named:</para>
+        <list id="id18935846" list-type="bulleted">
+          <item>Chapter_11 within the folder named: Cpp_Source_Code_Files</item>
+        </list>
+        <para id="id18935860">If you have not done so, please create the folder(s) and/or sub-folder(s) as appropriate.</para>
+      </section>
+      <section id="id18935867">
+        <title>Download the Lab File(s)</title>
+        <para id="id18935874">Download and store the following file(s) to your storage device in the appropriate folder(s). You may need to right click on the link and select "Save Target As" in order to download the file.</para>
+        <para id="id18935892">Download from Connexions: <link document="m19764" resource="Lab_11_Pseudocode.txt">Lab_11_Pseudocode.txt</link></para>
+      </section>
+      <section id="id18935912">
+        <title>Detailed Lab Instructions</title>
+        <para id="id18935918">Read and follow the directions below carefully, and perform the steps in the order listed.</para>
+        <list id="id18935927" list-type="bulleted"><item>Create a source code file from the Lab_11_Pseudocode.txt file. Name it: Lab_11.cpp</item>
+	<item>Build (compile and run) your program.</item>
+	<item>After you have successfully written this program, if you are taking this course for college credit, follow the instructions from your professor/instructor for submitting it for grading.</item>
+</list>
+      </section>
+    </section>
+    <section id="id18935966">
+      <title>Problems</title>
+      <section id="id18935972">
+        <title>Problem 11a – Instructions</title>
+        <para id="id18935979">Create a table with the six relational operators and their meanings.</para>
+      </section>
+      <section id="idproblem11b"><title>Problem 11b – Instructions</title><para id="idprob11b">Explain why we are using the "if then else" to manipulate the input data in the example below.</para>
+<example id="fs-id6221200">
+<title>C++ source code</title>
+<para id="fs-id25419849"><preformat id="fs-id6543855" display="block"><code>
+cout &lt;&lt; "\nEnter one side of the rectangle ---------&gt;: " ;
+cin &gt;&gt; side1; 
+cout &lt;&lt; "\nEnter the other side of the rectangle ---&gt;: " ;
+cin &gt;&gt; side2;
+
+if (side1 &gt; side2)
+  {
+  length = side1;
+  width = side2;
+  }
+else
+  {
+  length = side2;
+  width = side1;
+  } </code></preformat>
+</para>
+</example>
+</section>
+    </section>
+  </content>
+</document>

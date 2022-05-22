@@ -1,0 +1,262 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>While Loop</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m20598</md:content-id>
+  <md:title>While Loop</md:title>
+  <md:abstract>An introduction to the while control structure with examples in the C++ programming language.</md:abstract>
+  <md:uuid>fefa2659-866f-4a58-825e-c437bad97aa7</md:uuid>
+</metadata>
+<featured-links>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit below.
+       Changes to the links section in the source will not be saved. -->
+    <link-group type="prerequisite">
+      <link url="http://cnx.org/content/m20499/latest/" strength="3">Increment and Decrement Operators</link>
+      <link url="http://cnx.org/content/m19623/latest/" strength="2">Flowcharting </link>
+      <link url="http://cnx.org/content/m19628/latest/" strength="2">Structured Programming</link>
+      <link url="http://cnx.org/content/m19683/latest/" strength="1">Compound Statement</link>
+    </link-group>
+    <link-group type="supplemental">
+      <link url="http://cnx.org/content/m20404/latest/" strength="3">Flag Concept</link>
+    </link-group>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit above.
+       Changes to the links section in the source will not be saved. -->
+</featured-links>
+<content>
+    <section id="id19291311">
+      <title>Introduction to Test Before Loops</title>
+      <para id="id22908130">There are two commonly used test before loops in the iteration (or repetition) category of control structures. They are: while and for. This module covers the: while.</para>
+      <section id="id3920614">
+        <title>Understanding Iteration in General – while</title>
+        <para id="id10999493">The concept of iteration is connected to possibly wanting to repeat an action. Like all control structures we ask a question to control the execution of the loop. The term loop comes from the circular looping motion that occurs when using flowcharting. The basic form of the while loop is as follows:</para>
+        <para id="id17979958"><preformat id="klb1230001" display="block"><code>
+initialization of the flag 
+while the answer to the question is true then do
+  some statements or action
+  some statements or action
+  some statements or action
+  update the flag </code></preformat>
+        </para>
+        <para id="id19574851">In almost all languages the question (called a <term>test expression</term>) is a <term>Boolean expression</term>. The Boolean data type has two values – true and false. Let's rewrite the structure to consider this:</para>
+        <para id="id16146418"><preformat id="klb1230002" display="block"><code>
+initialization of the flag 
+while the expression is true then do
+  some statements or action
+  some statements or action
+  some statements or action
+  update the flag </code></preformat>
+        </para>
+        <para id="id16996346">Within the while control structure there are four attributes to a properly working loop. They are:</para>
+        <list id="id18067924" list-type="bulleted"><item>Initializing the flag</item>
+	<item>Test expression</item>
+	<item>Action or actions</item>
+	<item>Update of the flag</item>
+</list>
+        <para id="id16704076">The initialization of the flag is not technically part of the control structure, but a necessary item to occur before the loop is started. The English phrasing is, "While the expression is true, do the following actions". This is looping on the true. When the test expression is false, you stop the loop and go on with the next item in the program. Notice, because this is a test before loop the action <emphasis>might not happen</emphasis>. It is called a <term>test before loop</term> because the test comes before the action. It is also sometimes called a pre-test loop, meaning the test is pre (or Latin for before) the action and update.</para>
+      </section>
+      <section id="id14286028">
+        <title>Human Example of the while Loop</title>
+        <para id="id11840081">Consider the following one-way conversation from a mother to her child.</para>
+        <para id="id19403069">Child: The child says nothing, but mother knows the child had Cheerios for breakfast and history tells us that the child most likely spilled some Cheerios on the floor.</para>
+        <para id="id7835455">Mother says: "While it is true that you see (As long as you can see) a Cheerio on floor, pick it up and put it in the garbage."</para>
+        <para id="id16648518">Note: All of the elements are present to determine the action (or flow) that the child will be doing (in this case repeating). Because the question (can you see a Cheerios) has only two possible answers (true or false) the action will continue while there are Cheerios on the floor. Either the child 1) never picks up a Cheerio because they never spilled any or 2) picks up a Cheerio and keeps picking up Cheerios one at a time while he can see a Cheerio on the floor (that is until they are all picked up).</para>
+      </section>
+    </section>
+    <section id="id14862944">
+      <title>The while Structure within C++</title>
+      <section id="id10099089">
+        <title>Syntax</title>
+        <para id="id17215135">The syntax for the while control structure within the C++ programming language is:</para>
+        <para id="id13766633"><preformat id="klb1230003" display="block"><code>
+statement;        // This statement initializes the flag;
+while (expression)
+  {
+  statement;
+  statement;
+  statement;
+  statement;    // This statement updates the flag;
+  }
+</code></preformat>
+        </para>
+        <para id="id17223521"><note id="fs-id8737258">The test expression is within the parentheses, but this is not a function call. The parentheses are part of the control structure. Additionally, there is not a semicolon after the parenthesis following the expression.</note></para>
+      </section>
+      <section id="id13288264">
+        <title>An Example</title>
+<example id="fs-id1166234626007">
+<title>C++ source code: while</title>
+<para id="klb4560004"><preformat id="klb1230004" display="block"><code>
+loop_response = 'y';
+while (loop_response == 'y')
+  {
+  cout &lt;&lt; "\nWhat is your age? ";
+  cin &gt;&gt; age_user;
+  cout &lt;&lt; "\nWhat is your friend's age? ";
+  cin &gt;&gt; age_friend;
+  cout &gt;&gt; "\nTogether your ages add up to: ";
+  cout &gt;&gt; (age_user + age_friend);
+  cout &lt;&lt; "\nDo you want to do it again? y or n ";
+  cin &gt;&gt; loop_response;
+  }
+</code></preformat>
+</para>
+</example>
+        <para id="id24364717">The four attributes of a test before loop are present. The initialization of the flag. The test is the equality relational comparison of the value in the flag variable to the lower case character of y. The action part consists of the 6 lines that prompt for data and then displays the total of the two ages. The update of the flag is the displaying the question and getting the answer for the variable loop_response. </para>
+        <para id="id5325722">This type of loop control is called an event controlled loop. The flag updating is an event where someone decides if they want the loop to execute again. </para>
+        <para id="id14435708">Using indentation with the alignment of the loop actions and flag update is normal industry practice within the C++ community.</para>
+      </section>
+      <section id="id12109420">
+        <title>Infinite Loops</title>
+        <para id="id15338899">At this point it's worth mentioning that good programming always provides for a method to insure that the loop question will eventually be false so that the loop will stop executing and the program continues with the next line of code.  However, if this does not happen then the program is in an infinite loop.  Infinite loops are a bad thing. Consider the following code:</para>
+<example id="fs-id4986050">
+<title>C++ source code: infinite loop</title>
+<para id="klb4560005"><preformat id="klb1230005" display="block"><code>
+loop_response = 'y';
+while (loop_response == 'y')
+  {
+  cout &lt;&lt; "\nWhat is your age? ";
+  cin &gt;&gt; age_user;
+  cout &lt;&lt; "\nWhat is your friend's age? ";
+  cin &gt;&gt; age_friend;
+  cout &gt;&gt; "\nTogether your ages add up to: ";
+  cout &gt;&gt; (age_user + age_friend);
+  }
+</code></preformat>
+</para>
+</example>
+        <para id="id19251014">The programmer assigned a value to the flag before the loop which is correct. However, he forgot to update the flag. Every time the test expression is asked it will always be true. Thus, an infinite loop because the programmer did not provide a way to exit the loop (he forgot to update the flag). Consider the following code:</para>
+<example id="fs-id1166233600145">
+<title>C++ source code: infinite loop</title>
+<para id="klb4560006"><preformat id="klb1230006" display="block"><code>
+loop_response = 'y';
+while (loop_response = 'y')
+  {
+  cout &lt;&lt; "\nWhat is your age? ";
+  cin &gt;&gt; age_user;
+  cout &lt;&lt; "\nWhat is your friend's age? ";
+  cin &gt;&gt; age_friend;
+  cout &gt;&gt; "\nTogether your ages add up to: ";
+  cout &gt;&gt; (age_user + age_friend);
+  cout &lt;&lt; "\nDo you want to do it again? y or n ";
+  cin &gt;&gt; loop_response;
+  }
+</code></preformat>
+</para>
+</example>
+        <para id="id18840240">No matter what the user replies during the flag update, the test expression does not do a relational comparison but does an assignment. It assigns 'y' to the variable and asks if 'y' is true? Since all non-zero values are treated as representing true within the Boolean concepts of the C++ programming language, the answer to the test expression is true. Viola, you have an infinite loop. </para>
+<example id="fs-id1166233600999">
+<title>C++ source code: infinite loop</title>
+<para id="klb4560999"><preformat id="klb1230999" display="block"><code>
+loop_response = 'y';
+while (loop_response == 'y');
+  {
+  cout &lt;&lt; "\nWhat is your age? ";
+  cin &gt;&gt; age_user;
+  cout &lt;&lt; "\nWhat is your friend's age? ";
+  cin &gt;&gt; age_friend;
+  cout &gt;&gt; "\nTogether your ages add up to: ";
+  cout &gt;&gt; (age_user + age_friend);
+  cout &lt;&lt; "\nDo you want to do it again? y or n ";
+  cin &gt;&gt; loop_response;
+  }
+</code></preformat>
+</para>
+</example>
+        <para id="id18840999">The undesirable semi-colon on the end of while line causes the action of the while loop to be the "nothingness" between the closing parenthesis and the semi-colon.  The program will infinitely loop because there is no action (that is no action and no update). If this is the first item in your program it will appear to start but there will be no output.</para>
+      </section>
+    </section>
+    <section id="id3920612">
+      <title>Counting Loops</title>
+      <para id="id14436145">The examples above are for an event controlled loop. The flag updating is an event where someone decides if they want the loop to execute again. Often the initialization sets the flag so that the loop will execute at least once.</para>
+      <para id="id22497410">Another common usage of the while loop is as a counting loop. Consider:</para>
+<example id="fs-id1166232554922">
+<title>C++ source code: while loop that is counting</title>
+<para id="klb4560007"><preformat id="klb1230007" display="block"><code>
+counter = 0;
+while (counter &lt; 5)
+  {
+  cout &lt;&lt; "\nI love ice cream!";
+  counter++;
+  }
+</code></preformat>
+</para>
+</example>
+      <para id="id14392322">The variable counter is said to be controlling the loop.  It is set to zero (called initialization) before entering the while loop structure and as long as it is less than 5 (five); the loop action will be executed.  But part of the loop action uses the increment operator to increase counter's value by one.  After executing the loop five times (once for counter's values of: 0, 1, 2, 3 and 4) the expression will be false and the next line of code in the program will execute. A counting loop is designed to execute the action (which could be more than one statement) a set of given number of times. In our example, the message is displayed five times on the monitor. It is accomplished my making sure all four attributes of the while control structure are present and working properly. The attributes are:</para>
+      <list id="id10548253" list-type="bulleted"><item>Initializing the flag</item>
+	<item>Test expression</item>
+	<item>Action or actions</item>
+	<item>Update of the flag</item>
+</list>
+      <para id="id15226937">Missing an attribute might cause an infinite loop or give undesired results (does not work properly).</para>
+      <section id="id22222783">
+        <title>Infinite Loops</title>
+        <para id="id19277597">Consider:</para>
+<example id="fs-id7888331">
+<title>C++ source code: infinite loop</title>
+<para id="klb4560008"><preformat id="klb1230008" display="block"><code>
+counter = 0;
+while (counter &lt; 5)
+  {
+  cout &lt;&lt; "\nI love ice cream!";
+  }
+</code></preformat>
+</para>
+</example>
+        <para id="id15560212">Missing the flag update usually causes an infinite loop.</para>
+      </section>
+      <section id="id15329805">
+        <title>Variations on Counting</title>
+        <para id="id16004943">In the following example, the integer variable age is said to be controlling the loop (that is the flag). We can assume that age has a value provided earlier in the program. Because the while structure is a test before loop; it is possible that the person’s age is 0 (zero) and the first time we test the expression it will be false and the action part of the loop would never be executed.</para>
+<example id="fs-id1166239126509">
+<title>C++ source code: while as a counting loop</title>
+<para id="klb4560009"><preformat id="klb1230009" display="block"><code>
+while (0 &lt; age)
+  {
+  cout &lt;&lt; "\nI love candy!";
+  age--;
+  }
+</code></preformat>
+</para>
+</example>
+        <para id="id5380922">Consider the following variation assuming that age and counter are both integer data type and that age has a value:</para>
+<example id="fs-id8006700">
+<title>C++ source code: while as a counting loop</title>
+<para id="klb4560010"><preformat id="klb1230010" display="block"><code>
+counter = 0;
+while (counter &lt; age)
+  {
+  cout &lt;&lt; "\nI love corn chips!";
+  counter++;
+  }
+</code></preformat>
+</para>
+</example>
+        <para id="id12393458">This loop is a counting loop similar to our first counting loop example. The only difference is instead of using a literal constant (in other words 5) in our expression, we used the variable age (and thus the value stored in age) to determine how many times to execute the loop. However, unlike our first counting loop example which will always execute exactly 5 times; it is possible that the person’s age is 0 (zero) and the first time we test the expression it will be false and the action part of the loop would never be executed.</para>
+      </section>
+    </section>
+    <section id="id14429927">
+      <title>Definitions</title>
+    <definition id="fs-id7920547">
+      <term>while</term>
+      <meaning id="fs-id7920552"> A test before iteration control structure available in C++. </meaning>
+    </definition>
+    <definition id="fs-id7920558">
+      <term>loop attributes</term>
+      <meaning id="fs-id7920564">Items associated with iteration or looping control structures. </meaning>
+    </definition>
+    <definition id="fs-id7921086"><term>initialize item</term>
+	<meaning id="fs-id7921092">An attribute of iteration control structures. </meaning>
+</definition>
+    <definition id="fs-id7921097">
+      <term>might not happen</term>
+      <meaning id="fs-id7921103">Indicating that test before loops might not execute the action. </meaning>
+    </definition>
+    <definition id="fs-id7921108">
+      <term>event controlled</term>
+      <meaning id="fs-id7921114">Using user input to control a loop. </meaning>
+    </definition>
+    <definition id="fs-id7921118">
+      <term>counting controlled</term>
+      <meaning id="fs-id7921124">Using a variable to count up or down to control a loop. </meaning>
+    </definition>
+    </section>
+  </content>
+</document>

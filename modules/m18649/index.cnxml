@@ -1,0 +1,125 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Pseudocode Examples for Control Structures</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m18649</md:content-id>
+  <md:title>Pseudocode Examples for Control Structures</md:title>
+  <md:abstract>Pseudocode conventions and control structure examples of: if then else, case, while, for, do while and repeat until.</md:abstract>
+  <md:uuid>dd9b6471-2a32-4939-852d-93c5464d0e8c</md:uuid>
+</metadata>
+<featured-links>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit below.
+       Changes to the links section in the source will not be saved. -->
+    <link-group type="supplemental">
+      <link url="http://cnx.org/content/m19623/latest/" strength="2">Flowcharting </link>
+    </link-group>
+    <link-group type="prerequisite">
+      <link url="http://cnx.org/content/m18648/latest/" strength="3">Pseudocode</link>
+    </link-group>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit above.
+       Changes to the links section in the source will not be saved. -->
+</featured-links>
+<content>
+    <section id="id12274657">
+      <title>Overview</title>
+      <para id="id10138816">No standard for pseudocode syntax exists. However, there are some commonly followed conventions to help make pseudocode written by one programmer easily understood by another programmer. Most of these conventions follow two concepts:</para>
+      <list id="id12556130" list-type="bulleted">
+        <item>Use indentation to show the action part of a control structure</item>
+        <item>Use an ending <term>phrase word</term> to end a control structure</item>
+      </list>
+      <para id="id10357506">The sequence control structure simply lists the lines of pseudocode. The concern is not with the sequence category but with selection and two of the iteration control structures. The following are commonly used ending phrase-words:</para>
+      <table id="id17756368" summary="">
+        <tgroup cols="2">
+          <colspec colnum="1" colname="c1"/>
+          <colspec colnum="2" colname="c2"/>
+          <tbody>
+            <row>
+              <entry>Control Structure</entry>
+              <entry>Ending Phrase Word</entry>
+            </row>
+            <row>
+              <entry>If then Else</entry>
+              <entry>Endif</entry>
+            </row>
+            <row>
+              <entry>Case</entry>
+              <entry>Endcase</entry>
+            </row>
+            <row>
+              <entry>While</entry>
+              <entry>Endwhile</entry>
+            </row>
+            <row>
+              <entry>For</entry>
+              <entry>Endfor</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+      <para id="id7151894">The <emphasis>Do While</emphasis> and <emphasis>Repeat Until</emphasis> iteration control structures don't need an ending phrase-word. We simply use the first word, then the action part, followed by the second word with the test expression. Here are some examples:</para>
+    </section>
+    <section id="fs-id9267538">
+      <title>Selection Control Structures</title>
+<example id="fs-id9500456">
+<title>pseudocode: If then Else</title>
+<para id="fs-id3730929"><preformat id="fs-id6307540" display="block"><code>
+If age &gt; 17
+  Display a message indicating you can vote.
+Else
+  Display a message indicating you can't vote.
+Endif </code></preformat>
+</para>
+</example>
+<example id="fs-id5094556">
+<title>pseudocode: Case</title>
+<para id="fs-id7623474"><preformat id="fs-id5312864" display="block"><code>
+Case of age
+  0 to 17   Display "You can't vote."
+  18 to 64  Display "You're in your working years."
+  65 +      Display "You should be retired."
+Endcase </code></preformat>
+</para>
+</example>
+    </section>
+    <section id="id9357488">
+      <title>Iteration (Repetition) Control Structures</title>
+<example id="fs-id3580722">
+<title>pseudocode: While</title>
+<para id="fs-id5495389"><preformat id="fs-id8629443" display="block"><code>
+count assigned zero
+While count &lt; 5
+  Display "I love computers!"
+  Increment count
+Endwhile </code></preformat>
+</para>
+</example>
+<example id="fs-id1170864218945">
+<title>pseudocode: For</title>
+<para id="fs-id1170864112466"><preformat id="fs-id3388116" display="block"><code>
+For x starts at 0, x &lt; 5, increment x
+  Display "Are we having fun?"
+Endfor </code></preformat>
+</para>
+</example>
+<example id="fs-id1170864419479">
+<title>pseudocode: Do While</title>
+<para id="fs-id1170872113769"><preformat id="fs-id8465216" display="block"><code>
+count assigned five
+Do
+  Display "Blast off is soon!"
+  Decrement count
+While count &gt; zero </code></preformat>
+</para>
+</example>
+<example id="fs-id1170864209121">
+<title>pseudocode: Repeat Until</title>
+<para id="fs-id1170864278419"><preformat id="fs-id4466955" display="block"><code>
+count assigned five
+Repeat
+  Display "Blast off is soon!"
+  Decrement count
+Until count &lt; one </code></preformat>
+</para>
+</example>
+    </section>
+  </content>
+</document>

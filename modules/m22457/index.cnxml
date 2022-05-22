@@ -1,0 +1,149 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Practice 5: Integrated Development Environment</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m22457</md:content-id>
+  <md:title>Practice 5: Integrated Development Environment</md:title>
+  <md:abstract>Questions, exercises, problems, etc. that support this chapter in the "Programming Fundamentals - A Modular Structured Approach using C++" collection/textbook.</md:abstract>
+  <md:uuid>05c32539-71ae-4330-bedc-24069dda556b</md:uuid>
+</metadata>
+
+<content>
+    <section id="id1172641171756">
+      <title>Learning Objectives</title>
+      <para id="id1172636254004">With 100% accuracy during a: memory building activity, exercises, lab assignment, problems, or timed quiz/exam; the student is expected to:</para>
+      <list id="id1172638651458" list-type="enumerated" number-style="arabic">
+        <item>Define the terms on the definitions as listed in the modules associated with this chapter.</item>
+        <item>Be able to list the categories and give examples of errors encountered when using an Integrated Development Environment (IDE).</item>
+        <item>Write the C++ code for a program using appropriate planning documentation that you or another has designed.</item>
+      </list>
+    </section>
+    <section id="id1172638120297">
+      <title>Memory Building Activities</title>
+      <para id="id1172640867188">Link to: <link window="new" document="m22457" resource="index.html">MBA 05</link></para>
+    </section>
+    <section id="id1172636263545">
+      <title>Exercises</title>
+<exercise id="fs-id1172638365747">
+  <problem id="fs-id1172643326728">
+    <list id="fs-id1172636237828" list-type="enumerated">
+      <title>Answer the following statements as either true or false:</title>
+        <item>IDE means Integer Division Expression.</item>
+        <item>Most modern compilers are really an IDE type of software, not just a compiler.</item>
+        <item>cin and cout are used for the standard input and output in C++.</item>
+        <item>Programming errors are extremely easy to understand and fix.</item>
+        <item>All C++ programs will have at least one include type of compiler directive.</item>
+    </list>
+  </problem>
+  <solution id="fs-id1172640026732">
+    <list id="fs-id1172636766999" list-type="enumerated">
+      <title>Answers:</title>
+        <item>false</item>
+        <item>true</item>
+        <item>true</item>
+        <item>false</item>
+        <item>true</item>
+    </list>
+  </solution>
+</exercise>
+    </section>
+    <section id="id1172635535909">
+      <title>Miscellaneous Items</title>
+      <para id="id1172635670925">None at this time.</para>
+    </section>
+    <section id="id1172636729909">
+      <title>Lab Assignment</title>
+      <section id="id1172639024716">
+        <title>Creating a Folder or Sub-Folder for Chapter 05 Files</title>
+        <para id="id1172636002368">Depending on your compiler/IDE, you should decide where to download and store source code files for processing. Prudence dictates that you create these folders as needed prior to downloading source code files. A suggested sub-folder for the <term>Bloodshed Dev-C++ 5 compiler/IDE</term> might be named:</para>
+        <list id="id1172636045602" list-type="bulleted">
+          <item>Chapter_05 within the folder named: Cpp_Source_Code_Files</item>
+        </list>
+        <para id="id1172639013544">If you have not done so, please create the folder(s) and/or sub-folder(s) as appropriate.</para>
+      </section>
+      <section id="id1172635886574">
+        <title>Download the Lab File(s)</title>
+        <para id="id1172635785563">Download and store the following file(s) to your storage device in the appropriate folder(s). You may need to right click on the link and select "Save Target As" in order to download the file.</para>
+        <para id="id1172636085627">Download from Connexions: <link document="m22457" resource="Solution_Lab_02_Pseudocode.txt">Solution_Lab_02_Pseudocode.txt</link></para>
+        <para id="id1172636762531">Download from Connexions: <link document="m22457" resource="Solution_Lab_02_Test_Data.txt">Solution_Lab_02_Test_Data.txt</link></para>
+      </section>
+      <section id="id1172637419971">
+        <title>Detailed Lab Instructions</title>
+        <para id="id1172638117448">Read and follow the directions below carefully, and perform the steps in the order listed.</para>
+        <list id="id1172637471094" list-type="bulleted">
+          <item>Copy into your sub-folder: Chapter_05 one of the source code listings that we have used. We suggest the Lab 01 source code and rename the copy: <emphasis>Lab_05.cpp</emphasis></item>
+          <item>Modify the code to follow the Solution_Lab_02_Pseudocode.txt file.</item>
+        </list>
+        <list id="id1172635531129" list-type="bulleted">
+          <item>Build (compile and run) your program. You have successfully written this program if when it runs and you use the test data [use the test data as supplied as the solution for Lab 02] it gives the predicted results.</item>
+          <item>After you have successfully written this program, if you are taking this course for college credit, follow the instructions from your professor/instructor for submitting it for grading.</item>
+        </list>
+      </section>
+    </section>
+    <section id="id1172641016307">
+      <title>Problems</title>
+      <section id="id1172637763580">
+        <title>Problem 05a – Instructions</title>
+        <para id="id1172637881407">List and describe what might cause the four (4) types of errors encountered in a program using an Integrated Development Environment software product.</para>
+      </section>
+        <section id="fs-id1172638376324">
+          <title>Problem 05b – Instructions</title>
+          <para id="fs-id1172637825955"> Identify four (4) problems with this code listing (HINT: The four (4) types of errors encountered in a program using an Integrated Development Environment software product).</para>
+          <example id="fs-id1172636265194">
+            <title>C++ Source Code Listing</title>
+            <para id="fs-id1172636438619"><preformat id="fs-id1172636291586" display="block"><code>
+//******************************************************
+// Filename: Compiler_Test.cpp
+// Purpose:  Average the ages of two people
+// Author:   Ken Busbee; © Kenneth Leroy Busbee
+// Date:     Jan 5, 2009
+// Comment:  Main idea is to be able to 
+//           debug and run a program on your compiler.
+//******************************************************
+
+// Headers and Other Technical Items
+
+#include &lt;iostrern&gt;  
+using namespace std;
+
+// Function Prototypes
+
+void pause(void);
+
+// Variables
+
+int     age1;
+int     age2;
+double  answear;
+
+//******************************************************
+// main
+//******************************************************
+
+int main(void)
+  {
+  // Input	
+  cout &lt;&lt; "\nEnter the age of the first person ---&gt;: ";
+  cin &gt;&gt; age1;
+  cout &lt;&lt; "\nEnter the age of the second person --&gt;: ";
+  cin &gt;&gt; age2;
+
+  // Process
+  answer = (age1 + age2) / 3.0;
+
+  // Output
+  cout &lt;&lt; "\nThe average of their ages is --------&gt;: ";
+  cout &lt;&lt; answer;
+
+  pause();
+  return 0;
+  }
+
+//******************************************************
+// End of Program
+//******************************************************</code></preformat>
+            </para>
+          </example>
+        </section>
+    </section>
+  </content>
+</document>

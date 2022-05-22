@@ -1,0 +1,96 @@
+<?xml version='1.0'?>
+<order>
+<color>E7E7F5</color>
+<showterm>true</showterm>
+<showdef>false</showdef>
+<customDeckText>Custom Deck</customDeckText>
+<wholeDeckText>Whole Deck</wholeDeckText>
+<showText>SHOW</showText>
+<addToText>Add to Custom</addToText>
+<showTermText>Show Term</showTermText>
+<showDefText>Show Definition</showDefText>
+<orderset value='1'>
+ <term>text file</term>
+ <def>A file consisting of characters from the ASCII character code set.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='2'>
+ <term>filename</term>
+ <def>The name and its extension.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='3'>
+ <term>filespec</term>
+ <def>The location of a file along with its filename.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='4'>
+ <term>open</term>
+ <def>Your program requesting the operating system to let it have access to an existing file or to open a new file.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='5'>
+ <term>device token</term>
+ <def>A key value provided by the operating system to associate a device to your program.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='6'>
+ <term>read</term>
+ <def>Moving data from a device that has been opened into a memory location defined in your program.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='7'>
+ <term>write</term>
+ <def>Moving data from a memory location defined in your program to a device that has been opened.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='8'>
+ <term>close</term>
+ <def>Your program requesting the operating system to release a file that was previously opened.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='9'>
+ <term>array function</term>
+ <def>A user defined specific task function designed to process an array.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='10'>
+ <term>dynamic memory</term>
+ <def>Aka stack created memory associated with local scope.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='11'>
+ <term>static memory</term>
+ <def>Aka data area memory associated with global scope.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='12'>
+ <term>sum</term>
+ <def>Latin for summa or a total.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+</order>

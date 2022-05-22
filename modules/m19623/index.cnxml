@@ -1,0 +1,331 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Flowcharting</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m19623</md:content-id>
+  <md:title>Flowcharting</md:title>
+  <md:abstract>An introduction to flowcharting including the demonstration of functions and various control structures.</md:abstract>
+  <md:uuid>30db79a7-6868-47ac-a481-fadfb490a6cc</md:uuid>
+</metadata>
+<featured-links>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit below.
+       Changes to the links section in the source will not be saved. -->
+    <link-group type="prerequisite">
+      <link url="http://cnx.org/content/m18686/latest/" strength="3">Program Design</link>
+      <link url="http://cnx.org/content/m19136/latest/" strength="3">Pseudocode Examples for Functions</link>
+      <link url="http://cnx.org/content/m18649/latest/" strength="3">Pseudocode Examples for Control Structures</link>
+    </link-group>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit above.
+       Changes to the links section in the source will not be saved. -->
+</featured-links>
+<content>
+    <section id="id10857937">
+      <title>Flowcharting Symbols</title>
+      <section id="id9737636">
+        <title>Terminal</title>
+        <para id="id10157688">The rounded rectangles, or terminal points, indicate the flowchart's starting and ending points.</para>
+        <figure id="id11662638">
+          <media id="id11662638_media" alt="">
+            <image mime-type="image/jpg" src="../../media/graphics1-4d06.jpg" id="id11662638__onlineimage" height="149" width="199"/>
+          </media>
+        </figure>
+      </section>
+      <section id="id10797095">
+        <title>Process</title>
+        <para id="id10926322">The rectangle depicts a process such as a mathematical computation, or a variable assignment.</para>
+        <para id="id11215793">Note: the C++ language equivalent is the statement.</para>
+        <figure id="id10849251">
+          <media id="id10849251_media" alt="">
+            <image mime-type="image/jpg" src="../../media/graphics2-33bf.jpg" id="id10849251__onlineimage" height="153" width="204"/>
+          </media>
+        </figure>
+      </section>
+      <section id="id6462426">
+        <title>Input/Output</title>
+        <para id="id11372620">The parallelograms designate input or output operations.</para>
+        <para id="id11656002">Note: the C++ language equivalent is cin or cout.</para>
+        <figure id="id10954704">
+          <media id="id10954704_media" alt="">
+            <image mime-type="image/jpg" src="../../media/graphics3.jpg" id="id10954704__onlineimage" height="150" width="200"/>
+          </media>
+        </figure>
+      </section>
+      <section id="id10953991">
+        <title>Connectors</title>
+        <para id="id11495772">Sometimes a flowchart is broken into two or more smaller flowcharts. This is usually done when a flowchart does not fit on a single page, or must be divided into sections. A connector symbol, which is a small circle with a letter or number inside it, allows you to connect two flowcharts on the same page. A connector symbol that looks like a pocket on a shirt, allows you to connect to a flowchart on a different page.</para>
+        <para id="id11068608">On-Page Connector</para>
+        <figure id="id5528203">
+          <media id="id5528203_media" alt="">
+            <image mime-type="image/jpg" src="../../media/graphics4.jpg" id="id5528203__onlineimage" height="148" width="197"/>
+          </media>
+        </figure>
+        <para id="id10685037">Off-Page Connector</para>
+        <figure id="id7578010">
+          <media id="id7578010_media" alt="">
+            <image mime-type="image/jpg" src="../../media/graphics5.jpg" id="id7578010__onlineimage" height="148" width="197"/>
+          </media>
+        </figure>
+      </section>
+      <section id="id11543096">
+        <title>Decision</title>
+        <para id="id8826387">The diamond is used to represent the true/false statement being tested in a decision symbol. </para>
+        <figure id="id10680628">
+          <media id="id10680628_media" alt="">
+            <image mime-type="image/jpg" src="../../media/graphics6.jpg" id="id10680628__onlineimage" height="152" width="203"/>
+          </media>
+        </figure>
+      </section>
+      <section id="id9735555">
+        <title>Module Call</title>
+        <para id="id10673737">A program module is represented in a flowchart by rectangle with some lines to distinguish it from process symbol. Often programmers will make a distinction between program control and specific task modules as shown below.</para>
+        <para id="id9437324">Note: C++ equivalent is the function.</para>
+        <para id="id10815340">Local module: usually a program control function.</para>
+        <para id="id10860005">
+          <figure id="id10777617">
+            <media id="id10777617_media" alt="">
+              <image mime-type="image/jpg" src="../../media/graphics7.jpg" id="id10777617__onlineimage" height="149" width="199"/>
+            </media>
+          </figure>
+        </para>
+        <para id="id11696999">Library module: usually a specific task function.</para>
+        <figure id="id11594425">
+          <media id="id11594425_media" alt="">
+            <image mime-type="image/jpg" src="../../media/graphics8.jpg" id="id11594425__onlineimage" height="149" width="199"/>
+          </media>
+        </figure>
+      </section>
+      <section id="id11661250">
+        <title>Flow Lines</title>
+        <para id="id11384588">Note: The default flow is left to right and top to bottom (the same way you read English). To save time arrowheads are often only drawn when the flow lines go contrary the normal.</para>
+        <figure id="id9735069">
+          <media id="id9735069_media" alt="">
+            <image mime-type="image/jpg" src="../../media/graphics9.jpg" id="id9735069__onlineimage" height="149" width="199"/>
+          </media>
+        </figure>
+      </section>
+    </section>
+    <section id="id11182727">
+      <title>Examples</title>
+      <para id="id10719940">We will demonstrate various flowcharting items by showing the flowchart for some pseudocode.</para>
+      <section id="id3914564">
+        <title>Functions</title>
+<example id="fs-id12170330">
+<title>pseudocode: Function with no parameter passing</title>
+<para id="fs-id10426511"><preformat id="fs-id13001103" display="block"><code>
+Function clear monitor
+  Pass In: nothing
+  Direct the operating system to clear the monitor
+  Pass Out: nothing
+Endfunction </code></preformat>
+</para>
+</example>
+        <para id="id11693263">
+          <figure id="id11429984">
+            <media id="id11429984_media" alt="">
+              <image mime-type="image/jpg" src="../../media/graphics10.jpg" id="id11429984__onlineimage" height="225" width="300"/>
+            </media>
+            <caption>Function clear monitor</caption>
+          </figure>
+        </para>
+<example id="fs-id1170639604206">
+<title>pseudocode: Function main calling the clear monitor function</title>
+<para id="fs-id1170627297986"><preformat id="fs-id1170639379334" display="block"><code>
+Function main
+  Pass In: nothing
+  Doing some lines of code
+  Call: clear monitor
+  Doing some lines of code
+  Pass Out: value zero to the operating system
+Endfunction </code></preformat>
+</para>
+</example>
+       <para id="klb33001">
+        <figure id="id10877406">
+          <media id="id10877406_media" alt="">
+            <image mime-type="image/jpg" src="../../media/graphics11.jpg" id="id10877406__onlineimage" height="226" width="301"/>
+          </media>
+          <caption>Function main</caption>
+        </figure>
+       </para>
+      </section>
+      <section id="id9351717">
+        <title>Sequence Control Structures</title>
+        <para id="id10947176">The next item is pseudocode for a simple temperature conversion program. This demonstrates the use of both the on-page and off-page connectors. It also illustrates the sequence control structure where nothing unusually happens. Just do one instruction after another in the sequence listed. </para>
+<example id="fs-id1170629268619">
+<title>pseudocode: Sequence control structure</title>
+<para id="fs-id1170633930582"><preformat id="fs-id1170636473727" display="block"><code>
+Filename: Solution_Lab_04_Pseudocode.txt
+Purpose:  Convert Temperature from Fahrenheit to Celsius
+Author:   Ken Busbee; © 2008 Kenneth Leroy Busbee
+Date:     Dec 24, 2008
+
+Pseudocode = IPO Outline
+
+input
+  display a message asking user for the temperature in Fahrenheit
+  get the temperature from the keyboard
+processing
+  calculate the Celsius by subtracting 32 from the Fahrenheit
+  temperature then multiply the result by 5 then
+  divide the result by 9. Round up or down to the whole number.
+  HINT: Use 32.0 when subtracting to ensure floating-point accuracy.
+output
+  display the celsius with an appropriate message
+  pause so the user can see the answer </code></preformat>
+</para>
+</example>
+       <para id="klb33002">
+        <figure id="id8852977">
+          <media id="id8852977_media" alt="">
+            <image mime-type="image/jpg" src="../../media/graphics12.jpg" id="id8852977__onlineimage" height="227" width="303"/>
+          </media>
+          <caption>Sequence control structure</caption>
+        </figure>
+       </para>
+        <para id="id11370133">
+          <figure id="id11415583">
+            <media id="id11415583_media" alt="">
+              <image mime-type="image/jpg" src="../../media/graphics13.jpg" id="id11415583__onlineimage" height="227" width="303"/>
+            </media>
+            <caption>Sequence control structured continued</caption>
+          </figure>
+        </para>
+      </section>
+      <section id="id4373817">
+        <title>Selection Control Structures</title>
+<example id="fs-id1170640819602">
+<title>pseudocode: If then Else</title>
+<para id="fs-id1170640788617"><preformat id="fs-id1170634227422" display="block"><code>
+If age &gt; 17
+  Display a message indicating you can vote.
+Else
+  Display a message indicating you can't vote.
+Endif </code></preformat>
+</para>
+</example>
+       <para id="klb33003">
+        <figure id="id10777662">
+          <media id="id10777662_media" alt="">
+            <image mime-type="image/jpg" src="../../media/graphics14.jpg" id="id10777662__onlineimage" height="224" width="298"/>
+          </media>
+          <caption>If then Else control structure</caption>
+        </figure>
+       </para>
+<example id="fs-id1170633716709">
+<title>pseudocode: Case</title>
+<para id="fs-id1170625861370"><preformat id="fs-id1170625917096" display="block"><code>
+Case of age
+  0 to 17   Display "You can't vote."
+  18 to 64  Display "Your in your working years."
+  65 +      Display "You should be retired."
+Endcase </code></preformat>
+</para>
+</example>
+        <para id="id9577542">
+          <figure id="id9261442">
+            <media id="id9261442_media" alt="">
+              <image mime-type="image/jpg" src="../../media/graphics15.jpg" id="id9261442__onlineimage" height="225" width="300"/>
+            </media>
+            <caption>Case control structure</caption>
+          </figure>
+        </para>
+      </section>
+      <section id="id9680954">
+        <title>Iteration (Repetition) Control Structures</title>
+<example id="fs-id3758928">
+<title>pseudocode: While</title>
+<para id="fs-id5254391"><preformat id="fs-id5547975" display="block"><code>
+count assigned zero
+While count &lt; 5
+  Display "I love computers!"
+  Increment count
+Endwhile </code></preformat>
+</para>
+</example>
+        <para id="id10990170">
+          <figure id="id10179778">
+            <media id="id10179778_media" alt="">
+              <image mime-type="image/jpg" src="../../media/graphics16.jpg" id="id10179778__onlineimage" height="225" width="300"/>
+            </media>
+            <caption>While control structure</caption>
+          </figure>
+        </para>
+<example id="fs-id4291203">
+<title>pseudocode: For</title>
+<para id="fs-id1972742"><preformat id="fs-id5711388" display="block"><code>
+For x starts at 0, x &lt; 5, increment x
+  Display "Are we having fun?"
+Endfor </code></preformat>
+</para>
+</example>
+        <para id="id9735568">The for loop does not have a standard flowcharting method and you will find it done in different ways. The for loop as a counting loop can be flowcharted similar to the while loop as a counting loop.</para>
+        <para id="id11215465">
+          <figure id="id10139424">
+            <media id="id10139424_media" alt="">
+              <image mime-type="image/jpg" src="../../media/graphics17.jpg" id="id10139424__onlineimage" height="225" width="300"/>
+            </media>
+            <caption>For control structure</caption>
+          </figure>
+        </para>
+<example id="fs-id3005447">
+<title>pseudocode: Do While</title>
+<para id="fs-id2245666"><preformat id="fs-id2194288" display="block"><code>
+count assigned five
+Do
+  Display "Blast off is soon!"
+  Decrement count
+While count &gt; zero </code></preformat>
+</para>
+</example>
+        <para id="id9444459">
+          <figure id="id10940075">
+            <media id="id10940075_media" alt="">
+              <image mime-type="image/jpg" src="../../media/graphics18.jpg" id="id10940075__onlineimage" height="225" width="300"/>
+            </media>
+            <caption>Do While control structure</caption>
+          </figure>
+        </para>
+<example id="fs-id2797917">
+<title>pseudocode: Repeat Until</title>
+<para id="fs-id2425853"><preformat id="fs-id2536424" display="block"><code>
+count assigned five
+Repeat
+  Display "Blast off is soon!"
+  Decrement count
+Until count &lt; one </code></preformat>
+</para>
+</example>
+        <para id="id11559980">
+          <figure id="id10854900">
+            <media id="id10854900_media" alt="">
+              <image mime-type="image/jpg" src="../../media/graphics19.jpg" id="id10854900__onlineimage" height="224" width="299"/>
+            </media>
+            <caption>Repeat Until control structure</caption>
+          </figure>
+        </para>
+      </section>
+    </section>
+    <section id="id17853016">
+      <title>Definitions</title>
+<definition id="flowchartingdef">
+  <term>flowcharting</term>
+  <meaning id="fs-id23933897">A programming design tool that uses graphical elements to visually depict the flow of logic within a function. </meaning>
+</definition>
+<definition id="ProcessSymboldef">
+  <term>process symbol</term>
+  <meaning id="fs-id10560710">A rectangle used in flowcharting for normal processes such as assignment. </meaning>
+</definition>
+<definition id="InputOutputSymboldef">
+  <term>input/output symbol</term>
+  <meaning id="fs-id22774698">A parallelogram used in flowcharting for input/output interactions. </meaning>
+</definition>
+<definition id="DecisionSymboldef">
+  <term>decision symbol</term>
+  <meaning id="fs-id24309757">A diamond used in flowcharting for asking a question and making a decision. </meaning>
+</definition>
+<definition id="FlowLinesdef">
+  <term>flow lines</term>
+  <meaning id="fs-id23714312">Lines (sometimes with arrows) that connect the various flowcharting symbols. </meaning>
+</definition>
+    </section>
+  </content>
+</document>

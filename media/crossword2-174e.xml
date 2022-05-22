@@ -1,0 +1,10 @@
+&acrosstext=Across&
+&downtext=Down&
+&restarttext=Re-start&
+&finishtext=Finish&
+&word0=VERSATILE&
+&clue0=Easily modifying code to handle another data type.&
+&word1=FLEXIBLECODING&
+&clue1=Using the sizeof operator to calculate the number of members in an array.&
+&word2=TYPEDEF&
+&clue2=Allows the programmer to create an alias, or synonym, for an existing data type.&

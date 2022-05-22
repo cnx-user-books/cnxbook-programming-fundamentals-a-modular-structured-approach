@@ -1,0 +1,98 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Practice 15: Counting Loops</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m20809</md:content-id>
+  <md:title>Practice 15: Counting Loops</md:title>
+  <md:abstract>Questions, exercises, problems, etc. that support this chapter in the "Programming Fundamentals - A Modular Structured Approach using C++" collection/textbook.</md:abstract>
+  <md:uuid>22445967-44b7-47f9-a426-623489e47d98</md:uuid>
+</metadata>
+
+<content>
+    <section id="id15883387">
+      <title>Learning Objectives</title>
+      <para id="id15842040">With 100% accuracy during a: memory building activity, exercises, lab assignment, problems, or timed quiz/exam; the student is expected to:</para>
+      <list id="id16814888" list-type="enumerated" number-style="arabic">
+        <item>Define the terms on the definitions as listed in the modules associated with this chapter.</item>
+        <item>Identify which selection control structures are commonly used a counting loops.</item>
+        <item>Be able to write pseudo code or flowcharting for the for control structure.</item>
+        <item>Be able to write C++ source code for a for control structure.</item>
+        <item>When feasible, be able to convert C++ source code from while loop acting like a counting loop to a for loop and and vice versa.</item>
+      </list>
+    </section>
+    <section id="id15894815">
+      <title>Memory Building Activities</title>
+      <para id="id15486501">Link to: <link window="new" document="m20809" resource="index.html">MBA 15</link></para>
+    </section>
+    <section id="id15485691">
+      <title>Exercises</title>
+<exercise id="fs-id12023619">
+  <problem id="fs-id11801781">
+    <list id="fs-id10818349" list-type="enumerated"><title>Answer the following statements as either true or false:</title><item>Only for loops can be counting loops.</item>
+	<item>The integer data type has modular arithmetic attributes.</item>
+	<item>The escape code of \n is part of formatting output.</item>
+	<item>Nested for loops is not allowed in the C++ programming language.</item>
+	<item>Counting loops use all four of the loop attributes.</item>
+</list>
+  </problem>
+  <solution id="fs-id8470086">
+    <list id="fs-id11993858" list-type="enumerated">
+      <title>Answers:</title>
+        <item>false</item>
+        <item>true</item>
+        <item>true</item>
+        <item>false</item>
+        <item>true</item>
+    </list>
+  </solution>
+</exercise>
+    </section>
+    <section id="id16840477">
+      <title>Miscellaneous Items</title>
+      <para id="id16816254">None at this time.</para>
+    </section>
+    <section id="id15889970">
+      <title>Lab Assignment</title>
+      <section id="id16072981">
+        <title>Creating a Folder or Sub-Folder for Chapter 15 Files</title>
+        <para id="id16824860">Depending on your compiler/IDE, you should decide where to download and store source code files for processing. Prudence dictates that you create these folders as needed prior to downloading source code files. A suggested sub-folder for the <term>Bloodshed Dev-C++ 5 compiler/IDE</term> might be named:</para>
+        <list id="id15826406" list-type="bulleted">
+          <item>Chapter_15 within the folder named: Cpp_Source_Code_Files</item>
+        </list>
+        <para id="id4958857">If you have not done so, please create the folder(s) and/or sub-folder(s) as appropriate.</para>
+      </section>
+      <section id="id4958863">
+        <title>Download the Lab File(s)</title>
+        <para id="id16069157">Download and store the following file(s) to your storage device in the appropriate folder(s). You may need to right click on the link and select "Save Target As" in order to download the file.</para>
+        <para id="id13557957">Download from Connexions: <link document="m20809" resource="Lab_15a.cpp">Lab_15a.cpp</link></para>
+      </section>
+      <section id="id15022653">
+        <title>Detailed Lab Instructions</title>
+        <para id="id14290268">Read and follow the directions below carefully, and perform the steps in the order listed.</para>
+        <list id="id14290277" list-type="bulleted">
+          <item>Compile and run the Lab_15a.cpp source code file. Understand how it works.</item>
+          <item>Copy the source code file Lab_15a.cpp naming it: Lab_15b.cpp</item>
+          <item>Convert the code that is counting (all four attributes) to a for loop.</item>
+          <item>Build (compile and run) your program.</item>
+          <item>After you have successfully written this program, if you are taking this course for college credit, follow the instructions from your professor/instructor for submitting it for grading.</item>
+        </list>
+      </section>
+    </section>
+    <section id="id13772658">
+      <title>Problems</title>
+      <section id="id13043736">
+        <title>Problem 15a – Instructions</title>
+        <para id="id13679608">Using proper C++ syntax, convert the following for loop to a while loop.</para>
+<example id="klbp1501">
+<title>C++ source code</title>
+<para id="klbp1502"><preformat id="klbp1303" display="block"><code>
+for (x = 0; x &lt; 10; x++)
+  {
+  cout &lt;&lt; "Having fun!";
+  }
+</code></preformat>
+</para>
+</example>
+      </section>
+    </section>
+  </content>
+</document>

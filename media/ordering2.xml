@@ -1,0 +1,28 @@
+<?xml version='1.0'?>
+<order>
+<color>E7E7F5</color>
+<correctsound>correct.mp3</correctsound>
+<wrongsound>wrong.mp3</wrongsound>
+<value>0</value>
+<valueText>Value:</valueText>
+<scoreText>Score</scoreText>
+<resetText>Re-start</resetText>
+<orderset value='1'>
+ <item>Text Editor</item>
+</orderset>
+<orderset value='2'>
+ <item>Pre-processor</item>
+</orderset>
+<orderset value='3'>
+ <item>Conpiler converting code</item>
+</orderset>
+<orderset value='4'>
+ <item>Linker</item>
+</orderset>
+<orderset value='5'>
+ <item>Loader</item>
+</orderset>
+<orderset value='6'>
+ <item>Debugging logic errors</item>
+</orderset>
+</order>

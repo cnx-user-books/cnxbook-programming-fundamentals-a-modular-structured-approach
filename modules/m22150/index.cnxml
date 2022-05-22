@@ -1,0 +1,82 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Parameter Passing by Reference</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m22150</md:content-id>
+  <md:title>Parameter Passing by Reference</md:title>
+  <md:abstract>An introduction and example of parameter passing by reference as used within the C++ programming language.</md:abstract>
+  <md:uuid>3e8c26e0-f964-4c42-af3c-c96e15872be7</md:uuid>
+</metadata>
+<featured-links>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit below.
+       Changes to the links section in the source will not be saved. -->
+    <link-group type="supplemental">
+      <link url="http://cnx.org/content/m18785/latest/" strength="1">Bloodshed Dev-C++ 5 Compiler/IDE</link>
+    </link-group>
+    <link-group type="prerequisite">
+      <link url="http://cnx.org/content/m22148/latest/" strength="3">Address Operator</link>
+    </link-group>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit above.
+       Changes to the links section in the source will not be saved. -->
+</featured-links>
+<content>
+    <section id="id8171618">
+      <title>Overview</title>
+      <para id="id1169816862596">When we pass parameters to functions we usually pass by value; that is the calling function provides several values to the called function as needed. The called function takes these values which have <term>local scope</term> and stores them on the stack using them as needed for whatever processing the functions accomplishes. This is the preferred method when calling user defined specific task functions. The called function passes back a single value as the return item if needed. This has the advantage of a <term>closed communications model</term> with everything being neatly passed in as values and any needed item returned back as a parameter.</para>
+      <para id="id1169817152725">By necessity there are two exceptions to this closed communications model:</para>
+      <list id="id8199720" list-type="enumerated" number-style="arabic">
+        <item>When we need more than one item of information returned by the function</item>
+        <item>When a copy of an argument cannot reasonably or correctly be made (example: file stream objects).</item>
+      </list>
+      <para id="id1169817230336">These exceptions are handled by parameter passing by reference instead of passing a value. The item passed is called a <emphasis>reference variable</emphasis> and it represents a concept of an alias for the variable. Any change made to the reference variable is actually performed on the variable that it represents. The symbol of the ampersand is used to designate the reference variable (and it is associated with the address operator). </para>
+<example id="fs-id1169818488108">
+  <title>parameter passing by reference</title>
+  <para id="fs-id8437494">
+    <preformat id="fs-id5381987" display="block"><code>
+// prototype
+void process_values(int qty_dimes, int qty_quarters, double &amp;value_dimes, double &amp;value_quarters);
+
+// variable definitions
+int     dimes = 45;
+int     quarters = 33;
+double  value_dimes;
+double  value_quarters;
+
+// somewhere in the function main
+process_values(dimes, quarters, value_dimes, value_quarters);
+
+// definition of the function
+void process_values(int qty_dimes, int qty_quarters, double &amp;value_dimes, double &amp;value_quarters);
+  {
+  value_dimes = dimes * 0.10;
+  value_quarters = quarters * 0.25;
+  }    </code></preformat>
+  </para>
+</example>
+      <note id="id1169817196333" type="Note">The ampersand must appear in both the prototype and the function definition but it does not appear in the function call.</note>
+      <para id="id8170704">The above example shows the basic mechanics of parameter passing by reference. You should study the demonstration program in conjunction with this module.</para>
+    </section>
+    <section id="id1169816497045">
+      <title>Demonstration Program in C++</title>
+      <section id="id1169818763627">
+        <title>Creating a Folder or Sub-Folder for Source Code Files</title>
+        <para id="id8032655">Depending on your compiler/IDE, you should decide where to download and store source code files for processing. Prudence dictates that you create these folders as needed prior to downloading source code files. A suggested sub-folder for the <term>Bloodshed Dev-C++ 5 compiler/IDE</term> might be named:</para>
+        <list id="id1169821646400" list-type="bulleted">
+          <item>Demo_Programs</item>
+        </list>
+        <para id="id8889479">If you have not done so, please create the folder(s) and/or sub-folder(s) as appropriate.</para>
+      </section>
+      <section id="id1169816062144">
+        <title>Download the Demo Program</title>
+        <para id="id1169816496202">Download and store the following file(s) to your storage device in the appropriate folder(s). Following the methods of your compiler/IDE, compile and run the program(s). Study the source code file(s) in conjunction with other learning materials. You may need to right click on the link and select "Save Target As" in order to download the file.</para>
+        <para id="id1169817151046">Download from Connexions: <link document="m22150" resource="Demo_Parameter_Passing.cpp">Demo_Parameter_Passing.cpp</link></para>
+      </section>
+    </section>
+    <section id="id1169816766798">
+      <title>Definitions</title>
+    <definition id="fs-id1169816253357">
+      <term>reference variable</term>
+      <meaning id="fs-id3160588">Used with parameter passing by reference.</meaning>
+    </definition>
+    </section>
+  </content>
+</document>

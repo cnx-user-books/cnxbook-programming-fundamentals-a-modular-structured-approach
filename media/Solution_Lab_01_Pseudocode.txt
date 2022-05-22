@@ -1,0 +1,50 @@
+Filename: Solution_Lab_01_Pseudocode.txt
+
+Purpose:  Average the weight of three people
+
+Author:   Ken Busbee; © 2008 Kenneth Leroy Busbee
+
+Date:     Dec 24, 2008
+
+NOTE:     Academic Dishonesty Warning
+******************************************************
+Solution files are provided by the instructor to each
+individual student as needed. Students are not to 
+share these files with any other student.
+Not now, not later, not ever.  Don't share them.
+******************************************************
+
+Pseudocode = IPO Outline
+ 
+input
+   display a message asking user for the weight of the first person
+   get the weight of the first person from the keyboard
+   display a message asking user for the weight of the second person
+   get the weight of the second person from the keyboard
+   display a message asking user for the weight of the third person
+   get the weight of the third person from the keyboard
+ 
+processing
+   calculate the answer by adding the three weights and 
+   dividing by 3.0
+   HINT: Dividing by 3.0 which is a floating-point data type 
+         insures that we will be doing floating-point division.
+                                    
+output
+   display the answer with an appropriate message
+   pause so the user can see the answer
+
+******************************************************
+
+Potential Variables
+
+Data Type    Identifier Name
+*********    ***************
+integer      weight1
+integer      weight2
+integer      weight3
+double       answer
+
+******************************************************
+End of file
+

@@ -1,0 +1,36 @@
+Filename:    Lab_19_Narrative_Description.txt
+
+Purpose:     Creating an array function that gives the
+             average of the values in the array.
+
+Author:      Ken Busbee; © 2009 Kenneth Leroy Busbee
+Date:        Apr 7, 2009
+Licensed by: Kenneth Leroy Busbee under a 
+             Creative Commons Attribution License (CC-BY 3.0)
+             http://creativecommons.org/licenses/by/3.0/
+*************************************************************
+
+You are to write a program named Lab_19.cpp that does the following:
+
+1. You will want to use the Demo_Sum_Array_Function.cpp as 
+   a starting point.  Make sure that you change the comments
+   to a correct filename, purpose, author and date, etc.
+
+2. You will use the Demo_Farm_Acres_Input.txt data file.
+
+3. Leave all of the existing code in place. You will be adding a 
+   function that returns an integer value after being passed an 
+   array and the number of array elements.  The value it should 
+   return is the average of the values that are within the array.
+   Since we are dealing with integer values within this lab, we 
+   will use integer division.  The average would be the total 
+   divided by the number of elements in the array and it will 
+   truncate to a whole number and that is OK!  The name of the
+   function should be: average_array  
+
+4. Display the average within the function main following the 
+   display of the sum.
+
+*************************************************************
+End of file
+

@@ -1,0 +1,68 @@
+<?xml version='1.0'?>
+<order>
+<color>E7E7F5</color>
+<showterm>true</showterm>
+<showdef>false</showdef>
+<customDeckText>Custom Deck</customDeckText>
+<wholeDeckText>Whole Deck</wholeDeckText>
+<showText>SHOW</showText>
+<addToText>Add to Custom</addToText>
+<showTermText>Show Term</showTermText>
+<showDefText>Show Definition</showDefText>
+<orderset value='1'>
+ <term>flag</term>
+ <def>A variable or constant used to store information that will normally be used to control the program. </def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='2'>
+ <term>do while</term>
+ <def>A test after iteration control structure available in C++.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='3'>
+ <term>action item</term>
+ <def>An attribute of iteration control structures.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='4'>
+ <term>update item</term>
+ <def>An attribute of iteration control structures.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='5'>
+ <term>test item</term>
+ <def>An attribute of iteration control structures.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='6'>
+ <term>at least once</term>
+ <def>Indicating that test after loops execute the action at least once.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='7'>
+ <term>infinite loop</term>
+ <def>No method of exit, thus a bad thing.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='8'>
+ <term>repeat until</term>
+ <def>A test after iteration control structure that is not available in C++.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+</order>

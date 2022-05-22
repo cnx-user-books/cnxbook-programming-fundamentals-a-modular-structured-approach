@@ -1,0 +1,35 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Review: Modular Programming Group: 6-9</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m22421</md:content-id>
+  <md:title>Review: Modular Programming Group: 6-9</md:title>
+  <md:abstract>Review materials that support a group of chapters in the "Programming Fundamentals - A Modular Structured Approach using C++" collection/textbook.</md:abstract>
+  <md:uuid>e61a9609-ee36-43b6-99ed-ccb3ae7090cd</md:uuid>
+</metadata>
+
+<content>
+    <section id="id1170734599340">
+      <title>Strategy Discussion</title>
+      <para id="id5318069">Exams vary depending on your instructor. Many will use the following:</para>
+      <list id="id1170729590706" list-type="enumerated" number-style="arabic">
+        <item>Definitions</item>
+        <item>Self-grading questions including true/false, multiple choice, short answer, etc. </item>
+        <item>Problems</item>
+      </list>
+      <para id="id1170734469131">The materials in this textbook/collection have covered these items at the end of every chapter within the <emphasis>Practice</emphasis> module for that chapter. We suggest the following test preparation strategies:</para>
+      <list id="id1170732094535" list-type="enumerated" number-style="arabic">
+        <item>If your professor is testing the definitions and expecting you to have them memorized, you should review the “Using the Flash Card Activity” within the “Study Habits that Build the Brain” module within the Appendix materials. Practice writing your definitions using the Flash Card Activity in conjunction with the Memory Building Activities (MBAs) available within the <emphasis>Practice</emphasis> modules or in the Memory Building Activities within this <emphasis>Review</emphasis> module.</item>
+        <item>Do a quick review of any exercises within the Connexions modules or the <emphasis>Practice</emphasis> modules. Also review quizzes or exams that you have taken and pay special attention to making sure you understand why you missed a question.</item>
+        <item>If your professor has indicated that they might include a few of the problems presented within the <emphasis>Practice</emphasis> modules, make sure you have formulated a good answer for each problem. If authorized, collaborate with other students to improve your answers to the problems. Spend a moderate amount of time reviewing each problem with its answer before the exam.</item>
+      </list>
+    </section>
+    <section id="id7138638">
+      <title>Memory Building Activities</title>
+      <para id="id1170734487958">Link to: <link window="new" document="m22421" resource="index.html">MBA Review: Modular Programming Group: 6-9</link></para>
+    </section>
+    <section id="id5504332">
+      <title>Miscellaneous Items</title>
+      <para id="id1170738413335">None at this time.</para>
+    </section>
+  </content>
+</document>

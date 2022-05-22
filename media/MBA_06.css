@@ -1,0 +1,56 @@
+/*
+ * SoftChalk LessonBuilder StyleSheet (C)2004-2008
+ * SoftChalk LLC, www.softchalk.com
+ *
+ * NON STYLED FORMAT
+ */
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: 30px;
+	margin-right: 30px;
+	font-size: 90%;
+}
+
+
+/*  REPORT  */
+#report {
+	color: #000000;
+	font-family: Arial, Helvetica, sans-serif;
+	border-top: 2px solid #808080;
+	margin: 0 0 30px 0;
+}
+
+#report table td {
+	text-align: center;
+	border: thin ridge #F4F4F4;
+	background: #F4F4F4;
+	padding: 15px 15px;
+}
+
+
+/* Floating score window  */
+#floatingscore {
+	position: absolute;
+	border: 1px solid black;
+	padding: 2px;
+	background-color: #F4F4F4;
+	color: #000000;
+	width: 60px;
+	visibility: hidden;
+	z-index: 100;
+}
+
+
+/*  QUIZPOPPER  */
+.collapse {
+	display: none;
+}
+
+.expand {
+	display: block;
+}
+
+

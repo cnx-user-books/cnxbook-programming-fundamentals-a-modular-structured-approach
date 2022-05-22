@@ -1,0 +1,144 @@
+Filename:    Lab_16_Pseudocode.txt
+
+Purpose:     Practice with control structures
+
+Author:      Ken Busbee; © 2009 Kenneth Leroy Busbee
+Date:        Mar 20, 2009, Modified: Apr 10, 2010
+
+Comments:    See the programming hints at the end of the 
+             pseudocode.
+
+Licensed by: Kenneth Leroy Busbee under a 
+             Creative Commons Attribution License (CC-BY 3.0)
+             http://creativecommons.org/licenses/by/3.0/
+******************************************************
+
+Function main
+  Pass In: nothing
+  Do
+    Call: clear_m
+    Display "Welcome to the Fun Program."
+    Display "Select from the menu."
+    Display a blank line.
+    Display "A gets Counting Loop."
+    Display "B gets Impossible."
+    Display "C gets Missing Item."
+    Display "D gets Odd or Even."
+    Display "E gets Poem."
+    Display a blank line.
+    Display "Q quits the program."
+    Display a blank line.
+    Display "Enter the letter of your choice.".
+    Display "Then hit the enter key.".
+    Display a blank line.
+    Display "Your choice: --> ".
+    Get the response for user_choice from the keyboard
+    Case of user_choice
+      'A'  Call: counting_loop
+      'B'  Call: impossible
+      'C'  Call: missing_item
+      'D'  Call: odd_even
+      'E'  Call: poem
+    Endcase
+  While user_choice not equal to 'Q'
+  Pass Out: zero to the OS
+Endfunction
+
+********************
+
+Function counting_loop
+  Pass In: nothing
+  For x starts at 0, x < 5, increment x
+    Display "Are we having fun?"
+  Endfor
+  Call: pause_m
+  Pass Out: nothing
+Endfuction
+
+********************
+
+Function impossible
+  Pass In: nothing
+  Display "The repeat until loop is impossible in C++."
+  Call: pause_m
+  Pass Out: nothing
+Endfuction
+
+********************
+
+Function missing_item
+  Pass In: nothing
+  Display "This program is missing only the while loop."
+  Call: pause_m
+  Pass Out: nothing
+Endfuction
+
+********************
+
+Function odd_even
+  Pass In: nothing
+    Display a message asking user for an integer value
+    Get the user_integer from the keyboard
+    If user_integer modulus 2
+      Display "Your number was odd."
+    Else
+      Display "Your number was even."
+    Endif
+  Call: pause_m
+  Pass Out: nothing
+Endfuction
+
+********************
+
+Function poem
+  Pass In: nothing
+  Display a 4 line poem
+  Call: pause_m
+  Pass Out: nothing
+Endfuction
+
+********************
+
+clear_m
+and
+pause_m
+are functions defined in the udst_monitor.h
+
+******************************************************
+
+Potential Variables
+
+Data Type    Identifier Name
+*********    ***************
+character    user_choice
+integer      user_integer
+integer      x
+
+******************************************************
+Programming Hints
+
+1. Don't try writing the program all at once.  You can
+   eat an elephant but only one bite at a time. Suggestion:
+
+   a. Complete the do while loop but dont' do the case (switch).
+      Compile and test it.
+   b. Add the case with only one item (item A) and build the 
+      function for item A.  
+      compile and test it. 
+   c. Build each additional menu item one at a time. 
+      Compile and test it before doing the next menu item.
+
+2. Review as needed:
+
+   a. Chapter 6 on Program Control functions
+   b. Chapter 7 on User Defined Specific Task functions
+   c. The chapters within the Structrued Progrramming Group,
+      chapters 11 to 15, as needed for each control structure
+      that you are using.
+
+3. Pay attention to braces. They are always in pairs. One  
+   starting and one stoping. Review the module:
+   "Documentation and Making Source Code Readable" that is
+   in Chapter 6.  
+******************************************************
+End of file

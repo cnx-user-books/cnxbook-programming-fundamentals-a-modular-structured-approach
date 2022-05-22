@@ -1,0 +1,19 @@
+//******************************************************
+// Filename:    udst_monitor_prototypes.txt
+// Purpose:     Prototypes for the monitor.h Header File
+// Author:      Ken Busbee; © 2009 Kenneth Leroy Busbee
+// Date:        Jan 7, 2009
+// Licensed by: Kenneth Leroy Busbee under a 
+//              Creative Commons Attribution License (CC-BY 3.0)
+//              http://creativecommons.org/licenses/by/3.0/
+//******************************************************
+
+void clear_m(void);
+
+void delay_m(int tenths_second);
+
+void pause_m(void);
+
+//******************************************************
+// End of File
+//******************************************************

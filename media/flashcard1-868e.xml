@@ -1,0 +1,215 @@
+<?xml version='1.0'?>
+<order>
+<color>E7E7F5</color>
+<showterm>true</showterm>
+<showdef>false</showdef>
+<customDeckText>Custom Deck</customDeckText>
+<wholeDeckText>Whole Deck</wholeDeckText>
+<showText>SHOW</showText>
+<addToText>Add to Custom</addToText>
+<showTermText>Show Term</showTermText>
+<showDefText>Show Definition</showDefText>
+<orderset value='1'>
+ <term>conditional</term>
+ <def>A trinary C++ operator that acts like an if then else control structure.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='2'>
+ <term>recursion</term>
+ <def>A repetitive process in  which a function calls itself.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='3'>
+ <term>factorial</term>
+ <def>A math problem that often is solved using recursion.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='4'>
+ <term>dimension</term>
+ <def>An axis of an array.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='5'>
+ <term>list</term>
+ <def>A single dimension array.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='6'>
+ <term>table</term>
+ <def>A two dimension array.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='7'>
+ <term>array member</term>
+ <def>An element or value in an array.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='8'>
+ <term>index</term>
+ <def>An operator that allows us to reference a member of an array.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='9'>
+ <term>offset</term>
+ <def>The method of referencing array members by starting at zero.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='10'>
+ <term>flexible coding</term>
+ <def>Using the sizeof operator to calculate the number of members in an array.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='11'>
+ <term>text file</term>
+ <def>A file consisting of characters from the ASCII character code set.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='12'>
+ <term>filename</term>
+ <def>The name and its extension.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='13'>
+ <term>filespec</term>
+ <def>The location of a file along with its filename.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='14'>
+ <term>open</term>
+ <def>Your program requesting the operating system to let it have access to an existing file or to open a new file.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='15'>
+ <term>device token</term>
+ <def>A key value provided by the operating system to associate a device to your program.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='16'>
+ <term>read</term>
+ <def>Moving data from a device that has been opened into a memory location defined in your program.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='17'>
+ <term>write</term>
+ <def>Moving data from a memory location defined in your program to a device that has been opened.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='18'>
+ <term>close</term>
+ <def>Your program requesting the operating system to release a file that was previously opened.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='19'>
+ <term>array function</term>
+ <def>A user defined specific task function designed to process an array.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='20'>
+ <term>dynamic memory</term>
+ <def>Aka stack created memory associated with local scope.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='21'>
+ <term>static memory</term>
+ <def>Aka data area memory associated with global scope.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='22'>
+ <term>sum</term>
+ <def>Latin for summa or a total.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='23'>
+ <term>linear search</term>
+ <def>Using a loop to sequentially step through an array.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='24'>
+ <term>maximum</term>
+ <def>Aka max or the largest member of an array.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='25'>
+ <term>minimum</term>
+ <def>Aka min or the smallest member of an array.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='26'>
+ <term>sorting</term>
+ <def>Arranging data according to their values.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='27'>
+ <term>bubble sort</term>
+ <def>A method of swapping array members until they are in the desired sequence.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='28'>
+ <term>versatile</term>
+ <def>Easily modifying code to handle another data type.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='29'>
+ <term>typedef</term>
+ <def>Allows the programmer to create an alias, or synonym, for an existing data type.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+</order>

@@ -1,0 +1,81 @@
+! SoftChalk LessonBuilder TIV File (C)2003-2008
+! ================ DO NOT EDIT ================
+
+act_item=3
+
+act_num=1
+act_type=2
+items=7
+colorChoice=_B
+showList=false
+showFlashCardTerm=true
+showFlashCardDef=false
+useFlashBigText=false
+instructions=Click 'Show' to see the hidden portion.
+wordPair[1]=dimension|An axis of an array.|noimage
+wordPair[2]=list|A single dimension array.|noimage
+wordPair[3]=table|A two dimension array.|noimage
+wordPair[4]=array member|An element or value in an array.|noimage
+wordPair[5]=index|An operator that allows us to reference a member of an array.|noimage
+wordPair[6]=offset|The method of referencing array members by starting at zero.|noimage
+wordPair[7]=conditional compilation|A compiler directive that includes or excludes lines of code based on a Boolean expression.|noimage
+inline=false
+points=0
+showRestart=true
+sqrsize=20
+adaDescription=
+playFeedback=true
+hotspotWidth=450
+hotspotHeight=500
+
+act_num=2
+act_type=6
+items=6
+colorChoice=_B
+showList=false
+showFlashCardTerm=true
+showFlashCardDef=false
+useFlashBigText=false
+instructions=Solve the crossword puzzle.
+wordPair[1]=dimension|An axis of an array.
+wordPair[2]=list|A single dimension array.
+wordPair[3]=table|A two dimension array.
+wordPair[4]=ArrayMember|An element or value in an array.
+wordPair[5]=index|An operator that allows us to reference a member of an array.
+wordPair[6]=offset|The method of referencing array members by starting at zero.
+inline=false
+points=0
+showRestart=true
+sqrsize=20
+adaDescription=
+playFeedback=true
+hotspotWidth=450
+hotspotHeight=500
+
+act_num=3
+act_type=3
+items=8
+colorChoice=_B
+showList=false
+showFlashCardTerm=true
+showFlashCardDef=false
+useFlashBigText=false
+instructions=Click and drag to highlight a found word from the list.
+seekawordHintOption=true
+wordPair[1]=dimension
+wordPair[2]=list
+wordPair[3]=table
+wordPair[4]=ArrayMember
+wordPair[5]=index
+wordPair[6]=offset
+wordPair[7]=Conditional
+wordPair[8]=Compilation
+inline=false
+points=0
+showRestart=true
+sqrsize=20
+adaDescription=
+playFeedback=true
+hotspotWidth=450
+hotspotHeight=500
+

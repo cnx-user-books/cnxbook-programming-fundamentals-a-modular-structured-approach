@@ -1,0 +1,260 @@
+<col:collection xmlns="http://cnx.rice.edu/collxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:col="http://cnx.rice.edu/collxml" xml:lang="en">
+  <metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">
+    <md:content-id>col10621</md:content-id>
+    <md:title>Programming Fundamentals - A Modular Structured Approach using C++</md:title>
+    <md:language>en</md:language>
+    <md:license url="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution License</md:license>
+    <md:uuid>303800f3-07f3-44d5-a12c-49e93e8948c5</md:uuid>
+<md:slug>programming-fundamentals-a-modular-structured-approach</md:slug>
+</metadata>
+  <col:content>
+    <col:module document="m19049"/>
+    <col:module document="m19055"/>
+    <col:module document="m19684"/>
+    <col:module document="m33960"/>
+    <col:subcollection>
+      <md:title>1. Introduction to Programming</md:title>
+      <col:content>
+        <col:module document="m18684"/>
+        <col:module document="m18785"/>
+        <col:module document="m18861"/>
+        <col:module document="m22450"/>
+      </col:content>
+    </col:subcollection>
+    <col:subcollection>
+      <md:title>2. Program Planning &amp; Design</md:title>
+      <col:content>
+        <col:module document="m18686"/>
+        <col:module document="m18648"/>
+        <col:module document="m18781"/>
+        <col:module document="m22453"/>
+      </col:content>
+    </col:subcollection>
+    <col:subcollection>
+      <md:title>3. Data &amp; Operators</md:title>
+      <col:content>
+        <col:module document="m18653"/>
+        <col:module document="m18692"/>
+        <col:module document="m18719"/>
+        <col:module document="m18705"/>
+        <col:module document="m18725"/>
+        <col:module document="m18706"/>
+        <col:module document="m18744"/>
+        <col:module document="m22455"/>
+      </col:content>
+    </col:subcollection>
+    <col:subcollection>
+      <md:title>4. Often Used Data Types</md:title>
+      <col:content>
+        <col:module document="m18654"/>
+        <col:module document="m18657"/>
+        <col:module document="m18656"/>
+        <col:module document="m18743"/>
+        <col:module document="m18058"/>
+        <col:module document="m18717"/>
+        <col:module document="m22456"/>
+      </col:content>
+    </col:subcollection>
+    <col:subcollection>
+      <md:title>5. Integrated Development Environment</md:title>
+      <col:content>
+        <col:module document="m18920"/>
+        <col:module document="m18835"/>
+        <col:module document="m18787"/>
+        <col:module document="m22457"/>
+      </col:content>
+    </col:subcollection>
+    <col:subcollection>
+      <md:title>6. Program Control Functions</md:title>
+      <col:content>
+        <col:module document="m19136"/>
+        <col:module document="m18682"/>
+        <col:module document="m19145"/>
+        <col:module document="m18655"/>
+        <col:module document="m18912"/>
+        <col:module document="m22458"/>
+      </col:content>
+    </col:subcollection>
+    <col:subcollection>
+      <md:title>7. Specific Task Functions</md:title>
+      <col:content>
+        <col:module document="m19146"/>
+        <col:module document="m19147"/>
+        <col:module document="m19346"/>
+        <col:module document="m22459"/>
+      </col:content>
+    </col:subcollection>
+    <col:subcollection>
+      <md:title>8. Standard Libraries</md:title>
+      <col:content>
+        <col:module document="m19202"/>
+        <col:module document="m22460"/>
+      </col:content>
+    </col:subcollection>
+    <col:subcollection>
+      <md:title>9. Character Data, Sizeof, Typedef, Sequence</md:title>
+      <col:content>
+        <col:module document="m18669"/>
+        <col:module document="m18736"/>
+        <col:module document="m18741"/>
+        <col:module document="m18690"/>
+        <col:module document="m22461"/>
+      </col:content>
+    </col:subcollection>
+    <col:subcollection>
+      <md:title>10. Introduction to Structured Programming</md:title>
+      <col:content>
+        <col:module document="m19628"/>
+        <col:module document="m18649"/>
+        <col:module document="m19623"/>
+        <col:module document="m19692"/>
+      </col:content>
+    </col:subcollection>
+    <col:subcollection>
+      <md:title>11. Two Way Selection</md:title>
+      <col:content>
+        <col:module document="m19679"/>
+        <col:module document="m19544"/>
+        <col:module document="m19549"/>
+        <col:module document="m19683"/>
+        <col:module document="m19764"/>
+      </col:content>
+    </col:subcollection>
+    <col:subcollection>
+      <md:title>12. Multiway Selection</md:title>
+      <col:content>
+        <col:module document="m19951"/>
+        <col:module document="m19847"/>
+        <col:module document="m19963"/>
+        <col:module document="m19947"/>
+        <col:module document="m19968"/>
+      </col:content>
+    </col:subcollection>
+    <col:subcollection>
+      <md:title>13. Test After Loops</md:title>
+      <col:content>
+        <col:module document="m20596"/>
+        <col:module document="m20404"/>
+        <col:module document="m19542"/>
+        <col:module document="m20597"/>
+        <col:module document="m20642"/>
+      </col:content>
+    </col:subcollection>
+    <col:subcollection>
+      <md:title>14. Test Before Loops</md:title>
+      <col:content>
+        <col:module document="m20499"/>
+        <col:module document="m20598"/>
+        <col:module document="m20643"/>
+      </col:content>
+    </col:subcollection>
+    <col:subcollection>
+      <md:title>15. Counting Loops</md:title>
+      <col:content>
+        <col:module document="m20600"/>
+        <col:module document="m20743"/>
+        <col:module document="m20660"/>
+        <col:module document="m20653"/>
+        <col:module document="m20809"/>
+      </col:content>
+    </col:subcollection>
+    <col:subcollection>
+      <md:title>16. String Class, Unary Positive and Negative</md:title>
+      <col:content>
+        <col:module document="m20796"/>
+        <col:module document="m20501"/>
+        <col:module document="m20810"/>
+      </col:content>
+    </col:subcollection>
+    <col:subcollection>
+      <md:title>17. Conditional Operator and Recursion</md:title>
+      <col:content>
+        <col:module document="m20811"/>
+        <col:module document="m20814"/>
+        <col:module document="m20815"/>
+      </col:content>
+    </col:subcollection>
+    <col:subcollection>
+      <md:title>18. Introduction to Arrays</md:title>
+      <col:content>
+        <col:module document="m21315"/>
+        <col:module document="m21316"/>
+        <col:module document="m21317"/>
+        <col:module document="m21321"/>
+      </col:content>
+    </col:subcollection>
+    <col:subcollection>
+      <md:title>19. File I/O and Array Functions</md:title>
+      <col:content>
+        <col:module document="m21623"/>
+        <col:module document="m21624"/>
+        <col:module document="m21625"/>
+        <col:module document="m21626"/>
+        <col:module document="m21630"/>
+      </col:content>
+    </col:subcollection>
+    <col:subcollection>
+      <md:title>20. More Array Functions</md:title>
+      <col:content>
+        <col:module document="m21627"/>
+        <col:module document="m21628"/>
+        <col:module document="m21631"/>
+      </col:content>
+    </col:subcollection>
+    <col:subcollection>
+      <md:title>21. More on Typedef</md:title>
+      <col:content>
+        <col:module document="m21629"/>
+        <col:module document="m21632"/>
+      </col:content>
+    </col:subcollection>
+    <col:subcollection>
+      <md:title>22. Pointers</md:title>
+      <col:content>
+        <col:module document="m22148"/>
+        <col:module document="m22150"/>
+        <col:module document="m22151"/>
+        <col:module document="m22152"/>
+        <col:module document="m22153"/>
+      </col:content>
+    </col:subcollection>
+    <col:subcollection>
+      <md:title>23. More Arrays &amp; Compiler Directives</md:title>
+      <col:content>
+        <col:module document="m22203"/>
+        <col:module document="m22204"/>
+        <col:module document="m22205"/>
+      </col:content>
+    </col:subcollection>
+    <col:subcollection>
+      <md:title>24. OOP &amp; HPC</md:title>
+      <col:content>
+        <col:module document="m22188"/>
+        <col:module document="m19804"/>
+        <col:module document="m22194"/>
+      </col:content>
+    </col:subcollection>
+    <col:subcollection>
+      <md:title>Review Materials</md:title>
+      <col:content>
+        <col:module document="m22418"/>
+        <col:module document="m22421"/>
+        <col:module document="m21653"/>
+        <col:module document="m21642"/>
+        <col:module document="m22215"/>
+      </col:content>
+    </col:subcollection>
+    <col:subcollection>
+      <md:title>Appendix</md:title>
+      <col:content>
+        <col:module document="m18168"/>
+        <col:module document="m18181"/>
+        <col:module document="m18169"/>
+        <col:module document="m18100"/>
+        <col:module document="m18096"/>
+        <col:module document="m18101"/>
+        <col:module document="m19977"/>
+      </col:content>
+    </col:subcollection>
+  </col:content>
+</col:collection>

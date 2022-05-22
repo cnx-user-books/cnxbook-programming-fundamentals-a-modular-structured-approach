@@ -1,0 +1,64 @@
+Filename: Solution_Lab_03_Pseudocode.txt
+
+Purpose:  Paint Your House Calculation
+
+Author:   Ken Busbee; © 2008 Kenneth Leroy Busbee
+
+Date:     Dec 24, 2008
+
+NOTE:     Academic Dishonesty Warning
+******************************************************
+Solution files are provided by the instructor to each
+individual student as needed. Students are not to 
+share these files with any other student.
+Not now, not later, not ever.  Don't share them.
+******************************************************
+
+Pseudocode = IPO Outline
+ 
+input
+   display a message asking user for the length of the house
+   get the length of the house from the keyboard
+   display a message asking user for the width of the house
+   get the width of the house from the keyboard
+   display a message asking user for the height of the house
+   get the height of the house from the keyboard
+   display a message asking user for the price of a gallon of paint
+   get the price of a gallon of paint from the keyboard
+   display a message asking user for the sq ft coverage of a gallon of paint
+   get the sq ft coverate of a gallon of paint from the keyboard
+ 
+processing
+   calculate the total area of the building by:
+      1) multiplying the length by height by 2;
+      2) then multiply the width by height by 2;
+      3) then add the two results together
+   calculate the number of gallons of paint needed by:
+      1) dividing the total area by the coverage per gallon;
+      2) and then round up to the next whole gallon
+   calculate the total cost of the paint by:
+      1) multiplying the total gallons needed by the price of one gallon of paint
+                                
+output
+   display the total gallon of paint needed with an appropriate message
+   display the total cost with an appropriate message
+   pause so the user can see the answer
+
+******************************************************
+
+Potential Variables
+
+Data Type    Identifier Name
+*********    ***************
+double       length
+double       width
+double       height
+double       price_gal_paint
+int          coverage_gal_paint
+double       total_area
+int          total_gal_paint
+double       total_cost
+
+******************************************************
+End of file
+

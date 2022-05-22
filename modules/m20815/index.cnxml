@@ -1,0 +1,111 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Practice 17: Conditional Operator and Recursion</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m20815</md:content-id>
+  <md:title>Practice 17: Conditional Operator and Recursion</md:title>
+  <md:abstract>Questions, exercises, problems, etc. that support this chapter in the "Programming Fundamentals - A Modular Structured Approach using C++" collection/textbook.</md:abstract>
+  <md:uuid>f29d10e7-4600-47a9-88e3-2a4500ba8926</md:uuid>
+</metadata>
+
+<content>
+    <section id="id14615155">
+      <title>Learning Objectives</title>
+      <para id="id15088697">With 100% accuracy during a: memory building activity, exercises, lab assignment, problems, or timed quiz/exam; the student is expected to:</para>
+      <list id="id5338019" list-type="enumerated" number-style="arabic">
+        <item>Define the terms on the definitions as listed in the modules associated with this chapter.</item>
+        <item>Understand the conditional operator and how it works.</item>
+        <item>Understand recursion as a problem solving technique. </item>
+        <item>When feasible, be able to convert C++ source code from a conditional expression to an if then else and vice versa.</item>
+      </list>
+    </section>
+    <section id="id14438091">
+      <title>Memory Building Activities</title>
+      <para id="id5370411">Link to: <link window="new" document="m20815" resource="index.html">MBA 17</link></para>
+    </section>
+    <section id="id3806235">
+      <title>Exercises</title>
+<exercise id="fs-id28289471">
+  <problem id="fs-id26099181">
+    <list id="fs-id22786949" list-type="enumerated"><title>Answer the following statements as either true or false:</title><item>The conditional expression acts like a case structure.</item>
+	<item>The conditional operator is a two part operator with three operands.</item>
+	<item>Recursion is one method of implementing a repetitive algorithm.</item>
+	<item>Recursion is always preferred over an iterative approach to a repetitive problem.</item>
+	<item>Factorial is usually demonstrated with an iterative approach.</item>
+</list>
+  </problem>
+  <solution id="fs-id23958862">
+    <list id="fs-id24030853" list-type="enumerated">
+      <title>Answers:</title>
+        <item>false</item>
+        <item>true</item>
+        <item>true</item>
+        <item>false</item>
+        <item>false</item>
+    </list>
+  </solution>
+</exercise>
+    </section>
+    <section id="id3608056">
+      <title>Miscellaneous Items</title>
+      <para id="id4173778">None at this time.</para>
+    </section>
+    <section id="id14509781">
+      <title>Lab Assignment</title>
+      <section id="id10902344">
+        <title>Creating a Folder or Sub-Folder for Chapter 17 Files</title>
+        <para id="id14761293">Depending on your compiler/IDE, you should decide where to download and store source code files for processing. Prudence dictates that you create these folders as needed prior to downloading source code files. A suggested sub-folder for the <term>Bloodshed Dev-C++ 5 compiler/IDE</term> might be named:</para>
+        <list id="id14558906" list-type="bulleted">
+          <item>Chapter_17 within the folder named: Cpp_Source_Code_Files</item>
+        </list>
+        <para id="id9012957">If you have not done so, please create the folder(s) and/or sub-folder(s) as appropriate.</para>
+      </section>
+      <section id="id14542766">
+        <title>Download the Lab File(s)</title>
+        <para id="id3888472">Download and store the following file(s) to your storage device in the appropriate folder(s). You may need to right click on the link and select "Save Target As" in order to download the file.</para>
+        <para id="id6375022">Download from Connexions: <link document="m20815" resource="Lab_17a.cpp">Lab_17a.cpp</link></para>
+      </section>
+      <section id="id14343212">
+        <title>Detailed Lab Instructions</title>
+        <para id="id14554736">Read and follow the directions below carefully, and perform the steps in the order listed.</para>
+        <list id="id4026069" list-type="bulleted">
+          <item>Compile and run the Lab_17a.cpp source code file. Understand how it works.</item>
+          <item>Copy the source code file Lab_17a.cpp naming it: Lab_17b.cpp</item>
+          <item>Convert the code that is using the if then else to a conditional expression.</item>
+          <item>Convert the code that is using the conditional expression to an if then else.</item>
+          <item>Build (compile and run) your program.</item>
+          <item>After you have successfully written this program, if you are taking this course for college credit, follow the instructions from your professor/instructor for submitting it for grading.</item>
+        </list>
+      </section>
+    </section>
+    <section id="id14685949">
+      <title>Problems</title>
+      <section id="id4045481">
+        <title>Problem 17a – Instructions</title>
+        <para id="id8405937">Using proper C++ syntax, convert the following if then else to a conditional expression.</para>
+<example id="fs-id24506552">
+  <title>if then else</title>
+  <para id="fs-id24506558"><preformat id="fs-id20107584" display="block"><code>
+if (x == y)
+  {
+  z = 14;
+  }
+else
+  {
+  z++;
+  }</code></preformat>
+</para>
+</example>
+      </section>
+      <section id="id4089152">
+        <title>Problem 17b – Instructions</title>
+        <para id="id8404567">Using proper C++ syntax, convert the following conditional expression to an if then else.</para>
+<example id="fs-id13721704">
+  <title>conditional</title>
+  <para id="fs-id24104638"><preformat id="fs-id24104640" display="block"><code>
+answer = y &lt; z ? 47 : 92;</code></preformat>
+</para>
+</example>
+      </section>
+    </section>
+  </content>
+</document>

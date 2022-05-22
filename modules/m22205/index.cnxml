@@ -1,0 +1,85 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Practice 23: More Arrays &amp; Compiler Directives</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m22205</md:content-id>
+  <md:title>Practice 23: More Arrays &amp; Compiler Directives</md:title>
+  <md:abstract>Questions, exercises, problems, etc. that support this chapter in the "Programming Fundamentals - A Modular Structured Approach using C++" collection/textbook.</md:abstract>
+  <md:uuid>3d1e986c-c4c0-4bf8-ad83-96057943c71a</md:uuid>
+</metadata>
+
+<content>
+    <section id="id1166219855509">
+      <title>Learning Objectives</title>
+      <para id="id5973854">With 100% accuracy during a: memory building activity, exercises, lab assignment, problems, or timed quiz/exam; the student is expected to:</para>
+      <list id="id1166220981178" list-type="enumerated" number-style="arabic">
+        <item>Define the terms on the definitions as listed in the modules associated with this chapter.</item>
+        <item>Have an exposure to multidimensional arrays.</item>
+        <item>Understand conditional compilation as a testing technique. </item>
+        <item>When supplied with test data, add conditional compilation lines to an existing C++ source code.</item>
+      </list>
+    </section>
+    <section id="id1166220705867">
+      <title>Memory Building Activities</title>
+      <para id="id3661013">Link to: <link window="new" document="m22205" resource="index.html">MBA 23</link></para>
+    </section>
+    <section id="id1166222190258">
+      <title>Exercises</title>
+<exercise id="fs-id7549314">
+  <problem id="fs-id8398213">
+    <list id="fs-id1169994336051" list-type="enumerated"><title>Answer the following statements as either true or false:</title><item>Very few arrays need more than one axis.</item>
+	<item>Multidimensional arrays use multiple square brackets, one set per axis.</item>
+	<item>Using a flag to activate debugging lines of code has been around since the 1950s.</item>
+	<item>Within C++ we can use the conditional compilation compiler directives to implement debugging line of code.</item>
+</list>
+  </problem>
+  <solution id="fs-id2113938">
+    <list id="fs-id1777956" list-type="enumerated">
+      <title>Answers:</title>
+        <item>false</item>
+        <item>true</item>
+        <item>true</item>
+        <item>true</item>
+    </list>
+  </solution>
+</exercise>
+    </section>
+    <section id="id1166223531469">
+      <title>Miscellaneous Items</title>
+      <para id="id7389032">None at this time.</para>
+    </section>
+    <section id="id1166222556782">
+      <title>Lab Assignment</title>
+      <section id="id1166217436448">
+        <title>Creating a Folder or Sub-Folder for Chapter 23 Files</title>
+        <para id="id2439596">Depending on your compiler/IDE, you should decide where to download and store source code files for processing. Prudence dictates that you create these folders as needed prior to downloading source code files. A suggested sub-folder for the <term>Bloodshed Dev-C++ 5 compiler/IDE</term> might be named:</para>
+        <list id="id8489109" list-type="bulleted">
+          <item>Chapter_23 within the folder named: Cpp_Source_Code_Files</item>
+        </list>
+        <para id="id1166220712470">If you have not done so, please create the folder(s) and/or sub-folder(s) as appropriate.</para>
+      </section>
+      <section id="id5585998">
+        <title>Download the Lab File(s)</title>
+        <para id="id1166225343652">Download and store the following file(s) to your storage device in the appropriate folder(s). You may need to right click on the link and select "Save Target As" in order to download the file.</para>
+        <para id="id1166221152296">Download from Connexions: <link document="m22205" resource="Lab_23a.cpp">Lab_23a.cpp</link></para>
+      </section>
+      <section id="id1166221736150">
+        <title>Detailed Lab Instructions</title>
+        <para id="id1166220745487">Read and follow the directions below carefully, and perform the steps in the order listed.</para>
+        <list id="id1501230" list-type="bulleted">
+          <item>Compile and run the Lab_23a.cpp source code file. Understand how it works.</item>
+          <item>Copy the source code file Lab_23a.cpp naming it: Lab_23b.cpp</item>
+          <item>Add conditional compilation statements similar to the demonstration program used in the Conditional Compilation Connexions module. Specifically use: 157 pennies, 92 nickels, 23 dimes and 31 quarters as your test data.</item>
+          <item>Build (compile and run) your program.</item>
+          <item>After you have successfully written this program, if you are taking this course for college credit, follow the instructions from your professor/instructor for submitting it for grading.</item>
+        </list>
+      </section>
+    </section>
+    <section id="id1166221356656">
+      <title>Problems</title>
+      <section id="id1166221148978">
+        <title>Problem 23a – Instructions</title>
+        <para id="id1166228796019">Give three examples in the real world where data might be structured into a multidimensional array. One example (and you can’t count it) is a theatre ticket which might have a section, row and seat number on it.</para>
+      </section>
+    </section>
+  </content>
+</document>

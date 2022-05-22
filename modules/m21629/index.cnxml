@@ -1,0 +1,73 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Versatile Code with Typedef</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m21629</md:content-id>
+  <md:title>Versatile Code with Typedef</md:title>
+  <md:abstract>An explanation and example creating versatile code using typedef within the C++ programming language.</md:abstract>
+  <md:uuid>e48a8d62-bae0-42a7-8b1c-4bcbc8c07e41</md:uuid>
+</metadata>
+<featured-links>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit below.
+       Changes to the links section in the source will not be saved. -->
+    <link-group type="supplemental">
+      <link url="http://cnx.org/content/m18785/latest/" strength="1">Bloodshed Dev-C++ 5 Compiler/IDE</link>
+    </link-group>
+    <link-group type="prerequisite">
+      <link url="http://cnx.org/content/m18741/latest/" strength="1">Typedef - An Alias</link>
+    </link-group>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit above.
+       Changes to the links section in the source will not be saved. -->
+</featured-links>
+<content>
+    <section id="id8460403">
+      <title>Overview</title>
+      <para id="id17431907">Everyone seeks of ways to be more efficient in what they do. A farmer uses a tractor instead of a horse. A construction worker uses an air powered nail gun instead of a hammer. Programmers are no different than others, in that they are constantly improving their ability to produce correctly working programs. Some aspect of this is the use of modular/structured programming, proper documentation and following industry rules for a specific programming language. One example of efficient coding is letting the computer count the number of elements in an array. If we define an array:</para>
+      <para id="id17177204">
+        <code display="inline">int ages[] = {33,32,10,3};</code>
+      </para>
+      <para id="id4734692">We can use the following expression to calculate the number of members in the array:</para>
+      <para id="id16905983">
+        <code display="inline">sizeof ages / sizeof ages[0]</code>
+      </para>
+      <para id="id17415234">This type of <emphasis>flexible coding</emphasis> allows us to change the members of the array by adding or subtracting a values, like this:</para>
+      <para id="id19248822">
+        <code display="inline">int ages[] = {57,33,32,3,1};</code>
+      </para>
+      <para id="id10037940">Thus, we don't have to modify our code that uses the expression that calculates the number of member in the array. </para>
+      <para id="id7060599">One use of the <emphasis>typedef</emphasis> is to allow us to write code that can be quickly changed to handle different data types. There are several integer and floating-point data types that all store number values with different domains. If we write our code using some typedef statement, then our code becomes <emphasis>versatile</emphasis>. By changing only our typedef commands, our code can be used to process data of a different data type. This is demonstrated within the demo file provided, thus you need to study this material in conjunction with the demo program.</para>
+    </section>
+    <section id="id5213348">
+      <title>Demonstration Program in C++</title>
+      <section id="id17102975">
+        <title>Creating a Folder or Sub-Folder for Source Code Files</title>
+        <para id="id5207641">Depending on your compiler/IDE, you should decide where to download and store source code files for processing. Prudence dictates that you create these folders as needed prior to downloading source code files. A suggested sub-folder for the <term>Bloodshed Dev-C++ 5 compiler/IDE</term> might be named:</para>
+        <list id="id5412360" list-type="bulleted">
+          <item>Demo_Programs</item>
+        </list>
+        <para id="id16904525">If you have not done so, please create the folder(s) and/or sub-folder(s) as appropriate.</para>
+      </section>
+      <section id="id17978998">
+        <title>Download the Demo Program</title>
+        <para id="id19151299">Download and store the following file(s) to your storage device in the appropriate folder(s). Following the methods of your compiler/IDE, compile and run the program(s). Study the source code file(s) in conjunction with other learning materials. You may need to right click on the link and select "Save Target As" in order to download the file.</para>
+        <para id="id17182931">Download from Connexions: <link document="m21629" resource="Demo_Versatile_Array_Functions.cpp">Demo_Versatile_Array_Functions.cpp</link></para>
+        <para id="id16854260">Download from Connexions: <link document="m21629" resource="Demo_Farm_Acres_Input.txt">Demo_Farm_Acres_Input.txt</link></para>
+        <para id="id8459606">Download from Connexions: <link document="m21629" resource="Demo_Deposit_Checks_Input.txt">Demo_Deposit_Checks_Input.txt</link></para>
+      </section>
+    </section>
+    <section id="id19280932">
+      <title>Definitions</title>
+    <definition id="fs-id1166531160879">
+      <term>versatile</term>
+      <meaning id="fs-id1166529661770">Easily modifying code to handle another data type.  </meaning>
+    </definition>
+    <definition id="fs-id1166542642667">
+      <term>flexible coding</term>
+      <meaning id="fs-id1166529504252">Using the sizeof operator to calculate the number of members in an array.  </meaning>
+    </definition>
+    <definition id="fs-id1166536284397">
+      <term>typedef</term>
+      <meaning id="fs-id1166529775625">Allows the programmer to create an alias, or synonym, for an existing data type.  </meaning>
+    </definition>
+    </section>
+  </content>
+</document>

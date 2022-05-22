@@ -1,0 +1,54 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Pseudocode</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m18648</md:content-id>
+  <md:title>Pseudocode</md:title>
+  <md:abstract>An introduction to pseudocode with a simple example.</md:abstract>
+  <md:uuid>7d6c0943-9c37-47f2-9bbe-bb9cf5837a27</md:uuid>
+</metadata>
+<featured-links>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit below.
+       Changes to the links section in the source will not be saved. -->
+    <link-group type="example">
+      <link url="http://cnx.org/content/m18781/latest/" strength="3">Test Data</link>
+    </link-group>
+    <link-group type="supplemental">
+      <link url="http://cnx.org/content/m19136/latest/" strength="3">Pseudocode Examples for Functions</link>
+      <link url="http://cnx.org/content/m18649/latest/" strength="2">Pseudocode Examples for Control Structures</link>
+      <link url="http://en.wikipedia.org/wiki/Pseudocode" strength="2">Wikipedia - Pseudocode</link>
+    </link-group>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit above.
+       Changes to the links section in the source will not be saved. -->
+</featured-links>
+<content>
+    <section id="id1167338469115">
+      <title>Overview</title>
+      <para id="id1167338469122">Pseudocode is one method of designing or planning a program. <emphasis>Pseudo</emphasis> means false, thus pseudocode means false code. A better translation would be the word fake or imitation. Pseudocode is fake (not the real thing). It looks like (imitates) real code but it is NOT real code. It uses English statements to describe what a program is to accomplish. It is fake because no complier exists that will translate the pseudocode to any machine language. Pseudocode is used for documenting the program or module design (also known as the algorithm).</para>
+      <para id="id1167338441600">The following outline of a simple program illustrates pseudocode. We want to be able to enter the ages of two people and have the computer calculate their average age and display the answer.</para>
+<example id="fs-id10207076">
+<title>Outline using Pseudocode</title>
+<para id="fs-id6350271"><preformat id="fs-id16874732" display="block"><code>
+Input
+  display a message asking the user to enter the first age
+  get the first age from the keyboard
+  display a message asking the user to enter the second age
+  get the second age from the keyboard
+Processing
+  calculate the answer by adding the two ages together and dividing by two
+Output
+  display the answer on the screen
+  pause so the user can see the answer</code></preformat>
+</para>
+</example>
+      <para id="id1167338491327">After developing the program design, we use the pseudocode to write code in a language (like Pascal, COBOL, FORTRAN, "C", " C++", etc.) where you must follow the rules of the language (syntax) in order to code the logic or algorithm presented in the pseudocode. Pseudocode usually does not include other items produced during programming design such as identifier lists for variables or test data.</para>
+      <para id="id1167338491907">There are other methods for planning and documenting the logic for a program. One method is <term>HIPO</term>. It stands for Hierarchy plus Input Process Output and was developed by IBM in the 1960s. It involved using a hierarchy (or structure) chart to show the relationship of the sub-routines (or functions) in a program. Each sub-routine had an <term>IPO</term> piece. Since the above problem/task was simple, we did not need to use multiple sub-routines, thus we did not produce a hierarchy chart. We did incorporate the IPO part of the concept for the pseudocode outline.</para>
+    </section>
+    <section id="id1167338492140">
+      <title>Definitions</title>
+    <definition id="fs-id10942887">
+      <term>pseudo </term>
+      <meaning id="fs-id7759482">Means false and includes the concepts of fake or imitation.</meaning>
+    </definition>
+    </section>
+  </content>
+</document>

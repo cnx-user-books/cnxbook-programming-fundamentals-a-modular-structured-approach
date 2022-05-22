@@ -1,0 +1,138 @@
+<?xml version='1.0'?>
+<order>
+<color>E7E7F5</color>
+<showterm>true</showterm>
+<showdef>false</showdef>
+<customDeckText>Custom Deck</customDeckText>
+<wholeDeckText>Whole Deck</wholeDeckText>
+<showText>SHOW</showText>
+<addToText>Add to Custom</addToText>
+<showTermText>Show Term</showTermText>
+<showDefText>Show Definition</showDefText>
+<orderset value='1'>
+ <term>system analyst</term>
+ <def>Computer professional in charge of creating applications.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='2'>
+ <term>applications</term>
+ <def>An information system or collection of programs that handles a major task.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='3'>
+ <term>life cycle</term>
+ <def>Systems Development Life Cycle: Planning - Analysis - Design - Implementation - Maintenance</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='4'>
+ <term>implementation</term>
+ <def>The phase of a Systems Development Life Cycle where the programmers would be assigned to write specific programs.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='5'>
+ <term>open source</term>
+ <def>Group development of source code for software that is made available to the public at no cost.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='6'>
+ <term>portability</term>
+ <def>The ability to transport software on a flash drive and thus use it on various machines.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='7'>
+ <term>folder</term>
+ <def>A named area for storage of documents or other files on a disk drive or flash drive.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='8'>
+ <term>source code</term>
+ <def>Any collection of statements or declarations written in some human-readable computer programming language.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='9'>
+ <term>modularization</term>
+ <def>The ability to group some lines of code into a unit that can be included in our program.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='10'>
+ <term>function</term>
+ <def>What modules are called in the two predominant programming languages of today: C++ and Java.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='11'>
+ <term>program control</term>
+ <def>Functions used to simply sub divide and control the program.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='12'>
+ <term>specific task</term>
+ <def>Functions designed to be used with several programs.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='13'>
+ <term>parameter passing</term>
+ <def>How the data is communicated in to and out of a function.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='14'>
+ <term>identifier name</term>
+ <def>The name given by the programmer to identify a function or other program items such as variables.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='15'>
+ <term>function prototype</term>
+ <def>A function's communications declaration to a complier.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='16'>
+ <term>function call</term>
+ <def>A function's using or invoking of another function.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='17'>
+ <term>function definition</term>
+ <def>The code that defines what a function does.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='18'>
+ <term>braces</term>
+ <def>Used to identify a block of code in C++.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+</order>

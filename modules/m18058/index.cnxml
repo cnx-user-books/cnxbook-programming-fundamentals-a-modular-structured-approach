@@ -1,0 +1,75 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Lvalue and Rvalue</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m18058</md:content-id>
+  <md:title>Lvalue and Rvalue</md:title>
+  <md:abstract>Concepts and examples of Lvalue and Rvalue within the C++ programming language.</md:abstract>
+  <md:uuid>189ad639-b41c-4a16-9e7d-0cfcf6540802</md:uuid>
+</metadata>
+<featured-links>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit below.
+       Changes to the links section in the source will not be saved. -->
+    <link-group type="prerequisite">
+      <link url="http://cnx.org/content/m18725/latest/" strength="3">Assignment Operator</link>
+    </link-group>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit above.
+       Changes to the links section in the source will not be saved. -->
+</featured-links>
+<content>
+    <section id="id1166147250705">
+      <title>Discussion</title>
+      <para id="id1166145921489">They refer to on the left and right side of the assignment operator. The <emphasis>Lvalue</emphasis> (pronounced: L value) concept refers to the requirement that the operand on the left side of the assignment operator is modifiable, usually a variable. <emphasis>Rvalue</emphasis> concept pulls or fetches the value of the expression or operand on the right side of the assignment operator. Some examples:</para>
+<example id="fs-id1166146343882">
+<para id="fs-id1166146668849"><preformat id="fs-id1166146667618" display="block"><code>
+int age;     // variable set up
+    then later in the program
+age = 39;</code></preformat>
+</para>
+</example>
+      <para id="id1166146106347">The value 39 is pulled or fetched (Rvalue) and stored into the variable named age (Lvalue); destroying the value previously stored in that variable.</para>
+<example id="fs-id1166152242609">
+<para id="fs-id1166152243337"><preformat id="fs-id1166147394819" display="block"><code>
+int age;              // variable set up
+int voting_age = 18;  // variable set up with initialization
+    then later in the program
+age = voting_age;</code></preformat>
+</para>
+</example>
+      <para id="id1166146101494">If the expression has a variable or named constant on the right side of the assignment operator, it would pull or fetch the value stored in the variable or constant. The value 18 is pulled or fetched from the variable named voting_age and stored into the variable named age.</para>
+<example id="fs-id1166152236514">
+<para id="fs-id1166146503759"><preformat id="fs-id1166146428129" display="block"><code>
+age &lt; 17;</code></preformat>
+</para>
+</example>
+      <para id="id1166146070734">If the expression is a <term>test expression</term> or <term>Boolean expression</term>, the concept is still an Rvalue one. The value in the identifier named age is pulled or fetched and used in the relational comparison of less than.</para>
+<example id="fs-id1166146691337">
+<para id="fs-id7331792"><preformat id="fs-id1166147405449" display="block"><code>
+const int JACK_BENNYS_AGE = 39;  // constant set up
+    then later in the program
+JACK_BENNYS_AGE = 65;</code></preformat>
+</para>
+</example>
+      <para id="id1166146220474">This is illegal because the identifier JACK_BENNYS_AGE does not have Lvalue properties. It is not a modifiable data object, because it is a constant.</para>
+      <para id="id1166148626560">Some uses of the Lvalue and Rvalue can be confusing.</para>
+<example id="fs-id1166152249099">
+<para id="fs-id5932615"><preformat id="fs-id1166146310198" display="block"><code>
+int oldest = 55;  // variable set up with initialization
+    then later in the program
+age = oldest++;</code></preformat>
+</para>
+</example>
+      <para id="id1166145995476">Postfix increment says to use my existing value then when you are done with the other operators; increment me. Thus, the first use of the oldest variable is an Rvalue context where the existing value of 55 is pulled or fetched and then assigned to the variable age; an Lvalue context. The second use of the oldest variable is an Lvalue context where in the value of oldest is incremented from 55 to 56.</para>
+    </section>
+    <section id="id1166152502574">
+      <title>Definitions</title>
+    <definition id="fs-id5963423">
+      <term>Lvalue</term>
+      <meaning id="fs-id5842264">The requirement that the operand on the left side of the assignment operator is modifiable, usually a variable. </meaning>
+    </definition>
+    <definition id="fs-id1166146609803">
+      <term>Rvalue</term>
+      <meaning id="fs-id5935971"> Pulls or fetches the value stored in a variable or constant. </meaning>
+    </definition>
+    </section>
+  </content>
+</document>

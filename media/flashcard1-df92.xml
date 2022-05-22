@@ -1,0 +1,453 @@
+<?xml version='1.0'?>
+<order>
+<color>E7E7F5</color>
+<showterm>true</showterm>
+<showdef>false</showdef>
+<customDeckText>Custom Deck</customDeckText>
+<wholeDeckText>Whole Deck</wholeDeckText>
+<showText>SHOW</showText>
+<addToText>Add to Custom</addToText>
+<showTermText>Show Term</showTermText>
+<showDefText>Show Definition</showDefText>
+<orderset value='1'>
+ <term>flowcharting</term>
+ <def>A programming design tool that uses graphical elements to visually depict the flow of logic within a function.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='2'>
+ <term>process symbol</term>
+ <def>A rectangle used in flowcharting for normal processes such as assignment.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='3'>
+ <term>input/output symbol</term>
+ <def>A parallelogram used in flowcharting for input/output interactions.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='4'>
+ <term>decision symbol</term>
+ <def>A diamond used in flowcharting for asking a question and making a decision.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='5'>
+ <term>flow lines</term>
+ <def>Lines (sometimes with arrows) that connect the various flowcharting symbols.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='6'>
+ <term>control structures</term>
+ <def>Mechanisms that allow us to control the flow of execution within a program.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='7'>
+ <term>sequence</term>
+ <def>A control structure where you do the items in the sequence listed. </def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='8'>
+ <term>selection</term>
+ <def>A control structure where you select between two or more choices.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='9'>
+ <term>iteration</term>
+ <def>A control structure that allows some lines of code to be executed many times. </def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='10'>
+ <term>branching</term>
+ <def>A control structure that allows the flow of execution to jump to a different part of the program. </def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='11'>
+ <term>structured programming</term>
+ <def>A method of planning programs that avoids the branching category of control structures.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='12'>
+ <term>Boolean</term>
+ <def>A data type representing the concepts of true and false.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='13'>
+ <term>test expression</term>
+ <def>An expression used to control programming structures.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='14'>
+ <term>relational operator</term>
+ <def>An operator that gives a Boolean value by evaluating the relationship between two operands.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='15'>
+ <term>mutually exclusive</term>
+ <def>Items that do not overlap. Example: true and false.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='16'>
+ <term>if then else</term>
+ <def>A two way selection control structure.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='17'>
+ <term>compound statement</term>
+ <def>A unit of code consisting of zero or more statements.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='18'>
+ <term>block</term>
+ <def>Another name for a compound statement.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='19'>
+ <term>logical operator</term>
+ <def>An operator used to create complex Boolean expressions.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='20'>
+ <term>truth tables</term>
+ <def>A common way to show logical relationships.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='21'>
+ <term>branching control structures</term>
+ <def>Allow the flow of execution to jump to a different part of the program. </def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='22'>
+ <term>break</term>
+ <def>A branching control structure that terminates the existing structure.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='23'>
+ <term>continue</term>
+ <def>A branching control structure that causes a loop to stop its current iteration and begin the next one. </def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='24'>
+ <term>goto</term>
+ <def>A branching control structure that causes the logic to jump to a different place in the program. </def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='25'>
+ <term>return</term>
+ <def>A branching control structure that causes a function to jump back to the function that called it. </def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='26'>
+ <term>exit</term>
+ <def>A pre-defined function used to prematurely stop a program and jump to the operating system. </def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='27'>
+ <term>nested control structures</term>
+ <def>Placing one control structure inside of another. </def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='28'>
+ <term>multiway selection</term>
+ <def>Using control structures to be able to select from more than two choices.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='29'>
+ <term>case</term>
+ <def>A control structure that does mulitway selection.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='30'>
+ <term>switch</term>
+ <def>A C++ control structure that can be made to act like a case control structure.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='31'>
+ <term>flag</term>
+ <def>A variable or constant used to store information that will normally be used to control the program. </def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='32'>
+ <term>do while</term>
+ <def>A test after iteration control structure available in C++.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='33'>
+ <term>action item</term>
+ <def>An attribute of iteration control structures.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='34'>
+ <term>update item</term>
+ <def>An attribute of iteration control structures.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='35'>
+ <term>test item</term>
+ <def>An attribute of iteration control structures.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='36'>
+ <term>at least once</term>
+ <def>Indicating that test after loops execute the action at least once.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='37'>
+ <term>infinite loop</term>
+ <def>"No method of exit, thus a bad thing."</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='38'>
+ <term>repeat until</term>
+ <def>A test after iteration control structure that is not available in C++.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='39'>
+ <term>increment</term>
+ <def>Adding one to the value of a variable.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='40'>
+ <term>decrement</term>
+ <def>Subtracting one from the value of a variable.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='41'>
+ <term>postfix</term>
+ <def>Placing the increment or decrement operator to the right of the operand.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='42'>
+ <term>prefix</term>
+ <def>Placing the increment or decrement operator to the left of the operand.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='43'>
+ <term>while</term>
+ <def>A test before iteration control structure available in C++.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='44'>
+ <term>loop attributes</term>
+ <def>Items associated with iteration or looping control structures.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='45'>
+ <term>initialize item</term>
+ <def>An attribute of iteration control structures.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='46'>
+ <term>might not happen</term>
+ <def>Indicating that test before loops might not execute the action.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='47'>
+ <term>event controlled</term>
+ <def>Using user input to control a loop.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='48'>
+ <term>counting controlled</term>
+ <def>Using a variable to count up or down to control a loop.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='49'>
+ <term>for</term>
+ <def>A test before iteration control structure typically used for counting.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='50'>
+ <term>complex logic</term>
+ <def>Often solved with nested control structures.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='51'>
+ <term>formatting</term>
+ <def>Modifying the way the output is displayed.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='52'>
+ <term>wrapping</term>
+ <def>When output is not vertically spaced properly.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='53'>
+ <term>circular nature</term>
+ <def>Connecting the negative and positive ends of the domain of an integer family data type.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='54'>
+ <term>loop control</term>
+ <def>Making sure the attributes of a loop are properly handled.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='55'>
+ <term>modular arithmetic</term>
+ <def>A system of arithmetic for integers where numbers ""wrap around".</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='56'>
+ <term>unary positive</term>
+ <def>A worthless operator almost never used.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='57'>
+ <term>unary negative</term>
+ <def>An operator that causes negation.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='58'>
+ <term>plus</term>
+ <def>Aka unary positive.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='59'>
+ <term>minus</term>
+ <def>Aka unary negative.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='60'>
+ <term>array</term>
+ <def>A sequenced collection of elements of the same data type with a single identifier name.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='61'>
+ <term>concatenation</term>
+ <def>Combining two strings into one string.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='62'>
+ <term>string class</term>
+ <def>A complex data item that uses object oriented programming.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='63'>
+ <term>class member</term>
+ <def>An operator used to invoke functions associated with a class.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+</order>

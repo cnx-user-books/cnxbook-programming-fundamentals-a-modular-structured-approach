@@ -1,0 +1,92 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Practice 8: Standard Libraries</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m22460</md:content-id>
+  <md:title>Practice 8: Standard Libraries</md:title>
+  <md:abstract>Questions, exercises, problems, etc. that support this chapter in the "Programming Fundamentals - A Modular Structured Approach using C++" collection/textbook.</md:abstract>
+  <md:uuid>0f5ccdd5-ba86-444f-a9ad-008a9b3132cf</md:uuid>
+</metadata>
+
+<content>
+    <section id="id1170668562035">
+      <title>Learning Objectives</title>
+      <para id="id3501637">With 100% accuracy during a: memory building activity, exercises, lab assignment, problems, or timed quiz/exam; the student is expected to:</para>
+      <list id="id1170664594624" list-type="enumerated" number-style="arabic">
+        <item>Define the terms on the definitions as listed in the modules associated with this chapter.</item>
+        <item>Given a testing shell program already coded and tested, add another specific task function, and test it, then create a user defined specific task header file, a user defined specific task prototypes document and a source code program to verify that the header file works properly.</item>
+      </list>
+    </section>
+    <section id="id1170655406550">
+      <title>Memory Building Activities</title>
+      <para id="id1170657418291">Link to: <link window="new" document="m22460" resource="index.html">MBA 08</link></para>
+    </section>
+    <section id="id1170660609333">
+      <title>Exercises</title>
+<exercise id="fs-id1172776679633">
+  <problem id="fs-id1172768087714">
+    <list id="fs-id1172762115796" list-type="enumerated">
+      <title>Answer the following statements as either true or false:</title>
+        <item>The standard library is a set of specific task functions that have been added to the programming language for universal use.</item>
+        <item>Programmers should not have confidence that standard library functions work properly.</item>
+        <item>It would be easier to write programs without using specific task functions.</item>
+    </list>
+  </problem>
+  <solution id="fs-id1172762226531">
+    <list id="fs-id1172770579624" list-type="enumerated">
+      <title>Answers:</title>
+        <item>true</item>
+        <item>false</item>
+        <item>false</item>
+    </list>
+  </solution>
+</exercise>
+    </section>
+    <section id="id1170657787084">
+      <title>Miscellaneous Items</title>
+      <para id="id1170668723885">None at this time.</para>
+    </section>
+    <section id="id1170663806378">
+      <title>Lab Assignment</title>
+      <section id="id1170660421258">
+        <title>Creating a Folder or Sub-Folder for Chapter 08 Files</title>
+        <para id="id1170656907276">Depending on your compiler/IDE, you should decide where to download and store source code files for processing. Prudence dictates that you create these folders as needed prior to downloading source code files. A suggested sub-folder for the <term>Bloodshed Dev-C++ 5 compiler/IDE</term> might be named:</para>
+        <list id="id1170658638382" list-type="bulleted">
+          <item>Chapter_08 within the folder named: Cpp_Source_Code_Files</item>
+        </list>
+        <para id="id1170663862738">If you have not done so, please create the folder(s) and/or sub-folder(s) as appropriate.</para>
+      </section>
+      <section id="id1170656679569">
+        <title>Download the Lab File(s)</title>
+        <para id="id3522394">Download and store the following file(s) to your storage device in the appropriate folder(s). You may need to right click on the link and select "Save Target As" in order to download the file.</para>
+        <para id="id1170659496615">Download from Connexions: <link document="m22460" resource="Lab_08_Testing_Shell.cpp">Lab_08_Testing_Shell.cpp</link></para>
+      </section>
+      <section id="id1170656951541">
+        <title>Detailed Lab Instructions</title>
+        <para id="id1170656797690">Read and follow the directions below carefully, and perform the steps in the order listed.</para>
+        <list id="id1170668566782" list-type="bulleted"><item>Navigate to your sub-folder: Chapter_08. Compile and run the Lab 08 Testing Shell source code. Note: This program uses an include file that points to the "udst_monitor.h" file as explained in Connexions Chapter 7 materials. </item>
+	<item>You need to add another function to this testing shell titled: area_triangle that is to calculate the area of a triangle. Define the function, prototype it, and within the function main add an area for calling the function (similar to the existing functions with test data). Be confident that it is working properly.</item>
+	<item>Following same process as shown in the Connexions module "Using a Header File for User Defined Specific Task Functions" that is within the Chapter 7 materials; make the following files: <emphasis>udst_geo_area.h</emphasis> and <emphasis>udst_geo_area_prototypes.txt</emphasis> and <emphasis>Lab_08_Verify_Header.cpp</emphasis></item>
+	<item>Copy the header file to your user library, then build (compile and run) your verify header program.</item>
+	<item>After you have successfully written this program, if you are taking this course for college credit, follow the instructions from your professor/instructor for submitting it for grading.</item>
+</list>
+      </section>
+    </section>
+    <section id="id1170656949933">
+      <title>Problems</title>
+        <section id="fs-id1172772825917">
+          <title>Problem 08a – Instructions</title>
+          <para id="fs-id1172768349200">Write the C++ code to do the following specific task function.</para>
+          <example id="fs-id1172773578154">
+            <title>pseudocode</title>
+            <para id="fs-id1172766156959"><preformat id="fs-id1172771897166" display="block"><code>
+Function area_regular_hexagon
+  Pass In: side
+  Calculate: side times side times 3 times the square root of 0.75
+  Pass Out: the calculation
+Endfunction</code></preformat>
+</para>
+          </example>
+        </section>
+    </section>
+  </content>
+</document>

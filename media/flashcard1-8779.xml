@@ -1,0 +1,47 @@
+<?xml version='1.0'?>
+<order>
+<color>E7E7F5</color>
+<showterm>true</showterm>
+<showdef>false</showdef>
+<customDeckText>Custom Deck</customDeckText>
+<wholeDeckText>Whole Deck</wholeDeckText>
+<showText>SHOW</showText>
+<addToText>Add to Custom</addToText>
+<showTermText>Show Term</showTermText>
+<showDefText>Show Definition</showDefText>
+<orderset value='1'>
+ <term>linear search</term>
+ <def>Using a loop to sequentially step through an array.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='2'>
+ <term>maximum</term>
+ <def>Aka max or the largest member of an array.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='3'>
+ <term>minimum</term>
+ <def>Aka min or the smallest member of an array.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='4'>
+ <term>sorting</term>
+ <def>Arranging data according to their values.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='5'>
+ <term>bubble sort</term>
+ <def>A method of swapping array members until they are in the desired sequence.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+</order>

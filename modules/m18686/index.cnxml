@@ -1,0 +1,78 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Program Design</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m18686</md:content-id>
+  <md:title>Program Design</md:title>
+  <md:abstract>An introduction to the computer program design process.</md:abstract>
+  <md:uuid>fea3130c-6e57-41b2-a00f-0267ffae273c</md:uuid>
+</metadata>
+<featured-links>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit below.
+       Changes to the links section in the source will not be saved. -->
+    <link-group type="supplemental">
+      <link url="http://cnx.org/content/m18781/latest/" strength="3">Test Data</link>
+      <link url="http://cnx.org/content/m18648/latest/" strength="3">Pseudocode</link>
+      <link url="http://en.wikipedia.org/wiki/Algorithm" strength="2">Wikipedia - Algorithm</link>
+      <link url="http://en.wikipedia.org/wiki/Pseudocode" strength="2">Wikipedia - Pseudocode</link>
+      <link url="http://en.wikipedia.org/wiki/Flowchart" strength="2">Wikipedia - Flowchart</link>
+      <link url="http://cnx.org/content/m18682/latest/" strength="2">Hierarchy or Structure Chart</link>
+      <link url="http://www.hit.ac.il/staff/leonidM/information-systems/ch64.html" strength="1">HIPO - Hierarchy plus Input, Porcessing, Output</link>
+      <link url="http://en.wikipedia.org/wiki/Nassi-Shneiderman_diagram" strength="1">Wikipedia - Nassi-Shneiderman Diagram</link>
+      <link url="http://en.wikipedia.org/wiki/Warnier-Orr" strength="1">Wikipedia - Warnier-Orr Diagrams</link>
+      <link url="http://en.wikipedia.org/wiki/Computer-aided_software_engineering" strength="1">Wikipedia -  Computer-Aided Software Engineering</link>
+    </link-group>
+    <link-group type="prerequisite">
+      <link url="http://cnx.org/content/m18684/latest/" strength="3">Systems Development Life Cycle</link>
+    </link-group>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit above.
+       Changes to the links section in the source will not be saved. -->
+</featured-links>
+<content>
+    <section id="id1164917961775">
+      <title>Topic Introduction</title>
+      <para id="id1164916302672">Program Design consists of the steps a programmer should do before they start coding the program in a specific language. These steps when properly documented will make the completed program easier for other programmers to maintain in the future. There are three broad areas of activity:</para>
+      <list id="id1164913269267" list-type="bulleted">
+        <item>Understanding the Program</item>
+        <item>Using Design Tools to Create a Model</item>
+        <item>Develop Test Data</item>
+      </list>
+    </section>
+    <section id="id1164912683612">
+      <title>Understanding the Program</title>
+      <para id="id1164907595267">If you are working on a project as a one of many programmers, the system analyst may have created a variety of documentation items that will help you understand what the program is to do. These could include screen layouts, narrative descriptions, documentation showing the processing steps, etc. If you are not on a project and you are creating a simple program you might be given only a simple description of the purpose of the program. Understanding the purpose of a program usually involves understanding it's:</para>
+      <list id="id1164911185296" list-type="bulleted">
+        <item>Inputs</item>
+        <item>Processing</item>
+        <item>Outputs</item>
+      </list>
+      <para id="id1164916290809">This <emphasis>IPO</emphasis> approach works very well for beginning programmers. Sometimes, it might help to visualize the programming running on the computer. You can imagine what the monitor will look like, what the user must enter on the keyboard and what processing or manipulations will be done. </para>
+    </section>
+    <section id="id1164913480582">
+      <title>Using Design Tools to Create a Model</title>
+      <para id="id1164913166432">At first you will not need a hierarchy chart because your first programs will not be complex. But as they grow and become more complex, you will divide your program into several modules (or functions). </para>
+      <para id="id1164914402838">The first modeling tool you will usually learn is <emphasis>pseudocode</emphasis>. You will document the logic or algorithm of each function in your program. At first, you will have only one function, and thus your pseudocode will follow closely the IPO approach above.</para>
+      <para id="id1164910222113">There are several methods or tools for planning the logic of a program. They include: flowcharting, hierarchy or structure charts, pseudocode, HIPO, Nassi-Schneiderman charts, Warnier-Orr diagrams, etc. Programmers are expected to be able to understand and do flowcharting and pseudocode. These methods of developing the model of a program are usually taught in most computer courses. Several standards exist for flowcharting and pseudocode and most are very similar to each other. However, most companies have their own documentation standards and styles. Programmers are expected to be able to quickly adapt to any flowcharting or pseudocode standards for the company at which they work. The others methods that are less universal require some training which is generally provided by the employer that chooses to use them.</para>
+      <para id="id1164916387555">Later in your programming career, you will learn about using applications software that helps create an information system and/or programs. This type of software is called Computer-aided Software Engineering.</para>
+      <para id="id1164913129755">Understanding the logic and planning the algorithm on paper before you start to code is very important concept. Many students develop poor habits and skipping this step is one of them.</para>
+    </section>
+    <section id="id1164911033472">
+      <title>Develop Test Data</title>
+      <para id="id1164917730113"><emphasis>Test data</emphasis> consists of the user providing some input values and predicting the outputs. This can be quite easy for a simple program and the test data can be used to check the model to see if it produces the correct results.</para>
+    </section>
+    <section id="id1164914481273">
+      <title>Definitions</title>
+    <definition id="fs-id1164917078538">
+      <term>IPO</term>
+      <meaning id="fs-id1164911971264">Inputs - Processing - Outputs</meaning>
+    </definition>
+    <definition id="fs-id7667693">
+      <term>pseudocode</term>
+      <meaning id="fs-id1164917236414">English-like statements used to convey the steps of an algorithm or function. </meaning>
+    </definition>
+    <definition id="fs-id1966744">
+      <term>test data</term>
+      <meaning id="fs-id6282461">Providing input values and predicting the outputs.</meaning>
+    </definition>
+    </section>
+  </content>
+</document>

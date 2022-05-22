@@ -1,0 +1,64 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Loading an Array from a File</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m21625</md:content-id>
+  <md:title>Loading an Array from a File</md:title>
+  <md:abstract>An introduction and example of loading an array from a file within the C++ programming language.</md:abstract>
+  <md:uuid>4d96797d-6667-418b-bf5f-e43d2d890b19</md:uuid>
+</metadata>
+<featured-links>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit below.
+       Changes to the links section in the source will not be saved. -->
+    <link-group type="supplemental">
+      <link url="http://cnx.org/content/m18785/latest/" strength="1">Bloodshed Dev-C++ 5 Compiler/IDE</link>
+    </link-group>
+    <link-group type="prerequisite">
+      <link url="http://cnx.org/content/m21623/latest/" strength="3">File Input and Output</link>
+      <link url="http://cnx.org/content/m19147/latest/" strength="2">Global vs Local Data Storage</link>
+      <link url="http://cnx.org/content/m19947/latest/" strength="1">Branching Control Structures</link>
+    </link-group>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit above.
+       Changes to the links section in the source will not be saved. -->
+</featured-links>
+<content>
+    <section id="id3245115">
+      <title>Conceptual Overview</title>
+      <para id="id4574761">Loading an array from a file presents an interesting dilemma. The problem resolves around how many elements you should plan for in the array. Let’s say 100, but what if the file has fewer or more than 100 values. How can the program handle it correctly?</para>
+      <para id="id4775730">The solution involves some simple steps:</para>
+      <list id="id4798885" list-type="enumerated" number-style="arabic">
+        <item>We can read the file once to get the element count. Thus, we will know exactly how many members (elements) we will need.</item>
+        <item>We can then create an array using <term>dynamic memory allocation</term> by defining the array within a function so that it has <term>local scope</term>. Local scope variables are created during the execution of the program and use the stack as the storage location instead of the data area. If you define the array outside of a function (<term>global scope</term> also known as <term>static memory allocation</term>) it stores it in the data area and must know how much storage space to allocate to the array when you <emphasis>write the source code</emphasis>. Since we don’t know how many elements will be on the input file when we write the source code defining an array with global scope will not work. But, we can determine exactly how many members we need for the array by having our program count them (step 1) so that we can then define the array with local scope to the precise size needed.</item>
+        <item>We can then load the array by reading the file a second time and storing the values read into the array just created. </item>
+      </list>
+      <para id="id3755753">This method is demonstrated in the demo file provided, thus you need to study this material in conjunction with the demo program.</para>
+    </section>
+    <section id="id3857417">
+      <title>Demonstration Program in C++</title>
+      <section id="id4623555">
+        <title>Creating a Folder or Sub-Folder for Source Code Files</title>
+        <para id="id4789094">Depending on your compiler/IDE, you should decide where to download and store source code files for processing. Prudence dictates that you create these folders as needed prior to downloading source code files. A suggested sub-folder for the <term>Bloodshed Dev-C++ 5 compiler/IDE</term> might be named:</para>
+        <list id="id5314889" list-type="bulleted">
+          <item>Demo_Programs</item>
+        </list>
+        <para id="id4736586">If you have not done so, please create the folder(s) and/or sub-folder(s) as appropriate.</para>
+      </section>
+      <section id="id4738884">
+        <title>Download the Demo Program</title>
+        <para id="id4572320">Download and store the following file(s) to your storage device in the appropriate folder(s). Following the methods of your compiler/IDE, compile and run the program(s). Study the source code file(s) in conjunction with other learning materials. You may need to right click on the link and select "Save Target As" in order to download the file.</para>
+        <para id="id3795669">Download from Connexions: <link document="m21625" resource="Demo_Loading_Array_from_File.cpp">Demo_Loading_Array_from_File.cpp</link></para>
+        <para id="id4642892">Download from Connexions: <link document="m21625" resource="Demo_Farm_Acres_Input.txt">Demo_Farm_Acres_Input.txt</link></para>
+      </section>
+    </section>
+    <section id="id3753109">
+      <title>Definitions</title>
+    <definition id="fs-id3928430">
+      <term>dynamic memory</term>
+      <meaning id="fs-id14781440">Aka stack created memory associated with local scope.  </meaning>
+    </definition>
+    <definition id="fs-id12253235">
+      <term>static memory</term>
+      <meaning id="fs-id14199196">Aka data area memory associated with global scope.  </meaning>
+    </definition>
+    </section>
+  </content>
+</document>

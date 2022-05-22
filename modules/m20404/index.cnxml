@@ -1,0 +1,80 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Flag Concept</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m20404</md:content-id>
+  <md:title>Flag Concept</md:title>
+  <md:abstract>An explanation of how the flag concept is used within computer programming.</md:abstract>
+  <md:uuid>08cbfc64-e7fd-4fe9-aa95-e36d3554e50f</md:uuid>
+</metadata>
+<featured-links>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit below.
+       Changes to the links section in the source will not be saved. -->
+    <link-group type="supplemental">
+      <link url="http://cnx.org/content/m18058/latest/" strength="1">Lvalue and Rvalue</link>
+    </link-group>
+    <link-group type="prerequisite">
+      <link url="http://cnx.org/content/m19549/latest/" strength="3">Relational Operators</link>
+      <link url="http://cnx.org/content/m19847/latest/" strength="3">Logical Operators</link>
+    </link-group>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit above.
+       Changes to the links section in the source will not be saved. -->
+</featured-links>
+<content>
+    <section id="id16677797">
+      <title>Concept Discussion</title>
+      <para id="id14461663">For centuries flags have been used as a signal to let others know something about the group or individual that is displaying, flying or waving the flag. There are country flags and state flags. Ships at sea flew the flag of their country. Pirates flew the skull and cross bones. A yellow flag was used for quarantine, usually the plague. Even pirates stayed away. Today, some people might recognize the flag used by scuba divers. The Presidents of most countries have a flag. At a race car event they use the checkered flag to indicate the race is over. </para>
+      <figure id="id12100752">
+        <media id="id12100752_media" alt="">
+          <image mime-type="image/jpg" src="../../media/graphics1-9270.jpg" id="id12100752__onlineimage" height="450" width="600"/>
+        </media>
+      </figure>
+      <para id="id13346665">Computer programming uses the concept of a flag in the same way that physical flags are used. A flag is anything that signals some information to the person looking at it.</para>
+    </section>
+    <section id="id10603958">
+      <title>Computer Implementation</title>
+      <para id="id14829415">Any variable or constant that holds data can be used as a flag. You can think of the storage location as a flag pole. The value stored within the variable conveys some meaning and you can think of it as being the flag. An example might be a variable named: gender which is of the character data type. The two values normally stored in the variable are: 'F' and 'M' meaning female and male. Then, somewhere within a program we might look at the variable to make a decision:</para>
+<example id="fs-id15713616">
+<title>flag controling an if then control structure</title>
+<para id="fs-id9880754"><preformat id="fs-id8689428" display="block"><code>
+if gender equals 'F'
+  display "Are you pregnant?"
+  get answer from user store in pregnant variable
+</code></preformat>
+</para>
+</example>
+      <para id="id11834028">Looking at the flag implies comparing the value in the variable to another value (a constant or the value in another variable) using a relational operator (in our above example: equality). </para>
+      <para id="id4564554">Control structures are "controlled" by using a <emphasis>test expression</emphasis> which is usually a <emphasis>Boolean expression</emphasis>. Thus, the flag concept of "looking" at the value in the variable and comparing it to another value is fundamental to understanding how all control structures work. </para>
+    </section>
+    <section id="id14488161">
+      <title>Two Flags with the Same Meaning</title>
+      <para id="id15614393">Sometimes we will use an iteration control structure of do while to allow us to decide if we want to do the loop action again. A variable might be named "loop_response" with the user prompted for their answer of 'y' for yes or 'n' for no. Once the answer is retrieved from the keyboard and stored in our flag variable of "loop_response" the test expression to control the loop might be:</para>
+<example id="fs-id14963026">
+<title>simple flag comparison</title>
+<para id="fs-id10214792"><preformat id="fs-id10246817" display="block"><code>
+loop_response equals 'y'
+</code></preformat>
+</para>
+</example>
+      <para id="id15526217">This is fine but what if the user accidentally has on the caps lock. Then his response of 'Y' would not have the control structure loop and perform the action again. The solution lies in looking at the flag twice. Consider:</para>
+<example id="fs-id14150528">
+<title>complex flag comparison</title>
+  <para id="fs-id9961898"><preformat id="fs-id9961901" display="block"><code>
+loop_response equals 'y' or loop_response equals 'Y'
+</code></preformat>
+</para>
+</example>
+      <para id="id13076908">We look to see if the flag is either a lower case y or an upper case Y by using a more complex Boolean expression with both relational and logical operators. </para>
+    </section>
+    <section id="id11263672">
+      <title>Multiple Flags in One Byte</title>
+      <para id="id10419647">Within assembly language programming and in many technical programs that control special devices; the use of a single byte to represent several flags is common. This is accomplished by having each one of the 8 bits that make up the byte represent a flag. Each bit has a value of either 1 or 0 and can represent true and false, on or off, yes or no, etc. </para>
+    </section>
+    <section id="id4492836">
+      <title>Definitions</title>
+    <definition id="fs-id27102963">
+      <term>flag</term>
+      <meaning id="fs-id25970052"> A variable or constant used to store information that will normally be used to control the program. </meaning>
+    </definition>
+    </section>
+  </content>
+</document>

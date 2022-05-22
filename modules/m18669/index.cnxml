@@ -1,0 +1,89 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Character Data Type</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m18669</md:content-id>
+  <md:title>Character Data Type</md:title>
+  <md:abstract>An introduction to the character data type.</md:abstract>
+  <md:uuid>a05022a5-5961-40ff-ab54-9aeb61a2dc7d</md:uuid>
+</metadata>
+<featured-links>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit below.
+       Changes to the links section in the source will not be saved. -->
+    <link-group type="supplemental">
+      <link url="http://cnx.org/content/m18169/latest/" strength="2">The ASCII Character Set </link>
+      <link url="http://cnx.org/content/m18785/latest/" strength="1">Bloodshed Dev-C++ 5 Compiler/IDE</link>
+    </link-group>
+    <link-group type="prerequisite">
+      <link url="http://cnx.org/content/m18653/latest/" strength="2">Data Types in C++</link>
+    </link-group>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit above.
+       Changes to the links section in the source will not be saved. -->
+</featured-links>
+<content>
+    <section id="id18951292">
+      <title>Overview of the Character Data Type</title>
+      <para id="id19911182">The <emphasis>character</emphasis> data type basically represents individual or single characters. Characters comprise a variety of symbols such as the alphabet (both upper and lower case) the numeral digits (0 to 9), punctuation, etc. All computers store character data in a one byte field as an integer value. Because a byte consists of 8 bits, this one byte field has 28 or 256 possibilities using the positive values of 0 to 255. </para>
+      <para id="id23615786">Most microcomputers use the <emphasis>ASCII</emphasis> (stands for American Standard Code for Information Interchange and is pronounced "ask-key") Character Set which has established values for 0 to 127. For the values of 128 to 255 they usually use the Extended ASCII Character Set. When we hit the capital A on the keyboard, the keyboard sends a byte with the bit pattern equal to an integer 65. When the byte is sent from the memory to the monitor, the monitor converts the integer value of 65 to into the symbol of the capital A to display on the monitor. </para>
+      <para id="id21758697">The character data type attributes include:</para>
+      <table id="id20763270" summary="Table with data about the character data type.">
+<tgroup cols="2"><colspec colnum="1" colname="c1"/>
+	<colspec colnum="2" colname="c2"/>
+	<tbody>
+		<row>
+			<entry>C++ Reserved Word</entry>
+			<entry>char</entry>
+		</row>
+		<row>
+			<entry>Represent</entry>
+			<entry>Single characters</entry>
+		</row>
+		<row>
+			<entry>Size</entry>
+			<entry>1 byte</entry>
+		</row>
+		<row>
+			<entry>Normal Signage</entry>
+			<entry>Unsigned (positive values only)</entry>
+		</row>
+		<row>
+			<entry>Domain (Values Allowed)</entry>
+			<entry>Values from 0 to 127 as shown in the standard ASCII Character Set, plus values 128 to 255 from the Extended ASCII Character Set</entry>
+		</row>
+		<row>
+			<entry>C++ syntax rule</entry>
+			<entry>Single quote marks – Example: 'A'</entry>
+		</row>
+	</tbody>
+
+</tgroup>
+</table>
+    </section>
+    <section id="id23727868">
+      <title>Demonstration Program in C++</title>
+      <section id="id7564769">
+        <title>Creating a Folder or Sub-Folder for Source Code Files</title>
+        <para id="id22608300">Depending on your compiler/IDE, you should decide where to download and store source code files for processing. Prudence dictates that you create these folders as needed prior to downloading source code files. A suggested sub-folder for the <term>Bloodshed Dev-C++ 5 compiler/IDE</term> might be named:</para>
+        <list id="id21264198" list-type="bulleted">
+          <item>Demo_Programs</item>
+        </list>
+        <para id="id24071977">If you have not done so, please create the folder(s) and/or sub-folder(s) as appropriate.</para>
+      </section>
+      <section id="id24238291"><title>Download the Demo Program</title><para id="id23542825">Download and store the following file(s) to your storage device in the appropriate folder(s). Following the methods of your compiler/IDE, compile and run the program(s). Study the soruce code file(s) in conjunction with other learning materials.</para><para id="id24241581">Download from Connexions: <link document="m18669" resource="Demo_Character_Data_Type.cpp">Demo_Character_Data_Type.cpp</link></para></section>
+    </section>
+<section id="fs-id3947541">
+  <title>Definitions</title>
+    <definition id="fs-id1169802879840">
+      <term>character</term>
+      <meaning id="fs-id7665000">A data type representing single text characters like the alphabet, numeral digits, punctuation, etc.</meaning>
+    </definition>
+    <definition id="fs-id1169791251328">
+      <term>ASCII</term>
+      <meaning id="fs-id7209912">American Standard Code for Information Interchange</meaning>
+    </definition>
+    <definition id="fs-id1169799275212">
+      <term>single quote marks</term>
+      <meaning id="fs-id3591394">Used to create character type data within the C++ programming language.</meaning>
+    </definition>
+</section>
+  </content>
+</document>

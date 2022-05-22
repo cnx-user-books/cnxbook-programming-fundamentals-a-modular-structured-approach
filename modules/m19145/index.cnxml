@@ -1,0 +1,89 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Program Control Functions</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m19145</md:content-id>
+  <md:title>Program Control Functions</md:title>
+  <md:abstract>A general explanation of how functions are used to modularize a program.</md:abstract>
+  <md:uuid>614f8ea8-b14e-4271-89c5-ddcab0183675</md:uuid>
+</metadata>
+<featured-links>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit below.
+       Changes to the links section in the source will not be saved. -->
+    <link-group type="supplemental">
+      <link url="http://cnx.org/content/m19147/latest/" strength="2">Global vs Local Data Storage</link>
+      <link url="http://cnx.org/content/m18785/latest/" strength="1">Bloodshed Dev-C++ 5 Compiler/IDE</link>
+    </link-group>
+    <link-group type="prerequisite">
+      <link url="http://cnx.org/content/m18861/latest/" strength="3">Modularization and C++ Program Layout</link>
+      <link url="http://cnx.org/content/m19136/latest/" strength="2">Pseudocode Examples for Functions</link>
+      <link url="http://cnx.org/content/m18682/latest/" strength="2">Hierarchy or Structure Chart</link>
+    </link-group>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit above.
+       Changes to the links section in the source will not be saved. -->
+</featured-links>
+<content>
+    <section id="id45510286">
+      <title>Prerequisite Material</title>
+      <para id="id45652290">Critical to this module is the review of several Connexions modules: </para>
+      <list id="id46208449" list-type="enumerated">
+        <item>m_18861 – Titled: Modularization and C++ Program Layout</item>
+        <item>m_19136 – Titled: Pseudocode Examples for Functions</item>
+        <item>m_18682 – Titled: Hierarchy or Structure Chart</item>
+      </list>
+      <para id="id45997154">You should review these materials before proceeding. If you are viewing this module on-line, links to these items are in the "Links" box to your right.</para>
+    </section>
+    <section id="id46210196">
+      <title>Concept of Modularization</title>
+      <para id="id45911048">The concept is everywhere present in the real world about us. Simply put it is to <emphasis>take a large complicated problem and to divide it into smaller manageable pieces</emphasis>. The hierarchy chart of any large organization (government unit, company, university, hospital, etc.) will show levels of people with job titles that indicate a different area of responsibility. Each person is a small piece of the overall workings of the organization. Each person can concentrate on their unique talent or task to make sure it works properly. Collectively they accomplish the goals of the organization.  </para>
+      <para id="id45718552">Additionally, the concept has been around for a long time. A village of 300 years ago had farmers, tailors, butchers, blacksmiths, etc. Manufacturing is a prime example of not just work being modularized but the product itself is viewed in terms of modules or systems (Example of a automobile: engine, steering, brakes, etc.).</para>
+      <para id="id45593293">The world of computers, both hardware (equipment) and software (computer programs), also uses this modular concept. Thus, the concept migrates to a single computer program; allowing us to modularize the program into manageable tasks called functions.</para>
+    </section>
+    <section id="id46167413">
+      <title>Program Control Functions</title>
+      <para id="id45975240">Program Control functions normally do not communicate information to each other but use a <emphasis>common area</emphasis> for variable storage. The rules for how data is communicated in and out of a function vary greatly by programming language, but the concept is the same.  The data items passed (or communicated) are called parameters.  Thus the wording: <term>parameter passing</term>. However, with program control functions we use the data communication option of <term>no communication in – with no communication out</term>. Our data variables and constants are placed in a common area available to all functions (called global scope).</para>
+      <para id="id45980115">The identifier names for program control functions usually imply a task to be accomplished, such as get-data, process-data or show-results. As you learn to write more complicated programs the number of lines of code will increase. Prudence dictates that it would be beneficial to divide the program into functions that perform unique tasks. The larger the program the more need for modularization or creating of program control functions.</para>
+      <para id="id45522981">Depending on the programming language, there is a formal way to:</para>
+      <list id="id45244959" list-type="enumerated">
+        <item>define a function (it’s <term>definition</term> or the code it will execute))</item>
+        <item><term>call</term> a function </item>
+        <item>declare a function (a <term>prototype</term> is a declaration to a complier) </item>
+      </list>
+      <para id="id45963100">One of the easier ways to understand program control function is to view an example. Even if you don’t know the C++ programming language, you can study the materials to help understand the modularization process. </para>
+    </section>
+    <section id="id45985393">
+      <title>Demonstration Program in C++</title>
+      <section id="id45221220">
+        <title>Creating a Folder or Sub-Folder for Source Code Files</title>
+        <para id="id45540812">Depending on your compiler/IDE, you should decide where to download and store source code files for processing. Prudence dictates that you create these folders as needed prior to downloading source code files. A suggested sub-folder for the <term>Bloodshed Dev-C++ 5 compiler/IDE</term> might be named:</para>
+        <list id="id45750027" list-type="bulleted">
+          <item>Demo_Programs</item>
+        </list>
+        <para id="id45500369">If you have not done so, please create the folder(s) and/or sub-folder(s) as appropriate.</para>
+      </section>
+      <section id="id46181450">
+        <title>Download the Demo Program</title>
+        <para id="id45267503">Download and store the following file(s) to your storage device in the appropriate folder(s). You may need to right click on some of the links and select "Save Target As" in order to download some of the files. Following the methods of your compiler/IDE, compile and run the program(s). Study the source code file(s) in conjunction with other learning materials.</para>
+        <para id="id45540654">Download from Connexions: <link document="m19145" resource="Demo_Program_Control_Functions_before_Compiler_Test.cpp">Demo_Program_Control_Functions_before_Compiler_Test.cpp</link></para>
+        <para id="id47609850">Download from Connexions: <link document="m19145" resource="Demo_Program_Control_Functions_Pseudocode.txt">Demo_Program_Control_Functions_Pseudocode.txt</link></para>
+        <para id="id45965200">Download from Connexions: <link document="m19145" resource="Demo_Program_Control_Functions_Hierarchy_Chart.jpg">Demo_Program_Control_Functions_Hierarchy_Chart.jpg</link></para>
+        <para id="id46666132">Download from Connexions: <link document="m19145" resource="Demo_Program_Control_Functions.cpp">Demo_Program_Control_Functions.cpp</link></para>
+      </section>
+      <section id="id45989592">
+        <title>Study the Materials Collectively to Understand Modularization</title>
+        <para id="id45282797">The four items represent a progression from no modularization to modularization:</para>
+        <list id="id46014556" list-type="enumerated"><item>Program code before it is modularized</item>
+	<item>Modularized pseudocode and a hierarchy chart for the program</item>
+	<item>Program code that has been modularized</item>
+</list>
+        <para id="id46213897">The simplicity of the program should not be considered during this review. It is obvious that the program does not need modularization. The example is to show or demonstrate how to modularize a program for program control. </para>
+      </section>
+    </section>
+<section id="fs-id3314381">
+  <title>Definitions</title>
+    <definition id="fs-id7895315">
+      <term>common area</term>
+      <meaning id="fs-id7932666">An area of the program where variables and constants are defined so that they are available to all functions. </meaning>
+    </definition>
+</section>
+  </content>
+</document>

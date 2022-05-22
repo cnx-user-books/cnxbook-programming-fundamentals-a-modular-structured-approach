@@ -1,0 +1,82 @@
+! SoftChalk LessonBuilder TIV File (C)2003-2008
+! ================ DO NOT EDIT ================
+
+act_item=10
+
+act_num=8
+act_type=2
+items=7
+colorChoice=_B
+showList=false
+showFlashCardTerm=true
+showFlashCardDef=false
+useFlashBigText=false
+instructions=Click 'Show' to see the hidden portion.
+wordPair[1]=Boolean|A data type representing the concepts of true and false.|noimage
+wordPair[2]=test expression|An expression used to control programming structures.|noimage
+wordPair[3]=relational operator|An operator that gives a Boolean value by evaluating the relationship between two operands.|noimage
+wordPair[4]=mutually exclusive|Items that do not overlap. Example: true and false.|noimage
+wordPair[5]=if then else|A two way selection control structure.|noimage
+wordPair[6]=compound statement|A unit of code consisting of zero or more statements.|noimage
+wordPair[7]=block|Another name for a compound statement.|noimage
+inline=false
+points=0
+showRestart=true
+sqrsize=20
+adaDescription=
+playFeedback=true
+hotspotWidth=450
+hotspotHeight=500
+
+act_num=9
+act_type=6
+items=4
+colorChoice=_B
+showList=false
+showFlashCardTerm=true
+showFlashCardDef=false
+useFlashBigText=false
+instructions=Solve the crossword puzzle.
+wordPair[1]=Boolean|A data type representing the concepts of true and false.
+wordPair[2]=TestExpression|An expression used to control programming structures.
+wordPair[3]=IfThenElse|A two way selection control structure.
+wordPair[4]=block|Another name for a compound statement.
+inline=false
+points=0
+showRestart=true
+sqrsize=20
+adaDescription=
+playFeedback=true
+hotspotWidth=450
+hotspotHeight=500
+
+act_num=10
+act_type=3
+items=11
+colorChoice=_B
+showList=false
+showFlashCardTerm=true
+showFlashCardDef=false
+useFlashBigText=false
+instructions=Click and drag to highlight a found word from the list.
+seekawordHintOption=true
+wordPair[1]=Boolean
+wordPair[2]=Test
+wordPair[3]=Expression
+wordPair[4]=Relational
+wordPair[5]=Operator
+wordPair[6]=Mutually
+wordPair[7]=Exclusive
+wordPair[8]=IfThenElse
+wordPair[9]=Compound
+wordPair[10]=Statement
+wordPair[11]=block
+inline=false
+points=0
+showRestart=true
+sqrsize=20
+adaDescription=
+playFeedback=true
+hotspotWidth=450
+hotspotHeight=500
+

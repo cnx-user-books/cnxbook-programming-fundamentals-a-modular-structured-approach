@@ -1,0 +1,34 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Hierarchy or Structure Chart</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m18682</md:content-id>
+  <md:title>Hierarchy or Structure Chart</md:title>
+  <md:abstract>An explanation of a hierarchy or structure chart with an example.</md:abstract>
+  <md:uuid>f6a831fa-beba-490a-bf66-a9d94cb4faab</md:uuid>
+</metadata>
+
+<content>
+    <section id="id1166494765975">
+      <title>Overview</title>
+      <para id="id1166494775516">The <emphasis>hierarchy chart</emphasis> (also known as a <emphasis>structure chart</emphasis>) shows the relationship of various units. Its name comes from its general use in showing the organization (or structure) of a business. The President at the top, then vice presidents on the next level, etc. Within the context of a computer program it shows the relationship between modules (or functions). Detail logic of the program is not presented. It does represent the organization of the functions used within the program showing which functions are calling on a subordinate function. Those above are calling those on the next level down.</para>
+      <para id="id1166494792800">Hierarchy charts are created by the programmer to help document a program. They convey the big picture of the modules (or functions) used in a program. </para>
+      <figure id="id1166494825081">
+        <media id="id1166494825081_media" alt="">
+          <image mime-type="image/jpg" src="../../media/graphics1-85a5.jpg" id="id1166494825081__onlineimage" height="450" width="600"/>
+        </media>
+        <caption>Hierarchy or Structure chart for a program that has five functions.</caption>
+      </figure>
+    </section>
+    <section id="id1166494743582">
+      <title>Definitions</title>
+    <definition id="fs-id1166501229220">
+      <term>hierarchy chart</term>
+      <meaning id="fs-id1166499902777">Convey the relationship or big picture of the various functions in a program. </meaning>
+    </definition>
+    <definition id="fs-id8878391">
+      <term>structure chart</term>
+      <meaning id="fs-id7146744">Another name for a hierarchy chart. </meaning>
+    </definition>
+    </section>
+  </content>
+</document>

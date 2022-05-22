@@ -1,0 +1,84 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Conditional Operator</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m20811</md:content-id>
+  <md:title>Conditional Operator</md:title>
+  <md:abstract>An introduction to the conditional operator as used within the C++ programming language.</md:abstract>
+  <md:uuid>bc1d4e2f-db31-47ff-b243-449495fa6dfc</md:uuid>
+</metadata>
+<featured-links>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit below.
+       Changes to the links section in the source will not be saved. -->
+    <link-group type="prerequisite">
+      <link url="http://cnx.org/content/m19679/latest/" strength="2">If Then Else</link>
+    </link-group>
+    <link-group type="supplemental">
+      <link url="http://cnx.org/content/m18168/latest/" strength="2">Abbreviated Precedence Chart for C++ Operators</link>
+    </link-group>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit above.
+       Changes to the links section in the source will not be saved. -->
+</featured-links>
+<content>
+    <section id="id9940622">
+      <title>Overview</title>
+      <para id="id3787416">The conditional operator is unique in that it has three operands separated by two unconnected operator symbols. All other C++ operators are either unary (one operator and one operand) or binary (one operator and two operands).  On the "Abbreviated Precedence Chart for C++ Operators" the conditional operator has the word "trinary" in the comments column.  This prefix "tri" means three, thus three operands. </para>
+      <table id="id15558314" summary="">
+        <tgroup cols="3">
+          <colspec colnum="1" colname="c1"/>
+          <colspec colnum="2" colname="c2"/>
+          <colspec colnum="3" colname="c3"/>
+          <tbody>
+            <row>
+              <entry>C++ Operator</entry>
+              <entry>Meaning</entry>
+              <entry>Comments</entry>
+            </row>
+            <row>
+              <entry>? :</entry>
+              <entry>conditional</entry>
+              <entry>trinary – three operands with two operators </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+      <para id="id9937250">As an operator it produces a value for the expression. An easy way to explain the conditional operator is to convert an "if then else" control structure to an expression using the conditional operator.</para>
+<example id="fs-id16600853">
+  <title>if then else</title>
+  <para id="fs-id16148061"><preformat id="fs-id15745920" display="block"><code>
+if (age &gt; 17)
+  {
+  cout &lt;&lt; "You can vote.";
+  }
+else
+  {
+  cout &lt;&lt; "You can’t vote.";
+  }</code></preformat>
+</para>
+</example>
+<example id="fs-id8829385"><title>conditional = option 1</title><para id="fs-id15752121"><preformat id="fs-id13716412" display="block"><code>
+age &gt; 17 ? cout &lt;&lt; "You can vote." : cout &lt;&lt; "You can’t vote."; </code></preformat>
+</para>
+</example>
+<example id="fs-id15680127">
+  <title>conditional = option 2</title>
+  <para id="fs-id9861588"><preformat id="fs-id15640905" display="block"><code>
+cout &lt;&lt; (age &gt; 17 ? "You can vote." : "You can’t vote.");</code>
+</preformat>
+	<note id="fs-id16705761"> The use of parenthesizes is needed because of the precedence of operators. The conditional expression is of lower precedence than the insertion (writing) operator.</note>
+</para>
+</example>
+      <para id="id13832153">The first operand is a <emphasis>test expression</emphasis> similar to those that control program flow in control structures. This type of expression is also known as a <emphasis>Boolean expression</emphasis> because they create a Boolean answer of true or false. If the test is true the second operand becomes the value of the expression. If false, the third operand becomes the value of the expression. The operators of the question mark and colon separate the three operands. </para>
+<example id="fs-id16297521"><title>general format</title><para id="fs-id16940184"><preformat id="fs-id16073703" display="block"><code>
+test expression ? expression true : expression false</code></preformat>
+</para>
+</example>
+    </section>
+<section id="fs-id6527450">
+  <title>Definitions</title>
+    <definition id="fs-id5570273">
+      <term>conditional</term>
+      <meaning id="fs-id5004310">A trinary C++ operator that acts like an if then else control structure.  </meaning>
+    </definition>
+</section>
+  </content>
+</document>

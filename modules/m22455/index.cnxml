@@ -1,0 +1,138 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Practice 3: Data &amp; Operators</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m22455</md:content-id>
+  <md:title>Practice 3: Data &amp; Operators</md:title>
+  <md:abstract>Questions, exercises, problems, etc. that support this chapter in the "Programming Fundamentals - A Modular Structured Approach using C++" collection/textbook.</md:abstract>
+  <md:uuid>715202bc-fea7-4dc0-99e1-b6c1961111ee</md:uuid>
+</metadata>
+
+<content>
+    <section id="id1170476781095">
+      <title>Learning Objectives</title>
+      <para id="id1170459758572">With 100% accuracy during a: memory building activity, exercises, lab assignment, problems, or timed quiz/exam; the student is expected to:</para>
+      <list id="id1170470105404" list-type="enumerated" number-style="arabic">
+        <item>Define the terms on the definitions as listed in the modules associated with this chapter.</item>
+        <item>Understand basic data types and how operators manipulate data.</item>
+        <item>Given pseudocode and test data documents, write the C++ code for a program</item>
+      </list>
+    </section>
+    <section id="id1170470007405">
+      <title>Memory Building Activities</title>
+      <para id="id1170471571753">Link to: <link window="new" document="m22455" resource="index.html">MBA 03</link></para>
+    </section>
+    <section id="id1170470294352">
+      <title>Exercises</title>
+<exercise id="idklb3001">
+  <problem id="idklb3002"> 
+    <list id="idklb3003" list-type="enumerated">
+      <title>Answer the following statements as either true or false:</title>
+        <item>A data type defines a set of values and the set of operations that can be applied on those values.</item>
+        <item>Reserved or key words can be used as identifier names.</item>
+        <item>The concept of precedence says that some operators (like multiplication and division) are to be executed before other operators (like addition and subtraction).</item>
+        <item>An operator that needs two operands, will promote one of the operands as needed to make both operands be of the same data type.</item>
+        <item>Parentheses change the precedence of operators.</item>
+    </list>
+  </problem>
+  <solution id="idklb3004">
+    <list id="idklb3005" list-type="enumerated">
+      <title>Answers:</title>
+        <item>true</item>
+        <item>false</item>
+        <item>true</item>
+        <item>true</item>
+        <item>false – Parentheses change the order of evaluation in an expression.</item>
+    </list>
+  </solution>
+</exercise>
+    </section>
+    <section id="id1170460840002">
+      <title>Miscellaneous Items</title>
+      <para id="id1170460027513">Link to: <link window="new" document="m22455" resource="Manipulation_Data_Part_1.pdf">Manipulation of Data Part 1</link></para>
+    </section>
+    <section id="id1170474940964">
+      <title>Lab Assignment</title>
+      <section id="id1170464334072">
+        <title>Creating a Folder or Sub-Folder for Chapter 03 Files</title>
+        <para id="id1170459880803">Depending on your compiler/IDE, you should decide where to download and store source code files for processing. Prudence dictates that you create these folders as needed prior to downloading source code files. A suggested sub-folder for the <term>Bloodshed Dev-C++ 5 compiler/IDE</term> might be named:</para>
+        <list id="id1170464342905" list-type="bulleted">
+          <item>Chapter_03 within the folder named: Cpp_Source_Code_Files</item>
+        </list>
+        <para id="id1170474795064">If you have not done so, please create the folder(s) and/or sub-folder(s) as appropriate.</para>
+      </section>
+      <section id="id1170476865920">
+        <title>Download the Lab File(s)</title>
+        <para id="id1170460303005">Download and store the following file(s) to your storage device in the appropriate folder(s). You may need to right click on the link and select "Save Target As" in order to download the file.</para>
+        <para id="id1170469904300">Download from Connexions: <link document="m22455" resource="Solution_Lab_03_Pseudocode.txt">Solution_Lab_03_Pseudocode.txt</link></para>
+        <para id="id1170464196767">Download from Connexions: <link document="m22455" resource="Solution_Lab_03_Test_Data.txt">Solution_Lab_03_Test_Data.txt</link></para>
+      </section>
+      <section id="id1170463674200">
+        <title>Detailed Lab Instructions</title>
+        <para id="id1170475292581">Read and follow the directions below carefully, and perform the steps in the order listed.</para>
+        <list id="id1170464667603" list-type="bulleted">
+          <item>Navigate to your sub-folder: Chapter_03 and open and study the two files.</item>
+          <item>We have learned that a fundamental concept of interaction with computers is to divide the problem/task into three parts – input, processing and output.  This problem is simple and we will use the IPO (input – processing – output) approach again.  <emphasis>However this time we are going to think about it backwards.</emphasis>  </item>
+        </list>
+        <para id="id1170464197594"> </para>
+        <list id="id1170464017790" list-type="bulleted">
+          <item>
+            <emphasis>What output do I want displayed?  </emphasis>
+          </item>
+          <item>Number of gallons of paint</item>
+          <item>Total cost of the paint</item>
+        </list>
+        <para id="id1170477507798"> </para>
+        <list id="id1170476501673" list-type="bulleted">
+          <item>
+            <emphasis>Thus, what calculations do I need to make?</emphasis>
+          </item>
+          <item>Total cost of the paint is the Number of gallons needed times price per gallon</item>
+          <item>Number of gallons needed is the Total area to be covered (let’s use square feet) divided by the coverage per gallon of paint (Note: you must round up to the next full gallon of paint.)</item>
+          <item>Total area to be covered is the Length times height times 2 added to the width times height times 2 </item>
+        </list>
+        <para id="id1170464698754"> </para>
+        <list id="id1170464448467" list-type="bulleted">
+          <item>
+            <emphasis>Which leads us to, what data do I need as input?</emphasis>
+          </item>
+          <item>Price of a gallon of paint</item>
+          <item>Number of square feet that a gallon will cover</item>
+          <item>Length of the house</item>
+          <item>Width of the house</item>
+          <item>Height of the house</item>
+        </list>
+        <para id="id1170469465656"> </para>
+        <list id="id1170476924197" list-type="bulleted">
+          <item>You can see that by working the logic backwards, we can start to completely see what the program must do.  We need to enter some data (input), do some calculations (process) and display the results (output).</item>
+          <item>Copy into your sub-folder: Chapter_03 one of the source code listings that we have used (we suggest the Lab 01 source code) and rename the copy to: <emphasis>Lab_03.cpp</emphasis></item>
+          <item>Modify the code to follow the Solution_Lab_03_Pseudocode.txt file.</item>
+          <item>I am just going to give you the line of code for rounding up to the next whole gallon of paint (See the “Data Type Conversions” module within Chapter 3 of the Connexions materials. Do you understand why it works?).</item>
+          <item>
+            <emphasis>total_gal_paint = total_area / coverage_gal_paint + 0.9999;</emphasis>
+          </item>
+          <item>Build (compile and run) your program. You have successfully written this program when it runs with your test data and gives the predicted results.</item>
+        </list>
+        <list id="id1170460855307" list-type="bulleted">
+          <item>After you have successfully written this program, if you are taking this course for college credit, follow the instructions from your professor/instructor for submitting it for grading.</item>
+        </list>
+      </section>
+    </section>
+    <section id="id1170463717372">
+      <title>Problems</title>
+        <section id="fs-id6918523">
+          <title>Problem 03a – Instructions</title>
+          <para id="fs-id1172765386643">Write the C++ code to do the following pseudocode example.</para>
+          <example id="fs-id1172764124364">
+            <title>pseudocode</title>
+            <para id="fs-id1172768406850"><preformat id="fs-id1172768491169" display="block"><code>
+Prompt the user for his monthly income.
+Get the users monthly income.
+Multiply the monthly income by 12.
+Display the annual income.
+Pause the program so the user can see the answer. (HINT: You may call a function.)</code></preformat>
+            </para>
+          </example>
+        </section>
+    </section>
+  </content>
+</document>

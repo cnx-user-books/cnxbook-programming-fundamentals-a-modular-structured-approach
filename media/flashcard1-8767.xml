@@ -1,0 +1,47 @@
+<?xml version='1.0'?>
+<order>
+<color>E7E7F5</color>
+<showterm>true</showterm>
+<showdef>false</showdef>
+<customDeckText>Custom Deck</customDeckText>
+<wholeDeckText>Whole Deck</wholeDeckText>
+<showText>SHOW</showText>
+<addToText>Add to Custom</addToText>
+<showTermText>Show Term</showTermText>
+<showDefText>Show Definition</showDefText>
+<orderset value='1'>
+ <term>address operator</term>
+ <def>The ampersand or &.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='2'>
+ <term>pointer</term>
+ <def>A variable that holds an address as its value.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='3'>
+ <term>reference variable</term>
+ <def>Used with parameter passing by reference.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='4'>
+ <term>indirection operator</term>
+ <def>The asterisk used for dereferencing a pointer.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='5'>
+ <term>dereferencing</term>
+ <def>The concept of using the item to which a pointer or address is pointing at.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+</order>

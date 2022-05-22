@@ -1,0 +1,100 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Circular Nature of the Integer Data Type Family</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m20743</md:content-id>
+  <md:title>Circular Nature of the Integer Data Type Family</md:title>
+  <md:abstract>An explanation of how modular arithmetic concepts apply to the integer data type family and counting loops.</md:abstract>
+  <md:uuid>e1852ec2-2f5d-4f57-b9d3-84ea1f2a1f5f</md:uuid>
+</metadata>
+<featured-links>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit below.
+       Changes to the links section in the source will not be saved. -->
+    <link-group type="supplemental">
+      <link url="http://cnx.org/content/m18717/latest/" strength="1">Integer Division and Modulus</link>
+      <link url="http://cnx.org/content/m18785/latest/" strength="1">Bloodshed Dev-C++ 5 Compiler/IDE</link>
+    </link-group>
+    <link-group type="prerequisite">
+      <link url="http://cnx.org/content/m18654/latest/" strength="2">Integer Data Type</link>
+      <link url="http://cnx.org/content/m18669/latest/" strength="2">Character Data Type</link>
+      <link url="http://cnx.org/content/m20499/latest/" strength="2">Increment and Decrement Operators</link>
+      <link url="http://cnx.org/content/m20600/latest/" strength="2">For Loop</link>
+    </link-group>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit above.
+       Changes to the links section in the source will not be saved. -->
+</featured-links>
+<content>
+    <section id="id22442677">
+      <title>General Discussion</title>
+      <para id="id22856051">There are times when character and integer data types are lumped together because they both act the same (often called the integer family). Maybe we should say they act differently than the floating-point data types. The integer family values jump from one value to another. There is nothing between 6 and 7 nor between 'A' and 'B'. It could be asked why not make all your numbers floating-point data types. The reason is twofold. First, some things in the real world are not fractional. A dog, even with only 3 legs, is still one dog not three fourths of a dog. Second, the integer data type is often used to control program flow by counting (counting loops). The integer family has a circular wrap around feature. Using a two byte integer, the next number bigger than 32767 is negative 32768 (character acts the same way going from 255 to 0. We could also reverse that to be the next smaller number than negative 32768 is positive 32767. This can be shown by using a normal math line, limiting the domain and then connecting the two ends to form a circle.</para>
+      <figure id="id22968765">
+        <media id="id22968765_media" alt="">
+          <image mime-type="image/jpg" src="../../media/graphics1-4b38.jpg" id="id22968765__onlineimage" height="450" width="600"/>
+        </media>
+      </figure>
+      <para id="id19255729">This circular nature of the integer family works for both integer and character data types. In theory, it should work for the Boolean data type as well; but in most programming languages it does not for various technical reasons.</para>
+      <para id="id22443457">"In mathematics, modular arithmetic (sometimes called clock arithmetic) is a system of arithmetic for integers where numbers "wrap around" after they reach a certain value — the modulus. …</para>
+      <para id="id19797002">A familiar use of modular arithmetic is its use in the 12 hour clock the arithmetic of time-keeping in which the day is divided into two 12 hour periods. If the time is 7:00 now, then 8 hours later it will be 3:00. Usual addition would suggest that the later time should be 7 + 8 = 15, but this is not the answer because clock time "wraps around" every 12 hours; there is no "15 o'clock". Likewise, if the clock starts at 12:00 (noon) and 21 hours elapse, then the time will be 9:00 the next day, rather than 33:00. Since the hour number starts over when it reaches 12, this is arithmetic modulo 12.</para>
+      <para id="id18399486">
+        <figure id="id22445899">
+          <media id="id22445899_media" alt="">
+            <image mime-type="image/png" src="../../media/graphics2-b640.png" id="id22445899__onlineimage" height="82" width="188"/>
+          </media>
+        </figure>
+      </para>
+      <para id="id15090900">Time-keeping on a clock gives an example of modular arithmetic." (Modular arithmetic from Wikipedia)</para>
+      <para id="id18402905">The use of the modulus operator in integer division is tied to the concepts used in modular arithmetic. </para>
+    </section>
+    <section id="id21637124">
+      <title>Implications When Executing Loops</title>
+      <para id="id21628224">If a programmer sets up a counting loop incorrectly, usually one of three things happen:</para>
+      <list id="id22855658" list-type="bulleted">
+        <item>Infinite loop – usually caused by missing update attribute.</item>
+        <item>Loop never executes – usually the text expression is wrong with the direction of the less than or greater than relationship needing to be switched.</item>
+        <item>Loop executes more times than desired – update not properly handled. Usually the direction of counting (increment or decrement) need to be switched.</item>
+      </list>
+      <para id="id18399683">Let’s give an example of the loop executing for what appears to be for infinity (the third item on our list).</para>
+<example id="klbm1521">
+<title>C++ source code</title>
+<para id="klbm1522"><preformat id="fs-id25630964" display="block"><code>
+for (int x = 0; x &lt; 10; x--)
+  {
+  cout &lt;&lt; x &lt;&lt; endl;
+  }
+</code></preformat>
+</para>
+</example>
+      <para id="id18482838">The above code accidently decrements and the value of x goes in a negative way towards -2147483648 (the largest negative value in a normal four byte signed integer data type). It might take a while (thus it might appear to be in an infinite loop) for it to reach the negative 2 billion plus value, before finally decrementing to positive 2147483647 which would, incidentally, stop the loop execution.</para>
+    </section>
+    <section id="id18484676">
+      <title>Demonstration Program in C++</title>
+      <section id="id22475386">
+        <title>Creating a Folder or Sub-Folder for Source Code Files</title>
+        <para id="id6328425">Depending on your compiler/IDE, you should decide where to download and store source code files for processing. Prudence dictates that you create these folders as needed prior to downloading source code files. A suggested sub-folder for the <term>Bloodshed Dev-C++ 5 compiler/IDE</term> might be named:</para>
+        <list id="id19549189" list-type="bulleted">
+          <item>Demo_Programs</item>
+        </list>
+        <para id="id22769526">If you have not done so, please create the folder(s) and/or sub-folder(s) as appropriate.</para>
+      </section>
+      <section id="id19741664">
+        <title>Download the Demo Program</title>
+        <para id="id18685690">Download and store the following file(s) to your storage device in the appropriate folder(s). Following the methods of your compiler/IDE, compile and run the program(s). Study the source code file(s) in conjunction with other learning materials.</para>
+        <para id="id21009412">Download from Connexions: <link document="m20743" resource="Demo_Circular_Nature_Integer.cpp">Demo_Circular_Nature_Integer.cpp</link></para>
+      </section>
+    </section>
+    <section id="id6077784">
+      <title>Definitions</title>
+    <definition id="fs-id17733909">
+      <term>circular nature</term>
+      <meaning id="fs-id14080348">Connecting the negative and positive ends of the domain of an integer family data type. </meaning>
+    </definition>
+    <definition id="fs-id8468765">
+      <term>loop control</term>
+      <meaning id="fs-id17733994">Making sure the attributes of a loop are properly handled. </meaning>
+    </definition>
+    <definition id="fs-id17354153">
+      <term>modular arithmetic</term>
+      <meaning id="fs-id16910879">A system of arithmetic for integers where numbers "wrap around". </meaning>
+    </definition>
+    </section>
+  </content>
+</document>

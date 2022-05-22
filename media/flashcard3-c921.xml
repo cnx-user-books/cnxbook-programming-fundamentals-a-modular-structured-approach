@@ -1,0 +1,103 @@
+<?xml version='1.0'?>
+<order>
+<color>E7E7F5</color>
+<showterm>true</showterm>
+<showdef>false</showdef>
+<customDeckText>Custom Deck</customDeckText>
+<wholeDeckText>Whole Deck</wholeDeckText>
+<showText>SHOW</showText>
+<addToText>Add to Custom</addToText>
+<showTermText>Show Term</showTermText>
+<showDefText>Show Definition</showDefText>
+<orderset value='1'>
+ <term>phrase word</term>
+ <def>Words used to make pseudocode logic clear to any reader.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='2'>
+ <term>hierarchy chart</term>
+ <def>Convey the relationship or big picture of the various functions in a program.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='3'>
+ <term>structure chart</term>
+ <def>Another name for a hierarchy chart.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='4'>
+ <term>common area</term>
+ <def>An area of the program where variables and constants are defined so that they are available to all functions.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='5'>
+ <term>void data type</term>
+ <def>A data type that has no values or operators and is used to represent nothing.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='6'>
+ <term>documentation</term>
+ <def>A method of preserving information useful to others in understanding an information system or part thereof.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='7'>
+ <term>vertical alignment</term>
+ <def>A method of listing items vertically so that they are easier to read quickly.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='8'>
+ <term>comments</term>
+ <def>Information inserted into a source code file for documentation of the program.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='9'>
+ <term>banners</term>
+ <def>A set of comment lines used to help separate the functions and other sections of a program.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='10'>
+ <term>braces</term>
+ <def>Used to identify a block of code in C++.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='11'>
+ <term>indention</term>
+ <def>A method used to make sections of source code more visible.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='12'>
+ <term>meaningful</term>
+ <def>A rule that says identifier names must be easily understood by another reading the source code.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+<orderset value='13'>
+ <term>consistent</term>
+ <def>A rule that says to type identifier names in upper and lower case consistently through out your source code.</def>
+ <image></image>
+ <width></width>
+ <height></height>
+</orderset>
+</order>

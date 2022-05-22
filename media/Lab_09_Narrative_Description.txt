@@ -1,0 +1,54 @@
+Filename:    Lab_09_Narrative_Description.txt
+
+Purpose:     Farmable Land Calculation
+Comment:     Your professor is the project System Analyst.
+
+Author:      Ken Busbee; © 2009 Kenneth Leroy Busbee
+Date:        Jan 12, 2009; Modified: Mar 17, 2010
+Licensed by: Kenneth Leroy Busbee under a 
+             Creative Commons Attribution License (CC-BY 3.0)
+             http://creativecommons.org/licenses/by/3.0/
+*************************************************************
+In the mid-west many farmers irrigate from a well near
+the center of a piece of land using a circular
+irrigation system. The farmer plans on farming an 
+almost square (but it is a rectangle) piece of 
+property and needs to know some answers for planning.
+
+This program is to get two measurements for a rectangular
+piece of property.  The measurements will be in feet,
+and should be identified with variables named length 
+width. The program is to calculate the area in square
+feet of the rectangle and the largest circle that could
+fit into the rectangle.
+
+The farmer wants to know the acreage of:
+
+1. the property
+2. the farmable area
+3. the non-farmable area
+
+You are to Google Internet to determine how many
+square feet are in a acre.
+
+A graphic of farms using this type of irrigation is
+provided.
+
+A hierarchy chart is provided and you are to name
+your program control functions (middle level) as shown.
+You are to use specific task functions (lowest level)
+from the user libraries as appropriate.
+
+Additional information about Center Pivot Irrigation
+can be found at:
+
+http://en.wikipedia.org/wiki/Center_pivot_irrigation
+*************************************************************
+NOTE: The farmer is smart enough to enter the longer side of 
+the property as the length and the shorter side of the 
+property as the width. You should not include any code for 
+checking to see if he did it right or wrong or fixing it if
+he did it wrong.
+*************************************************************
+End of file
+

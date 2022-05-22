@@ -1,0 +1,34 @@
+<?xml version='1.0'?>
+<match>
+<color>E7E7F5</color>
+<correctsound>correct.mp3</correctsound>
+<wrongsound>wrong.mp3</wrongsound>
+<value>0</value>
+<valueText>Value:</valueText>
+<scoreText>Score</scoreText>
+<resetText>Re-start</resetText>
+<matchset name='1'>
+ <left>A medhod of perserving information useful to others in understanding an informatin system.</left>
+ <right>documentation</right>
+</matchset>
+<matchset name='2'>
+ <left>A method used t make sections of source code more visible.</left>
+ <right>indention</right>
+</matchset>
+<matchset name='3'>
+ <left>A method of listing items vertically so that they are esier to read quickly.</left>
+ <right>vertical alignment</right>
+</matchset>
+<matchset name='4'>
+ <left>Information inserted into a source code file for documentation of hte program.</left>
+ <right>comments</right>
+</matchset>
+<matchset name='5'>
+ <left>A set of comment lines used to help separate the functions and other sections of a program.</left>
+ <right>banners</right>
+</matchset>
+<matchset name='6'>
+ <left>Convey the relationship or big picture of the various functions in a program. </left>
+ <right>hierarchy chart</right>
+</matchset>
+</match>

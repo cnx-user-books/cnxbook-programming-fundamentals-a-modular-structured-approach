@@ -1,0 +1,31 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Sharing/Rating Connexions Materials</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m33960</md:content-id>
+  <md:title>Sharing/Rating Connexions Materials</md:title>
+  <md:abstract>How to share Connexions modules and collections.</md:abstract>
+  <md:uuid>a77ac3eb-56c1-4e3c-aeb8-3eb25e95ca89</md:uuid>
+</metadata>
+
+<content>
+    <section id="id1165913497736">
+      <title>Historical Rating System</title>
+      <para id="id1165919145517">At one time within Connexions there was a five (5) star rating system provided within each Connexions module. This feature was not often used and was discontinued.</para>
+    </section>
+    <section id="id1165909425762">
+      <title>Sharing Connexions Materials</title>
+      <para id="id1165912091728">The five (5) star rating feature was replaced with several ways for users of Connexions materials to share with others. Available at the top and bottom of each module or collection are:</para>
+      <list id="id1165920900632" list-type="bulleted">
+        <item>Google’s “+1”</item>
+        <item>Facebook’s “Like”</item>
+        <item>twitter’s “Tweet”</item>
+      </list>
+      <figure id="id1165910812836">
+        <media id="id1165910812836_media" alt="">
+          <image mime-type="image/jpg" src="../../media/graphics1-fcce.jpg" id="id1165910812836__onlineimage" height="450" width="600"/>
+        </media>
+        <caption>Sharing Connexions Materials</caption>
+      </figure>
+    </section>
+  </content>
+</document>

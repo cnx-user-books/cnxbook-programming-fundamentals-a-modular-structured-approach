@@ -1,0 +1,64 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Address Operator</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m22148</md:content-id>
+  <md:title>Address Operator</md:title>
+  <md:abstract>An introduction to the address operator as used within the C++ programming language.</md:abstract>
+  <md:uuid>8d6d0d4f-2098-4959-9739-484dc60af8f3</md:uuid>
+</metadata>
+<featured-links>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit below.
+       Changes to the links section in the source will not be saved. -->
+    <link-group type="supplemental">
+      <link url="http://cnx.org/content/m22150/latest/" strength="2">Parameter Passing by Reference</link>
+      <link url="http://cnx.org/content/m22151/latest/" strength="2">Pointer Data Type</link>
+      <link url="http://cnx.org/content/m18168/latest/" strength="1">Abbreviated Precedence Chart for C++ Operators</link>
+    </link-group>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit above.
+       Changes to the links section in the source will not be saved. -->
+</featured-links>
+<content>
+    <section id="id7604417">
+      <title>Address Operator in C++</title>
+      <para id="id1164771601515">"Every variable is assigned a memory location whose address can be retrieved using the address operator &amp;. The address of a memory location is called a pointer. Every variable in an executing program is allocated a section of memory large enough to hold a value of that variable’s type."<footnote id="id6893172">Tony Gaddis, Judy Walters and Godfrey Muganda, <emphasis effect="underline">Starting Out with C++ Early Objects Sixth Edition</emphasis> (United States of America: Pearson – Addison Wesley, 2008) 597.</footnote> Thus, whether the variables are <term>global scope</term> and use the data area for storage or <term>local scope</term> and use the stack for storage; you can ask the question at what address in the memory does this variable exist. Given an integer variable named age: </para>
+      <para id="id6453801">
+        <code display="inline">int age = 47;</code>
+      </para>
+      <para id="id8557453">We can use the <emphasis>address operator</emphasis> [which is the <term>ampersand</term> or &amp;] to determine where it exists (or its address) in the memory by:</para>
+      <para id="id1164782722717">
+        <code display="inline">&amp;age</code>
+      </para>
+      <para id="id1164771379886">This expression is a <emphasis>pointer</emphasis> data type. The concept of an address and a pointer are one in the same. A pointer points to the location in memory because the value of a pointer is the address were the data item resides in the memory.</para>
+      <para id="id7148748">The address operator is commonly used in two ways:</para>
+      <list id="id6406627" list-type="enumerated" number-style="arabic">
+        <item>To do parameter passing by reference</item>
+        <item>To establish the value of pointers</item>
+      </list>
+      <para id="id5354398">Both of these items are covered in the supplemental links to this module.</para>
+      <para id="id1164782468148">You can print out the value of the address with the following code:</para>
+      <para id="id3259201">
+        <code display="inline">cout &lt;&lt; &amp;age;</code>
+      </para>
+      <para id="id7761870">This will by default print the value in hexadecimal. Some people prefer an integer value and to print it as an integer you will need to cast the address into a long data type:</para>
+      <para id="id1164782786490">
+        <code display="inline">cout &lt;&lt; long(&amp;age);</code>
+      </para>
+      <para id="id7594059">One additional tidbit, an array’s name is by definition a pointer to the arrays first element. Thus:</para>
+      <para id="id1164780055320">
+        <code display="inline">int iqs[] = {122, 105, 131, 97};</code>
+      </para>
+      <para id="id7679153">establishes "iqs" as a pointer to the array. </para>
+    </section>
+<section id="fs-id15743268">
+  <title>Definitions</title>
+    <definition id="fs-id15734591">
+      <term>address operator</term>
+      <meaning id="fs-id15512437">The ampersand or &amp;.</meaning>
+    </definition>
+    <definition id="fs-id14752614">
+      <term>pointer</term>
+      <meaning id="fs-id7304057">A variable that holds an address as its value. </meaning>
+    </definition>
+</section>
+  </content>
+</document>

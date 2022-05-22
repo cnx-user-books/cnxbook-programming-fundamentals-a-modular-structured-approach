@@ -1,0 +1,94 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Preface</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m19049</md:content-id>
+  <md:title>Preface</md:title>
+  <md:abstract>This module introduces the Connexions online textbook/collection "Programming Fundamentals - A Modular Structured Approach using C++" by Kenneth Leroy Busbee.</md:abstract>
+  <md:uuid>6337e48c-2dab-41d4-a67d-411dbd1344ec</md:uuid>
+</metadata>
+
+<content>
+    <section id="id1169946083199">
+      <title>About this Textbook/Collection</title>
+      <section id="id1169928657239">
+        <title>Programming Fundamentals – A Modular Structured Approach using C++</title>
+        <para id="id1169925731526">Programming Fundamentals - A Modular Structured Approach using C++ is written by Kenneth Leroy Busbee, a faculty member at Houston Community College in Houston, Texas. The materials used in this textbook/collection were developed by the author and others as independent modules for publication within the Connexions environment. Programming fundamentals are often divided into three college courses: Modular/Structured, Object Oriented and Data Structures. This textbook/collection covers the first of those three courses.</para><para id="eip-999">On January 10, 2013 Version 1.22 was created with the modules that make up the collection "fixed" to the their current versions.  This will allow Version 1.22 to remain static with the modules as of that date.</para><para id="eip-596">The collection is going to be revised with a different organization of chapters along with updated modules to handle C++, Java and C# programming languages.  The next version of the collection will have significant changes. </para></section>
+      <section id="id1169942602330">
+        <title>Connexions Learning Modules</title>
+        <para id="id1169946111784">The learning modules of this textbook/collection were written as <emphasis>standalone</emphasis> modules. Students using a collection of modules as a textbook will usually view it contents by reading the modules sequentially as presented by the author of the collection. </para>
+        <para id="id1169938616481">However, the majority of readers of these modules will find them as a result of an Internet search. The Connexions Project allows the author of a module to create web links to other Connexions modules and Internet locations. These links are shown when viewing materials on-line and are categorized into three types: Example, Prerequisite and Supplemental. The importance of each link is numbered from 1 to 3 by the author. When viewing the module each links shows a three part box with yellow or white rectangles. All three yellow means it is a <emphasis>strongly related link</emphasis>. As the yellow decreases the importance decreases. </para>
+        <para id="id1169945907906">Students using this collection for a college course should note that all of the <emphasis>Prerequisite links</emphasis> within the modules will be modules that student should have already read and most of the <emphasis>Supplemental links</emphasis> will be modules that the student will read shortly. Thus, students should use Prerequisite links for review as needed and not be overly concerned about viewing all of the Supplemental links at the first reading of this textbook/collection.</para>
+      </section>
+      <section id="id1169938813964">
+        <title>Conceptual Approach</title>
+        <para id="id1169923243593">The learning modules of this textbook/collection were, for the most part, written without consideration of a specific programming language. In many cases the C++ language is discussed as part of the explanation of the concept. Often the examples used for C++ are exactly the same for the Java programming language. However, some modules were written specifically for the C++ programming language. This could not be avoided as the C++ language is used in conjunction with this textbook/collection by the author in teaching college courses.</para>
+      </section>
+      <section id="id1169956098779">
+        <title>Bloodshed Dev-C++ 5 Compiler/IDE</title>
+        <para id="id1169943679864">This open source compiler/IDE (Integrated Development Environment) was used to develop the demonstration source code files provided within the modules of this textbook/collection. The compiler/IDE is presented to the student in the second module of Chapter 1, with instructions for downloading, installing and using the compiler/IDE. A more complete explanation of the IDE along with demonstration source code listings with errors is presented in first module of Chapter 5. All of the source code files provided in this textbook/collection contain only ANSI standard C++ code and should work on any standard C++ compiler like Microsoft Visual Studio (which includes C++), Microsoft Visual C++ Express or Borland C++ Builder.</para>
+      </section>
+      <section id="id1169922829902">
+        <title>Instructor Materials</title>
+        <para id="id1169938876841">Encrypted instructor materials are available in a module that is not part of this collection. It’s title: Instructor Materials for: Programming Fundamentals - A Modular Structured Approach using C++ is available at: <link document="m34529">http://cnx.org/content/m34529/latest/</link> and the encryption code is only available to educational institutional faculty that are considering adoption of this collection as a textbook.</para>
+      </section>
+    </section>
+    <section id="id1169933172576">
+      <title>About Connexions</title>
+      <section id="id1169934633540">
+        <title>Connexions Modular Content</title>
+        <para id="id1169945766559">The Connexions Project <link url="http://cnx.org/">http://cnx.org</link> is part of the <emphasis>Open Educational Resources (OER)</emphasis> movement dedicated to providing high quality learning materials free online, free in printable PDF format, and at low cost in bound volumes through print-on-demand publishing. This textbook is one of many collections available to Connexions users. Each <emphasis>collection</emphasis> is composed of a number of re-usable learning modules written in the Connexions XML markup language. Each module may also be re-used (or 're-purposed') as part of other collections and may be used outside of Connexions. </para>
+      </section>
+      <section id="id1169934488007">
+        <title>Re-use and Customization</title>
+        <para id="id1169932916625">The <link url="http://creativecommons.org/licenses/by/2.0/">Creative Commons (CC) Attribution license</link> applies to all Connexions modules. Under this license, any <emphasis>Connexions module</emphasis> may be used or modified for any purpose as long as proper attribution to the original author(s) is maintained. Connexions' authoring tools make re-use (or re-purposing) easy. Therefore, instructors anywhere are permitted to create customized versions of this textbook by editing modules, deleting unneeded modules, and adding their own supplementary modules. Connexions' authoring tools keep track of these changes and maintain the CC license's required attribution to the original authors. This process creates a new collection that can be viewed online, downloaded as a single PDF file, or ordered in any quantity by instructors and students as a low-cost printed textbook. </para>
+      </section>
+      <section id="id1169934429747">
+        <title>Read the book online, print the PDF, or buy a copy of the book.</title>
+        <para id="id1169938697985">To browse this textbook online, visit the collection home page. You will then have three options. </para>
+        <list id="id1169932944314" list-type="enumerated" number-style="arabic">
+          <item>You may view the collection modules on-line by clicking on the "Start &gt;&gt;" link, which takes you to the first module in the collection. You can then navigate to the next module using "NEXT &gt;&gt;" and through the subsequent modules by using the "&lt;&lt; PREVIOUS | NEXT &gt;&gt;" button that is towards the upper right to move forward and backward in the collection. You can jump to any module in the collection by clicking on that module's title in the "TABLE OF CONTENTS" box on the left side of the window. If these contents are hidden, make them visible by clicking on the small triangle to the right of the "TABLE OF CONTENTS". Chapters also have a small triangle to show or hide contents.</item>
+          <item>You may obtain a PDF of the entire textbook to print or view offline by clicking on the "Download PDF" link in the "Content Actions" box. </item>
+          <item>You may order a bound copy of the collection (for a reasonable printing and shipping fee) by clicking on the "Order printed copy" button. </item>
+        </list>
+      </section>
+      <section id="id1169940749409">
+        <title>Connexions PDF Conversion Problems</title>
+        <para id="id1169932117296">Buying a copy of the textbook/collection is basically sending the PDF file to a printing service that has a contract with the Connexions project. There are several known printing problems and the Connexions Project is aware of them and seeking a solution. In the mean time, be aware that quirks exist for printed PDF materials. A description of the known problems are:</para>
+        <list id="id1169934691630" list-type="enumerated" number-style="arabic">
+          <item>When it converts an "Example" the PDF displays the first line of an example properly but indents the remaining lines of the example. This problem occurs for the printing of a book (because it prints a PDF) and downloading either a module or a textbook/collection as a PDF. </item>
+          <item>Chapter numbering has been added to the on-line Table of Contents. This will make it easier for students to quickly get to the chapter reading materials. However this creates a "double" chapter numbering within the textbook/collection’s PDF and custom printing formats.</item>
+          <item>Within C++ there are three operators that do not convert properly to PDF format.</item>
+        </list>
+        <table id="id1169931842815" summary="">
+          <tgroup cols="3">
+            <colspec colnum="1" colname="c1"/>
+            <colspec colnum="2" colname="c2"/>
+            <colspec colnum="3" colname="c3"/>
+            <tbody>
+              <row>
+                <entry>decrement </entry>
+                <entry>--</entry>
+                <entry>which is two minus signs</entry>
+              </row>
+              <row>
+                <entry>insertion</entry>
+                <entry>&lt;&lt;</entry>
+                <entry>which is two less than signs</entry>
+              </row>
+              <row>
+                <entry>extraction</entry>
+                <entry>&gt;&gt;</entry>
+                <entry>which is two greater than signs</entry>
+              </row>
+            </tbody>
+          </tgroup>
+        </table>
+      </section>
+      <section id="id1169925911857">
+        <title>Rating Connexion Modules</title>
+        <para id="id1169956085664">A rating feature was added during 2009 for Connexions modules. It will not be useful until more people rate modules within the Connexions repository. If a module is rated by several people, it can be used as a <emphasis effect="bold">measure of quality</emphasis>. Thus, your participation in rating modules is welcomed and helps others determine the quality of the educational materials being viewed.</para>
+        <para id="id1169922882743">In order to rate modules you must have a Connexions account. Three (3) modules have been added to the preface series of modules for this collection. They explain why and how to create a Connexions account and how to rate a Connexions module.</para>
+      </section>
+    </section>
+  </content>
+</document>

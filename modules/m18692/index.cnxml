@@ -1,0 +1,61 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Identifier Names</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m18692</md:content-id>
+  <md:title>Identifier Names</md:title>
+  <md:abstract>An explanation of identifier names including some common rules for the C++ programming language.</md:abstract>
+  <md:uuid>8981e9fe-5e0f-4930-b518-e97e883cfa94</md:uuid>
+</metadata>
+<featured-links>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit below.
+       Changes to the links section in the source will not be saved. -->
+    <link-group type="supplemental">
+      <link url="http://cnx.org/content/m18181/latest/" strength="2">C++ Reserved Keywords</link>
+    </link-group>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit above.
+       Changes to the links section in the source will not be saved. -->
+</featured-links>
+<content>
+    <section id="id16449460">
+      <title>Overview</title>
+      <para id="id23740194">Within programming a variety of items are given descriptive names to make the code more meaningful to us as humans. These names are called "Identifier Names". Constants, variables, type definitions, functions, etc. when declared or defined are identified by a name. These names follow a set of rules that are imposed by:</para>
+      <list id="id14904688" list-type="enumerated" number-style="arabic"><item>the language's technical limitations </item>
+	<item>good programming practices </item>
+	<item>common industry standards for the language  </item>
+</list>
+    </section>
+    <section id="id23389221">
+      <title>Technical to Language</title>
+      <list id="id10306716" list-type="bulleted">
+        <item>Use only allowable characters (for C++ the first character alphabetic or underscore, can continue with alphanumeric or underscore)</item>
+        <item>Can't use reserved words</item>
+        <item>Length limit</item>
+      </list>
+      <para id="id20282960">These attributes vary from one programming language to another. The allowable characters and reserved words will be different. The length limit refers to how many characters are allowed in an identifier name and often is compiler dependent and may vary from compiler to compiler for the same language. However, all programming languages have these three technical rules.</para>
+    </section>
+    <section id="id14843517">
+      <title>Good Programming Techniques</title>
+      <list id="id16718348" list-type="bulleted">
+        <item>Meaningful</item>
+        <item>Be case consistent</item>
+      </list>
+      <para id="id21851764">Meaningful identifier names make your code easier for another to understand. After all what does "p" mean? Is it pi, price, pennies, etc. Thus do not use cryptic (look it up in the dictionary) identifier names.</para>
+      <para id="id11198325">Some programming languages treat upper and lower case letters used in identifier names as the same. Thus: pig and Pig are treated as the same identifier name. Unknown to you the programmer, the compiler usually forces all identifier names to upper case. Thus: pig and Pig both get changed to PIG. However not all programming languages act this way. Some will treat upper and lower case letters as being different things. Thus: pig and Pig are two different identifier names. If you declare it as pig and then reference it in your code later as Pig – you get a compiler error. To avoid the problem altogether, we teach students to <emphasis>be case consistent</emphasis>. Use an identifier name only once and spell it (upper and lower case) the same way within your program.</para>
+    </section>
+    <section id="id16449305">
+      <title>Industry Rules</title>
+      <list id="id7116880" list-type="bulleted" bullet-style="bullet"><item>Do not start with underscore (used for technical programming)</item>
+	<item>variables in all lower case</item>
+	<item>CONSTANTS IN ALL UPPER CASE</item>
+</list>
+      <para id="id15806431">These rules are decided by the industry (those who are using the programming language). The above rules were commonly used within the "C" programming language and have to large degree carried over to C++.</para>
+    </section>
+    <section id="id4945458">
+      <title>Definitions</title>
+    <definition id="fs-id1167291138671">
+      <term>reserved word</term>
+      <meaning id="fs-id1167288180141">Words that cannot be used by the programmer as identifier names because they already have a specific meaning within the programming language.</meaning>
+    </definition>
+    </section>
+  </content>
+</document>
