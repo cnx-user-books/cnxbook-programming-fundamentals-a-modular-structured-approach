@@ -1,12 +1,13 @@
-<col:collection xmlns="http://cnx.rice.edu/collxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:col="http://cnx.rice.edu/collxml" xml:lang="en">
+<?xml version="1.0"?>
+<col:collection xmlns="http://cnx.rice.edu/collxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:col="http://cnx.rice.edu/collxml" xml:lang="en" authors="Kenneth Leroy Busbee">
   <metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">
     <md:content-id>col10621</md:content-id>
     <md:title>Programming Fundamentals - A Modular Structured Approach using C++</md:title>
     <md:language>en</md:language>
     <md:license url="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution License</md:license>
     <md:uuid>303800f3-07f3-44d5-a12c-49e93e8948c5</md:uuid>
-<md:slug>programming-fundamentals-a-modular-structured-approach</md:slug>
-</metadata>
+    <md:slug>programming-fundamentals-a-modular-structured-approach</md:slug>
+  </metadata>
   <col:content>
     <col:module document="m19049"/>
     <col:module document="m19055"/>
