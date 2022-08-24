@@ -1,0 +1,42 @@
+name: A workflow to build books using Enki
+on: push
+jobs:
+  build:
+    name: Build book
+    runs-on: ubuntu-latest
+    container: samuelklutse/enki_epub:latest
+    permissions:
+      deployments: write
+      packages: write
+      contents: write
+    steps:
+      - name: Set Env variables
+        run: |
+          echo "TAG=$(date +'%Y%m%d.%H%M%S')" >> $GITHUB_ENV
+          echo "WORKDIR=/__w/${{ github.event.repository.name }}/${{ github.event.repository.name }}" >> $GITHUB_ENV
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      - name: List files in the repository
+        run: |
+          ls -alt ${{ env.WORKDIR }}
+      - name: Build Book
+        run: |
+          echo 'Initializing Book Build'
+          cd /github
+          git clone https://github.com/openstax/enki
+          cd enki
+          git checkout sk-epub-fixes 
+          TRACE_ON=1 LOCAL_ATTIC_DIR=_attic TERM=xterm /github/enki/dockerfiles/enki-in-container --command all-git-epub --repo-dir ${{ env.WORKDIR }} --style dummy
+          
+          mv /tmp/test.epub /tmp/programming-fundamentals-a-modular-structured-approach.epub
+      - uses: ncipollo/release-action@v1
+        with:
+          artifacts: /tmp/programming-fundamentals-a-modular-structured-approach.epub
+          omitBody: True
+          tag: ${{ env.TAG }}
+      - uses: actions/upload-artifact@v3
+        with:
+          name: ${{ github.event.repository.name }}
+          path: /tmp/programming-fundamentals-a-modular-structured-approach.epub
+          if-no-files-found: error
+
