@@ -27,16 +27,21 @@ jobs:
           cd enki
           git checkout sk-epub-fixes 
           TRACE_ON=1 LOCAL_ATTIC_DIR=_attic TERM=xterm /github/enki/dockerfiles/enki-in-container --command all-git-epub --repo-dir ${{ env.WORKDIR }} --style dummy
-          
-          mv /tmp/test.epub /tmp/programming-fundamentals-a-modular-structured-approach.epub
-      - uses: ncipollo/release-action@v1
-        with:
-          artifacts: /tmp/programming-fundamentals-a-modular-structured-approach.epub
-          omitBody: True
-          tag: ${{ env.TAG }}
-      - uses: actions/upload-artifact@v3
-        with:
-          name: ${{ github.event.repository.name }}
-          path: /tmp/programming-fundamentals-a-modular-structured-approach.epub
-          if-no-files-found: error
 
+
+      - name: Bump version and push tag
+        id: tag_version
+        uses: mathieudutour/github-tag-action@v6.0
+        with:
+          custom_tag: ${{ env.TAG }}
+          tag_prefix: ""
+          release_branches: ${GITHUB_REF##*/}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Create a GitHub release
+        uses: ncipollo/release-action@v1
+        with:
+          artifacts: /tmp/_attic/IO_ARTIFACTS/programming-fundamentals-a-modular-structured-approach.epub
+          tag: ${{ steps.tag_version.outputs.new_tag }}
+          name: ${{ steps.tag_version.outputs.new_tag }}
+          omitBody: True
