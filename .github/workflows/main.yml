@@ -1,10 +1,10 @@
 name: A workflow to build books using Enki
-on: [push, workflow_dispatch]
+on: [workflow_dispatch]
 jobs:
   build:
     name: Build book
     runs-on: ubuntu-latest
-    container: samuelklutse/enki_epub:latest
+    container: openstax/enki:20220922.225409
     permissions:
       deployments: write
       packages: write
